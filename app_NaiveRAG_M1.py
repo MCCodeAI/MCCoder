@@ -258,35 +258,7 @@ async def on_message(message: cl.Message):
 
     # Run Code in WMX3
     codereturn = SendCode(RunnableCode)
-    # if 'error' in codereturn:
-    #     err_codes_0 = codereturn + '\n # ------------------------------- \n' + RunnableCode
-    #     code_corrected = await self_correct(err_codes_0)
 
-    
-
-    # lines = msgCode.splitlines()
-    # api_start_index = None
-    
-    # # 查找 '# WMX3 API ' 行的索引
-    # for i, line in enumerate(lines):
-    #     if line.strip() == '### WMX3 API':
-    #         api_start_index = i
-    #         break
-
-    # # 如果找到了 '## WMX3 API ' 行，将其和其后的所有行赋值给 API_list
-    # if api_start_index is not None:
-    #     API_list = lines[api_start_index:]
-    
-    # text_content = '\n'.join(API_list)
-    # # Display API related documents
-    # apitext = [
-    #     cl.Text(name="simple_text", content=text_content, display="inline", size='small')
-    # ]
-
-    # await cl.Message(
-    #     content="API reference:",
-    #     elements=apitext,
-    # ).send()
 
     folder_path = f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}'
     os.makedirs(folder_path, exist_ok=True)
@@ -321,30 +293,20 @@ async def on_message(message: cl.Message):
             ).send()
 
 
-
-
     await msg.send()    
 
     print("end")
 
 
+ 
+
+# When running as a standalone script
+if __name__ == "__main__":
+    pass
+    print(__name__)
 
 
-    #  Sending an action button within a chatbot message
-    actions = [
-        cl.Action(name="action_button", value="example_value", description="Run!")
-    ]
-
-    await cl.Message(content="Run the code in the real machine!", actions=actions).send()
-
-
-
-
-@cl.action_callback("action_button")
-async def on_action(action: cl.Action):
-    print("Send to real machine for running!")
-
-    codereturn = SendCodetoMachine(RunnableCodeinMachine)
-    print(codereturn)
-
-    return "Send to real machine for running!"
+# When imported as a module
+if __name__ == "":
+    pass
+    print(__name__)
