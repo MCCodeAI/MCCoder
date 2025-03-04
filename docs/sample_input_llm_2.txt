@@ -1,0 +1,512 @@
+Write a python code based on the following Question and Context. You need to choose the correct codes from the Context to answer the Question.
+    1. Review the Question carefully and find all the 'Axis number', IO Inputs and Outputs, and add them to the first lines of the generated code in the following format: 
+    # Axes = [Axis number 1, Axis number 2, ...]
+    # Inputs = [byte.bit 1, byte.bit 2, ...]
+    # Outputs = [byte.bit 1, byte.bit 2, ...]
+    For instance, if the question is '...Axis 9..., ...Axis 12..., ...Axis 2..., Input 0.3 and 1.2, ...Output 3.4 and 6.1', then exact the information after matching the keywords: "Axis", "Input", "Output":
+    # Axes = [9, 12, 2]
+    # Inputs = [0.3, 1.2, ...]
+    # Outputs = [3.4, 6.1, ...]
+    2. Include all the generated codes within one paragraph between ```python and ``` tags. 
+    3. Don't import any library.
+    4. Don't create any functions or example usage.
+    5. You need to wait until the Axes reaches the target position and stops, after the motion API, unless otherwise specified. For instance, Wmx3Lib_cm.motion.Wait(4), while 4 is the Axis specified in Axes.
+    6. Use StartPos for absolute positioning, as in 'Move Axis 4 to 200', and StartMov for relative positioning, as in 'Move Axis 4 by a distance of 200'.
+    7. Strictly follow the instruction for the profile type.
+    ----------------------------------------------
+
+    Question: 
+    Write Python code to move Axis 2 to the position -55 at a speed of 1000, using an scurve profile.
+
+    Context: 
+    Write Python code to move Axis 2 to the position -55 at a speed of 1000, using an scurve profile.
+``
+
+
+
+# Write python code to Start an absolute position command of Axis 0 to position 180 with 1000 velocity, and then start a relative position command of Axis 0 by a 200 distance and 2000 velocity.
+# Move Axis 0 to position 180 with 1000 velocity, and then move Axis 0 by a 200 distance and 2000 velocity.
+    # Axes = [0]
+    # Create a command value of target as 180.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 180
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+    # Create a command value of target as 200.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 200
+    posCommand.profile.velocity = 2000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to a specified distance relatively. e.g. 'Move 100..'
+    ret = Wmx3Lib_cm.motion.StartMov(posCommand)
+    if ret!=0:
+        print('StartMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+
+#
+
+``
+
+
+
+# Write python code to Execute a sequence of motion commands using trigger motion functions and Wait functions.Move Axis 0 as 100 distance with 1000 velocity, and trigger it to move as -100 distance when the remaining time is 0, and then move as 200 distance, and -200 distance after waiting it to be overridable.
+    # Axes = [0]
+
+    pos = Motion_PosCommand()
+    tpos = Motion_TriggerPosCommand()
+    wait = Motion_WaitCondition()
+
+    # Set position command parameters
+    pos.axis = 0
+    pos.profile.type = ProfileType.Trapezoidal;
+    pos.profile.velocity = 1000
+    pos.profile.acc = 10000
+    pos.profile.dec = 10000
+
+    # Set triggered position command parameters
+    tpos.axis = 0
+    tpos.profile.type = ProfileType.Trapezoidal
+    tpos.profile.velocity = 1000
+    tpos.profile.acc = 10000
+    tpos.profile.dec = 10000
+    tpos.trigger.triggerAxis = 0
+    tpos.trigger.triggerType = TriggerType.RemainingTime
+    tpos.trigger.triggerValue = 0
+
+    # Set wait condition parameters, waiting Axis 0 to be overridable.
+    wait.waitConditionType = Motion_WaitConditionType.MotionStartedOverrideReady
+    wait.axisCount = 1
+    wait.SetAxis(0, 0)
+
+    # Execute motion to move axis forward 100
+    pos.target = 100
+
+    ret = Wmx3Lib_cm.motion.StartMov(pos)
+    if ret != 0:
+        print('StartMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Execute trigger motion to move axis backward 100 at the end of the previous motion
+    tpos.target = -100
+
+    ret = Wmx3Lib_cm.motion.StartMov_Trigger(tpos)
+    if ret != 0:
+        print('StartMov_Trigger error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until trigger motion executes
+    ret = Wmx3Lib_cm.motion.Wait_WaitCondition(wait)
+    if ret != 0:
+        print('Wait_WaitCondition error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Execute trigger motion to move axis forward 200 at the end of the previous motion
+    tpos.target = 200
+
+    ret = Wmx3Lib_cm.motion.StartMov_Trigger(tpos)
+    if ret != 0:
+        print('StartMov_Trigger error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until trigger motion executes
+    ret = Wmx3Lib_cm.motion.Wait_WaitCondition(wait)
+    if ret != 0:
+        print('Wait_WaitCondition error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Execute trigger motion to move axis backward 20000 at the end of the previous motion
+    tpos.target = -200
+    ret = Wmx3Lib_cm.motion.StartMov_Trigger(tpos)
+    if ret != 0:
+        print('StartMov_Trigger error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until motion is finished
+    ret = Wmx3Lib_cm.motion.Wait(0)
+    if ret != 0:
+        print('Wait error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+    
+
+
+#
+
+``
+
+
+
+# Write python code to Start a relative position command of Axis 1 by a 200 distance and 2000 velocity.
+# Move Axis 1 by a 200 distance with velocity 2000.
+    # Axes = [1]
+
+    # Start a relative position command of Axis 1 with 200 distance and 2000 velocity.
+    # Create a command value of target as 200.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 1
+    posCommand.target = 200
+    posCommand.profile.velocity = 2000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to a specified distance relatively. e.g. 'Move 100..'
+    ret = Wmx3Lib_cm.motion.StartMov(posCommand)
+    if ret!=0:
+        print('StartMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(1)
+
+
+#
+
+# Write python code to start an absolute position command of Axis 0 to position 180 with 1000 velocity.
+# Move Axis 0 to 180 with velocity 1000.
+    # Axes = [0]
+    # Start an absolute position command of Axis 0 to position 180 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 180
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+
+
+#
+
+``
+
+
+
+# Write python code to Jog Axis 2 for 1.5s with 160 velocity, then start an absolute position command to position 10 with 1000 velocity.
+# Jog Axis 2 for 1.5s with 160 velocity, then move to 10 with velocity 1000.
+    # Axes = [2]
+
+    jogCommand = Motion_JogCommand()
+    jogCommand.profile.type = ProfileType.Trapezoidal
+    jogCommand.axis = 2
+    jogCommand.profile.velocity = 160
+    jogCommand.profile.acc = 10000
+    jogCommand.profile.dec = 10000
+
+    # Rotate the motor at the specified speed.
+    ret =Wmx3Lib_cm.motion.StartJog(jogCommand)
+    if ret!=0:
+        print('StartJog error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    #Jogging for 1.5 seconds
+    sleep(1.5)
+    
+    Wmx3Lib_cm.motion.Stop(2)
+
+    Wmx3Lib_cm.motion.Wait(2)
+    
+    # Create a command value of target as 10.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 2
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(2)
+
+
+
+#
+
+``
+
+
+
+# Write python code to Start an absolute position linear interpolation motion command of Axis 0 and 1 to position (300, 100) with 1000 velocity, and then start a relative position linear interpolation motion command of Axis 0 and 1 with  (200, -150) distance with 1000 velocity.
+    # Axes = [0, 1]
+
+    # Create a command value of relative distance
+    lin = Motion_LinearIntplCommand()
+    lin.axisCount = 2 
+    lin.SetAxis(0,0)
+    lin.SetAxis(1,1) 
+
+    lin.profile.type = ProfileType.Trapezoidal
+    lin.profile.velocity = 1000
+    lin.profile.acc = 10000
+    lin.profile.dec = 10000
+
+    lin.SetTarget(0,300)  #Set target of Axis 0 to be 300
+    lin.SetTarget(1,100)  #Set target of Axis 1 to be 100
+
+    # Start an absolute position linear interpolation motion command.
+    ret =Wmx3Lib_cm.motion.StartLinearIntplPos(lin)
+    if ret!=0:
+            print('StartLinearIntplPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+            return
+    Wmx3Lib_cm.motion.Wait(0) #need to wait the Axis 0 to be idle
+
+    lin.SetTarget(0,200)  #Set target of Axis 0  
+    lin.SetTarget(1,-150)  #Set target of Axis 1  
+
+    # Start an relative position linear interpolation motion command.
+    ret =Wmx3Lib_cm.motion.StartLinearIntplMov(lin)
+    if ret!=0:
+            print('StartLinearIntplMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+            return
+    
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+    
+
+
+#
+
+``
+
+
+
+# Write python code to Start a relative triggered position command of Axis 1 with 180 distance and velocity of 1000, and the triggered condition is the remaining distance for Axis 0 to the target position is 30 while it moves a relative 100 distance.
+    # Axes = [0, 1]
+
+    posCommand = Motion_PosCommand()
+    tgrPosCommand = Motion_TriggerPosCommand()
+    trigger = Trigger()
+
+    # Move the motor to the specified position.
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 100
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+    ret = Wmx3Lib_cm.motion.StartMov(posCommand)
+    if ret != 0:
+        print('StartMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Set trigger PosCommand.
+    tgrPosCommand.profile.type = ProfileType.Trapezoidal
+    tgrPosCommand.axis = 1
+    tgrPosCommand.target = 180
+    tgrPosCommand.profile.velocity = 1000
+    tgrPosCommand.profile.acc = 10000
+    tgrPosCommand.profile.dec = 10000
+
+    # Create Trigger
+    # Start when the remaining distance of 0 axis reaches 30 pulse.
+    trigger.triggerAxis = 0
+    trigger.triggerType = TriggerType.RemainingDistance
+    trigger.triggerValue = 30
+    tgrPosCommand.trigger = trigger
+    ret = Wmx3Lib_cm.motion.StartMov_Trigger(tgrPosCommand)
+    if ret != 0:
+        print('StartMov_Trigger error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+    Wmx3Lib_cm.motion.Wait(1)
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+        
+
+
+#
+
+``
+
+
+
+# Write python code to Execute a sequence of moving position command with blocking wait command.The moving distance of Axis 0 is 100, -100 and 100 with blocking wait.
+    # Axes = [0]
+
+    pos = Motion_PosCommand()
+
+    # Set position command parameters
+    pos.axis = 0
+    pos.profile.type = ProfileType.Trapezoidal
+    pos.profile.velocity = 1000
+    pos.profile.acc = 10000
+    pos.profile.dec = 10000
+
+    # Execute motion to move axis forward 100
+    pos.target = 100
+
+    ret = Wmx3Lib_cm.motion.StartMov(pos)
+    if ret != 0:
+        print('StartMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until motion is finishedmoving 
+    ret = Wmx3Lib_cm.motion.Wait(0)
+    if ret != 0:
+        print('Wait error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Execute motion to move axis backward 100
+    pos.target = -100
+    ret = Wmx3Lib_cm.motion.StartMov(pos)
+    if ret != 0:
+        print('StartMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until motion is finished
+    ret = Wmx3Lib_cm.motion.Wait(0)
+    if ret != 0:
+        print('Wait error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Execute motion to move axis forward 100
+    pos.target = 100
+    ret = Wmx3Lib_cm.motion.StartMov(pos)
+    if ret != 0:
+        print('StartMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until motion is finished
+    ret = Wmx3Lib_cm.motion.Wait(0)
+    if ret != 0:
+        print('Wait error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+    
+    
+
+#
+
+``
+
+
+
+# Write python code to Start a relative position linear interpolation motion command of Axis 0 and 1 with  (200, -150) distance with 1000 velocity.
+    # Axes = [0, 1]
+    
+    # Create a command value of relative distance of (200, -150).
+    lin = Motion_LinearIntplCommand()
+    lin.axisCount = 2 
+    lin.SetAxis(0,0)
+    lin.SetAxis(1,1) 
+
+    lin.profile.type = ProfileType.Trapezoidal
+    lin.profile.velocity = 1000
+    lin.profile.acc = 10000
+    lin.profile.dec = 10000
+
+    lin.SetTarget(0,200)  #Set target of Axis 0 to be 300
+    lin.SetTarget(1,-150)  #Set target of Axis 1 to be 100
+
+    # Start an relative position linear interpolation motion command.
+    ret =Wmx3Lib_cm.motion.StartLinearIntplMov(lin)
+    if ret!=0:
+            print('StartLinearIntplMov error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+            return
+    
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+    
+
+
+#
+
+``
+
+
+
+# Write python code to Start an absolute position linear interpolation motion command of Axis 0 and 1 to position (300, 100) with 1000 velocity.
+    # Axes = [0, 1]
+
+    # Create a command value of target as (300, 100).
+    lin = Motion_LinearIntplCommand()
+    lin.axisCount = 2 
+    lin.SetAxis(0,0)
+    lin.SetAxis(1,1) 
+
+    lin.profile.type = ProfileType.Trapezoidal
+    lin.profile.velocity = 1000
+    lin.profile.acc = 10000
+    lin.profile.dec = 10000
+
+    lin.SetTarget(0,300)  #Set target of Axis 0 to be 300
+    lin.SetTarget(1,100)  #Set target of Axis 1 to be 100
+
+    # Start an absolute position linear interpolation motion command.
+    ret =Wmx3Lib_cm.motion.StartLinearIntplPos(lin)
+    if ret!=0:
+            print('StartLinearIntplPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+            return
+    
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+    
+
+
+#
+----------
+
+
+        

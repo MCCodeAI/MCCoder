@@ -1,0 +1,20 @@
+[
+    {
+        "No": 1,
+        "Instruction": "Get a string representation of the raw data of an API log.",
+        "A": "ApiLogDataToString(pLogData, logDataSize)",
+        "B": "ApiLogToString(pLogData, logDataSize)",
+        "C": "GetPlannedVelOverrideStatus(channel)",
+        "D": "Clear(channel)",
+        "Answer(s)": "B"
+    },
+    {
+        "No": 769,
+        "Instruction": "Release the halt state for a specified slave axis in CCLINK.",
+        "A": "HaltAxisReleaseCommand(slaveId, axisIndex)",
+        "B": "HaltAxisRelease(slaveId, axisIndex)",
+        "C": "StartAxisHM(slaveId, axisIndex, method, switchSpeed, zeroSpeed, hmAcc)",
+        "D": "SetAxisMode(slaveId, axisIndex, mode)",
+        "Answer(s)": "B"
+    }
+]
