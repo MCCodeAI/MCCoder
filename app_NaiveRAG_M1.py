@@ -79,20 +79,7 @@ async def on_chat_start():
 
     # Prompt for code generation
     prompt_template = """Write a python code based on the following Question and Context. You need to choose the correct codes from the Context to answer the Question.
-    1. Review the question carefully and find all the 'Axis number', IO Inputs and Outputs, and add them to the first lines of the generated code in the following format: 
-    # Axes = [Axis number 1, Axis number 2, ...]
-    # Inputs = [byte.bit 1, byte.bit 2, ...]
-    # Outputs = [byte.bit 1, byte.bit 2, ...]
-    For instance, if the question is '...Axis 9..., ...Axis 12..., ...Axis 2..., Input 0.3 and 1.2, ...Output 3.4 and 6.1', then 
-    # Axes = [9, 12, 2]
-    # Inputs = [0.3, 1.2, ...]
-    # Outputs = [3.4, 6.1, ...]
-    2. Include all the generated codes within one paragraph between ```python and ``` tags. 
-    3. Don't import any library.
-    4. Don't create any functions or example usage.
-    5. You need to wait until the axis reaches the target position and stops, unless otherwise specified.
-    ----------------------------------------------
-
+    
     Question: 
     {question}
 
@@ -158,21 +145,7 @@ def extract_code(text):
 @cl.step
 # Extracts and formats code instructions from a user question based on specific starting phrases.
 async def coder_router(user_question):
-    """
-    Extracts numbered sections of a user question based on specific starting phrases.
-    
-    If the question starts with 'Write a python code', 'Python code', or 'write python' (case insensitive),
-    it splits the question into paragraphs that start with numbers (e.g., 1., 2., 3.) and adds 
-    'Write python code to ' after the numbers. If the question does not start 
-    with the specified phrases or does not contain numbered lists, the entire question is saved into a single 
-    element array. If the question does not start with the specified phrases, NoCoder is set to 1.
-    
-    Args:
-        user_question (str): The user's question.
-    
-    Returns:
-        tuple: NoCoder (int), an array of strings with each element containing a code instruction or the entire question.
-    """
+
     result = []
     NoCoder = 0
     # Check if the input starts with the specified prefixes
