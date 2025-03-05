@@ -130,14 +130,12 @@ def main():
         print('SetLogOption error code is ' + str(ret) + ': ' + WMX3Log.ErrorToString(ret))
         ret=WMX3Log.SetLogOption(0, option)
     sleep(0.1)
-    print('SetLogOption a')
 
     ret = WMX3Log.SetCustomLog(0,cmLogIn_0)
     if ret!=0:
         print('SetCustomLog error code is ' + str(ret) + ': ' + WMX3Log.ErrorToString(ret))
         return
     sleep(0.1)
-    print('SetCustomLog a')
 
     
     # IOInputs and IOOutputs
@@ -185,7 +183,6 @@ def main():
     if ret != 0:
         print('SetIOLog error code is ' + str(ret) + ': ' + WMX3Log.ErrorToString(ret))
         return
-    print('SetIOLog a')
         
     # Set log file address
     path_0 = LogFilePath()
@@ -193,13 +190,12 @@ def main():
     path_0.dirPath = r"\\\\Mac\\\\Home\\\\Documents\\\\GitHub\\\\MCCodeLog\\\\LLM_NAME"
     path_0.fileName = f"filename_Log.txt"
 
-    print('SetLogFilePath b')
     ret = WMX3Log.SetLogFilePath(0, path_0)
     if ret!=0:
         print('SetLogFilePath error code is ' + str(ret) + ': ' + WMX3Log.ErrorToString(ret))
         return
 
-    print('StartLog b')
+
     # Start log
     ret = WMX3Log.StartLog(0)
     if ret!=0:
@@ -254,7 +250,6 @@ def main():
     print('Program End.')
 
 if __name__ == '__main__':
-    print('before main')
     main()
 
 '''

@@ -7,7 +7,7 @@ from langchain.schema.runnable.config import RunnableConfig
 
 from langchain import hub
 from langchain_community.document_loaders import WebBaseLoader, TextLoader, PyPDFLoader
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings, OpenAI
@@ -16,6 +16,8 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.documents import Document
 from langchain.chains import LLMChain
 from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_community.retrievers import BM25Retriever
+from langchain.retrievers import EnsembleRetriever
 
 import chainlit as cl
 from time import *
@@ -50,7 +52,7 @@ else:
     # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
     print("load from chunks")
 
-retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 10})
+retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 5})
 
 # Txt loader of sample codes, for BM25 search
 loader = TextLoader("./docs/WMX3API_MCEval_Samplecodes.txt")
@@ -67,10 +69,22 @@ splits = text_splitter.split_documents(docs)
 llm_name = None
 llm = ChatOpenAI(name="MCCoder and QA", model_name="gpt-4o", streaming=True)
 
+
+@cl.password_auth_callback
+def auth_callback(username: str, password: str):
+    # Fetch the user matching username from your database
+    # and compare the hashed password with the value stored in the database
+    if (username, password) == ("admin", "admin"):
+        return cl.User(
+            identifier="admin", metadata={"role": "admin", "provider": "credentials"}
+        )
+    else:
+        return None
+
+
+
 @cl.on_chat_start
 async def on_chat_start():
-    
-    
     
 
     global llm_name
@@ -78,7 +92,33 @@ async def on_chat_start():
     llm_name = llm.model_name
 
     # Prompt for code generation
-    prompt_template = """Write a python code based on the following Question and Context. You need to choose the correct codes from the Context to answer the Question.
+    prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
+
+Instructions:
+	1.	Extract Key Information:
+	•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
+	•	Add this information at the beginning of the generated code in the following format:
+
+# Axes = [Axis_number_1, Axis_number_2, ...]
+# Inputs = [byte.bit_1, byte.bit_2, ...]
+# Outputs = [byte.bit_1, byte.bit_2, ...]
+
+
+	•	Example:
+If the Question states:
+“Move Axis 9, Axis 12, and Axis 2 based on Input 0.3 and 1.2, then activate Output 3.4 and 6.1”,
+the script should start with:
+
+# Axes = [9, 12, 2]
+# Inputs = [0.3, 1.2]
+# Outputs = [3.4, 6.1]
+
+
+	2.	Code Formatting:
+	•	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
+
+	3.	Do not import any libraries.
+    ----------------------------------------------
     
     Question: 
     {question}
@@ -142,57 +182,26 @@ def extract_code(text):
     return "\n\n---\n\n".join(matches)
 
 
-@cl.step
-# Extracts and formats code instructions from a user question based on specific starting phrases.
-async def coder_router(user_question):
-
-    result = []
-    NoCoder = 0
-    # Check if the input starts with the specified prefixes
-    if re.match(r'(?i)^(Write a python code|Python code|write python)', user_question):
-        result.append(user_question)
-    else:
-        # Save the entire question to the array and set NoCoder to 1
-        result.append(user_question)
-        NoCoder = 1
-    
-    return NoCoder, result
-
 
 @cl.step
 # This function retrieves and concatenates documents for each element in the input string array.
-async def coder_retrieval(coder_router_result):
-    """
-    This function takes an array of strings as input. For each element in the array,
-    it performs a retrieval using format_docs(retriever.invoke(element))
-    and concatenates the element with the retrieval result into one long string, 
-    with a newline character between them. Each concatenated result is separated by a specified separator.
-    
-    Args:
-        coder_router_result (list): An array of strings.
+async def coder_retrieval(question):
 
-    Returns:
-        str: A single long string formed by concatenating each element with its retrieval result,
-             separated by a newline character, and each concatenated result separated by a specified separator.
-    """
     separator = "\n----------\n"
     long_string = ""
-    for element in coder_router_result:
 
-        # Fusion retrieval or hybrid search
-        from langchain.retrievers import BM25Retriever, EnsembleRetriever
 
-        # initialize the bm25 retriever and faiss retriever
-        bm25_retriever = BM25Retriever.from_documents(splits)
-        bm25_retriever.k = 5
+    # initialize the bm25 retriever and faiss retriever
+    bm25_retriever = BM25Retriever.from_documents(splits)
+    bm25_retriever.k = 5
 
-        # initialize the ensemble retriever
-        ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
+    # initialize the ensemble retriever
+    ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
 
-        ensemble_docs = ensemble_retriever.get_relevant_documents(element)
+    ensemble_docs = ensemble_retriever.invoke(question)
 
-        retrieval_result = format_docs(ensemble_docs)
-        long_string += element + "\n" + retrieval_result + separator
+    retrieval_result = format_docs(ensemble_docs)
+    long_string +=  "\n" + retrieval_result + separator
     
     return long_string
 
@@ -201,7 +210,6 @@ RunnableCodeinMachine = ''
 @cl.on_message
 async def on_message(message: cl.Message):
     
-
     runnable = cl.user_session.get("runnable")  # type: Runnable
 
     msg = cl.Message(content="")
@@ -209,18 +217,10 @@ async def on_message(message: cl.Message):
     # Input text
     user_question = message.content
     
-    # Call coder_router function
-    NoCoder, coder_router_result = await coder_router(user_question)
-    
-    # Route the result based on NoCoder value
-    if NoCoder == 0:
-        coder_return = await coder_retrieval(coder_router_result)
-        context_msg = coder_return
-    else:
-        context_msg = format_docs(retriever.invoke(coder_router_result[0]))
 
+    context_msg = await coder_retrieval(user_question)
+ 
     # questionMsg=message.content
-
 
     async for chunk in runnable.astream(
         # {"question": questionMsg},
@@ -254,7 +254,7 @@ async def on_message(message: cl.Message):
     RunnableCodeinMachine = re.sub(r'# <logoff[\s\S]*?# logoff>', '', RunnableCodeinMachine)
 
 
-    print(RunnableCodeinMachine)
+    # print(RunnableCodeinMachine)
 
     # Run Code in WMX3
     codereturn = SendCode(RunnableCode)
@@ -273,8 +273,8 @@ async def on_message(message: cl.Message):
     # Check if the plot files exist in folder_path and delete them if they do
     for filename in plot_filenames:
         file_path = os.path.join(folder_path, filename)
-        # if os.path.exists(file_path):
-        #     os.remove(file_path)
+        if os.path.exists(file_path):
+            os.remove(file_path)
 
     log_file_path = os.path.join(folder_path, f"{task_info}_{llm_name}_log.txt")
     # Plot with the log file
