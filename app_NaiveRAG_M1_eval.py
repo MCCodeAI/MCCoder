@@ -19,7 +19,6 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_community.retrievers import BM25Retriever
 from langchain.retrievers import EnsembleRetriever
 
-import chainlit as cl
 from time import *
 from CodeClient import *
 from MachineClient import *
@@ -67,26 +66,11 @@ splits = text_splitter.split_documents(docs)
 
 # Global variable to store the name of the LLM
 llm_name = None
-llm = ChatOpenAI(name="MCCoder and QA", model_name="gpt-4o-mini", streaming=True)
-
-
-@cl.password_auth_callback
-def auth_callback(username: str, password: str):
-    # Fetch the user matching username from your database
-    # and compare the hashed password with the value stored in the database
-    if (username, password) == ("admin", "admin"):
-        return cl.User(
-            identifier="admin", metadata={"role": "admin", "provider": "credentials"}
-        )
-    else:
-        return None
-
-
-async def ttt():
-    print("ttt")
-
-@cl.on_chat_start
-async def on_chat_start():
+llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True)
+runnable = None
+ 
+ 
+def on_chat_start():
     
     global llm_name
     # Store the name of the LLM in the global variable
@@ -118,7 +102,9 @@ the script should start with:
 	2.	Code Formatting:
 	•	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
 
-	3.	Do not import any libraries.
+	3.	Do not import any motion libraries.
+
+
     ----------------------------------------------
     
     Question: 
@@ -131,6 +117,7 @@ the script should start with:
 
     prompt_code = ChatPromptTemplate.from_template(prompt_template)
 
+    global runnable
     runnable = (
         # {"context": retriever | format_docs}
          prompt_code
@@ -138,11 +125,9 @@ the script should start with:
         | StrOutputParser()
     )
 
-    cl.user_session.set("runnable", runnable)
 
 
-@cl.step
-async def self_correct(err_codes):
+def self_correct(err_codes):
    # remember to write "python" code in the prompt later
     template = """Correct the following codes based on the error infomation. 
 
@@ -183,9 +168,9 @@ def extract_code(text):
 
 
 
-@cl.step
+
 # This function retrieves and concatenates documents for each element in the input string array.
-async def coder_retrieval(question):
+def coder_retrieval(question):
 
     separator = "\n----------\n"
     long_string = ""
@@ -207,18 +192,12 @@ async def coder_retrieval(question):
 
 RunnableCodeinMachine = ''
 
-@cl.on_message
-async def on_message(message: cl.Message):
+def on_message(message):
     
-    runnable = cl.user_session.get("runnable")  # type: Runnable
-
-    msg = cl.Message(content="")
-
     # Input text
-    user_question = message.content
+    user_question = message
     
-
-    context_msg = await coder_retrieval(user_question)
+    context_msg = coder_retrieval(user_question)
  
     # questionMsg=message.content
 
@@ -230,11 +209,9 @@ async def on_message(message: cl.Message):
     #     await msg.stream_token(chunk)
         # print(chunk)
 
-    response = await runnable.ainvoke(
-    {"context": context_msg, "question": user_question},
-    config=RunnableConfig(callbacks=[cl.LangchainCallbackHandler()]))
-    print(response)
-    await cl.Message(content=response).send()
+    response = runnable.invoke(
+    {"context": context_msg, "question": user_question})
+
 
     # TaskId file path
     file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'
@@ -245,7 +222,7 @@ async def on_message(message: cl.Message):
     llm_name = 'CanonicalCode_test'
 
     # Get python code from the output of LLM
-    msgCode = extract_code(msg.content)
+    msgCode = extract_code(response)
     RunnableCode = make_code_runnable(msgCode, llm_name, task_info)
 
     # Old and new paths
@@ -259,11 +236,9 @@ async def on_message(message: cl.Message):
     RunnableCodeinMachine = re.sub(r'# <logon[\s\S]*?# logon>', '', RunnableCodeinMachine)
     RunnableCodeinMachine = re.sub(r'# <logoff[\s\S]*?# logoff>', '', RunnableCodeinMachine)
 
-    # print(RunnableCodeinMachine)
 
     # Run Code in WMX3
     codereturn = SendCode(RunnableCode)
-
 
     folder_path = f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}'
     os.makedirs(folder_path, exist_ok=True)
@@ -285,31 +260,7 @@ async def on_message(message: cl.Message):
     # Plot with the log file
     plot_log(log_file_path)
     
-    sleep(0.3)
-
-    for filename in plot_filenames:
-        file_path = os.path.join(folder_path, filename)
-        if os.path.exists(file_path):
-            image = cl.Image(path=file_path, name=filename, display="inline", size='large')
-            # Attach the image to the message
-            await cl.Message(
-                content=f"Plot name: {filename}",
-                elements=[image],
-            ).send()
-
-
-    await msg.send()    
+    sleep(0.1)
 
     print("end")
 
-
-# When running as a standalone script
-if __name__ == "__main__":
-    pass
-    print(__name__)
-
-
-# When imported as a module
-if __name__ == "":
-    pass
-    print(__name__)
