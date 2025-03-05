@@ -36,7 +36,7 @@ load_dotenv(find_dotenv())
 
 # Preparation of documents for RAG-------------------------
 # Vectorstore, for retrieval
-embedding_model=OpenAIEmbeddings(model="text-embedding-3-large")   #text-embedding-3-large   #text-embedding-ada-002    #text-embedding-3-small
+embedding_model=OpenAIEmbeddings(model="text-embedding-3-large")   
 
 # If pdf vectorstore exists
 vectorstore_path = "Vectorstore/chromadb-MCCoder"
@@ -47,7 +47,7 @@ if os.path.exists(vectorstore_path):
                     ) 
     print("load from disk: " + vectorstore_path)
 else:
-        # Load from chunks and save to disk
+    # Load from chunks and save to disk
     # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
     print("load from chunks")
 
@@ -66,7 +66,7 @@ splits = text_splitter.split_documents(docs)
 
 # Global variable to store the name of the LLM
 llm_name = None
-llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True)
+llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True, temperature=0.2)
 runnable = None
  
  

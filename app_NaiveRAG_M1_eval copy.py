@@ -1,4 +1,4 @@
-
+from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, PromptTemplate
 from langchain.schema import StrOutputParser
 from langchain.schema.runnable import Runnable
@@ -18,7 +18,6 @@ from langchain.chains import LLMChain
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_community.retrievers import BM25Retriever
 from langchain.retrievers import EnsembleRetriever
-from langchain_community.llms import Tongyi
 
 from time import *
 from CodeClient import *
@@ -35,52 +34,50 @@ from dotenv import load_dotenv,find_dotenv
 load_dotenv(find_dotenv()) 
 
 
-# # Preparation of documents for RAG-------------------------
-# # Vectorstore, for retrieval
-# embedding_model=OpenAIEmbeddings(model="text-embedding-3-large")   #text-embedding-3-large   #text-embedding-ada-002    #text-embedding-3-small
+# Preparation of documents for RAG-------------------------
+# Vectorstore, for retrieval
+embedding_model=OpenAIEmbeddings(model="text-embedding-3-large")   #text-embedding-3-large   #text-embedding-ada-002    #text-embedding-3-small
 
-# # If pdf vectorstore exists
-# vectorstore_path = "Vectorstore/chromadb-MCCoder"
-# if os.path.exists(vectorstore_path):
-#     vectorstore = Chroma(
-#                     embedding_function=embedding_model,
-#                     persist_directory=vectorstore_path,
-#                     ) 
-#     print("load from disk: " + vectorstore_path)
-# else:
-#         # Load from chunks and save to disk
-#     # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
-#     print("load from chunks")
+# If pdf vectorstore exists
+vectorstore_path = "Vectorstore/chromadb-MCCoder"
+if os.path.exists(vectorstore_path):
+    vectorstore = Chroma(
+                    embedding_function=embedding_model,
+                    persist_directory=vectorstore_path,
+                    ) 
+    print("load from disk: " + vectorstore_path)
+else:
+        # Load from chunks and save to disk
+    # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
+    print("load from chunks")
 
-# retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 5})
+retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 5})
 
-# # Txt loader of sample codes, for BM25 search
-# loader = TextLoader("./docs/WMX3API_MCEval_Samplecodes.txt")
-# docs = loader.load()
+# Txt loader of sample codes, for BM25 search
+loader = TextLoader("./docs/WMX3API_MCEval_Samplecodes.txt")
+docs = loader.load()
 
-# #Sample code chunk with dedicated separators
-# separators = ['``']  # Adjust based on actual document structure, `` is the end of each code snippet.
-# text_splitter = RecursiveCharacterTextSplitter(separators=separators, keep_separator=True, chunk_size=1000, chunk_overlap=200, add_start_index=True)
-# splits = text_splitter.split_documents(docs)
+#Sample code chunk with dedicated separators
+separators = ['``']  # Adjust based on actual document structure, `` is the end of each code snippet.
+text_splitter = RecursiveCharacterTextSplitter(separators=separators, keep_separator=True, chunk_size=1000, chunk_overlap=200, add_start_index=True)
+splits = text_splitter.split_documents(docs)
 
-from pathlib import Path
-from openai import OpenAI
+
+
 # Global variable to store the name of the LLM
 llm_name = None
-llm = OpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"), 
-base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",)
-
-
-
+llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True, temperature=0.2)
 runnable = None
  
+ 
+def on_chat_start():
+    
+    global llm_name
+    # Store the name of the LLM in the global variable
+    llm_name = llm.model_name
 
-# file_object = llm.files.create(file=Path("./docs/WMX3API_MCEval_Samplecodes.txt"), purpose="file-extract")
-# print("file_object.id: ", file_object.id)
-#file-fe-8CpzTnayquFOf5LmI0Q9kKJj
-
-# Prompt for code generation
-prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
+    # Prompt for code generation
+    prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
 
 Instructions:
 	1.	Extract Key Information:
@@ -110,16 +107,14 @@ the script should start with:
 
     ----------------------------------------------
     
+    Question: 
+    {question}
+
+    Context: 
+    {context}
 
         """
 
-def on_chat_start():
-    
-    global llm_name
-    # Store the name of the LLM in the global variable
-    llm_name = llm.model_name
-
-    
     prompt_code = ChatPromptTemplate.from_template(prompt_template)
 
     global runnable
@@ -174,26 +169,26 @@ def extract_code(text):
 
 
 
-# # This function retrieves and concatenates documents for each element in the input string array.
-# def coder_retrieval(question):
+# This function retrieves and concatenates documents for each element in the input string array.
+def coder_retrieval(question):
 
-#     separator = "\n----------\n"
-#     long_string = ""
+    separator = "\n----------\n"
+    long_string = ""
 
 
-#     # initialize the bm25 retriever and faiss retriever
-#     bm25_retriever = BM25Retriever.from_documents(splits)
-#     bm25_retriever.k = 5
+    # initialize the bm25 retriever and faiss retriever
+    bm25_retriever = BM25Retriever.from_documents(splits)
+    bm25_retriever.k = 5
 
-#     # initialize the ensemble retriever
-#     ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
+    # initialize the ensemble retriever
+    ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
 
-#     ensemble_docs = ensemble_retriever.invoke(question)
+    ensemble_docs = ensemble_retriever.invoke(question)
 
-#     retrieval_result = format_docs(ensemble_docs)
-#     long_string +=  "\n" + retrieval_result + separator
+    retrieval_result = format_docs(ensemble_docs)
+    long_string +=  "\n" + retrieval_result + separator
     
-#     return long_string
+    return long_string
 
 RunnableCodeinMachine = ''
 
@@ -202,7 +197,7 @@ def on_message(message):
     # Input text
     user_question = message
     
-    # context_msg = coder_retrieval(user_question)
+    context_msg = coder_retrieval(user_question)
  
     # questionMsg=message.content
 
@@ -214,22 +209,9 @@ def on_message(message):
     #     await msg.stream_token(chunk)
         # print(chunk)
 
-    # response = runnable.invoke(
-    # {"context": "context_msg", "question": user_question})
+    response = runnable.invoke(
+    {"context": context_msg, "question": user_question})
 
- 
-    completion = llm.chat.completions.create(
-        model="qwen-long",
-        messages=[
-            {'role': 'system', 'content': prompt_template},
-            {'role': 'system', 'content': 'fileid://file-fe-8CpzTnayquFOf5LmI0Q9kKJj'},
-            {'role': 'user', 'content': user_question}
-        ],
-        # stream=True,
-        # stream_options={"include_usage": True}
-    )
-
-    response = completion.choices[0].message.content.strip() 
 
     # TaskId file path
     file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'

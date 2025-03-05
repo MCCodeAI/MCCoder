@@ -1,10 +1,11 @@
-from app_NaiveRAG_M1_eval import *
+from app_LongContext_M2_eval import *
 from userlib.user_logger import log_message
 
 def run():
-    result = on_chat_start()
-    on_message("Write a python code to move axis 0 to 444")
-    log_message("Script execution completed")
+    # result = on_chat_start()
+    log_message("M2 Script execution starts")
+    on_message("Write a python code to move axis 6 to 4444")
+    log_message("M2 Script execution completed")
 
 # When running as a standalone script
 if __name__ == "__main__":
