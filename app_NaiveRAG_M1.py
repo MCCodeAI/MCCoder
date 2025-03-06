@@ -164,22 +164,21 @@ async def self_correct(err_codes):
     return(code_corrected)
 
 
-
-
 # Joins the page content of each document with double newline
 def format_docs(docs):
    return "\n\n".join(doc.page_content for doc in docs)
 
-# Extracts code snippets written in Python from the given text
 def extract_code(text):
+    """Extracts the first Python code snippet from the given text."""
+    
     # Define the regular expression pattern to find text between ```python and ```
     pattern = r"```python(.*?)```"
 
-    # Use re.findall to find all occurrences
-    matches = re.findall(pattern, text, re.DOTALL)
-
-    # Return the matches, join them if there are multiple matches
-    return "\n\n---\n\n".join(matches)
+    # Use re.search to find the first occurrence
+    match = re.search(pattern, text, re.DOTALL)
+    
+    # Return the first match if found, otherwise return an empty string
+    return match.group(1) if match else ""
 
 
 

@@ -66,30 +66,29 @@ splits = text_splitter.split_documents(docs)
 
 # Global variable to store the name of the LLM
 llm_name = None
-llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True, temperature=0.2)
-runnable = None
+codegene_llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True, temperature=0.2)
+taskdecom_llm = codegene_llm
+codegene_runnable = None
  
  
-def on_chat_start():
-    
-    global llm_name
-    # Store the name of the LLM in the global variable
-    llm_name = llm.model_name
+# Store the name of the LLM in the global variable
+llm_name = codegene_llm.model_name
 
-    # Prompt for code generation
-    prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
+# Code generation llm >>>>>>>>>>>>>
+# Prompt for code generation
+prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
 
 Instructions:
-	1.	Extract Key Information:
-	•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
-	•	Add this information at the beginning of the generated code in the following format:
+1.	Extract Key Information:
+•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
+•	Add this information at the beginning of the generated code in the following format:
 
 # Axes = [Axis_number_1, Axis_number_2, ...]
 # Inputs = [byte.bit_1, byte.bit_2, ...]
 # Outputs = [byte.bit_1, byte.bit_2, ...]
 
 
-	•	Example:
+•	Example:
 If the Question states:
 “Move Axis 9, Axis 12, and Axis 2 based on Input 0.3 and 1.2, then activate Output 3.4 and 6.1”,
 the script should start with:
@@ -99,54 +98,132 @@ the script should start with:
 # Outputs = [3.4, 6.1]
 
 
-	2.	Code Formatting:
-	•	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
+2.	Code Formatting:
+•	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
 
-	3.	Do not import any motion libraries.
+3.	Do not import any motion libraries.
 
 
-    ----------------------------------------------
+----------------------------------------------
+
+Question: 
+{question}
+
+Context: 
+{context}
+
+    """
+
+prompt_code = ChatPromptTemplate.from_template(prompt_template)
+
+codegene_runnable = (
+    prompt_code
+    | codegene_llm
+    | StrOutputParser()
+)
+
+# Task decomposition llm >>>>>>>>>>>>>
+# Prompt for task decomposition
+taskdecom_prompt_template = """
+You are a task decomposer that breaks down a user question into multiple sub-tasks, listing them as separate lines. For example, the user question '1. Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile ; 2. set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 3. Move Axis 7 to 30; ' should be decomposed into three tasks, adding 'Write Python code to' to each:
+
+1. Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile ; 
+2. Write Python code to set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 
+3. Write Python code to Move Axis 7 to 30; 
+
+If the user question contains only a single task, output the original question as is, adding 'Write Python code to' at the beginning if it’s not already present.
+
+User question:
+{question}
+
+Output:
+
+    """
+
+taskdecom_prompt_code = ChatPromptTemplate.from_template(taskdecom_prompt_template)
+
+taskdecom_runnable = (
+    taskdecom_prompt_code
+    | taskdecom_llm
+    | StrOutputParser()
+)
+
+def task_decomposition(user_question):
+    """Decomposes a user question into a list of non-empty task lines."""
+    task_str=taskdecom_runnable.invoke({"question": user_question})
+    lines = task_str.splitlines()
+    lines = [line for line in lines if line.strip()] # To remove empty lines from the list of lines
+    return lines
+
+def task_rag(tasks):
+    """Performs retrieval for each task and formats results with task-reference pairs."""
+    separator = "\n----------\n"
+    result_list = []
     
-    Question: 
-    {question}
+    # Perform retrieval for each task
+    for task in tasks:
+        # Retrieve relevant reference content using retriever
+        retrieved_docs = retriever.invoke(task)
+        
+        # Format the documents into a string using the existing format_docs function
+        references = format_docs(retrieved_docs)
+        
+        # Build the output format for a single task
+        task_output = f"Task: {task}\nReference:\n{references}"
+        result_list.append(task_output)
+    
+    # Join all task outputs with the separator
+    context_output = separator.join(result_list)
+    
+    return context_output
+    
 
-    Context: 
-    {context}
+def self_correct(original_code, err_info):
+    """Correct the code based on original code and error information using LLM."""
+    
+    # Retrieve relevant documents based on error information
+    retrieved_docs = retriever.invoke(err_info)
+    
+    # Format retrieved documents into a single string
+    references = format_docs(retrieved_docs)
+    
+    # Combine original error info with retrieved references into a richer context
+    err_context = f"{err_info}\n\nReferences:\n{references}"
+    
+    # Define the prompt template with original code and error context
+    template = """Correct the following code based on the error information and context provided.
 
-        """
+    Original Code:
+    ```
+    {original_code}
+    ```
 
-    prompt_code = ChatPromptTemplate.from_template(prompt_template)
+    Error Context:
+    ```
+    {err_context}
+    ```
 
-    global runnable
-    runnable = (
-        # {"context": retriever | format_docs}
-         prompt_code
-        | llm
+    Please provide the corrected code only, without additional explanations.
+    """
+
+    # Create a prompt template from the defined string
+    custom_rag_prompt = PromptTemplate.from_template(template)
+    
+    # Build the processing chain: prompt -> LLM -> output parser
+    self_correct_chain = (
+        custom_rag_prompt
+        | codegene_llm
         | StrOutputParser()
     )
 
-
-
-def self_correct(err_codes):
-   # remember to write "python" code in the prompt later
-    template = """Correct the following codes based on the error infomation. 
-
-        {err_codes}
-
-        """
-
-    custom_rag_prompt = PromptTemplate.from_template(template)
+    # Execute the chain with the input variables
+    code_corrected = self_correct_chain.invoke({
+        "original_code": original_code,
+        "err_context": err_context
+    })
     
-    rag_chain = (
-            {"err_codes": RunnablePassthrough()}
-            | custom_rag_prompt
-            | llm
-            | StrOutputParser()
-        )
-
-    code_corrected=rag_chain.invoke(err_codes)
- 
-    return(code_corrected)
+    # Return the corrected code
+    return code_corrected
 
 
 
@@ -155,16 +232,17 @@ def self_correct(err_codes):
 def format_docs(docs):
    return "\n\n".join(doc.page_content for doc in docs)
 
-# Extracts code snippets written in Python from the given text
 def extract_code(text):
+    """Extracts the first Python code snippet from the given text."""
+    
     # Define the regular expression pattern to find text between ```python and ```
     pattern = r"```python(.*?)```"
 
-    # Use re.findall to find all occurrences
-    matches = re.findall(pattern, text, re.DOTALL)
-
-    # Return the matches, join them if there are multiple matches
-    return "\n\n---\n\n".join(matches)
+    # Use re.search to find the first occurrence
+    match = re.search(pattern, text, re.DOTALL)
+    
+    # Return the first match if found, otherwise return an empty string
+    return match.group(1) if match else ""
 
 
 
@@ -193,74 +271,99 @@ def coder_retrieval(question):
 RunnableCodeinMachine = ''
 
 def on_message(message):
+    """Handle incoming message, generate executable code, and manage self-correction with post-processing."""
     
-    # Input text
+    # Extract user question from the message
     user_question = message
+
+    # Decompose the user question into tasks
+    tasks = task_decomposition(user_question)
     
-    context_msg = coder_retrieval(user_question)
+    # Retrieve context for tasks using RAG
+    context_msg = task_rag(tasks)
  
-    # questionMsg=message.content
+    # Generate response using codegen runnable with context and question
+    response = codegene_runnable.invoke(
+        {"context": context_msg, "question": user_question}
+    )
 
-    # async for chunk in runnable.astream(
-    #     # {"question": questionMsg},
-    #     {"context": context_msg, "question": user_question},
-    #     config=RunnableConfig(callbacks=[cl.LangchainCallbackHandler()]),
-    # ):
-    #     await msg.stream_token(chunk)
-        # print(chunk)
-
-    response = runnable.invoke(
-    {"context": context_msg, "question": user_question})
-
-
-    # TaskId file path
+    # Define TaskId file path
     file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'
     with open(file_path, 'r', encoding='utf-8') as file:
-            task_info = file.read().strip()   
+        # Read task info from file
+        task_info = file.read().strip()   
 
-    # Only for making CanonicalCode.
+    # Specify LLM name for making CanonicalCode
     llm_name = 'CanonicalCode_test'
 
-    # Get python code from the output of LLM
+    # Extract Python code from LLM output
     msgCode = extract_code(response)
+    
+    # Convert extracted code into runnable format
     RunnableCode = make_code_runnable(msgCode, llm_name, task_info)
 
-    # Old and new paths
-    old_path = f'path_0.dirPath = r"\\\\Mac\\\\Home\\\\Documents\\\\GitHub\\\\MCCodeLog\\\\{llm_name}"'
-
-    new_path = r'path_0.dirPath = r"C:\\"'
-
-    # Replace the old path with the new one
-    global RunnableCodeinMachine
-    RunnableCodeinMachine = RunnableCode.replace(old_path, new_path)
-    RunnableCodeinMachine = re.sub(r'# <logon[\s\S]*?# logon>', '', RunnableCodeinMachine)
-    RunnableCodeinMachine = re.sub(r'# <logoff[\s\S]*?# logoff>', '', RunnableCodeinMachine)
-
+    # # Old and new paths (commented out but retained)
+    # old_path = f'path_0.dirPath = r"\\\\Mac\\\\Home\\\\Documents\\\\GitHub\\\\MCCodeLog\\\\{llm_name}"'
+    # new_path = r'path_0.dirPath = r"C:\\"'
+    # # Replace the old path with the new one
+    # global RunnableCodeinMachine
+    # RunnableCodeinMachine = RunnableCode.replace(old_path, new_path)
+    # RunnableCodeinMachine = re.sub(r'# <logon[\s\S]*?# logon>', '', RunnableCodeinMachine)
+    # RunnableCodeinMachine = re.sub(r'# <logoff[\s\S]*?# logoff>', '', RunnableCodeinMachine)
 
     # Run Code in WMX3
     codereturn = SendCode(RunnableCode)
 
-    folder_path = f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}'
-    os.makedirs(folder_path, exist_ok=True)
+    # Set maximum correction attempts
+    max_attempts = 3
+    attempt_count = 0
 
-    # Define plot files name
-    plot_filenames = [
-        f"{task_info}_{llm_name}_log_plot.png",
-        f"{task_info}_{llm_name}_log_2d_plot.png",
-        f"{task_info}_{llm_name}_log_3d_plot.png"
-    ]
+    # Check for errors in codereturn and attempt self-correction
+    while "err" in codereturn and attempt_count < max_attempts:
+        # Call self_correct with original code and error info
+        corrected_code = self_correct(msgCode, codereturn)
+        
+        # Convert corrected code back to runnable format
+        RunnableCode = make_code_runnable(corrected_code, llm_name, task_info)
+        
+        # Run the corrected code in WMX3
+        codereturn = SendCode(RunnableCode)
+        
+        # Increment attempt counter
+        attempt_count += 1
+        
+    # Check final state of codereturn
+    if "err" not in codereturn:
+        # Execute post-processing if no error is present
+        folder_path = f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}'
+        os.makedirs(folder_path, exist_ok=True)
 
-    # Check if the plot files exist in folder_path and delete them if they do
-    for filename in plot_filenames:
-        file_path = os.path.join(folder_path, filename)
-        if os.path.exists(file_path):
-            os.remove(file_path)
+        # Define plot file names
+        plot_filenames = [
+            f"{task_info}_{llm_name}_log_plot.png",
+            f"{task_info}_{llm_name}_log_2d_plot.png",
+            f"{task_info}_{llm_name}_log_3d_plot.png"
+        ]
 
-    log_file_path = os.path.join(folder_path, f"{task_info}_{llm_name}_log.txt")
-    # Plot with the log file
-    plot_log(log_file_path)
-    
-    sleep(0.1)
+        # Check and delete existing plot files in folder_path
+        for filename in plot_filenames:
+            file_path = os.path.join(folder_path, filename)
+            if os.path.exists(file_path):
+                os.remove(file_path)
 
-    print("end")
+        # Define log file path and plot with it
+        log_file_path = os.path.join(folder_path, f"{task_info}_{llm_name}_log.txt")
+        plot_log(log_file_path)
+        
+        # Brief pause to ensure file operations complete
+        sleep(0.1)
+
+        # Indicate successful completion
+        print("end")
+    elif attempt_count >= max_attempts:
+        # Output error code if maximum attempts exceeded
+        print(f"Error after {max_attempts} attempts: {codereturn}")
+
+    # Return the final codereturn
+    return codereturn
 

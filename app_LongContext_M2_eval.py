@@ -79,6 +79,7 @@ runnable = None
 # print("file_object.id: ", file_object.id)
 #file-fe-8CpzTnayquFOf5LmI0Q9kKJj
 
+# Code generation
 # Prompt for code generation
 prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
 
@@ -113,22 +114,17 @@ the script should start with:
 
         """
 
-def on_chat_start():
-    
-    global llm_name
-    # Store the name of the LLM in the global variable
-    llm_name = llm.model_name
+# Store the name of the LLM in the global variable
+llm_name = llm.model_name
 
-    
-    prompt_code = ChatPromptTemplate.from_template(prompt_template)
+prompt_code = ChatPromptTemplate.from_template(prompt_template)
 
-    global runnable
-    runnable = (
-        # {"context": retriever | format_docs}
-         prompt_code
-        | llm
-        | StrOutputParser()
-    )
+runnable = (
+    # {"context": retriever | format_docs}
+        prompt_code
+    | llm
+    | StrOutputParser()
+)
 
 
 
