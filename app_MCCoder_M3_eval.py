@@ -25,6 +25,7 @@ from MachineClient import *
 from make_code_runnable import *
 from plot_log import *
  
+from userlib.user_logger import log_message
 
 import bs4
 import os
@@ -178,7 +179,7 @@ def task_rag(tasks):
     return context_output
     
 
-def self_correct(original_code, err_info):
+def self_correct(user_question, original_code, err_info):
     """Correct the code based on original code and error information using LLM."""
     
     # Retrieve relevant documents based on error information
@@ -188,22 +189,25 @@ def self_correct(original_code, err_info):
     references = format_docs(retrieved_docs)
     
     # Combine original error info with retrieved references into a richer context
-    err_context = f"{err_info}\n\nReferences:\n{references}"
+    err_context = f"{err_info}\n\nError context:\n{references}"
     
     # Define the prompt template with original code and error context
-    template = """Correct the following code based on the error information and context provided.
+    template = """Correct the code based on the user question, original code, error information and context provided. 
+
+    User question:
+    ```
+    {user_question}
+    ```
 
     Original Code:
     ```
     {original_code}
     ```
 
-    Error Context:
+    Error information:
     ```
     {err_context}
     ```
-
-    Please provide the corrected code only, without additional explanations.
     """
 
     # Create a prompt template from the defined string
@@ -218,6 +222,7 @@ def self_correct(original_code, err_info):
 
     # Execute the chain with the input variables
     code_corrected = self_correct_chain.invoke({
+        "user_question": user_question,
         "original_code": original_code,
         "err_context": err_context
     })
@@ -315,25 +320,37 @@ def on_message(message):
     codereturn = SendCode(RunnableCode)
 
     # Set maximum correction attempts
-    max_attempts = 3
+    max_attempts = 2
     attempt_count = 0
+    previous_codereturn = None  # Store previous codereturn value
 
+    log_message(f"Count{attempt_count}:\n{codereturn}")
     # Check for errors in codereturn and attempt self-correction
-    while "err" in codereturn and attempt_count < max_attempts:
-        # Call self_correct with original code and error info
-        corrected_code = self_correct(msgCode, codereturn)
+    while "codeerr" in codereturn and attempt_count < max_attempts:
+        # Check if current codereturn is same as previous
+        if codereturn == previous_codereturn:
+            log_message(f"Count{attempt_count}: No change in codereturn, exiting correction loop")
+            break
         
+        # Store current codereturn before attempting correction
+        previous_codereturn = codereturn
+        
+        # Call self_correct with original code and error info
+        corrected_code = self_correct(user_question, msgCode, codereturn)
+        msgCode = extract_code(corrected_code)
         # Convert corrected code back to runnable format
-        RunnableCode = make_code_runnable(corrected_code, llm_name, task_info)
+        RunnableCode = make_code_runnable(msgCode, llm_name, task_info)
         
         # Run the corrected code in WMX3
         codereturn = SendCode(RunnableCode)
         
         # Increment attempt counter
         attempt_count += 1
+
+        log_message(f"Count{attempt_count}:\n{codereturn}")
         
-    # Check final state of codereturn
-    if "err" not in codereturn:
+    # Check final state of codereturn, and plot log
+    if "codeerr" not in codereturn:
         # Execute post-processing if no error is present
         folder_path = f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}'
         os.makedirs(folder_path, exist_ok=True)

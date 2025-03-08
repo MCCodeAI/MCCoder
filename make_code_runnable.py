@@ -125,9 +125,9 @@ def main():
 
     ret=WMX3Log.SetLogOption(0, option)
     if ret!=0:
+        print('SetLogOption error code is ' + str(ret) + ': ' + WMX3Log.ErrorToString(ret))
         ret = WMX3Log.StopLog(0)
         sleep(0.2)
-        print('SetLogOption error code is ' + str(ret) + ': ' + WMX3Log.ErrorToString(ret))
         ret=WMX3Log.SetLogOption(0, option)
     sleep(0.1)
 

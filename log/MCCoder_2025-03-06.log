@@ -1,0 +1,24 @@
+2025-03-06 23:09:29,043 - Default - MainProcess - 2718 - M3 Script execution starts
+2025-03-06 23:09:42,621 - Default - MainProcess - 2718 - Count0:
+codereturn
+2025-03-06 23:09:43,150 - Default - MainProcess - 2718 - M3 Script execution completed
+2025-03-06 23:12:06,189 - Default - MainProcess - 3953 - M3 Script execution starts
+2025-03-06 23:12:35,276 - Default - MainProcess - 3953 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 20.729
+----------------------
+
+2025-03-06 23:12:35,856 - Default - MainProcess - 3953 - M3 Script execution completed
+2025-03-06 23:13:10,091 - Default - MainProcess - 4467 - M3 Script execution starts
+2025-03-06 23:13:25,266 - Default - MainProcess - 4467 - Count0:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 214
+    posCommand.target = 66xx  # Replace 'xx' with the specific value needed
+                         ^
+SyntaxError: invalid decimal literal
+!!!
+----------------------
+
+2025-03-06 23:13:47,354 - Default - MainProcess - 4467 - M3 Script execution completed

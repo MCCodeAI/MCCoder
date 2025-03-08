@@ -1,11 +1,11 @@
-from app_LongContext_M2_eval import *
+from app_MCCoder_M3_eval import *
 from userlib.user_logger import log_message
 
 def run():
     # result = on_chat_start()
-    log_message("M2 Script execution starts")
-    on_message("Write a python code to move axis 6 to 4444")
-    log_message("M2 Script execution completed")
+    log_message("M3 Script execution starts")
+    on_message("Write a python code to move axis 6 to 10k901 with s profile type")
+    log_message("M3 Script execution completed")
 
 # When running as a standalone script
 if __name__ == "__main__":
