@@ -77,7 +77,7 @@ llm_name = codegene_llm.model_name
 
 # Code generation llm >>>>>>>>>>>>>
 # Prompt for code generation
-prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
+prompt_template = """Generate a Python code based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
 
 Instructions:
 1.	Extract Key Information:

@@ -32,3 +32,54 @@ Elapsed_time: 4.206
 ----------------------
 
 2025-03-09 09:50:16,606 - Default - MainProcess - 35088 - M3 Script execution completed
+2025-03-09 12:06:01,280 - Default - MainProcess - 2371 - M3 Script execution starts
+2025-03-09 12:06:16,616 - Default - MainProcess - 2371 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.957
+----------------------
+
+2025-03-09 12:06:17,201 - Default - MainProcess - 2371 - M3 Script execution completed
+2025-03-09 12:07:16,507 - Default - MainProcess - 2985 - M3 Script execution starts
+2025-03-09 12:09:41,853 - Default - MainProcess - 2985 - Count0:
+codedata:
+Program begin.
+StopLog error code is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+SetServoOn to off error code for axis 6 is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+Program End.
+Elapsed_time: 138.030
+----------------------
+
+2025-03-09 12:09:42,743 - Default - MainProcess - 2985 - M3 Script execution completed
+2025-03-09 12:09:51,049 - Default - MainProcess - 4210 - M3 Script execution starts
+2025-03-09 12:12:36,445 - Default - MainProcess - 4210 - Count0:
+codedata:
+Program begin.
+StopLog error code is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+SetServoOn to off error code for axis 6 is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+Program End.
+Elapsed_time: 157.156
+----------------------
+
+2025-03-09 12:12:37,330 - Default - MainProcess - 4210 - M3 Script execution completed
+2025-03-09 12:12:53,996 - Default - MainProcess - 5640 - M3 Script execution starts
+2025-03-09 12:14:56,299 - Default - MainProcess - 6589 - M3 Script execution starts
+2025-03-09 12:15:45,798 - Default - MainProcess - 6589 - Count0:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 3.522
+----------------------
+
+2025-03-09 12:15:46,370 - Default - MainProcess - 6589 - M3 Script execution completed
+2025-03-09 12:16:12,026 - Default - MainProcess - 7227 - M3 Script execution starts
+2025-03-09 12:16:22,787 - Default - MainProcess - 7227 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.119
+----------------------
+
+2025-03-09 12:16:23,334 - Default - MainProcess - 7227 - M3 Script execution completed

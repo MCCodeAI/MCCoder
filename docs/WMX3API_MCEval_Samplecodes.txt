@@ -7,10 +7,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using an Trapezoidal profile.
+   # move Axis 10 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using an Trapezoidal profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.Trapezoidal
-    posCommand.axis = 0
+    posCommand.axis = 10
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -23,6 +23,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(10)
 
 #``
 
@@ -38,10 +41,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using an SCurve profile.
+   # move Axis 3 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using an SCurve profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.SCurve
-    posCommand.axis = 0
+    posCommand.axis = 3
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -54,6 +57,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(3)
 
 #``
 
@@ -71,10 +77,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatio profile.
+   # move Axis 4 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatio profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkRatio
-    posCommand.axis = 0
+    posCommand.axis = 4
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -90,6 +96,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(4)
+
 #``
 
 
@@ -103,10 +112,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using a Parabolic profile.
+   # move Axis 2 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using a Parabolic profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.Parabolic
-    posCommand.axis = 0
+    posCommand.axis = 2
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -119,6 +128,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(2)
 
 #``
 
@@ -133,10 +145,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using a Sine profile.
+   # move Axis 8 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using a Sine profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.Sine
-    posCommand.axis = 0
+    posCommand.axis = 8
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -149,6 +161,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(8)
 
 #``
 
@@ -166,10 +181,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a AdvancedS profile.
+   # move Axis 22 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a AdvancedS profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.AdvancedS
-    posCommand.axis = 0
+    posCommand.axis = 22
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -185,6 +200,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(22)
+
 #``
 
 
@@ -199,10 +217,10 @@
         #endVelocity                         Final velocity 
 		#movingAverageTimeMilliseconds       Moving average time in milliseconds
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, moving average time as 50ms,starting Velocity of 0,and end Velocity of 0, using an TrapezoidalMAT profile.
+   # move Axis 11 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, moving average time as 50ms,starting Velocity of 0,and end Velocity of 0, using an TrapezoidalMAT profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TrapezoidalMAT
-    posCommand.axis = 0
+    posCommand.axis = 11
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -216,6 +234,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(11)
 
 #``
 
@@ -232,10 +253,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimited profile.
+   # move Axis 3 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimited profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkLimited
-    posCommand.axis = 0
+    posCommand.axis = 3
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -250,6 +271,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(3)
 
 #``
 
@@ -267,10 +291,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedSCurve profile.
+   # move Axis 44 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedSCurve profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkLimitedSCurve
-    posCommand.axis = 0
+    posCommand.axis = 44
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -285,6 +309,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(44)
 
 #``
 
@@ -302,10 +329,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedAdvancedS profile.
+   # move Axis 16 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedAdvancedS profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkLimitedAdvancedS
-    posCommand.axis = 0
+    posCommand.axis = 16
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -321,6 +348,8 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(16)
 
 #``
 
@@ -339,10 +368,10 @@
         #endVelocity            Final velocity 
 		#secondVelocity         Second target velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocityTrapezoidal profile.
+   # move Axis 30 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocityTrapezoidal profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TwoVelocityTrapezoidal
-    posCommand.axis = 0
+    posCommand.axis = 30
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -357,6 +386,8 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(30)
 
 #``
 
@@ -375,10 +406,10 @@
         #endVelocity            Final velocity 
 		#secondVelocity         Second target velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocitySCurve profile.
+   # move Axis 29 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocitySCurve profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TwoVelocitySCurve
-    posCommand.axis = 0
+    posCommand.axis = 29
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -392,6 +423,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(29)
 
 #``
 
@@ -412,10 +446,10 @@
         #endVelocity            Final velocity 
 		#secondVelocity         Second target velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocityJerkRatio profile.
+   # move Axis 13 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocityJerkRatio profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TwoVelocityJerkRatio
-    posCommand.axis = 0
+    posCommand.axis = 13
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -432,7 +466,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
-   
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(13)
+
 #``
 
 
@@ -446,10 +482,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccTrapezoidal profile.
+   # move Axis 21 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccTrapezoidal profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TimeAccTrapezoidal
-    posCommand.axis = 0
+    posCommand.axis = 21
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.accTimeMilliseconds = 50
@@ -463,6 +499,8 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(21)
 
 #``
 
@@ -477,10 +515,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccSCurve profile.
+   # move Axis 5 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccSCurve profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TimeAccSCurve
-    posCommand.axis = 0
+    posCommand.axis = 5
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.accTimeMilliseconds = 50
@@ -494,6 +532,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(5)
 
 #``
 
@@ -510,10 +551,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a TimeAccJerkRatio profile.
+   # move Axis 9 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a TimeAccJerkRatio profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TimeAccJerkRatio
-    posCommand.axis = 0
+    posCommand.axis = 9
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.accTimeMilliseconds = 50
@@ -529,7 +570,8 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
-
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(9)
 
 #``
 
@@ -544,10 +586,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccParabolic profile.
+   # move Axis 4 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccParabolic profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TimeAccParabolic
-    posCommand.axis = 0
+    posCommand.axis = 4
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.accTimeMilliseconds = 50
@@ -561,6 +603,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(4)
 
 #``
 
@@ -575,10 +620,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccSin profile.
+   # move Axis 8 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccSin profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TimeAccSin
-    posCommand.axis = 0
+    posCommand.axis = 8
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.accTimeMilliseconds = 50
@@ -592,7 +637,8 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
-
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(8)
 
 #``
 
@@ -609,10 +655,10 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a TimeAccAdvancedS profile.
+   # move Axis 4 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a TimeAccAdvancedS profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.TimeAccAdvancedS
-    posCommand.axis = 0
+    posCommand.axis = 4
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.accTimeMilliseconds = 50
@@ -628,6 +674,8 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(4)
 
 #``
 
@@ -643,10 +691,10 @@
         #startingVelocity      Initial velocity 
         #endVelocity           Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at starting Velocity of 10000,and end Velocity of 2000, using a ConstantDec profile.
+   # move Axis 7 to the position 10 at starting Velocity of 10000,and end Velocity of 2000, using a ConstantDec profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.ConstantDec
-    posCommand.axis = 0
+    posCommand.axis = 7
     posCommand.target = 10
 	posCommand.profile.startingVelocity = 10000
 	posCommand.profile.endVelocity = 2000
@@ -656,6 +704,9 @@
     if ret!=0:
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(7)
 
 #``
 
@@ -672,11 +723,11 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatioFixedVelocityT profile.
+   # move Axis 8 to the position 104 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatioFixedVelocityT profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkRatioFixedVelocityT
-    posCommand.axis = 0
-    posCommand.target = 10
+    posCommand.axis = 8
+    posCommand.target = 104
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
     posCommand.profile.dec = 10000
@@ -691,6 +742,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(8)
 
 #``
 
@@ -707,11 +761,11 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatioFixedVelocityS profile.
+   # move Axis 9 to the position 120 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatioFixedVelocityS profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkRatioFixedVelocityS
-    posCommand.axis = 0
-    posCommand.target = 10
+    posCommand.axis = 9
+    posCommand.target = 120
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
     posCommand.profile.dec = 10000
@@ -726,6 +780,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(9)
 
 #``
 
@@ -742,11 +799,11 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedFixedVelocityT profile.
+   # move Axis 7 to the position 140 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedFixedVelocityT profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkLimitedFixedVelocityT
-    posCommand.axis = 0
-    posCommand.target = 10
+    posCommand.axis = 7
+    posCommand.target = 140
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
     posCommand.profile.dec = 10000
@@ -761,6 +818,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(7)
 
 #``
 
@@ -777,16 +837,16 @@
         #startingVelocity       Initial velocity 
         #endVelocity            Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedFixedVelocityS profile.
+   # move Axis 6 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAcc of 11000,jerkDec of 11000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedFixedVelocityS profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.JerkLimitedFixedVelocityS
-    posCommand.axis = 0
+    posCommand.axis = 6
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
     posCommand.profile.dec = 10000
-	posCommand.profile.jerkAcc= 1000
-    posCommand.profile.jerkDec = 1000
+	posCommand.profile.jerkAcc= 11000
+    posCommand.profile.jerkDec = 11000
 	posCommand.profile.startingVelocity = 0
 	posCommand.profile.endVelocity = 0
 
@@ -796,6 +856,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(6)
 
 #``
 
@@ -813,16 +876,16 @@
         #startingVelocity        Initial velocity 
         #endVelocity             Final velocity 
    #The example is as follows:
-   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50,decTimeMilliseconds of 50,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a ParabolicVelocity profile.
+   # move Axis 3 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50,decTimeMilliseconds of 150,jerkAccRatio of 0.5,jerkDecRatio of 1.5,starting Velocity of 0,and end Velocity of 0, using a ParabolicVelocity profile.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.ParabolicVelocity
-    posCommand.axis = 0
+    posCommand.axis = 3
     posCommand.target = 10
     posCommand.profile.velocity = 1000
     posCommand.profile.accTimeMilliseconds = 50
-    posCommand.profile.decTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 150
 	posCommand.profile.jerkAccRatio= 0.5
-    posCommand.profile.jerkDecRatio = 0.5
+    posCommand.profile.jerkDecRatio = 1.5
 	posCommand.profile.startingVelocity = 0
 	posCommand.profile.endVelocity = 0
 
@@ -832,6 +895,9 @@
         print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
 
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(3)
 
 #``
 
@@ -1228,9 +1294,9 @@
 
 
 
-#Write Python code to set an event that triggers Axis 0 to stop when Output 1.0 equals 1. The event ID is 0.
+#Write Python code to set an event that triggers Axis 2 to stop when Output 1.0 equals 1. The event ID is 0.
 
-   #Axes = [0]
+   #Axes = [2]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_IO = IoEventInput()
@@ -1267,15 +1333,15 @@
         return
 
     # Wait until the axis moves to the target position and stops.
-    Wmx3Lib_cm.motion.Wait(0)
+    Wmx3Lib_cm.motion.Wait(2)
 
 #``
 
 
 
-# Write python code to Set an event to trigger a absolute position command of Axis 0 with 100 distance and 1000 velocity, when Output 1.0 = 1. Event id is 0.
+# Write python code to Set an event to trigger a absolute position command of Axis 6 with 100 distance and 1000 velocity, when Output 1.0 = 1. Event id is 0.
 
-   # Axes = [0]
+   # Axes = [6]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_IO = IoEventInput()
@@ -1317,15 +1383,15 @@
         return
 
     # Wait until the axis moves to the target position and stops.
-    Wmx3Lib_cm.motion.Wait(0)
+    Wmx3Lib_cm.motion.Wait(6)
 
 #``
 
 
 
-#Write Python code to set an event that triggers a multi-axis absolute position command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position for Axis 0 is 100 with a velocity of 1000, and the target position for Axis 1 is 200 with a velocity of 1000. The event ID is 0.
+#Write Python code to set an event that triggers a multi-axis absolute position command for Axis 5 and Axis 6 when Output 1.0 equals 1. The target position for Axis 5 is 100 with a velocity of 1000, and the target position for Axis 6 is 200 with a velocity of 1000. The event ID is 0.
 
-    #Axes = [0, 1]
+    #Axes = [5, 6]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_IO = IoEventInput()
@@ -1344,8 +1410,8 @@
     #Starts position commands for which absolute target positions are specified for multiple axes.
     eventOut_Motion.type = CoreMotionEventOutputType.StartMultiplePos
     eventOut_Motion.startMultiplePos.axisCount=2
-    eventOut_Motion.startMultiplePos.SetAxis(0, 0)
-    eventOut_Motion.startMultiplePos.SetAxis(1, 1)
+    eventOut_Motion.startMultiplePos.SetAxis(0, 5)
+    eventOut_Motion.startMultiplePos.SetAxis(1, 6)
     eventOut_Motion.startMultiplePos.SetType(0,ProfileType.Trapezoidal)
     eventOut_Motion.startMultiplePos.SetType(1, ProfileType.Trapezoidal)
     eventOut_Motion.startMultiplePos.SetVelocity(0, 1000)
@@ -1374,11 +1440,11 @@
         print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
         return
 
-    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 5 and Axis 6 become idle.
     axisSel = AxisSelection()
     axisSel.axisCount = 2
-    axisSel.SetAxis(0, 0)
-    axisSel.SetAxis(1, 1)
+    axisSel.SetAxis(0, 5)
+    axisSel.SetAxis(1, 6)
     ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
     if ret != 0:
         print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
@@ -1388,9 +1454,9 @@
 
 
 
-#Write Python code to set an event that triggers a multi-axis relative position command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position for Axis 0 is 100 with a velocity of 1000, and the target position for Axis 1 is 200 with a velocity of 1000. The event ID is 0.
+#Write Python code to set an event that triggers a multi-axis relative position command for Axis 10 and Axis 11 when Output 1.0 equals 1. The target position for Axis 10 is 100 with a velocity of 1000, and the target position for Axis 11 is 200 with a velocity of 1000. The event ID is 0.
 
-    #Axes = [0, 1]
+    #Axes = [10, 11]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_IO = IoEventInput()
@@ -1409,8 +1475,8 @@
     #Starts position commands for which relative target positions are specified for multiple axes.
     eventOut_Motion.type = CoreMotionEventOutputType.StartMultipleMov
     eventOut_Motion.startMultipleMov.axisCount=2
-    eventOut_Motion.startMultipleMov.SetAxis(0, 0)
-    eventOut_Motion.startMultipleMov.SetAxis(1, 1)
+    eventOut_Motion.startMultipleMov.SetAxis(0, 10)
+    eventOut_Motion.startMultipleMov.SetAxis(1, 11)
     eventOut_Motion.startMultipleMov.SetType(0,ProfileType.Trapezoidal)
     eventOut_Motion.startMultipleMov.SetType(1, ProfileType.Trapezoidal)
     eventOut_Motion.startMultipleMov.SetVelocity(0, 1000)
@@ -1442,8 +1508,8 @@
     # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
     axisSel = AxisSelection()
     axisSel.axisCount = 2
-    axisSel.SetAxis(0, 0)
-    axisSel.SetAxis(1, 1)
+    axisSel.SetAxis(0, 10)
+    axisSel.SetAxis(1, 11)
     ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
     if ret != 0:
         print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
@@ -1453,9 +1519,9 @@
 
 
 
-#Write Python code to set an event that triggers a multi-axis absolute position linear interpolation motion command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position is (100, 200) and the velocity is 1000.The event ID is 0.
+#Write Python code to set an event that triggers a multi-axis absolute position linear interpolation motion command for Axis 20 and Axis 21 when Output 1.0 equals 1. The target position is (100, 200) and the velocity is 1000.The event ID is 0.
 
-    #Axes = [0, 1]
+    #Axes = [20, 21]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_IO = IoEventInput()
@@ -1474,8 +1540,8 @@
     #Starts a linear interpolation command for which absolute target positions are specified.
     eventOut_Motion.type = CoreMotionEventOutputType.LinearIntplPos
     eventOut_Motion.linearIntplPos.axisCount=2
-    eventOut_Motion.linearIntplPos.SetAxis(0, 0)
-    eventOut_Motion.linearIntplPos.SetAxis(1, 1)
+    eventOut_Motion.linearIntplPos.SetAxis(0, 20)
+    eventOut_Motion.linearIntplPos.SetAxis(1, 21)
     eventOut_Motion.linearIntplPos.type = ProfileType.Trapezoidal
     eventOut_Motion.linearIntplPos.velocity = 1000
     eventOut_Motion.linearIntplPos.acc = 10000
@@ -1503,8 +1569,8 @@
     # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
     axisSel = AxisSelection()
     axisSel.axisCount = 2
-    axisSel.SetAxis(0, 0)
-    axisSel.SetAxis(1, 1)
+    axisSel.SetAxis(0, 20)
+    axisSel.SetAxis(1, 21)
     ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
     if ret != 0:
         print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
@@ -1514,9 +1580,9 @@
 
 
 
-#Write Python code to set an event that triggers a multi-axis relative position linear interpolation motion command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position is (100, 200) and the velocity is 1000.The event ID is 0.
+#Write Python code to set an event that triggers a multi-axis relative position linear interpolation motion command for Axis 30 and Axis 31 when Output 1.0 equals 1. The target position is (100, 200) and the velocity is 1000.The event ID is 0.
 
-    #Axes = [0, 1]
+    #Axes = [30, 31]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_IO = IoEventInput()
@@ -1535,8 +1601,8 @@
     #Starts a linear interpolation command for which relative target positions are specified.
     eventOut_Motion.type = CoreMotionEventOutputType.LinearIntplMov
     eventOut_Motion.linearIntplMov.axisCount=2
-    eventOut_Motion.linearIntplMov.SetAxis(0, 0)
-    eventOut_Motion.linearIntplMov.SetAxis(1, 1)
+    eventOut_Motion.linearIntplMov.SetAxis(0, 30)
+    eventOut_Motion.linearIntplMov.SetAxis(1, 31)
     eventOut_Motion.linearIntplMov.type = ProfileType.Trapezoidal
     eventOut_Motion.linearIntplMov.velocity = 1000
     eventOut_Motion.linearIntplMov.acc = 10000
@@ -1564,8 +1630,8 @@
     # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
     axisSel = AxisSelection()
     axisSel.axisCount = 2
-    axisSel.SetAxis(0, 0)
-    axisSel.SetAxis(1, 1)
+    axisSel.SetAxis(0, 30)
+    axisSel.SetAxis(1, 31)
     ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
     if ret != 0:
         print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
@@ -1575,9 +1641,9 @@
 
 
 
-#Write Python code to set an event that triggers an emergency stop command for Axis 0 when Output 1.0 equals 0.The event ID is 0.
+#Write Python code to set an event that triggers an emergency stop command for Axis 4 when Output 1.0 equals 0.The event ID is 0.
 
-   #Axes = [0]
+   #Axes = [4]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_IO = IoEventInput()
@@ -1613,6 +1679,10 @@
     if ret != 0:
         print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(4)
+
 #``
 
 
@@ -1655,6 +1725,9 @@
     if ret != 0:
         print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
         return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
 
 #``
 
@@ -1701,9 +1774,9 @@
 
 
 
-#Write Python code to set an event that triggers the output to set Output 2.0 to 1 when Axis 0 moves to the position of 1000. The event ID is 0.
+#Write Python code to set an event that triggers the output to set Output 2.0 to 1 when Axis 3 moves to the position of 2000. The event ID is 0.
  
-    #Axes = [0]
+    #Axes = [3]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_Motion = CoreMotionEventInput()
@@ -1737,8 +1810,8 @@
     # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.Trapezoidal
-    posCommand.axis = 0
-    posCommand.target = 10000
+    posCommand.axis = 3
+    posCommand.target = 2000
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
     posCommand.profile.dec = 10000
@@ -1750,14 +1823,14 @@
         return
 
     # Wait until the axis moves to the target position and stops.
-    Wmx3Lib_cm.motion.Wait(0)
+    Wmx3Lib_cm.motion.Wait(3)
 #``
 
 
 
-#Write Python code to set an event that triggers the output to stop the movement of Axis 0 when Axis 0 moves to the position of 1000. The event ID is 0.
+#Write Python code to set an event that triggers the output to stop the movement of Axis 7 when Axis 7 moves to the position of 1000. The event ID is 0.
 
-    #Axes = [0]
+    #Axes = [7]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_Motion = CoreMotionEventInput()
@@ -1770,12 +1843,12 @@
 
     #Set the event input.
     eventIN_Motion.type=CoreMotionEventInputType.EqualPos
-    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.axis=7
     eventIN_Motion.equalPos.pos=1000
 
     #Stops the motion of an axis that is executing a motion command in Position or Velocity mode.
     eventOut_Motion.type = CoreMotionEventOutputType.StopSingleAxis
-    eventOut_Motion.stopSingleAxis.axis=0
+    eventOut_Motion.stopSingleAxis.axis=7
 
     # Set input events, output events, and event addresses.
     ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
@@ -1789,7 +1862,7 @@
     # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
     posCommand = Motion_PosCommand()
     posCommand.profile.type = ProfileType.Trapezoidal
-    posCommand.axis = 0
+    posCommand.axis = 7
     posCommand.target = 10000
     posCommand.profile.velocity = 1000
     posCommand.profile.acc = 10000
@@ -1802,7 +1875,7 @@
         return
 
     # Wait until the axis moves to the target position and stops.
-    Wmx3Lib_cm.motion.Wait(0)
+    Wmx3Lib_cm.motion.Wait(7)
  
 
 #``
@@ -1811,7 +1884,7 @@
 
 #Write Python code to set an event that triggers the output to move Axis 1 to the position of 100 when Axis 0 moves to the position of 1000. The event ID is 0.
 
-    #Axes = [0]
+    #Axes = [0,1]
 
     Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
     eventIN_Motion = CoreMotionEventInput()
@@ -1937,7 +2010,6 @@
     if ret != 0:
         print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
         return
-
 
 #``
 
@@ -2262,14 +2334,11 @@
     if ret!=0:
 
 
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
 
 
-
-
-
-
-
-
+#``
 
 
 
