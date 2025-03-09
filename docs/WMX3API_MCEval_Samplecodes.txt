@@ -1,3 +1,2283 @@
+#The Trapezoidal profile is one of the most basic profiles. In this profile type, the axis accelerates at the specified constant rate until the profile velocity is reached. At the end of the profile, the axis decelerates at the specified constant rate to stop at the target position.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using an Trapezoidal profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#In the SCurve profile, the acceleration curve of the profile is divided into two equal parts. In the first half, the acceleration increases at a constant rate. In the second half, the acceleration decreases at a constant rate. This generates a smooth "S" shaped acceleration curve. The deceleration curve is generated similarly.
+#Compared to the Trapezoidal profile, if the accTimeMillisecondsis kept the same, the maximum acceleration will be twice as large. 
+ #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using an SCurve profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.SCurve
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#The JerkRatio profile can be thought of as a profile type that is partway between the Trapezoidal and S-Curve profile types. The acceleration jerk ratio determines the shape of the acceleration curve, and is defined as the ratio of the time where the acceleration is changing (jerk is nonzero) to the total acceleration time. The deceleration jerk ratio similarly determines the shape of the deceleration curve. The acceleration jerk ratio and deceleration jerk ratio must be values between 0 and 1 inclusive.
+#If the acceleration jerk ratio and deceleration jerk ratio are both 0, the profile becomes identical to the Trapezoidal profile. If the acceleration jerk ratio and deceleration jerk ratio are both 1, the profile becomes identical to the S-Curve profile.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+		#jerkAccRatio           Acceleration jerk ratio 
+		#jerkDecRatio           Deceleration jerk ratio 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatio profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkRatio
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5	
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#In the Parabolic profile, the axis will accelerate and decelerate with a linearly changing acceleration jerk and deceleration jerk. The acceleration and deceleration curves will be parabolic-shaped.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using a Parabolic profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Parabolic
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000	
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#In the Sine profile, the axis will accelerate and decelerate following a sinusoidal curve.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, starting Velocity of 0,and end Velocity of 0, using a Sine profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Sine
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000	
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#In the AdvancedS profile, the acceleration jerk and deceleration jerk will change linearly. The acceleration and acceleration jerk are both 0 at the beginning of the profile, and are continuous throughout the profile. In addition, the acceleration jerk ratio (and deceleration jerk ratio) may be specified to determine the ratio of the time where the acceleration is changing (jerk is nonzero) to the total acceleration time. The acceleration jerk ratio and deceleration jerk ratio must be values between 0 and 1 inclusive. A higher jerk ratio will result in a higher maximum acceleration and lower maximum jerk.
+#If the acceleration jerk ratio and deceleration jerk ratio are both 0, the profile becomes identical to the Trapezoidal profile.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+		#jerkAccRatio           Acceleration jerk ratio 
+		#jerkDecRatio           Deceleration jerk ratio 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a AdvancedS profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.AdvancedS
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5	
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#The TrapezoidalMAT profile is equivalent to the trapezoidal profile, but is passed through a moving average filter to prevent sudden changes in acceleration. The averaging time of the moving average filter is defined with the movingAverageTimeMilliseconds parameter. This value will be rounded to the closest multiple of the cycle time. Compared to a Trapezoidal profile with identical parameters, the moving average time profile will take this time longer to complete. This profile type is identical to the Trapezoidal profile if the movingAverageTimeMilliseconds is set to 0. The movingAverageTimeMilliseconds is reduced from the specified value if a profile could otherwise not be generated due to a high initial or endVelocity.
+   #This profile uses the following profile parameters:
+        #Parameter                           Description 
+        #velocity                            Maximum velocity 
+        #acc                                 Maximum acceleration 
+        #dec                                 Maximum deceleration 
+        #startingVelocity                    Initial velocity 
+        #endVelocity                         Final velocity 
+		#movingAverageTimeMilliseconds       Moving average time in milliseconds
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, moving average time as 50ms,starting Velocity of 0,and end Velocity of 0, using an TrapezoidalMAT profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TrapezoidalMAT
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+    posCommand.profile.movingAverageTimeMilliseconds = 50
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#The JerkLimited profile is the fastest profile that can be generated with the specified limits for acceleration, deceleration, acceleration jerk, and deceleration jerk. Typically, the profile will appear to be partway between the Trapezoidal and S-Curve profile types.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+		#jerkAcc                Maximum acceleration jerk 
+		#jerkDec                Maximum deceleration jerk 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimited profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkLimited
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAcc = 1000
+    posCommand.profile.jerkDec = 1000	
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#In the JerkLimitedSCurve profile, the acceleration curve of the profile is divided into two equal parts. In each half, the acceleration increases or decreases at a constant rate such that the specified acceleration and acceleration jerk limits are not exceeded. The deceleration curve is also generated similarly with the specified deceleration and deceleration jerk limits.
+#The differences between this profile and the S-Curve profile are that the acceleration jerk and deceleration jerk are specified, and that the acceleration and deceleration are specified as a limit instead of an average value.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+		#jerkAcc                Maximum acceleration jerk 
+		#jerkDec                Maximum deceleration jerk 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedSCurve profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkLimitedSCurve
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAcc = 1000
+    posCommand.profile.jerkDec = 1000	
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+
+#In the JerkLimitedAdvancedS profile, the acceleration jerk and deceleration jerk will change linearly. The acceleration and acceleration jerk are both 0 at the beginning of the profile, and are continuous throughout the profile. In addition, the acceleration and acceleration jerk will remain within the specified acceleration and acceleration jerk limits while accelerating and the specified deceleration and deceleration jerk limits while decelerating.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+		#jerkAcc                Maximum acceleration jerk 
+		#jerkDec                Maximum deceleration jerk 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000, jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedAdvancedS profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkLimitedAdvancedS
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAcc = 1000
+    posCommand.profile.jerkDec = 1000	
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#In the TwoVelocityTrapezoidal profile, the axis accelerates at the specified constant rate until the profile velocity is reached. After reaching the profile velocity, the axis accelerates at a constant intermediate acceleration rate until it reaches the second velocity. After reaching the second velocity, the axis decelerates at the specified constant rate to stop at the target position.
+#The intermediate acceleration used to accelerate from the first velocity to the secondVelocityis calculated automatically. The intermediate acceleration can never exceed the specified profile acceleration. If the target position is too close to reach the secondVelocitywith the given acceleration and deceleration, the axis will start decelerating before reaching the second velocity.
+#The first velocity must be smaller than the second velocity. If the first velocity is greater than the second velocity, it will be set equal to the second velocity.
+#Two-velocity profiles are incompatible with jog or velocity commands.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+		#secondVelocity         Second target velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocityTrapezoidal profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TwoVelocityTrapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+	posCommand.profile.secondVelocity = 5000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#In the TwoVelocitySCurve  profile, the acceleration curve of the profile is divided into two equal parts. In the first half, the acceleration increases at a constant rate. In the second half, the acceleration decreases at a constant rate. This generates a smooth "S" shaped acceleration curve. After the axis accelerates to the profile velocity, the axis accelerates at a constant intermediate acceleration rate until it reaches the second velocity. After reaching the second velocity, the axis decelerates with a "S" shaped deceleration curve generated similarly as the acceleration curve.
+#The intermediate acceleration used to accelerate from the first velocity to the secondVelocityis calculated automatically. The intermediate acceleration can never exceed the specified profile acceleration. If the target position is too close to reach the secondVelocitywith the given acceleration and deceleration, the axis will start decelerating before reaching the second velocity.
+#The first velocity must be smaller than the second velocity. If the first velocity is greater than the second velocity, it will be set equal to the second velocity.
+#Two-velocity profiles are incompatible with jog or velocity commands.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+		#secondVelocity         Second target velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocitySCurve profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TwoVelocitySCurve
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+	posCommand.profile.secondVelocity = 5000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#In the TwoVelocityJerkRatio profile, the shape of the acceleration curve is determined by the acceleration jerk ratio, which is defined as the ratio of the time where the acceleration is changing (jerk is nonzero) to the total acceleration time. After the axis accelerates to the profile velocity, the axis accelerates at a constant intermediate acceleration rate until it reaches the second velocity. After reaching the second velocity, the axis decelerates using the deceleration jerk ratio. The acceleration jerk ratio and deceleration jerk ratio must be values between 0 and 1 inclusive.
+#The intermediate acceleration used to accelerate from the first velocity to the secondVelocityis calculated automatically. The intermediate acceleration can never exceed the specified profile acceleration. If the target position is too close to reach the secondVelocitywith the given acceleration and deceleration, the axis will start decelerating before reaching the second velocity.
+#The first velocity must be smaller than the second velocity. If the first velocity is greater than the second velocity, it will be set equal to the second velocity.
+#Two-velocity profiles are incompatible with jog or velocity commands.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Maximum acceleration 
+        #dec                    Maximum deceleration 
+		#jerkAccRatio           Acceleration jerk ratio 
+		#jerkDecRatio           Deceleration jerk ratio 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+		#secondVelocity         Second target velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,secondVelocity of 5000,and end Velocity of 0, using a TwoVelocityJerkRatio profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TwoVelocityJerkRatio
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+	posCommand.profile.secondVelocity = 5000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+   
+#``
+
+
+
+#The TimeAccTrapezoidal profile is identical to the Trapezoidal profile, except the acceleration and deceleration are specified in units of time instead of user units per second^2.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #accTimeMilliseconds    accTimeMillisecondsin milliseconds 
+        #decTimeMilliseconds    decTimeMilliseconds in milliseconds 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccTrapezoidal profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TimeAccTrapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.accTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 50
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#The TimeAccSCurve profile is identical to the S-Curve profile, except the acceleration and deceleration are specified in units of time instead of user units per second^2.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #accTimeMilliseconds    accTimeMillisecondsin milliseconds 
+        #decTimeMilliseconds    decTimeMilliseconds in milliseconds 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccSCurve profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TimeAccSCurve
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.accTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 50
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#The TimeAccJerkRatio profile is identical to the Jerk Ratio profile, except the acceleration and deceleration are specified in units of time instead of user units per second^2.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #accTimeMilliseconds    accTimeMillisecondsin milliseconds 
+        #decTimeMilliseconds    decTimeMilliseconds in milliseconds 
+		#jerkAccRatio           Acceleration jerk ratio 
+		#jerkDecRatio           Deceleration jerk ratio 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a TimeAccJerkRatio profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TimeAccJerkRatio
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.accTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 50
+	posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+
+#``
+
+
+
+#The TimeAccParabolic profile is identical to the Parabolic profile, except the acceleration and deceleration are specified in units of time instead of user units per second^2.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #accTimeMilliseconds    accTimeMillisecondsin milliseconds 
+        #decTimeMilliseconds    decTimeMilliseconds in milliseconds 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccParabolic profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TimeAccParabolic
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.accTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 50
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#The TimeAccSin profile is identical to the Sine profile, except the acceleration and deceleration are specified in units of time instead of user units per second^2.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #accTimeMilliseconds    accTimeMillisecondsin milliseconds 
+        #decTimeMilliseconds    decTimeMilliseconds in milliseconds 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,starting Velocity of 0,and end Velocity of 0, using a TimeAccSin profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TimeAccSin
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.accTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 50
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+
+#``
+
+
+
+#The TimeAccAdvancedS profile is identical to the Advanced-S profile, except the acceleration and deceleration are specified in units of time instead of user units per second^2.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #accTimeMilliseconds    accTimeMillisecondsin milliseconds 
+        #decTimeMilliseconds    decTimeMilliseconds in milliseconds 
+		#jerkAccRatio           Acceleration jerk ratio 
+		#jerkDecRatio           Deceleration jerk ratio 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50ms,decTimeMilliseconds of 50ms,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a TimeAccAdvancedS profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.TimeAccAdvancedS
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.accTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 50
+	posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#In the ConstantDec profile, velocity, acceleration, and deceleration are not specified, and the profile is calculated from the startingVelocity, endVelocity, and target position.
+#The axis decelerates at a constant deceleration from the startingVelocity to the endVelocity (or constant acceleration if the endVelocity is greater than the startingVelocity). The axis will be at the target position when it reaches the endVelocity.
+#The minimum value for the deceleration (or acceleration) is 0.000001 user unit / sec^2. If the startingVelocity and endVelocity are close or the target position is far, and the calculated deceleration (or acceleration) is less than the minimum value, the deceleration (or acceleration) is set to the minimum value. In this case, after reaching the endVelocity, the axis will continue to move at the endVelocity until it reaches the target position.
+#When this profile is used for an override command, the startingVelocity can be set to the velocity at the time of the override by specifying 0 for the startingVelocity. The specification when 0 is specified for the startingVelocity is the same as other profiles.
+#The constant deceleration profile is incompatible with jog or velocity commands.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #startingVelocity      Initial velocity 
+        #endVelocity           Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at starting Velocity of 10000,and end Velocity of 2000, using a ConstantDec profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.ConstantDec
+    posCommand.axis = 0
+    posCommand.target = 10
+	posCommand.profile.startingVelocity = 10000
+	posCommand.profile.endVelocity = 2000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#The JerkRatioFixedVelocityT profile is identical to the Jerk Ratio profile, except the profile velocity cannot be reduced to smooth out the extra pulses that do not divide evenly into the profile shape. The extra pulses are instead appended to the acceleration and deceleration segments with a trapezoidal distribution. See Velocity Adjustment from Extra Pulses.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Average acceleration 
+        #dec                    Average deceleration 
+		#jerkAccRatio           Acceleration jerk ratio 
+		#jerkDecRatio           Deceleration jerk ratio 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatioFixedVelocityT profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkRatioFixedVelocityT
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#The JerkRatioFixedVelocityS profile is identical to the Jerk Ratio profile, except the profile velocity cannot be reduced to smooth out the extra pulses that do not divide evenly into the profile shape. The extra pulses are instead appended to the acceleration and deceleration segments with a sinusoidal distribution. See Velocity Adjustment from Extra Pulses.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Average acceleration 
+        #dec                    Average deceleration 
+		#jerkAccRatio           Acceleration jerk ratio 
+		#jerkDecRatio           Deceleration jerk ratio 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a JerkRatioFixedVelocityS profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkRatioFixedVelocityS
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#The JerkLimitedFixedVelocityT profile is identical to the Jerk-Limited profile, except the profile velocity cannot be reduced to smooth out the extra pulses that do not divide evenly into the profile shape. The extra pulses are instead appended to the acceleration and deceleration segments with a trapezoidal distribution. See Velocity Adjustment from Extra Pulses.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Average acceleration 
+        #dec                    Average deceleration 
+		#jerkAcc                Maximum acceleration jerk 
+		#jerkDec                Maximum deceleration jerk 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedFixedVelocityT profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkLimitedFixedVelocityT
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAcc= 1000
+    posCommand.profile.jerkDec = 1000
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#The JerkLimitedFixedVelocityS profile is identical to the Jerk-Limited profile, except the profile velocity cannot be reduced to smooth out the extra pulses that do not divide evenly into the profile shape. The extra pulses are instead appended to the acceleration and deceleration segments with a sinusoidal distribution. See Velocity Adjustment from Extra Pulses.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #velocity               Maximum velocity 
+        #acc                    Average acceleration 
+        #dec                    Average deceleration 
+		#jerkAcc                Maximum acceleration jerk 
+		#jerkDec                Maximum deceleration jerk 
+        #startingVelocity       Initial velocity 
+        #endVelocity            Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , acceleration of 10000,deceleration of 10000,jerkAcc of 1000,jerkDec of 1000,starting Velocity of 0,and end Velocity of 0, using a JerkLimitedFixedVelocityS profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkLimitedFixedVelocityS
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+	posCommand.profile.jerkAcc= 1000
+    posCommand.profile.jerkDec = 1000
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#In the ParabolicVelocity profile, the axis will have a linearly changing acceleration and deceleration. The velocity curve will be parabolic-shaped. By adjusting the jerk ratio, part of the velocity curve during acceleration and deceleration can be changed to be linear.
+#The accTimeMillisecondsand decTimeMilliseconds are specified for this profile.
+#For the parabolic velocity profile, the Prohibit Overtravel parameter has the same effect when set to ChangeDeceleration or ChangeInitialVelocity.
+   #This profile uses the following profile parameters:
+        #Parameter              Description 
+        #accTimeMilliseconds     accTimeMillisecondsin milliseconds 
+        #decTimeMilliseconds     decTimeMilliseconds in milliseconds 
+        #jerkAccRatio            Acceleration jerk ratio 
+		#jerkDecRatio            Deceleration jerk ratio 
+        #startingVelocity        Initial velocity 
+        #endVelocity             Final velocity 
+   #The example is as follows:
+   # move Axis 0 to the position 10 at a speed of 1000 , accTimeMilliseconds of 50,decTimeMilliseconds of 50,jerkAccRatio of 0.5,jerkDecRatio of 0.5,starting Velocity of 0,and end Velocity of 0, using a ParabolicVelocity profile.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.ParabolicVelocity
+    posCommand.axis = 0
+    posCommand.target = 10
+    posCommand.profile.velocity = 1000
+    posCommand.profile.accTimeMilliseconds = 50
+    posCommand.profile.decTimeMilliseconds = 50
+	posCommand.profile.jerkAccRatio= 0.5
+    posCommand.profile.jerkDecRatio = 0.5
+	posCommand.profile.startingVelocity = 0
+	posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#Core Motion type inputs are defined using the CoreMotionEventInput class.
+     #Input type           Description 
+	 #EqualPos             Evaluates to TRUE when the position of the specified axis equals the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to equal 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
+       eventIN_Motion.equalPos.axis=0
+       eventIN_Motion.equalPos.pos=1000
+
+     #Input type           Description 
+	 #GreaterPos           Evaluates to TRUE when the position of the specified axis is greater than the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to be greater than 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.GreaterPos 
+       eventIN_Motion.greaterPos.axis=0
+       eventIN_Motion.greaterPos.pos=1000
+
+     #Input type           Description 
+	 #LessPos              Evaluates to TRUE when the position of the specified axis is less than the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to be less than 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.LessPos  
+       eventIN_Motion.lessPos.axis=0
+       eventIN_Motion.lessPos.pos=1000
+
+     #Input type           Description 
+	 #EqualVelocity        Evaluates to TRUE when the velocity of the specified axis equals the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to equal a speed of 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualVelocity   
+       eventIN_Motion.equalVelocity.axis=0
+       eventIN_Motion.equalVelocity.pos=1000
+
+     #Input type           Description 
+	 #GreaterVelocity      Evaluates to TRUE when the velocity of the specified axis is greater than the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to have a speed greater than 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.GreaterVelocity    
+       eventIN_Motion.greaterVelocity.axis=0
+       eventIN_Motion.greaterVelocity.pos=1000	
+
+     #Input type           Description 
+	 #LessVelocity         Evaluates to TRUE when the velocity of the specified axis is less than the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to have a speed less than 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.LessVelocity     
+       eventIN_Motion.lessVelocity.axis=0
+       eventIN_Motion.lessVelocity.pos=1000		
+
+     #Input type           Description 
+	 #EqualTrq             Evaluates to TRUE when the torque of the specified axis equals the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to have a torque value equal to 10.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualTrq      
+       eventIN_Motion.equalTrq.axis=0
+       eventIN_Motion.equalTrq.pos=10		
+
+     #Input type           Description 
+	 #GreaterTrq           Evaluates to TRUE when the torque of the specified axis is greater than the specified value, and FALSE otherwise.  
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to have a torque value greater than 10.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.GreaterTrq       
+       eventIN_Motion.greaterTrq.axis=0
+       eventIN_Motion.greaterTrq.pos=10	
+
+     #Input type           Description 
+	 #LessTrq              Evaluates to TRUE when the torque of the specified axis is less than the specified value, and FALSE otherwise.
+	 #The example is as follows:
+	 #Set the event input for Axis 0 to have a torque value less than 10.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.LessTrq        
+       eventIN_Motion.lessTrq.axis=0
+       eventIN_Motion.lessTrq.pos=10	
+
+     #Input type           Description 
+	 #OpState              Evaluates to TRUE when the operation state (Op State) of the axis is equal to the specified operation state. 
+	 #This enumerator class enumerates the operation states of axes. 
+	 #Enumerator
+	 #Idle                  The axis is idle and not executing any commands.
+     #Pos 	                The axis is executing a position command. 
+	 #Jog                   The axis is executing a jog command. 
+	 #Home                  The axis is executing a homing operation. 
+	 #Sync                  The axis is synchronized to another axis. 
+	 #GantryHome            The axis is executing a gantry homing operation. 
+	 #Stop                  The axis is stopping. 
+	 #Intpl                 The axis is executing an interpolation command
+	 #Velocity              The axis is executing a velocity command. 
+	 #ConstLinearVelocity   The axis is executing a constant linear velocity command. 
+	 #Trq                   The axis is executing a torque command. 
+     #DirectControl         The axis is operating in direct control mode. 
+     #PVT                   The axis is executing a PVT command. 
+     #ECAM                  The axis is synchronized to another axis with ECAM. 
+     #SyncCatchUp           The axis is catching up to another axis. 
+     #DancerControl         The axis is executing dancer control. 
+	  
+	 #The example is as follows:
+	 #Set the input event to monitor whether the OpState of the axis is idle.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.OpState
+       eventIN_Motion.opState.axis=0
+       eventIN_Motion.opState.opState=OpState	 
+
+     #Input type           Description 
+	 #AxisCmdMode          Evaluates to TRUE when the axis command mode (Axis Command Mode) of the axis is the specified axis command mode.  
+     #This enumerator class enumerates the cyclic command modes of axes. 
+	 #Enumerator
+	 #Position             The axis is in position mode and updates the position command every communication cycle.      
+     #Velocity  	       The axis is in velocity mode and updates the velocity command every communication cycle. 
+     #Torque 	           The axis is in torque mode and updates the torque command every communication cycle. 
+
+	 #The example is as follows:
+     #Set the input event to monitor whether the AxisCommandMode of the axis is in Position state.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.AxisCmdMode
+       eventIN_Motion.axisCmdMode.axis=0
+       eventIN_Motion.axisCmdMode.axisCommandMode=AxisCommandMode.Position
+
+     #Input type           Description 
+	 #InPos                This input function monitors the in position signal (In Pos, In Pos 2, etc.) of an axis. When the in position signal is 1, the event triggers.
+	 #The example is as follows:
+	 #Set the input event to monitor whether the Inpos of Axis 0 is true.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.InPos         
+       eventIN_Motion.inPos.axis=0
+
+     #Input type           Description 
+	 #PosSET               This input function monitors the position set signal (Pos Set) of an axis. When the position set signal is 1, the event triggers.
+	 #The example is as follows:
+	 #Set the input event to monitor whether the PosSET of Axis 0 is true.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.PosSET         
+       eventIN_Motion.posSET.axis=0
+
+     #Input type           Description 
+	 #DelayedPosSET        This input function monitors the delayed position set signal (Delayed Pos Set) of an axis. When the delayed position set signal is 1, the event triggers.
+	 #The example is as follows:
+	 #Set the input event to monitor whether the DelayedPosSET of Axis 0 is true.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.DelayedPosSET          
+       eventIN_Motion.delayedPosSET.axis=0	   
+
+     #Input type               Description 
+	 #CommandDistributedEnd    Evaluates to TRUE when the command distribution end signal (Cmd Distribution End) of the axis is 1. 
+	 #The example is as follows:
+	 #Set the input event to monitor whether the CommandDistributedEnd of Axis 0 is true.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.CommandDistributedEnd           
+       eventIN_Motion.commandDistributedEnd.axis=0	  
+
+     #Input type               Description 
+	 #RemainingTime            Evaluates the same condition as the RemainingTime trigger motion.The condition evaluates to TRUE when the remaining time of the motion executed by the trigger axis is equal to or less than the trigger value.
+	 #The example is as follows:
+	 #Set the input event to monitor whether the RemainingTime of Axis 0's movement is 100ms.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.RemainingTime            
+       eventIN_Motion.remainingTime.axis=0	 
+	   eventIN_Motion.remainingTime.timeMilliseconds=100	
+
+     #Input type               Description 
+	 #RemainingDistance        Evaluates the same condition as the RemainingDistance trigger motion.The condition evaluates to TRUE when the distance remaining for the motion executed by the trigger axis is equal to or less than the trigger value.    
+	 #The example is as follows:
+	 #Set the input event to monitor whether the RemainingDistance of Axis 0's movement is 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.RemainingDistance            
+       eventIN_Motion.remainingDistance.axis=0	 
+	   eventIN_Motion.remainingDistance.distance=1000	   
+
+     #Input type               Description 
+	 #CompletedTime            Evaluates the same condition as the CompletedTime trigger motion.The condition evaluates to TRUE when the completed time of the motion executed by the trigger axis is equal to or greater than the trigger value.
+	 #The example is as follows:
+	 #Set the input event to monitor whether the CompletedTime of Axis 0's movement is 100ms.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.CompletedTime            
+       eventIN_Motion.completedTime.axis=0	 
+	   eventIN_Motion.completedTime.timeMilliseconds=100	
+
+     #Input type               Description 
+	 #CompletedDistance        Evaluates the same condition as the CompletedDistance trigger motion.The condition evaluates to TRUE when the distance completed by the motion executed by the trigger axis is equal to or greater than the trigger value.
+	 #The example is as follows:
+	 #Set the input event to monitor whether the CompletedDistance of Axis 0's movement is 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.CompletedDistance            
+       eventIN_Motion.completedDistance.axis=0	 
+	   eventIN_Motion.completedDistance.distance=1000
+	   
+     #Input type               Description 
+	 #DistanceToTarget         Evaluates the same condition as the DistanceToTarget trigger motion.The condition evaluates to TRUE when the distance to the target position for the motion executed by the trigger axis is equal to or less than the trigger value.
+	 #The example is as follows:
+	 #Set the input event to monitor whether the DistanceToTarget of Axis 0's movement is 1000.
+       eventIN_Motion.inputFunction=CoreMotionEventInputType.DistanceToTarget             
+       eventIN_Motion.distanceToTarget.axis=0	 
+	   eventIN_Motion.distanceToTarget.distance=1000
+
+#``
+
+
+
+#I/O type inputs are defined using the IoEventInput class.
+
+     #Input type               Description 
+	 #IOBit                    Evaluates to TRUE when the specified I/O input or output bit is 1 and FALSE otherwise.The input function triggers the event when the specified I/O bit is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether Input 1.0 is triggered.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.IOBit
+	   eventIN_IO.ioBit.byteAddress = 1
+       eventIN_IO.ioBit.bitAddress = 0
+
+     #Input type               Description 
+	 #NotIOBit                 Evaluates to TRUE when the specified I/O input or output bit is 0 and FALSE otherwise.The input function triggers the event when either of the two specified I/O bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether Input 1.0 is not triggered.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.NotIOBit
+	   eventIN_IO.notIOBit.byteAddress = 1
+       eventIN_IO.notIOBit.bitAddress = 0
+
+     #Input type               Description 
+	 #OrIOBit                  Evaluates to TRUE when either of the two specified I/O input or output bits is 1, and FALSE otherwise.The input function triggers the event when either of the two specified I/O bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether Input 0.0 or Input 0.1 is triggered.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.OrIOBit
+       eventIN_IO.orIOBit.SetByteAddress(0, 0)
+       eventIN_IO.orIOBit.SetBitAddress(0, 0)
+       eventIN_IO.orIOBit.SetByteAddress(1, 0)
+       eventIN_IO.orIOBit.SetBitAddress(1, 1)
+
+     #Input type               Description 
+	 #AndIOBit                 Evaluates to TRUE when both of the two specified I/O input or output bits are 1, and FALSE otherwise.The input function triggers the event when both of the two specified I/O bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether both Input 0.0 and Input 0.1 are triggered.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.AndIOBit
+       eventIN_IO.andIOBit.SetByteAddress(0, 0)
+       eventIN_IO.andIOBit.SetBitAddress(0, 0)
+       eventIN_IO.andIOBit.SetByteAddress(1, 0)
+       eventIN_IO.andIOBit.SetBitAddress(1, 1) 
+
+     #Input type               Description 
+	 #XorIOBit                 Evaluates to TRUE when only one of the two specified I/O input or output bits is 1, and FALSE otherwise.The input function triggers the event when both of the specified I/O bits are 1 or both of the specified I/O bits are 0 (this input function implements a not exclusive-or logic).
+	 #The example is as follows:
+	 #Set the input event to monitor whether only one of Input 0.0 and Input 0.1 is triggered.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.XorIOBit 
+       eventIN_IO.xorIOBit.SetByteAddress(0, 0)
+       eventIN_IO.xorIOBit.SetBitAddress(0, 0)
+       eventIN_IO.xorIOBit.SetByteAddress(1, 0)
+       eventIN_IO.xorIOBit.SetBitAddress(1, 1) 
+
+     #Input type               Description 
+	 #NandIOBit                Evaluates to FALSE when both of the two specified I/O input or output bits are 1, and TRUE otherwise.The input function triggers the event when not both of the two specified I/O bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether both Input 0.0 and Input 0.1 are triggered. If both are triggered, the event returns FALSE; otherwise, it returns TRUE.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.NandIOBit  
+       eventIN_IO.nandIOBit.SetByteAddress(0, 0)
+       eventIN_IO.nandIOBit.SetBitAddress(0, 0)
+       eventIN_IO.nandIOBit.SetByteAddress(1, 0)
+       eventIN_IO.nandIOBit.SetBitAddress(1, 1) 
+
+     #Input type               Description 
+	 #NorIOBit                 Evaluates to FALSE when either of the two specified I/O input or output bits is 1, and TRUE otherwise.The input function triggers the event when neither of the two specified I/O bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether either Input 0.0 or Input 0.1 is triggered. If either is triggered, the event returns FALSE; otherwise, it returns TRUE.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.NorIOBit  
+       eventIN_IO.norIOBit.SetByteAddress(0, 0)
+       eventIN_IO.norIOBit.SetBitAddress(0, 0)
+       eventIN_IO.norIOBit.SetByteAddress(1, 0)
+       eventIN_IO.norIOBit.SetBitAddress(1, 1) 
+
+     #Input type               Description 
+	 #XnorIOBit                Evaluates to FALSE when only one of the two specified I/O input or output bits is 1, and TRUE otherwise.NorIOBit structure of input.The input function triggers the event when both of the specified I/O bits are 1 or both of the specified I/O bits are 0 (this input function implements a not exclusive-or logic). 
+	 #The example is as follows:
+	 #Set the input event to monitor whether only one of Input 0.0 and Input 0.1 is triggered. If both are triggered, the event returns FALSE; otherwise, it returns TRUE.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.XnorIOBit  
+       eventIN_IO.xnorIOBit.SetByteAddress(0, 0)
+       eventIN_IO.xnorIOBit.SetBitAddress(0, 0)
+       eventIN_IO.xnorIOBit.SetByteAddress(1, 0)
+       eventIN_IO.xnorIOBit.SetBitAddress(1, 1)
+
+     #Input type               Description 
+	 #DelayIOBit               Evaluates to TRUE when the specified I/O input or output bit has continuously been 1 for at least the specified amount of time, and FALSE otherwise.The input function triggers the event after the specified I/O bit remains 1 continuously for the specified time.	 
+	 #The example is as follows:
+	 #Set the input event to monitor whether Input 1.0 is triggered and remains active for 100ms.
+	   eventIN_IO = IoEventInput()
+       eventIN_IO.type = IoEventInputType.DelayIOBit
+	   eventIN_IO.delayIOBit.byteAddress = 1
+       eventIN_IO.delayIOBit.bitAddress = 0
+	   eventIN_IO.delayIOBit.delayTime = 100
+	   	  
+#``
+
+
+
+#User Memory type inputs are defined using the UserMemoryEventInput class.
+
+     #Input type               Description 
+	 #MBit                     Evaluates to TRUE when the specified user memory bit is 1 and FALSE otherwise.The input function triggers the event when the specified user memory bit is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether user memory 1.0 is triggered.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type=UserMemoryEventInputType.MBit
+       eventIN_M.mBit.byteAddress=0
+       eventIN_M.mBit.bitAddress=0
+
+     #Input type               Description 
+	 #NotMBit                  Evaluates to TRUE when the specified user memory bit is 0 and FALSE otherwise.The input function triggers the event when the specified user memory bit is 0.
+	 #The example is as follows:
+	 #Set the input event to monitor whether user memory 1.0 is not triggered.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type=UserMemoryEventInputType.NotMBit
+       eventIN_M.notMBit.byteAddress=0
+       eventIN_M.notMBit.bitAddress=0
+
+     #Input type               Description 
+	 #OrMBit                   Evaluates to TRUE when either of the two specified user memory bits is 1, and FALSE otherwise.The input function triggers the event when either of the two specified user memory bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether user memory 0.0 or user memory 0.1 is triggered.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type = IoEventInputType.OrMBit
+       eventIN_M.orMBit.SetByteAddress(0, 0)
+       eventIN_M.orMBit.SetBitAddress(0, 0)
+       eventIN_M.orMBit.SetByteAddress(1, 0)
+       eventIN_M.orMBit.SetBitAddress(1, 1)
+
+     #Input type               Description 
+	 #AndMBit                  Evaluates to TRUE when both of the two specified user memory bits are 1, and FALSE otherwise.The input function triggers the event when both of the two specified user memory bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether both user memory 0.0 and user memory 0.1 are triggered.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type = IoEventInputType.AndMBit
+       eventIN_M.andMBit.SetByteAddress(0, 0)
+       eventIN_M.andMBit.SetBitAddress(0, 0)
+       eventIN_M.andMBit.SetByteAddress(1, 0)
+       eventIN_M.andMBit.SetBitAddress(1, 1)
+
+
+     #Input type               Description 
+	 #XorMBit                  Evaluates to TRUE when only one of the two specified user memory bits is 1, and FALSE otherwise.The input function triggers the event when one but not both of the specified user memory bits is 1 (this input function implements an exclusive-or logic).
+	 #The example is as follows:
+	 #Set the input event to monitor whether only one of user memory 0.0 and user memory 0.1 is triggered.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type = IoEventInputType.XorMBit
+       eventIN_M.xorMBit.SetByteAddress(0, 0)
+       eventIN_M.xorMBit.SetBitAddress(0, 0)
+       eventIN_M.xorMBit.SetByteAddress(1, 0)
+       eventIN_M.xorMBit.SetBitAddress(1, 1)
+
+     #Input type               Description 
+	 #NandMBit                 Evaluates to FALSE when both of the two specified user memory bits are 1, and TRUE otherwise.The input function triggers the event when not both of the two specified user memory bits is 1.
+	 #The example is as follows:
+	 #Set the input event to monitor whether both user memory 0.0 and user memory 0.1 are triggered. If both are triggered, the event returns FALSE; otherwise, it returns TRUE.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type = IoEventInputType.NandMBit
+       eventIN_M.nandMBit.SetByteAddress(0, 0)
+       eventIN_M.nandMBit.SetBitAddress(0, 0)
+       eventIN_M.nandMBit.SetByteAddress(1, 0)
+       eventIN_M.nandMBit.SetBitAddress(1, 1)
+
+     #Input type               Description 
+	 #XnorMBit                 Evaluates to FALSE when only one of the two specified user memory bits is 1, and TRUE otherwise.The input function triggers the event when both of the specified user memory bits are 1 or both of the specified user memory bits are 0 (this input function implements a not exclusive-or logic).
+	 #The example is as follows:
+	 #Set the input event to monitor whether either user memory 0.0 or user memory 0.1 is triggered. If either is triggered, the event returns FALSE; otherwise, it returns TRUE.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type = IoEventInputType.XnorMBit
+       eventIN_M.xnorMBit.SetByteAddress(0, 0)
+       eventIN_M.xnorMBit.SetBitAddress(0, 0)
+       eventIN_M.xnorMBit.SetByteAddress(1, 0)
+       eventIN_M.xnorMBit.SetBitAddress(1, 1)
+
+
+     #Input type               Description 
+	 #DelayMBit                Evaluates to TRUE when the specified user memory bit has continuously been 1 for at least the specified amount of time, and FALSE otherwise.The input function triggers the event after the specified user memory bit remains 1 continuously for the specified time.
+	 #The example is as follows:
+	 #Set the input event to monitor whether user memory 1.0 is triggered and remains active for 100ms.
+	   eventIN_M=UserMemoryEventInput()
+       eventIN_M.type = IoEventInputType.DelayMBit
+	   eventIN_M.delayMBit.byteAddress = 1
+       eventIN_M.delayMBit.bitAddress = 0
+	   eventIN_M.delayMBit.delayTime = 100
+	   	  
+#``
+
+
+
+#User Memory type outputs are defined using the UserMemoryEventOutput class.
+
+     #Input type               Description 
+	 #SetMBit                  Sets a user memory output bit.This output function sets a user memory output bit.
+	 #The example is as follows:
+	 #Set the output event to make user memory 1.0 equal to 1.
+        eventOut_M =UserMemoryEventOutput()
+		eventOut_M.type =UserMemoryEventOutputType.SetMBit
+        eventOut_M.setMBit.byteAddress=1
+        eventOut_M.setMBit.bitAddress=0
+#``
+
+
+
+#Write Python code to set an event that triggers Axis 0 to stop when Output 1.0 equals 1. The event ID is 0.
+
+   #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Stops the motion of an axis that is executing a motion command in Position or Velocity mode.
+    eventOut_Motion.type = CoreMotionEventOutputType.StopSingleAxis
+    eventOut_Motion.stopSingleAxis.axis=0
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+#``
+
+
+
+# Write python code to Set an event to trigger a absolute position command of Axis 0 with 100 distance and 1000 velocity, when Output 1.0 = 1. Event id is 0.
+
+   # Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+ 
+    #Starts a position command for which an absolute target position is specified.
+    eventOut_Motion.type = CoreMotionEventOutputType.StartSinglePos
+    eventOut_Motion.startSinglePos.axis = 0
+    eventOut_Motion.startSinglePos.type = ProfileType.Trapezoidal
+    eventOut_Motion.startSinglePos.target = 100
+    eventOut_Motion.startSinglePos.velocity = 1000
+    eventOut_Motion.startSinglePos.acc = 10000
+    eventOut_Motion.startSinglePos.dec = 10000
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis absolute position command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position for Axis 0 is 100 with a velocity of 1000, and the target position for Axis 1 is 200 with a velocity of 1000. The event ID is 0.
+
+    #Axes = [0, 1]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Starts position commands for which absolute target positions are specified for multiple axes.
+    eventOut_Motion.type = CoreMotionEventOutputType.StartMultiplePos
+    eventOut_Motion.startMultiplePos.axisCount=2
+    eventOut_Motion.startMultiplePos.SetAxis(0, 0)
+    eventOut_Motion.startMultiplePos.SetAxis(1, 1)
+    eventOut_Motion.startMultiplePos.SetType(0,ProfileType.Trapezoidal)
+    eventOut_Motion.startMultiplePos.SetType(1, ProfileType.Trapezoidal)
+    eventOut_Motion.startMultiplePos.SetVelocity(0, 1000)
+    eventOut_Motion.startMultiplePos.SetVelocity(1, 1000)
+    eventOut_Motion.startMultiplePos.SetAcc(0, 10000)
+    eventOut_Motion.startMultiplePos.SetAcc(1, 10000)
+    eventOut_Motion.startMultiplePos.SetDec(0, 10000)
+    eventOut_Motion.startMultiplePos.SetDec(1, 10000)
+    eventOut_Motion.startMultiplePos.SetTarget(0, 100)
+    eventOut_Motion.startMultiplePos.SetTarget(1, 200)
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis relative position command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position for Axis 0 is 100 with a velocity of 1000, and the target position for Axis 1 is 200 with a velocity of 1000. The event ID is 0.
+
+    #Axes = [0, 1]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+	
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Starts position commands for which relative target positions are specified for multiple axes.
+    eventOut_Motion.type = CoreMotionEventOutputType.StartMultipleMov
+    eventOut_Motion.startMultipleMov.axisCount=2
+    eventOut_Motion.startMultipleMov.SetAxis(0, 0)
+    eventOut_Motion.startMultipleMov.SetAxis(1, 1)
+    eventOut_Motion.startMultipleMov.SetType(0,ProfileType.Trapezoidal)
+    eventOut_Motion.startMultipleMov.SetType(1, ProfileType.Trapezoidal)
+    eventOut_Motion.startMultipleMov.SetVelocity(0, 1000)
+    eventOut_Motion.startMultipleMov.SetVelocity(1, 1000)
+    eventOut_Motion.startMultipleMov.SetAcc(0, 10000)
+    eventOut_Motion.startMultipleMov.SetAcc(1, 10000)
+    eventOut_Motion.startMultipleMov.SetDec(0, 10000)
+    eventOut_Motion.startMultipleMov.SetDec(1, 10000)
+    eventOut_Motion.startMultipleMov.SetTarget(0, 100)
+    eventOut_Motion.startMultipleMov.SetTarget(1, 200)
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis absolute position linear interpolation motion command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position is (100, 200) and the velocity is 1000.The event ID is 0.
+
+    #Axes = [0, 1]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Starts a linear interpolation command for which absolute target positions are specified.
+    eventOut_Motion.type = CoreMotionEventOutputType.LinearIntplPos
+    eventOut_Motion.linearIntplPos.axisCount=2
+    eventOut_Motion.linearIntplPos.SetAxis(0, 0)
+    eventOut_Motion.linearIntplPos.SetAxis(1, 1)
+    eventOut_Motion.linearIntplPos.type = ProfileType.Trapezoidal
+    eventOut_Motion.linearIntplPos.velocity = 1000
+    eventOut_Motion.linearIntplPos.acc = 10000
+    eventOut_Motion.linearIntplPos.dec = 10000
+    eventOut_Motion.linearIntplPos.SetTarget(0, 100)
+    eventOut_Motion.linearIntplPos.SetTarget(1, 200)
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis relative position linear interpolation motion command for Axis 0 and Axis 1 when Output 1.0 equals 1. The target position is (100, 200) and the velocity is 1000.The event ID is 0.
+
+    #Axes = [0, 1]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Starts a linear interpolation command for which relative target positions are specified.
+    eventOut_Motion.type = CoreMotionEventOutputType.LinearIntplMov
+    eventOut_Motion.linearIntplMov.axisCount=2
+    eventOut_Motion.linearIntplMov.SetAxis(0, 0)
+    eventOut_Motion.linearIntplMov.SetAxis(1, 1)
+    eventOut_Motion.linearIntplMov.type = ProfileType.Trapezoidal
+    eventOut_Motion.linearIntplMov.velocity = 1000
+    eventOut_Motion.linearIntplMov.acc = 10000
+    eventOut_Motion.linearIntplMov.dec = 10000
+    eventOut_Motion.linearIntplMov.SetTarget(0, 100)
+    eventOut_Motion.linearIntplMov.SetTarget(1, 200)
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 0)
+    axisSel.SetAxis(1, 1)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers an emergency stop command for Axis 0 when Output 1.0 equals 0.The event ID is 0.
+
+   #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Stops the motion of an axis that is in Position mode using the quick stop deceleration (Quick Stop Dec).
+    eventOut_Motion.type = CoreMotionEventOutputType.ExecQuickStopSingleAxis
+    eventOut_Motion.execQuickStopSingleAxis.axis=0
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+#``
+
+
+
+#Write Python code to set an event that triggers an emergency stop of the system when Output 1.0 equals 0. The event ID is 0.
+
+   #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+	
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Executes an emergency stop.
+    eventOut_Motion.type = CoreMotionEventOutputType.ExecEStop
+    eventOut_Motion.execEStop.eStopLevel=EStopLevel.Level1  #Level1 :Command all axes to decelerate to a stop at the E-Stop Dec deceleration. Depending on the E-Stop Level 1 Type parameter, a servo off signal may be sent to each axis after it stops.
+                                                            #Final :Immediately send a servo off signal to all axes.
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers setting Output 2.0 to 1 when Output 1.0 equals 1. The event ID is 0.
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_IO = IoEventInput()
+    eventOut_IO=IoEventOutput()
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_IO.type = IoEventInputType.NotIOBit
+    eventIN_IO.ioBit.ioSourceType = IOSourceType.Output
+    eventIN_IO.ioBit.bitAddress = 0
+    eventIN_IO.ioBit.byteAddress = 1
+
+    #Set an I/O output bit.
+    eventOut_IO.type = IoEventOutputType.SetIOOutBit
+    eventOut_IO.setIOOutBit.bitAddress =0
+    eventOut_IO.setIOOutBit.byteAddress = 2
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_IO, eventOut_IO, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Set Output 1.0 = 1 to trigger the motion
+    Wmx3Lib_Io = Io(Wmx3Lib)
+    ret = Wmx3Lib_Io.SetOutBit(0x01, 0x00, 0x01)
+    if ret != 0:
+        print('SetOutBit error code is ' + str(ret) + ': ' + Wmx3Lib_Io.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers the output to set Output 2.0 to 1 when Axis 0 moves to the position of 1000. The event ID is 0.
+ 
+    #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    #eventOut_Motion = CoreMotionEventOutput()
+    eventOut_IO=IoEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Set an I/O output bit.
+    eventOut_IO.type = IoEventOutputType.SetIOOutBit
+    eventOut_IO.setIOOutBit.bitAddress =0
+    eventOut_IO.setIOOutBit.byteAddress = 2
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_IO, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+#``
+
+
+
+#Write Python code to set an event that triggers the output to stop the movement of Axis 0 when Axis 0 moves to the position of 1000. The event ID is 0.
+
+    #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Stops the motion of an axis that is executing a motion command in Position or Velocity mode.
+    eventOut_Motion.type = CoreMotionEventOutputType.StopSingleAxis
+    eventOut_Motion.stopSingleAxis.axis=0
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+ 
+
+#``
+
+
+
+#Write Python code to set an event that triggers the output to move Axis 1 to the position of 100 when Axis 0 moves to the position of 1000. The event ID is 0.
+
+    #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Starts a position command for which an absolute target position is specified.
+    eventOut_Motion.type = CoreMotionEventOutputType.StartSinglePos
+    eventOut_Motion.startSinglePos.axis = 1
+    eventOut_Motion.startSinglePos.type = ProfileType.Trapezoidal
+    eventOut_Motion.startSinglePos.target = 100
+    eventOut_Motion.startSinglePos.velocity = 1000
+    eventOut_Motion.startSinglePos.acc = 10000
+    eventOut_Motion.startSinglePos.dec = 10000
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+ 
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis absolute position command for Axis 1 and Axis 2 when Axis 0 moves to the position of 1000. The target position for Axis 0 is 100 with a velocity of 1000, and the target position for Axis 1 is 200 with a velocity of 1000. The event ID is 0.
+
+    #Axes = [0,1,2]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Starts position commands for which absolute target positions are specified for multiple axes.
+    eventOut_Motion.type = CoreMotionEventOutputType.StartMultiplePos
+    eventOut_Motion.startMultiplePos.axisCount=2
+    eventOut_Motion.startMultiplePos.SetAxis(0, 1)
+    eventOut_Motion.startMultiplePos.SetAxis(1, 2)
+    eventOut_Motion.startMultiplePos.SetType(0,ProfileType.Trapezoidal)
+    eventOut_Motion.startMultiplePos.SetType(1, ProfileType.Trapezoidal)
+    eventOut_Motion.startMultiplePos.SetVelocity(0, 1000)
+    eventOut_Motion.startMultiplePos.SetVelocity(1, 1000)
+    eventOut_Motion.startMultiplePos.SetAcc(0, 10000)
+    eventOut_Motion.startMultiplePos.SetAcc(1, 10000)
+    eventOut_Motion.startMultiplePos.SetDec(0, 10000)
+    eventOut_Motion.startMultiplePos.SetDec(1, 10000)
+    eventOut_Motion.startMultiplePos.SetTarget(0, 100)
+    eventOut_Motion.startMultiplePos.SetTarget(1, 200)
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0) 
+	
+	# Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 1)
+    axisSel.SetAxis(1, 2)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis relative  position command for Axis 1 and Axis 2 when Axis 0 moves to the position of 1000. The target position for Axis 0 is 100 with a velocity of 1000, and the target position for Axis 1 is 200 with a velocity of 1000. The event ID is 0.
+
+    #Axes = [0,1,2]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Starts position commands for which absolute target positions are specified for multiple axes.
+    eventOut_Motion.type = CoreMotionEventOutputType.StartMultipleMov
+    eventOut_Motion.startMultipleMov.axisCount=2
+    eventOut_Motion.startMultipleMov.SetAxis(0, 1)
+    eventOut_Motion.startMultipleMov.SetAxis(1, 2)
+    eventOut_Motion.startMultipleMov.SetType(0,ProfileType.Trapezoidal)
+    eventOut_Motion.startMultipleMov.SetType(1, ProfileType.Trapezoidal)
+    eventOut_Motion.startMultipleMov.SetVelocity(0, 1000)
+    eventOut_Motion.startMultipleMov.SetVelocity(1, 1000)
+    eventOut_Motion.startMultipleMov.SetAcc(0, 10000)
+    eventOut_Motion.startMultipleMov.SetAcc(1, 10000)
+    eventOut_Motion.startMultipleMov.SetDec(0, 10000)
+    eventOut_Motion.startMultipleMov.SetDec(1, 10000)
+    eventOut_Motion.startMultipleMov.SetTarget(0, 100)
+    eventOut_Motion.startMultipleMov.SetTarget(1, 200)
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 1)
+    axisSel.SetAxis(1, 2)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis absolute position linear interpolation motion command for Axis 1 and Axis 2 when Axis 0 moves to the position of 1000. The target positions are (100, 200) and the velocity is 1000. The event ID is 0.
+
+    #Axes = [0,1,2]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    # Starts a linear interpolation command for which absolute target positions are specified.
+    eventOut_Motion.type = CoreMotionEventOutputType.LinearIntplPos
+    eventOut_Motion.linearIntplPos.axisCount = 2
+    eventOut_Motion.linearIntplPos.SetAxis(0, 1)
+    eventOut_Motion.linearIntplPos.SetAxis(1, 2)
+    eventOut_Motion.linearIntplPos.type = ProfileType.Trapezoidal
+    eventOut_Motion.linearIntplPos.velocity = 1000
+    eventOut_Motion.linearIntplPos.acc = 10000
+    eventOut_Motion.linearIntplPos.dec = 10000
+    eventOut_Motion.linearIntplPos.SetTarget(0, 100)
+    eventOut_Motion.linearIntplPos.SetTarget(1, 200)
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 1)
+    axisSel.SetAxis(1, 2)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers a multi-axis relative position linear interpolation motion command for Axis 1 and Axis 2 when Axis 0 moves to the position of 1000. The target positions are (100, 200) and the velocity is 1000. The event ID is 0.
+
+    #Axes = [0,1,2]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Starts a linear interpolation command for which relative target positions are specified.
+    eventOut_Motion.type = CoreMotionEventOutputType.LinearIntplMov
+    eventOut_Motion.linearIntplMov.axisCount=2
+    eventOut_Motion.linearIntplMov.SetAxis(0, 1)
+    eventOut_Motion.linearIntplMov.SetAxis(1, 2)
+    eventOut_Motion.linearIntplMov.type = ProfileType.Trapezoidal
+    eventOut_Motion.linearIntplMov.velocity = 1000
+    eventOut_Motion.linearIntplMov.acc = 10000
+    eventOut_Motion.linearIntplMov.dec = 10000
+    eventOut_Motion.linearIntplMov.SetTarget(0, 100)
+    eventOut_Motion.linearIntplMov.SetTarget(1, 200)
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+    # Wait for the motion to complete. Start a blocking wait command, returning only when Axis 0 and Axis 1 become idle.
+    axisSel = AxisSelection()
+    axisSel.axisCount = 2
+    axisSel.SetAxis(0, 1)
+    axisSel.SetAxis(1, 2)
+    ret = Wmx3Lib_cm.motion.Wait_AxisSel(axisSel)
+    if ret != 0:
+        print('Wait_AxisSel error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+#``
+
+
+
+#Write Python code to set an event that triggers an emergency stop command for Axis 0 when Axis 0 moves to the position of 1000. The event ID is 0.
+
+    #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Stops the motion of an axis that is in Position mode using the quick stop deceleration (Quick Stop Dec).
+    eventOut_Motion.type = CoreMotionEventOutputType.ExecQuickStopSingleAxis
+    eventOut_Motion.execQuickStopSingleAxis.axis=0
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis moves to the target position and stops.
+    Wmx3Lib_cm.motion.Wait(0)
+
+
+#``
+
+
+
+#Write Python code to set an event that triggers an emergency stop of the system when Axis 0 moves to the position of 1000. The event ID is 0.
+
+    #Axes = [0]
+
+    Wmx3Lib_EventCtl = EventControl(Wmx3Lib)
+    eventIN_Motion = CoreMotionEventInput()
+    eventOut_Motion = CoreMotionEventOutput()
+
+    # Event ID
+    posEventID = 0
+    # RemoveEvent
+    Wmx3Lib_EventCtl.RemoveEvent(posEventID)
+    #Set the event input.
+    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.equalPos.axis=0
+    eventIN_Motion.equalPos.pos=1000
+
+    #Executes an emergency stop.
+    eventOut_Motion.type = CoreMotionEventOutputType.ExecEStop
+    eventOut_Motion.execEStop.eStopLevel=EStopLevel.Level1  #Level1 :Command all axes to decelerate to a stop at the E-Stop Dec deceleration. Depending on the E-Stop Level 1 Type parameter, a servo off signal may be sent to each axis after it stops.
+                                                            #Final :Immediately send a servo off signal to all axes.
+
+
+
+    # Set input events, output events, and event addresses.
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+    if ret != 0:
+        print('SetEvent_ID error code is ' + str(ret))
+        return
+    # EnableEvent
+    Wmx3Lib_EventCtl.EnableEvent(posEventID, 1)
+
+    sleep(0.01)
+    # Start an absolute position command of Axis 0 to position 10000 with 1000 velocity.
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.Trapezoidal
+    posCommand.axis = 0
+    posCommand.target = 10000
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret!=0:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Write python code to move Axis 0 to 180 with velocity 1000.
 # Write python code to start an absolute position command of Axis 0 to position 180 with 1000 velocity.
 
