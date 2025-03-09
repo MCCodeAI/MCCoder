@@ -1,0 +1,24 @@
+2025-03-09 00:03:34,717 - Default - MainProcess - 7359 - M3 Script execution starts
+2025-03-09 00:06:40,281 - Default - MainProcess - 8806 - M3 Script execution starts
+2025-03-09 00:06:54,437 - Default - MainProcess - 8806 - Count0:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Moving Axis 0 to position 102 with starting velocity 10000 and ending velocity 2000 using a ConstantDec profile.
+Program End.
+Elapsed_time: 3.543
+----------------------
+
+2025-03-09 00:06:54,949 - Default - MainProcess - 8806 - M3 Script execution completed
+2025-03-09 00:08:39,757 - Default - MainProcess - 9834 - M3 Script execution starts
+2025-03-09 00:10:05,690 - Default - MainProcess - 9834 - Count0:
+codedata:
+Program begin.
+StopLog error code is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+SetServoOn to off error code for axis 0 is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+Program End.
+Elapsed_time: 77.662
+----------------------
+
+2025-03-09 00:10:06,615 - Default - MainProcess - 9834 - M3 Script execution completed
+2025-03-09 00:10:26,013 - Default - MainProcess - 10638 - M3 Script execution starts
