@@ -1789,7 +1789,7 @@
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
 
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 
@@ -1842,7 +1842,7 @@
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
 
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=7
     eventIN_Motion.equalPos.pos=1000
 
@@ -1896,7 +1896,7 @@
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
 
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 
@@ -1954,7 +1954,7 @@
     # RemoveEvent
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 
@@ -2028,7 +2028,7 @@
     # RemoveEvent
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 
@@ -2104,7 +2104,7 @@
     # RemoveEvent
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 
@@ -2175,7 +2175,7 @@
     # RemoveEvent
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 
@@ -2246,7 +2246,7 @@
     # RemoveEvent
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 
@@ -2300,7 +2300,7 @@
     # RemoveEvent
     Wmx3Lib_EventCtl.RemoveEvent(posEventID)
     #Set the event input.
-    eventIN_Motion.type=CoreMotionEventInputType.EqualPos
+    eventIN_Motion.inputFunction=CoreMotionEventInputType.EqualPos
     eventIN_Motion.equalPos.axis=0
     eventIN_Motion.equalPos.pos=1000
 

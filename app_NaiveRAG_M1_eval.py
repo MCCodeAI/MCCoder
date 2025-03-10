@@ -24,9 +24,7 @@ from CodeClient import *
 from MachineClient import *
 from make_code_runnable import *
 from plot_log import *
- 
 
-import bs4
 import os
 import re
 from dotenv import load_dotenv,find_dotenv
@@ -66,30 +64,28 @@ splits = text_splitter.split_documents(docs)
 
 # Global variable to store the name of the LLM
 llm_name = None
-llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True, temperature=0.2)
-runnable = None
- 
- 
-def on_chat_start():
-    
-    global llm_name
-    # Store the name of the LLM in the global variable
-    llm_name = llm.model_name
+llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", streaming=True, temperature=0.2)
 
-    # Prompt for code generation
-    prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
+ 
+ 
+
+# Store the name of the LLM in the global variable
+llm_name = llm.model_name
+
+# Prompt for code generation
+prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
 
 Instructions:
-	1.	Extract Key Information:
-	•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
-	•	Add this information at the beginning of the generated code in the following format:
+1.	Extract Key Information:
+•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
+•	Add this information at the beginning of the generated code in the following format:
 
 # Axes = [Axis_number_1, Axis_number_2, ...]
 # Inputs = [byte.bit_1, byte.bit_2, ...]
 # Outputs = [byte.bit_1, byte.bit_2, ...]
 
 
-	•	Example:
+•	Example:
 If the Question states:
 “Move Axis 9, Axis 12, and Axis 2 based on Input 0.3 and 1.2, then activate Output 3.4 and 6.1”,
 the script should start with:
@@ -99,55 +95,30 @@ the script should start with:
 # Outputs = [3.4, 6.1]
 
 
-	2.	Code Formatting:
-	•	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
+2.	Code Formatting:
+•	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
 
-	3.	Do not import any motion libraries.
-
-
-    ----------------------------------------------
-    
-    Question: 
-    {question}
-
-    Context: 
-    {context}
-
-        """
-
-    prompt_code = ChatPromptTemplate.from_template(prompt_template)
-
-    global runnable
-    runnable = (
-        # {"context": retriever | format_docs}
-         prompt_code
-        | llm
-        | StrOutputParser()
-    )
+3.	Do not import any motion libraries.
 
 
+----------------------------------------------
 
-def self_correct(err_codes):
-   # remember to write "python" code in the prompt later
-    template = """Correct the following codes based on the error infomation. 
+Question: 
+{question}
 
-        {err_codes}
+Context: 
+{context}
 
-        """
+    """
 
-    custom_rag_prompt = PromptTemplate.from_template(template)
-    
-    rag_chain = (
-            {"err_codes": RunnablePassthrough()}
-            | custom_rag_prompt
-            | llm
-            | StrOutputParser()
-        )
+prompt_code = ChatPromptTemplate.from_template(prompt_template)
 
-    code_corrected=rag_chain.invoke(err_codes)
- 
-    return(code_corrected)
-
+codegene_runnable = (
+    # {"context": retriever | format_docs}
+        prompt_code
+    | llm
+    | StrOutputParser()
+)
 
 
 
@@ -155,16 +126,17 @@ def self_correct(err_codes):
 def format_docs(docs):
    return "\n\n".join(doc.page_content for doc in docs)
 
-# Extracts code snippets written in Python from the given text
 def extract_code(text):
+    """Extracts the first Python code snippet from the given text."""
+    
     # Define the regular expression pattern to find text between ```python and ```
     pattern = r"```python(.*?)```"
 
-    # Use re.findall to find all occurrences
-    matches = re.findall(pattern, text, re.DOTALL)
-
-    # Return the matches, join them if there are multiple matches
-    return "\n\n---\n\n".join(matches)
+    # Use re.search to find the first occurrence
+    match = re.search(pattern, text, re.DOTALL)
+    
+    # Return the first match if found, otherwise return an empty string
+    return match.group(1) if match else ""
 
 
 
@@ -193,7 +165,7 @@ def coder_retrieval(question):
 RunnableCodeinMachine = ''
 
 def on_message(message):
-    
+    """Handle incoming message, generate executable code with post-processing."""
     # Input text
     user_question = message
     
@@ -209,7 +181,7 @@ def on_message(message):
     #     await msg.stream_token(chunk)
         # print(chunk)
 
-    response = runnable.invoke(
+    response = codegene_runnable.invoke(
     {"context": context_msg, "question": user_question})
 
 

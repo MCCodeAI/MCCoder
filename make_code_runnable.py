@@ -81,19 +81,19 @@ def main():
         sleep(0.1)
 
         # Homing
-        # homeParam = Config_HomeParam()
-        # ret, homeParam = Wmx3Lib_cm.config.GetHomeParam(axis)
+        homeParam = Config_HomeParam()
+        ret, homeParam = Wmx3Lib_cm.config.GetHomeParam(axis)
 
-        # # homeParam.homeType = Config_HomeType.CurrentPos
+        homeParam.homeType = Config_HomeType.CurrentPos
 
-        # # SetHomeParam -> First return value: Error code, Second return value: param error
-        # ret, homeParamError = Wmx3Lib_cm.config.SetHomeParam(axis, homeParam)
+        # SetHomeParam -> First return value: Error code, Second return value: param error
+        ret, homeParamError = Wmx3Lib_cm.config.SetHomeParam(axis, homeParam)
 
-        # ret = Wmx3Lib_cm.home.StartHome(axis)
-        # if ret != 0:
-        #     print(f'StartHome before log error code for axis {axis} is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
-        #     return
-        # Wmx3Lib_cm.motion.Wait(axis)
+        ret = Wmx3Lib_cm.home.StartHome(axis)
+        if ret != 0:
+            print(f'StartHome before log error code for axis {axis} is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+            return
+        Wmx3Lib_cm.motion.Wait(axis)
 
     # <logon---------------------------------------------------------------------------                                                                 
     WMX3Log = Log(Wmx3Lib)

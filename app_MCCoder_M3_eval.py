@@ -67,7 +67,7 @@ splits = text_splitter.split_documents(docs)
 
 # Global variable to store the name of the LLM
 llm_name = None
-codegene_llm = ChatOpenAI(name="MCCoder", model_name="gpt-4o", streaming=True, temperature=0.2)
+codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="gpt-4o", streaming=True, temperature=0.2)
 taskdecom_llm = codegene_llm
 codegene_runnable = None
  
@@ -126,7 +126,7 @@ codegene_runnable = (
 # Task decomposition llm >>>>>>>>>>>>>
 # Prompt for task decomposition
 taskdecom_prompt_template = """
-You are a task decomposer that breaks down a user question into multiple sub-tasks, listing them as separate lines. For example, the user question '1. Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile ; 2. set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 3. Move Axis 7 to 30; ' should be decomposed into three tasks, adding 'Write Python code to' to each:
+You are a task decomposer that breaks down a user question into multiple sub-tasks only when encountering ';', listing them as separate lines. For example, the user question '1. Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile ; 2. set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 3. Move Axis 7 to 30; ' should be decomposed into three tasks, adding 'Write Python code to' to each:
 
 1. Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile ; 
 2. Write Python code to set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 
