@@ -1052,6 +1052,7 @@
        eventIN_Motion.inputFunction=CoreMotionEventInputType.RemainingTime            
        eventIN_Motion.remainingTime.axis=0	 
 	   eventIN_Motion.remainingTime.timeMilliseconds=100	
+	   eventIN_Motion.remainingTime.disableIdleAxisTrigger=1
 
      #Input type               Description 
 	 #RemainingDistance        Evaluates the same condition as the RemainingDistance trigger motion.The condition evaluates to TRUE when the distance remaining for the motion executed by the trigger axis is equal to or less than the trigger value.    
@@ -1059,7 +1060,8 @@
 	 #Set the input event to monitor whether the RemainingDistance of Axis 0's movement is 1000.
        eventIN_Motion.inputFunction=CoreMotionEventInputType.RemainingDistance            
        eventIN_Motion.remainingDistance.axis=0	 
-	   eventIN_Motion.remainingDistance.distance=1000	   
+	   eventIN_Motion.remainingDistance.distance=1000	  
+       eventIN_Motion.remainingDistance.disableIdleAxisTrigger=1	   
 
      #Input type               Description 
 	 #CompletedTime            Evaluates the same condition as the CompletedTime trigger motion.The condition evaluates to TRUE when the completed time of the motion executed by the trigger axis is equal to or greater than the trigger value.
@@ -1068,6 +1070,7 @@
        eventIN_Motion.inputFunction=CoreMotionEventInputType.CompletedTime            
        eventIN_Motion.completedTime.axis=0	 
 	   eventIN_Motion.completedTime.timeMilliseconds=100	
+	   eventIN_Motion.completedTime.disableIdleAxisTrigger=1	
 
      #Input type               Description 
 	 #CompletedDistance        Evaluates the same condition as the CompletedDistance trigger motion.The condition evaluates to TRUE when the distance completed by the motion executed by the trigger axis is equal to or greater than the trigger value.
@@ -1076,6 +1079,7 @@
        eventIN_Motion.inputFunction=CoreMotionEventInputType.CompletedDistance            
        eventIN_Motion.completedDistance.axis=0	 
 	   eventIN_Motion.completedDistance.distance=1000
+	   eventIN_Motion.completedDistance.disableIdleAxisTrigger=1	
 	   
      #Input type               Description 
 	 #DistanceToTarget         Evaluates the same condition as the DistanceToTarget trigger motion.The condition evaluates to TRUE when the distance to the target position for the motion executed by the trigger axis is equal to or less than the trigger value.
@@ -1084,7 +1088,7 @@
        eventIN_Motion.inputFunction=CoreMotionEventInputType.DistanceToTarget             
        eventIN_Motion.distanceToTarget.axis=0	 
 	   eventIN_Motion.distanceToTarget.distance=1000
-
+	   eventIN_Motion.distanceToTarget.disableIdleAxisTrigger=1	
 #``
 
 

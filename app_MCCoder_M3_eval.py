@@ -104,7 +104,7 @@ the script should start with:
 
 3.	Do not import any motion libraries.
 
-
+4. Wait for all axes stop moving in the end.
 ----------------------------------------------
 
 Question: 
@@ -163,8 +163,19 @@ def task_rag(tasks):
     
     # Perform retrieval for each task
     for task in tasks:
-        # Retrieve relevant reference content using retriever
-        retrieved_docs = retriever.invoke(task)
+
+        # initialize the bm25 retriever and faiss retriever
+        bm25_retriever = BM25Retriever.from_documents(splits)
+        bm25_retriever.k = 5
+
+        # initialize the ensemble retriever
+        ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
+
+        ensemble_docs = ensemble_retriever.invoke(task)
+        ensemble_docs = ensemble_docs[:5] 
+
+        # Retrieve relevant reference content using ensemble_retriever
+        retrieved_docs = ensemble_docs
         
         # Format the documents into a string using the existing format_docs function
         references = format_docs(retrieved_docs)
@@ -275,9 +286,10 @@ def coder_retrieval(question):
 
 RunnableCodeinMachine = ''
 
-def on_message(message):
+def on_message(task_id, message):
     """Handle incoming message, generate executable code, and manage self-correction with post-processing."""
     
+    llm_start_time = time()
     # Extract user question from the message
     user_question = message
 
@@ -291,15 +303,19 @@ def on_message(message):
     response = codegene_runnable.invoke(
         {"context": context_msg, "question": user_question}
     )
+    llm_end_time = time()
+    llm_execution_time = llm_end_time - llm_start_time
+    print(f"llm execution time: {llm_execution_time}s")
 
-    # Define TaskId file path
-    file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'
-    with open(file_path, 'r', encoding='utf-8') as file:
-        # Read task info from file
-        task_info = file.read().strip()   
-
+    # # Define TaskId file path
+    # file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'
+    # with open(file_path, 'r', encoding='utf-8') as file:
+    #     # Read task info from file
+    #     task_info = file.read().strip()   
+    task_info = task_id
+    
     # Specify LLM name for making CanonicalCode
-    llm_name = 'CanonicalCode_test'
+    llm_name = 'CanonicalCode'
 
     # Extract Python code from LLM output
     msgCode = extract_code(response)
@@ -382,5 +398,5 @@ def on_message(message):
         print(f"Error after {max_attempts} attempts: {codereturn}")
 
     # Return the final codereturn
-    return codereturn
+    return codereturn + f"llm execution time: {llm_execution_time}s"
 

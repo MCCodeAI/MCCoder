@@ -100,7 +100,7 @@ the script should start with:
 
 3.	Do not import any motion libraries.
 
-
+4. Wait for all axes stop moving in the end.
 ----------------------------------------------
 
 Question: 
@@ -156,6 +156,7 @@ def coder_retrieval(question):
     ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
 
     ensemble_docs = ensemble_retriever.invoke(question)
+    ensemble_docs = ensemble_docs[:5] 
 
     retrieval_result = format_docs(ensemble_docs)
     long_string +=  "\n" + retrieval_result + separator
@@ -164,8 +165,10 @@ def coder_retrieval(question):
 
 RunnableCodeinMachine = ''
 
-def on_message(message):
+def on_message(task_id, message):
     """Handle incoming message, generate executable code with post-processing."""
+    
+    llm_start_time = time()
     # Input text
     user_question = message
     
@@ -184,14 +187,19 @@ def on_message(message):
     response = codegene_runnable.invoke(
     {"context": context_msg, "question": user_question})
 
+    llm_end_time = time()
+    llm_execution_time = llm_end_time - llm_start_time
+    print(f"llm execution time: {llm_execution_time}")
 
-    # TaskId file path
-    file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'
-    with open(file_path, 'r', encoding='utf-8') as file:
-            task_info = file.read().strip()   
+    # # Define TaskId file path
+    # file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'
+    # with open(file_path, 'r', encoding='utf-8') as file:
+    #     # Read task info from file
+    #     task_info = file.read().strip()   
+    task_info = task_id
 
     # Only for making CanonicalCode.
-    llm_name = 'CanonicalCode_test'
+    llm_name = 'CanonicalCode'
 
     # Get python code from the output of LLM
     msgCode = extract_code(response)
@@ -236,3 +244,5 @@ def on_message(message):
 
     print("end")
 
+    # Return the final codereturn
+    return codereturn + f"llm execution time: {llm_execution_time}s"

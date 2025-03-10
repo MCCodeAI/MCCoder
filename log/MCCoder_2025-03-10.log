@@ -1,0 +1,393 @@
+2025-03-10 12:30:15,507 - Default - MainProcess - 63026 - M3 Script execution starts
+2025-03-10 12:30:37,177 - Default - MainProcess - 63026 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.341
+----------------------
+
+2025-03-10 12:30:37,767 - Default - MainProcess - 63026 - M3 Script execution completed
+2025-03-10 12:31:20,218 - Default - MainProcess - 63550 - M3 Script execution starts
+2025-03-10 12:31:41,490 - Default - MainProcess - 63550 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.714
+----------------------
+
+2025-03-10 12:31:42,077 - Default - MainProcess - 63550 - M3 Script execution completed
+2025-03-10 13:17:58,579 - Default - MainProcess - 84319 - M3 Script execution starts
+2025-03-10 13:18:20,362 - Default - MainProcess - 84319 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.682
+----------------------
+
+2025-03-10 13:18:20,941 - Default - MainProcess - 84319 - M3 Script execution completed
+2025-03-10 13:21:11,564 - Default - MainProcess - 85775 - M3 Script execution starts
+2025-03-10 13:21:32,062 - Default - MainProcess - 85775 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 302, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 259, in main
+    Wmx3Lib_cm.motion.Wait([0, 1])
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8872, in Wait
+    return _WMX3ApiPython.Motion_Wait(self, axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: in method 'Motion_Wait', argument 2 of type 'int'
+!!!
+----------------------
+
+2025-03-10 13:21:53,354 - Default - MainProcess - 85775 - Count1:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 6.047
+----------------------
+
+2025-03-10 13:21:53,923 - Default - MainProcess - 85775 - M3 Script execution completed
+2025-03-10 13:25:48,611 - Default - MainProcess - 87852 - M3 Script execution starts
+2025-03-10 13:26:09,614 - Default - MainProcess - 87852 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 302, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 259, in main
+    Wmx3Lib_cm.motion.Wait([0, 1])
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8872, in Wait
+    return _WMX3ApiPython.Motion_Wait(self, axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: in method 'Motion_Wait', argument 2 of type 'int'
+!!!
+----------------------
+
+2025-03-10 13:26:27,772 - Default - MainProcess - 87852 - Count1:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 2.874
+----------------------
+
+2025-03-10 13:26:28,155 - Default - MainProcess - 87852 - M3 Script execution completed
+2025-03-10 13:27:29,278 - Default - MainProcess - 88626 - M3 Script execution starts
+2025-03-10 13:27:50,489 - Default - MainProcess - 88626 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.582
+----------------------
+
+2025-03-10 13:27:51,069 - Default - MainProcess - 88626 - M3 Script execution completed
+2025-03-10 13:31:57,138 - Default - MainProcess - 90722 - M3 Script execution starts
+2025-03-10 13:32:20,524 - Default - MainProcess - 90722 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.729
+----------------------
+
+2025-03-10 13:32:21,083 - Default - MainProcess - 90722 - M3 Script execution completed
+2025-03-10 13:36:05,111 - Default - MainProcess - 92564 - M3 Script execution starts
+2025-03-10 13:36:39,497 - Default - MainProcess - 92564 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.751
+----------------------
+
+2025-03-10 13:36:40,072 - Default - MainProcess - 92564 - M3 Script execution completed
+2025-03-10 14:12:21,496 - Default - MainProcess - 10521 - M3 Script execution starts
+2025-03-10 14:12:46,881 - Default - MainProcess - 10521 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.145
+----------------------
+
+2025-03-10 14:12:47,538 - Default - MainProcess - 10521 - M3 Script execution completed
+2025-03-10 14:24:18,951 - Default - MainProcess - 15937 - M3 Script execution starts
+2025-03-10 14:24:38,940 - Default - MainProcess - 15937 - M3 Script execution completed
+2025-03-10 14:27:35,963 - Default - MainProcess - 17446 - M3 Script execution starts
+2025-03-10 14:28:01,191 - Default - MainProcess - 17446 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.721
+----------------------
+
+2025-03-10 14:28:01,784 - Default - MainProcess - 17446 - M3 Script execution completed
+2025-03-10 14:35:12,075 - Default - MainProcess - 21061 - M3 Script execution starts
+2025-03-10 14:35:37,835 - Default - MainProcess - 21061 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.784
+----------------------
+
+2025-03-10 14:35:38,439 - Default - MainProcess - 21061 - M3 Script execution completed
+2025-03-10 14:37:03,098 - Default - MainProcess - 21933 - M3 Script execution starts
+2025-03-10 14:37:24,604 - Default - MainProcess - 21933 - M3 Script execution completed
+2025-03-10 14:40:53,154 - Default - MainProcess - 23699 - M3 Script execution starts
+2025-03-10 14:41:27,574 - Default - MainProcess - 23970 - M3 Script execution starts
+2025-03-10 14:41:50,930 - Default - MainProcess - 23970 - 23.355217933654785
+2025-03-10 14:41:50,931 - Default - MainProcess - 23970 - M3 Script execution completed
+2025-03-10 14:42:40,583 - Default - MainProcess - 24562 - M3 Script execution starts
+2025-03-10 14:43:04,437 - Default - MainProcess - 24562 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.674
+----------------------
+
+2025-03-10 14:43:05,044 - Default - MainProcess - 24562 - 24.460479021072388
+2025-03-10 14:43:05,044 - Default - MainProcess - 24562 - M3 Script execution completed
+2025-03-10 14:43:55,513 - Default - MainProcess - 25201 - M3 Script execution starts
+2025-03-10 14:44:21,163 - Default - MainProcess - 25201 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.773
+----------------------
+
+2025-03-10 14:44:21,747 - Default - MainProcess - 25201 - 26.233478784561157
+2025-03-10 14:44:21,747 - Default - MainProcess - 25201 - M3 Script execution completed
+2025-03-10 14:53:38,126 - Default - MainProcess - 29494 - M3 Script execution starts
+2025-03-10 14:54:04,564 - Default - MainProcess - 29494 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.642
+----------------------
+
+2025-03-10 14:54:05,128 - Default - MainProcess - 29494 - 27.001863956451416
+2025-03-10 14:54:05,128 - Default - MainProcess - 29494 - M3 Script execution completed
+2025-03-10 14:54:52,142 - Default - MainProcess - 30063 - M3 Script execution starts
+2025-03-10 14:55:15,793 - Default - MainProcess - 30063 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.571
+----------------------
+
+2025-03-10 14:55:16,391 - Default - MainProcess - 30063 - 24.24895405769348
+2025-03-10 14:55:16,391 - Default - MainProcess - 30063 - M3 Script execution completed
+2025-03-10 14:56:48,388 - Default - MainProcess - 30954 - M3 Script execution starts
+2025-03-10 14:57:08,813 - Default - MainProcess - 30954 - 20.422829151153564
+2025-03-10 14:57:08,814 - Default - MainProcess - 30954 - M3 Script execution completed
+2025-03-10 15:00:46,889 - Default - MainProcess - 32820 - M3 Script execution starts
+2025-03-10 15:01:08,015 - Default - MainProcess - 32820 - M3 Script execution completed
+2025-03-10 15:01:22,550 - Default - MainProcess - 33135 - M3 Script execution starts
+2025-03-10 15:01:43,194 - Default - MainProcess - 33135 - M3 Script execution completed
+2025-03-10 15:40:52,903 - Default - MainProcess - 50673 - M3 Script execution starts
+2025-03-10 15:41:18,637 - Default - MainProcess - 50673 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.037
+----------------------
+
+2025-03-10 15:41:19,215 - Default - MainProcess - 50673 - M3 Script execution completed
+2025-03-10 15:42:43,619 - Default - MainProcess - 51586 - M3 Script execution starts
+2025-03-10 15:43:04,798 - Default - MainProcess - 51586 - M3 Script execution completed
+2025-03-10 16:00:21,749 - Default - MainProcess - 59779 - M3 Script execution starts
+2025-03-10 16:00:44,491 - Default - MainProcess - 59779 - M3 Script execution completed
+2025-03-10 16:01:45,981 - Default - MainProcess - 60465 - M3 Script execution starts
+2025-03-10 16:02:10,607 - Default - MainProcess - 60465 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.067
+----------------------
+
+2025-03-10 16:02:11,215 - Default - MainProcess - 60465 - M3 Script execution completed
+2025-03-10 17:12:05,418 - Default - MainProcess - 92529 - M3 Script execution starts
+2025-03-10 17:12:20,694 - Default - MainProcess - 92529 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.441
+----------------------
+
+2025-03-10 17:12:21,262 - Default - MainProcess - 92529 - M3 Script execution completed
+2025-03-10 17:23:03,668 - Default - MainProcess - 97536 - M3 Script execution starts
+2025-03-10 17:23:15,308 - Default - MainProcess - 97536 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.491
+----------------------
+
+2025-03-10 17:23:15,887 - Default - MainProcess - 97536 - M3 Script execution completed
+2025-03-10 18:02:58,637 - Default - MainProcess - 7442 - M3 Script execution starts
+2025-03-10 18:03:12,054 - Default - MainProcess - 7442 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.040
+----------------------
+
+2025-03-10 18:03:12,602 - Default - MainProcess - 7442 - M3 Script execution completed
+2025-03-10 18:03:36,267 - Default - MainProcess - 7792 - M3 Script execution starts
+2025-03-10 18:03:49,071 - Default - MainProcess - 7792 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.660
+----------------------
+
+2025-03-10 18:03:49,619 - Default - MainProcess - 7792 - M3 Script execution completed
+2025-03-10 18:05:18,488 - Default - MainProcess - 8655 - M3 Script execution starts
+2025-03-10 18:05:31,562 - Default - MainProcess - 8655 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.667
+----------------------
+
+2025-03-10 18:05:32,101 - Default - MainProcess - 8655 - M3 Script execution completed
+2025-03-10 18:05:45,917 - Default - MainProcess - 8909 - M3 Script execution starts
+2025-03-10 18:06:30,836 - Default - MainProcess - 9299 - M3 Script execution starts
+2025-03-10 18:06:41,716 - Default - MainProcess - 9299 - M3 Script execution completed
+2025-03-10 18:06:55,104 - Default - MainProcess - 9519 - M3 Script execution starts
+2025-03-10 18:07:06,319 - Default - MainProcess - 9519 - M3 Script execution completed
+2025-03-10 18:07:38,546 - Default - MainProcess - 9892 - M3 Script execution starts
+2025-03-10 18:07:50,656 - Default - MainProcess - 9892 - M3 Script execution completed
+2025-03-10 18:08:12,986 - Default - MainProcess - 10190 - M3 Script execution starts
+2025-03-10 18:08:25,053 - Default - MainProcess - 10190 - M3 Script execution completed
+2025-03-10 18:08:50,636 - Default - MainProcess - 10500 - M3 Script execution starts
+2025-03-10 18:09:03,661 - Default - MainProcess - 10500 - M3 Script execution completed
+2025-03-10 18:09:55,695 - Default - MainProcess - 11019 - M3 Script execution starts
+2025-03-10 18:10:10,082 - Default - MainProcess - 11019 - M3 Script execution completed
+2025-03-10 18:10:23,020 - Default - MainProcess - 11253 - M3 Script execution starts
+2025-03-10 18:10:34,484 - Default - MainProcess - 11253 - M3 Script execution completed
+2025-03-10 18:11:18,599 - Default - MainProcess - 11709 - M3 Script execution starts
+2025-03-10 18:11:32,593 - Default - MainProcess - 11709 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 273, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 214, in main
+    posCommand.profile.type = ProfileType.Tixing
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Tixing'
+!!!
+----------------------
+
+2025-03-10 18:11:45,557 - Default - MainProcess - 11709 - Count1:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 3.347
+----------------------
+
+2025-03-10 18:11:46,082 - Default - MainProcess - 11709 - M3 Script execution completed
+2025-03-10 18:20:40,949 - Default - MainProcess - 16187 - M3 Script execution starts
+2025-03-10 18:20:53,201 - Default - MainProcess - 16187 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.845
+----------------------
+
+2025-03-10 18:20:53,788 - Default - MainProcess - 16187 - M3 Script execution completed
+2025-03-10 19:19:38,724 - Default - MainProcess - 40628 - M3 Script execution starts
+2025-03-10 19:19:57,475 - Default - MainProcess - 40628 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 291, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.S
+                              ^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'S'
+!!!
+----------------------
+
+2025-03-10 19:20:14,064 - Default - MainProcess - 40628 - Count1:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 3.734
+----------------------
+
+2025-03-10 19:20:14,648 - Default - MainProcess - 40628 - M3 Script execution completed
+2025-03-10 19:23:11,504 - Default - MainProcess - 42320 - M3 Script execution starts
+2025-03-10 19:23:25,753 - Default - MainProcess - 42320 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.595
+----------------------
+
+2025-03-10 19:23:26,286 - Default - MainProcess - 42320 - M3 Script execution completed
+2025-03-10 19:25:02,535 - Default - MainProcess - 43188 - M3 Script execution starts
+2025-03-10 19:25:20,126 - Default - MainProcess - 43188 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.668
+----------------------
+
+2025-03-10 19:25:20,629 - Default - MainProcess - 43188 - M3 Script execution completed
+2025-03-10 19:25:45,031 - Default - MainProcess - 43530 - M3 Script execution starts
+2025-03-10 19:25:57,898 - Default - MainProcess - 43530 - M3 Script execution completed
+2025-03-10 19:26:58,224 - Default - MainProcess - 44091 - M3 Script execution starts
+2025-03-10 19:27:11,932 - Default - MainProcess - 44091 - Count0:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 3.473
+----------------------
+
+2025-03-10 19:27:12,451 - Default - MainProcess - 44091 - M3 Script execution completed
+2025-03-10 19:34:30,872 - Default - MainProcess - 47485 - M3 Script execution starts
+2025-03-10 19:34:42,556 - Default - MainProcess - 47485 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.499
+----------------------
+
+2025-03-10 19:34:43,110 - Default - MainProcess - 47485 - M3 Script execution completed
+2025-03-10 19:36:15,687 - Default - MainProcess - 48297 - M3 Script execution starts
+2025-03-10 19:36:29,836 - Default - MainProcess - 48297 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.143
+----------------------
+
+2025-03-10 19:36:30,428 - Default - MainProcess - 48297 - M3 Script execution completed
+2025-03-10 19:37:45,069 - Default - MainProcess - 48982 - M3 Script execution starts
+2025-03-10 19:37:58,579 - Default - MainProcess - 48982 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.316
+----------------------
+
+2025-03-10 19:37:59,121 - Default - MainProcess - 48982 - M3 Script execution completed
+2025-03-10 19:38:55,836 - Default - MainProcess - 49541 - M3 Script execution starts
+2025-03-10 19:39:07,986 - Default - MainProcess - 49541 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.196
+----------------------
+
+2025-03-10 19:39:08,519 - Default - MainProcess - 49541 - M3 Script execution completed
+2025-03-10 19:39:23,001 - Default - MainProcess - 49785 - M3 Script execution starts
+2025-03-10 19:39:34,603 - Default - MainProcess - 49785 - M3 Script execution completed
+2025-03-10 19:39:54,067 - Default - MainProcess - 50034 - M3 Script execution starts
+2025-03-10 19:40:08,568 - Default - MainProcess - 50034 - M3 Script execution completed
+2025-03-10 19:40:43,952 - Default - MainProcess - 50437 - M3 Script execution starts
+2025-03-10 19:40:54,948 - Default - MainProcess - 50437 - M3 Script execution completed
+2025-03-10 19:41:22,965 - Default - MainProcess - 50773 - M3 Script execution starts
+2025-03-10 19:41:35,771 - Default - MainProcess - 50773 - M3 Script execution completed
