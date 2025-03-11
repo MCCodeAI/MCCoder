@@ -1,1 +1,92 @@
-2025-03-12 01:19:48,719 - Default - MainProcess - 23028 - DeepSeek-V3-M1 Script execution starts for Task ID: 1
+2025-03-12 01:35:24,349 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution starts for Task ID: 1
+2025-03-12 01:35:42,663 - Default - MainProcess - 28116 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.706
+----------------------
+
+2025-03-12 01:35:43,223 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution completed for Task ID: 1
+2025-03-12 01:35:43,325 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution starts for Task ID: 2
+2025-03-12 01:36:02,546 - Default - MainProcess - 28116 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.355
+----------------------
+
+2025-03-12 01:36:02,951 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution completed for Task ID: 2
+2025-03-12 01:36:03,053 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution starts for Task ID: 3
+2025-03-12 01:36:23,167 - Default - MainProcess - 28116 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.522
+----------------------
+
+2025-03-12 01:36:23,563 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution completed for Task ID: 3
+2025-03-12 01:36:23,665 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution starts for Task ID: 4
+2025-03-12 01:36:42,387 - Default - MainProcess - 28116 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 275, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if XYZ == 0:
+       ^^^
+NameError: name 'XYZ' is not defined
+!!!
+----------------------
+
+2025-03-12 01:36:42,490 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Error detected for Task ID: 4
+2025-03-12 01:36:42,490 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution completed for Task ID: 4
+2025-03-12 01:36:42,591 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution starts for Task ID: 5
+2025-03-12 01:37:15,318 - Default - MainProcess - 28116 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.759
+----------------------
+
+2025-03-12 01:37:15,733 - Default - MainProcess - 28116 - DeepSeek-V3-M1 Script execution completed for Task ID: 5
+2025-03-12 01:42:20,161 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution starts for Task ID: 1
+2025-03-12 01:42:40,494 - Default - MainProcess - 30398 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.617
+----------------------
+
+2025-03-12 01:42:41,068 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution completed for Task ID: 1, LLM Time: 16.61s
+2025-03-12 01:42:41,169 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution starts for Task ID: 2
+2025-03-12 01:43:01,968 - Default - MainProcess - 30398 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.444
+----------------------
+
+2025-03-12 01:43:02,369 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution completed for Task ID: 2, LLM Time: 17.25s
+2025-03-12 01:43:02,470 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution starts for Task ID: 3
+2025-03-12 01:43:26,325 - Default - MainProcess - 30398 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.509
+----------------------
+
+2025-03-12 01:43:26,732 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution completed for Task ID: 3, LLM Time: 20.24s
+2025-03-12 01:43:26,833 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution starts for Task ID: 4
+2025-03-12 01:43:49,831 - Default - MainProcess - 30398 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 275, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if XYZ == 0:
+       ^^^
+NameError: name 'XYZ' is not defined
+!!!
+----------------------
+
+2025-03-12 01:43:49,933 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Error detected for Task ID: 4
+2025-03-12 01:43:49,934 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution completed for Task ID: 4, LLM Time: 19.79s
+2025-03-12 01:43:50,035 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution starts for Task ID: 5
+2025-03-12 01:44:13,762 - Default - MainProcess - 30398 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.847
+----------------------
+
+2025-03-12 01:44:14,182 - Default - MainProcess - 30398 - DeepSeek-V3-M1 Script execution completed for Task ID: 5, LLM Time: 18.78s

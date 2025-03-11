@@ -26,6 +26,8 @@ from MachineClient import *
 from make_code_runnable import *
 from plot_log import *
 
+from userlib.user_logger import log_message
+
 import os
 import re
 from dotenv import load_dotenv,find_dotenv
@@ -214,6 +216,8 @@ def on_message(task_id, message):
 
     # Run Code in WMX3
     codereturn = SendCode(RunnableCode)
+
+    log_message(f"{codereturn}")
 
     folder_path = f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}'
     os.makedirs(folder_path, exist_ok=True)
