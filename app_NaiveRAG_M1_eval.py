@@ -100,7 +100,7 @@ the script should start with:
 
 3.	Do not import any motion libraries.
 
-4. Wait for all axes stop moving in the end.
+4. Wait for axes stop moving after every single motion, but don't wait in the middle of continuous motion.
 ----------------------------------------------
 
 Question: 

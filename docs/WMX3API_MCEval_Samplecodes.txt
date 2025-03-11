@@ -885,7 +885,7 @@
     posCommand.profile.accTimeMilliseconds = 50
     posCommand.profile.decTimeMilliseconds = 150
 	posCommand.profile.jerkAccRatio= 0.5
-    posCommand.profile.jerkDecRatio = 1.5
+    posCommand.profile.jerkDecRatio = 0.5
 	posCommand.profile.startingVelocity = 0
 	posCommand.profile.endVelocity = 0
 

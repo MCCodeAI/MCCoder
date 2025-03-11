@@ -1,0 +1,324 @@
+2025-03-11 00:16:01,217 - Default - MainProcess - 40943 - M3 Script execution starts
+2025-03-11 00:16:21,765 - Default - MainProcess - 40943 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 294, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 250, in main
+    monitor_event_and_execute()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 246, in monitor_event_and_execute
+    if check_event_condition(eventIN_Motion):
+       ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'check_event_condition' is not defined
+!!!
+----------------------
+
+2025-03-11 00:16:44,855 - Default - MainProcess - 40943 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.548
+----------------------
+
+2025-03-11 00:16:45,469 - Default - MainProcess - 40943 - M3 Script execution completed
+2025-03-11 00:17:25,356 - Default - MainProcess - 41429 - M3 Script execution starts
+2025-03-11 00:17:48,700 - Default - MainProcess - 41429 - M3 Script execution completed
+2025-03-11 00:22:36,444 - Default - MainProcess - 43029 - M3 Script execution starts
+2025-03-11 00:22:59,938 - Default - MainProcess - 43029 - M3 Script execution completed
+2025-03-11 00:24:03,181 - Default - MainProcess - 43491 - M3 Script execution starts
+2025-03-11 00:24:24,641 - Default - MainProcess - 43491 - Count0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 3.534
+----------------------
+
+2025-03-11 00:24:50,628 - Default - MainProcess - 43491 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.431
+----------------------
+
+2025-03-11 00:24:51,200 - Default - MainProcess - 43491 - M3 Script execution completed
+2025-03-11 00:25:23,675 - Default - MainProcess - 43923 - M3 Script execution starts
+2025-03-11 00:25:46,045 - Default - MainProcess - 43923 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.663
+----------------------
+
+2025-03-11 00:25:46,620 - Default - MainProcess - 43923 - M3 Script execution completed
+2025-03-11 00:28:02,017 - Default - MainProcess - 44751 - M3 Script execution starts
+2025-03-11 00:28:26,275 - Default - MainProcess - 44751 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.792
+----------------------
+
+2025-03-11 00:28:26,871 - Default - MainProcess - 44751 - M3 Script execution completed
+2025-03-11 00:28:57,604 - Default - MainProcess - 45060 - M3 Script execution starts
+2025-03-11 00:29:21,282 - Default - MainProcess - 45060 - M3 Script execution completed
+2025-03-11 00:29:41,246 - Default - MainProcess - 45361 - M3 Script execution starts
+2025-03-11 00:30:09,662 - Default - MainProcess - 45361 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.725
+----------------------
+
+2025-03-11 00:30:10,250 - Default - MainProcess - 45361 - M3 Script execution completed
+2025-03-11 00:32:42,561 - Default - MainProcess - 46340 - M3 Script execution starts
+2025-03-11 00:33:06,280 - Default - MainProcess - 46340 - M3 Script execution completed
+2025-03-11 00:34:07,996 - Default - MainProcess - 46793 - M3 Script execution starts
+2025-03-11 00:34:34,639 - Default - MainProcess - 46793 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.672
+----------------------
+
+2025-03-11 00:34:35,223 - Default - MainProcess - 46793 - M3 Script execution completed
+2025-03-11 00:35:12,835 - Default - MainProcess - 47136 - M3 Script execution starts
+2025-03-11 00:35:36,099 - Default - MainProcess - 47136 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.763
+----------------------
+
+2025-03-11 00:35:36,674 - Default - MainProcess - 47136 - M3 Script execution completed
+2025-03-11 00:37:05,792 - Default - MainProcess - 47738 - M3 Script execution starts
+2025-03-11 00:37:30,942 - Default - MainProcess - 47738 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.902
+----------------------
+
+2025-03-11 00:37:31,547 - Default - MainProcess - 47738 - M3 Script execution completed
+2025-03-11 00:37:57,018 - Default - MainProcess - 48023 - M3 Script execution starts
+2025-03-11 00:38:17,804 - Default - MainProcess - 48023 - M3 Script execution completed
+2025-03-11 00:38:41,250 - Default - MainProcess - 48270 - M3 Script execution starts
+2025-03-11 00:39:06,876 - Default - MainProcess - 48270 - M3 Script execution completed
+2025-03-11 00:39:58,643 - Default - MainProcess - 48702 - M3 Script execution starts
+2025-03-11 00:40:24,999 - Default - MainProcess - 48702 - M3 Script execution completed
+2025-03-11 00:41:13,785 - Default - MainProcess - 49116 - M3 Script execution starts
+2025-03-11 00:41:43,617 - Default - MainProcess - 49116 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.867
+----------------------
+
+2025-03-11 00:41:44,196 - Default - MainProcess - 49116 - M3 Script execution completed
+2025-03-11 00:42:53,066 - Default - MainProcess - 49643 - M3 Script execution starts
+2025-03-11 00:43:18,847 - Default - MainProcess - 49643 - M3 Script execution completed
+2025-03-11 00:43:54,146 - Default - MainProcess - 49983 - M3 Script execution starts
+2025-03-11 00:44:18,181 - Default - MainProcess - 49983 - M3 Script execution completed
+2025-03-11 00:45:03,238 - Default - MainProcess - 50354 - M3 Script execution starts
+2025-03-11 00:45:22,109 - Default - MainProcess - 50354 - M3 Script execution completed
+2025-03-11 00:45:47,478 - Default - MainProcess - 50601 - M3 Script execution starts
+2025-03-11 00:46:09,893 - Default - MainProcess - 50601 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.798
+----------------------
+
+2025-03-11 00:46:10,443 - Default - MainProcess - 50601 - M3 Script execution completed
+2025-03-11 00:47:16,566 - Default - MainProcess - 51079 - M3 Script execution starts
+2025-03-11 00:47:43,483 - Default - MainProcess - 51079 - Count0:
+codedata:
+Program begin.
+SetEvent_ID error code is 1556
+Elapsed_time: 3.395
+----------------------
+
+2025-03-11 00:48:15,389 - Default - MainProcess - 51079 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 318, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 226, in main
+    Wmx3Lib_EventCtl.ClearAllEvents()
+    ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'Wmx3Lib_EventCtl' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-11 00:48:46,825 - Default - MainProcess - 51079 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 320, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    Wmx3Lib_EventCtl.ClearAllEvents()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 21371, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, EventControl, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'EventControl' object has no attribute 'ClearAllEvents'. Did you mean: 'ClearAllEvent'?
+!!!
+----------------------
+
+2025-03-11 00:48:46,827 - Default - MainProcess - 51079 - M3 Script execution completed
+2025-03-11 00:48:56,149 - Default - MainProcess - 51598 - M3 Script execution starts
+2025-03-11 00:49:21,403 - Default - MainProcess - 51598 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.902
+----------------------
+
+2025-03-11 00:49:21,993 - Default - MainProcess - 51598 - M3 Script execution completed
+2025-03-11 00:50:07,449 - Default - MainProcess - 51981 - M3 Script execution starts
+2025-03-11 00:50:34,060 - Default - MainProcess - 51981 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.685
+----------------------
+
+2025-03-11 00:50:34,630 - Default - MainProcess - 51981 - M3 Script execution completed
+2025-03-11 00:50:56,815 - Default - MainProcess - 52263 - M3 Script execution starts
+2025-03-11 00:51:20,205 - Default - MainProcess - 52263 - M3 Script execution completed
+2025-03-11 00:52:25,751 - Default - MainProcess - 52738 - M3 Script execution starts
+2025-03-11 00:52:55,988 - Default - MainProcess - 52738 - M3 Script execution completed
+2025-03-11 00:55:35,713 - Default - MainProcess - 53735 - M3 Script execution starts
+2025-03-11 00:56:03,916 - Default - MainProcess - 53735 - Count0:
+codedata:
+Program begin.
+SetEvent_ID error code is 1556
+Elapsed_time: 3.398
+----------------------
+
+2025-03-11 00:56:28,591 - Default - MainProcess - 53735 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 319, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 233, in main
+    while Wmx3Lib_EventCtl.IsEventIDInUse(posEventID):
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 21371, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, EventControl, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'EventControl' object has no attribute 'IsEventIDInUse'
+!!!
+----------------------
+
+2025-03-11 00:57:02,832 - Default - MainProcess - 53735 - Count2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.921
+----------------------
+
+2025-03-11 00:57:03,398 - Default - MainProcess - 53735 - M3 Script execution completed
+2025-03-11 01:02:07,769 - Default - MainProcess - 55842 - M3 Script execution starts
+2025-03-11 01:02:41,928 - Default - MainProcess - 55842 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.784
+----------------------
+
+2025-03-11 01:02:42,517 - Default - MainProcess - 55842 - M3 Script execution completed
+2025-03-11 01:07:32,415 - Default - MainProcess - 57533 - M3 Script execution starts
+2025-03-11 01:07:59,278 - Default - MainProcess - 57533 - M3 Script execution completed
+2025-03-11 01:08:29,898 - Default - MainProcess - 57852 - M3 Script execution starts
+2025-03-11 01:08:58,815 - Default - MainProcess - 57852 - M3 Script execution completed
+2025-03-11 01:09:40,623 - Default - MainProcess - 58238 - M3 Script execution starts
+2025-03-11 01:10:13,475 - Default - MainProcess - 58238 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.081
+----------------------
+
+2025-03-11 01:10:14,065 - Default - MainProcess - 58238 - M3 Script execution completed
+2025-03-11 01:13:39,385 - Default - MainProcess - 59506 - M3 Script execution starts
+2025-03-11 01:13:57,041 - Default - MainProcess - 59506 - M3 Script execution completed
+2025-03-11 01:14:13,373 - Default - MainProcess - 59707 - M3 Script execution starts
+2025-03-11 01:14:32,912 - Default - MainProcess - 59707 - M3 Script execution completed
+2025-03-11 01:14:45,020 - Default - MainProcess - 59882 - M3 Script execution starts
+2025-03-11 01:15:08,389 - Default - MainProcess - 59882 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.250
+----------------------
+
+2025-03-11 01:15:08,949 - Default - MainProcess - 59882 - M3 Script execution completed
+2025-03-11 01:15:35,622 - Default - MainProcess - 60160 - M3 Script execution starts
+2025-03-11 01:16:02,687 - Default - MainProcess - 60160 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.323
+----------------------
+
+2025-03-11 01:16:03,253 - Default - MainProcess - 60160 - M3 Script execution completed
+2025-03-11 01:17:13,620 - Default - MainProcess - 60686 - M3 Script execution starts
+2025-03-11 01:17:50,145 - Default - MainProcess - 60686 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.487
+----------------------
+
+2025-03-11 01:17:50,720 - Default - MainProcess - 60686 - M3 Script execution completed
+2025-03-11 01:18:25,849 - Default - MainProcess - 61079 - M3 Script execution starts
+2025-03-11 01:18:59,400 - Default - MainProcess - 61079 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.525
+----------------------
+
+2025-03-11 01:18:59,985 - Default - MainProcess - 61079 - M3 Script execution completed
+2025-03-11 01:19:21,304 - Default - MainProcess - 61381 - M3 Script execution starts
+2025-03-11 01:19:43,379 - Default - MainProcess - 61381 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.930
+----------------------
+
+2025-03-11 01:19:43,942 - Default - MainProcess - 61381 - M3 Script execution completed
+2025-03-11 01:22:24,327 - Default - MainProcess - 62322 - M3 Script execution starts
+2025-03-11 01:22:53,397 - Default - MainProcess - 62322 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.108
+----------------------
+
+2025-03-11 01:22:53,958 - Default - MainProcess - 62322 - M3 Script execution completed
+2025-03-11 01:23:25,948 - Default - MainProcess - 62664 - M3 Script execution starts
+2025-03-11 01:23:39,622 - Default - MainProcess - 62664 - M3 Script execution completed
+2025-03-11 01:25:25,639 - Default - MainProcess - 63292 - M3 Script execution starts
+2025-03-11 01:25:49,042 - Default - MainProcess - 63292 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.225
+----------------------
+
+2025-03-11 01:25:49,606 - Default - MainProcess - 63292 - M3 Script execution completed
+2025-03-11 01:28:59,971 - Default - MainProcess - 64398 - M3 Script execution starts
+2025-03-11 01:29:22,950 - Default - MainProcess - 64398 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.676
+----------------------
+
+2025-03-11 01:29:23,564 - Default - MainProcess - 64398 - M3 Script execution completed

@@ -391,3 +391,1022 @@ Elapsed_time: 4.196
 2025-03-10 19:40:54,948 - Default - MainProcess - 50437 - M3 Script execution completed
 2025-03-10 19:41:22,965 - Default - MainProcess - 50773 - M3 Script execution starts
 2025-03-10 19:41:35,771 - Default - MainProcess - 50773 - M3 Script execution completed
+2025-03-10 19:49:10,143 - Default - MainProcess - 54780 - M3 Script execution starts
+2025-03-10 19:49:22,143 - Default - MainProcess - 54780 - M3 Script execution completed
+2025-03-10 19:50:46,175 - Default - MainProcess - 55315 - M3 Script execution starts
+2025-03-10 19:50:56,995 - Default - MainProcess - 55315 - M3 Script execution completed
+2025-03-10 19:51:10,635 - Default - MainProcess - 55482 - M3 Script execution starts
+2025-03-10 19:51:22,603 - Default - MainProcess - 55482 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-10 19:51:36,396 - Default - MainProcess - 55482 - Count1:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 3.921
+----------------------
+
+2025-03-10 19:51:36,937 - Default - MainProcess - 55482 - M3 Script execution completed
+2025-03-10 19:53:00,073 - Default - MainProcess - 56106 - M3 Script execution starts
+2025-03-10 19:53:12,181 - Default - MainProcess - 56106 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Cosine
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Cosine'
+!!!
+----------------------
+
+2025-03-10 19:53:26,700 - Default - MainProcess - 56106 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine  # Changed from Cosine to Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-10 19:53:39,414 - Default - MainProcess - 56106 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Cosine  # Changed from Sine to Cosine
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Cosine'
+!!!
+----------------------
+
+2025-03-10 19:53:39,414 - Default - MainProcess - 56106 - M3 Script execution completed
+2025-03-10 19:54:10,147 - Default - MainProcess - 56485 - M3 Script execution starts
+2025-03-10 19:54:21,483 - Default - MainProcess - 56485 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Cosine
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Cosine'
+!!!
+----------------------
+
+2025-03-10 19:54:33,084 - Default - MainProcess - 56485 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine  # Corrected from Cosine to Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-10 19:54:50,289 - Default - MainProcess - 56485 - Count2:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 3.742
+----------------------
+
+2025-03-10 19:54:50,839 - Default - MainProcess - 56485 - M3 Script execution completed
+2025-03-10 19:56:04,413 - Default - MainProcess - 57102 - M3 Script execution starts
+2025-03-10 19:56:16,372 - Default - MainProcess - 57102 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-10 19:56:28,591 - Default - MainProcess - 57102 - Count1:
+codedata:
+Program begin.
+SetLogOption error code is 69641: [0x00011009] : LogApi Error: Currently collecting log data.
+Program End.
+Elapsed_time: 3.741
+----------------------
+
+2025-03-10 19:56:29,119 - Default - MainProcess - 57102 - M3 Script execution completed
+2025-03-10 20:00:59,851 - Default - MainProcess - 58670 - M3 Script execution starts
+2025-03-10 20:01:18,907 - Default - MainProcess - 58670 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.974
+----------------------
+
+2025-03-10 20:01:19,474 - Default - MainProcess - 58670 - M3 Script execution completed
+2025-03-10 20:01:45,751 - Default - MainProcess - 58945 - M3 Script execution starts
+2025-03-10 20:02:03,243 - Default - MainProcess - 58945 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.013
+----------------------
+
+2025-03-10 20:02:03,782 - Default - MainProcess - 58945 - M3 Script execution completed
+2025-03-10 20:04:16,208 - Default - MainProcess - 59745 - M3 Script execution starts
+2025-03-10 20:04:31,021 - Default - MainProcess - 59745 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.669
+----------------------
+
+2025-03-10 20:04:31,549 - Default - MainProcess - 59745 - M3 Script execution completed
+2025-03-10 20:05:48,129 - Default - MainProcess - 60234 - M3 Script execution starts
+2025-03-10 20:06:06,357 - Default - MainProcess - 60234 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.067
+----------------------
+
+2025-03-10 20:06:06,890 - Default - MainProcess - 60234 - M3 Script execution completed
+2025-03-10 20:06:53,305 - Default - MainProcess - 60632 - M3 Script execution starts
+2025-03-10 20:07:27,584 - Default - MainProcess - 60632 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.885
+----------------------
+
+2025-03-10 20:07:28,120 - Default - MainProcess - 60632 - M3 Script execution completed
+2025-03-10 20:08:47,886 - Default - MainProcess - 61246 - M3 Script execution starts
+2025-03-10 20:09:25,977 - Default - MainProcess - 61246 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.549
+----------------------
+
+2025-03-10 20:09:26,547 - Default - MainProcess - 61246 - M3 Script execution completed
+2025-03-10 20:11:28,406 - Default - MainProcess - 62110 - M3 Script execution starts
+2025-03-10 20:11:43,070 - Default - MainProcess - 62110 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.628
+----------------------
+
+2025-03-10 20:11:43,606 - Default - MainProcess - 62110 - M3 Script execution completed
+2025-03-10 20:12:48,842 - Default - MainProcess - 62562 - M3 Script execution starts
+2025-03-10 20:13:02,524 - Default - MainProcess - 62562 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.862
+----------------------
+
+2025-03-10 20:13:02,631 - Default - MainProcess - 62562 - M3 Script execution completed
+2025-03-10 20:17:44,407 - Default - MainProcess - 64075 - M3 Script execution starts
+2025-03-10 20:17:57,945 - Default - MainProcess - 64075 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.529
+----------------------
+
+2025-03-10 20:17:58,049 - Default - MainProcess - 64075 - M3 Script execution completed
+2025-03-10 20:18:07,712 - Default - MainProcess - 64223 - M3 Script execution starts
+2025-03-10 20:18:20,818 - Default - MainProcess - 64223 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.539
+----------------------
+
+2025-03-10 20:18:21,328 - Default - MainProcess - 64223 - M3 Script execution completed
+2025-03-10 20:19:07,019 - Default - MainProcess - 64591 - M3 Script execution starts
+2025-03-10 20:19:20,127 - Default - MainProcess - 64591 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.544
+----------------------
+
+2025-03-10 20:20:40,639 - Default - MainProcess - 65112 - M3 Script execution starts
+2025-03-10 20:22:19,860 - Default - MainProcess - 65642 - M3 Script execution starts
+2025-03-10 20:22:59,012 - Default - MainProcess - 65874 - M3 Script execution starts
+2025-03-10 20:24:20,182 - Default - MainProcess - 65874 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 3.048
+----------------------
+
+2025-03-10 20:25:04,068 - Default - MainProcess - 65874 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 27.961
+----------------------
+
+2025-03-10 20:25:28,295 - Default - MainProcess - 66640 - M3 Script execution starts
+2025-03-10 20:25:40,177 - Default - MainProcess - 66640 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.917
+----------------------
+
+2025-03-10 20:26:06,619 - Default - MainProcess - 66640 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.863
+----------------------
+
+2025-03-10 20:26:33,418 - Default - MainProcess - 66640 - Count2:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.824
+----------------------
+
+2025-03-10 20:27:22,838 - Default - MainProcess - 66640 - Count3:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 29.609
+----------------------
+
+2025-03-10 20:27:43,825 - Default - MainProcess - 66640 - Count4:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 289, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 232, in main
+    Wmx3Lib_cm.StopCommunication()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'StopCommunication'
+!!!
+----------------------
+
+2025-03-10 20:28:13,280 - Default - MainProcess - 67530 - M3 Script execution starts
+2025-03-10 20:28:24,944 - Default - MainProcess - 67530 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.615
+----------------------
+
+2025-03-10 20:28:43,702 - Default - MainProcess - 67530 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.502
+----------------------
+
+2025-03-10 20:28:44,266 - Default - MainProcess - 67530 - M3 Script execution completed
+2025-03-10 20:29:22,949 - Default - MainProcess - 67922 - M3 Script execution starts
+2025-03-10 20:29:35,003 - Default - MainProcess - 67922 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.841
+----------------------
+
+2025-03-10 20:29:52,497 - Default - MainProcess - 67922 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.692
+----------------------
+
+2025-03-10 20:29:53,046 - Default - MainProcess - 67922 - M3 Script execution completed
+2025-03-10 20:31:34,018 - Default - MainProcess - 68672 - M3 Script execution starts
+2025-03-10 20:32:00,391 - Default - MainProcess - 68672 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.583
+----------------------
+
+2025-03-10 20:32:00,925 - Default - MainProcess - 68672 - M3 Script execution completed
+2025-03-10 20:33:42,738 - Default - MainProcess - 69372 - M3 Script execution starts
+2025-03-10 20:34:10,707 - Default - MainProcess - 69372 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.919
+----------------------
+
+2025-03-10 20:34:11,262 - Default - MainProcess - 69372 - M3 Script execution completed
+2025-03-10 20:34:43,304 - Default - MainProcess - 69713 - M3 Script execution starts
+2025-03-10 20:35:13,921 - Default - MainProcess - 69713 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.943
+----------------------
+
+2025-03-10 20:35:14,472 - Default - MainProcess - 69713 - M3 Script execution completed
+2025-03-10 20:35:33,614 - Default - MainProcess - 69999 - M3 Script execution starts
+2025-03-10 20:35:56,715 - Default - MainProcess - 69999 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.882
+----------------------
+
+2025-03-10 20:35:57,276 - Default - MainProcess - 69999 - M3 Script execution completed
+2025-03-10 20:36:24,063 - Default - MainProcess - 70277 - M3 Script execution starts
+2025-03-10 20:36:45,870 - Default - MainProcess - 70277 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.872
+----------------------
+
+2025-03-10 20:36:46,413 - Default - MainProcess - 70277 - M3 Script execution completed
+2025-03-10 20:37:13,406 - Default - MainProcess - 70556 - M3 Script execution starts
+2025-03-10 20:37:45,677 - Default - MainProcess - 70556 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.980
+----------------------
+
+2025-03-10 20:37:46,244 - Default - MainProcess - 70556 - M3 Script execution completed
+2025-03-10 20:38:06,530 - Default - MainProcess - 70856 - M3 Script execution starts
+2025-03-10 20:38:34,375 - Default - MainProcess - 70856 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.810
+----------------------
+
+2025-03-10 20:38:34,915 - Default - MainProcess - 70856 - M3 Script execution completed
+2025-03-10 20:39:01,136 - Default - MainProcess - 71179 - M3 Script execution starts
+2025-03-10 20:39:16,612 - Default - MainProcess - 71179 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.881
+----------------------
+
+2025-03-10 20:39:17,180 - Default - MainProcess - 71179 - M3 Script execution completed
+2025-03-10 20:45:19,965 - Default - MainProcess - 73118 - M3 Script execution starts
+2025-03-10 20:45:35,271 - Default - MainProcess - 73118 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.509
+----------------------
+
+2025-03-10 20:45:35,811 - Default - MainProcess - 73118 - M3 Script execution completed
+2025-03-10 20:47:21,105 - Default - MainProcess - 73773 - M3 Script execution starts
+2025-03-10 20:47:34,479 - Default - MainProcess - 73773 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 2.972
+----------------------
+
+2025-03-10 20:47:55,641 - Default - MainProcess - 73773 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.213
+----------------------
+
+2025-03-10 20:47:56,180 - Default - MainProcess - 73773 - M3 Script execution completed
+2025-03-10 20:49:19,779 - Default - MainProcess - 74424 - M3 Script execution starts
+2025-03-10 20:49:32,574 - Default - MainProcess - 74424 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.334
+----------------------
+
+2025-03-10 20:49:33,096 - Default - MainProcess - 74424 - M3 Script execution completed
+2025-03-10 20:51:28,632 - Default - MainProcess - 75162 - M3 Script execution starts
+2025-03-10 20:51:47,807 - Default - MainProcess - 75162 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.905
+----------------------
+
+2025-03-10 20:51:48,368 - Default - MainProcess - 75162 - M3 Script execution completed
+2025-03-10 20:52:48,836 - Default - MainProcess - 75598 - M3 Script execution starts
+2025-03-10 20:53:16,729 - Default - MainProcess - 75598 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.620
+----------------------
+
+2025-03-10 20:53:17,281 - Default - MainProcess - 75598 - M3 Script execution completed
+2025-03-10 20:53:33,441 - Default - MainProcess - 75877 - M3 Script execution starts
+2025-03-10 20:53:47,541 - Default - MainProcess - 75877 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65590: [0x00010036] : CoreMotionApi Error: One or more second velocity arguments out of range.
+StartPos error code is 65590: [0x00010036] : CoreMotionApi Error: One or more second velocity arguments out of range.
+StartPos error code is 65590: [0x00010036] : CoreMotionApi Error: One or more second velocity arguments out of range.
+StartPos error code is 65590: [0x00010036] : CoreMotionApi Error: One or more second velocity arguments out of range.
+Program End.
+Elapsed_time: 3.265
+----------------------
+
+2025-03-10 20:54:08,010 - Default - MainProcess - 75877 - Count1:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Program End.
+Elapsed_time: 3.197
+----------------------
+
+2025-03-10 20:54:17,721 - Default - MainProcess - 76127 - M3 Script execution starts
+2025-03-10 20:54:32,213 - Default - MainProcess - 76127 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 297, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.TwoVelTrapezoidal
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TwoVelTrapezoidal'. Did you mean: 'TwoVelocityTrapezoidal'?
+!!!
+----------------------
+
+2025-03-10 20:54:54,603 - Default - MainProcess - 76127 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.220
+----------------------
+
+2025-03-10 20:54:55,129 - Default - MainProcess - 76127 - M3 Script execution completed
+2025-03-10 20:56:10,312 - Default - MainProcess - 76752 - M3 Script execution starts
+2025-03-10 20:56:22,520 - Default - MainProcess - 76752 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.335
+----------------------
+
+2025-03-10 20:56:23,062 - Default - MainProcess - 76752 - M3 Script execution completed
+2025-03-10 20:57:35,812 - Default - MainProcess - 77217 - M3 Script execution starts
+2025-03-10 20:58:15,717 - Default - MainProcess - 77443 - M3 Script execution starts
+2025-03-10 20:58:33,976 - Default - MainProcess - 77443 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.114
+----------------------
+
+2025-03-10 20:58:34,570 - Default - MainProcess - 77443 - M3 Script execution completed
+2025-03-10 21:02:13,399 - Default - MainProcess - 78741 - M3 Script execution starts
+2025-03-10 21:02:30,578 - Default - MainProcess - 78741 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.581
+----------------------
+
+2025-03-10 21:02:31,124 - Default - MainProcess - 78741 - M3 Script execution completed
+2025-03-10 21:03:27,574 - Default - MainProcess - 79143 - M3 Script execution starts
+2025-03-10 21:03:39,992 - Default - MainProcess - 79143 - M3 Script execution completed
+2025-03-10 21:04:03,566 - Default - MainProcess - 79364 - M3 Script execution starts
+2025-03-10 21:04:18,689 - Default - MainProcess - 79364 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.475
+----------------------
+
+2025-03-10 21:04:19,223 - Default - MainProcess - 79364 - M3 Script execution completed
+2025-03-10 21:05:20,203 - Default - MainProcess - 79782 - M3 Script execution starts
+2025-03-10 21:05:33,891 - Default - MainProcess - 79782 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.TwoVelJerkRatio
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TwoVelJerkRatio'. Did you mean: 'TwoVelocityJerkRatio'?
+!!!
+----------------------
+
+2025-03-10 21:05:51,939 - Default - MainProcess - 79782 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.091
+----------------------
+
+2025-03-10 21:05:52,469 - Default - MainProcess - 79782 - M3 Script execution completed
+2025-03-10 21:08:10,128 - Default - MainProcess - 80708 - M3 Script execution starts
+2025-03-10 21:08:25,627 - Default - MainProcess - 80708 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.370
+----------------------
+
+2025-03-10 21:08:26,151 - Default - MainProcess - 80708 - M3 Script execution completed
+2025-03-10 21:09:25,391 - Default - MainProcess - 81132 - M3 Script execution starts
+2025-03-10 21:09:39,983 - Default - MainProcess - 81132 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 2.872
+----------------------
+
+2025-03-10 21:09:54,113 - Default - MainProcess - 81132 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.044
+----------------------
+
+2025-03-10 21:09:54,633 - Default - MainProcess - 81132 - M3 Script execution completed
+2025-03-10 21:11:26,481 - Default - MainProcess - 81784 - M3 Script execution starts
+2025-03-10 21:11:44,693 - Default - MainProcess - 81784 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.002
+----------------------
+
+2025-03-10 21:11:45,245 - Default - MainProcess - 81784 - M3 Script execution completed
+2025-03-10 21:13:11,746 - Default - MainProcess - 82346 - M3 Script execution starts
+2025-03-10 21:13:25,857 - Default - MainProcess - 82346 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.886
+----------------------
+
+2025-03-10 21:13:26,414 - Default - MainProcess - 82346 - M3 Script execution completed
+2025-03-10 21:14:05,951 - Default - MainProcess - 82658 - M3 Script execution starts
+2025-03-10 21:14:22,676 - Default - MainProcess - 82658 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.944
+----------------------
+
+2025-03-10 21:14:23,223 - Default - MainProcess - 82658 - M3 Script execution completed
+2025-03-10 21:15:21,232 - Default - MainProcess - 83070 - M3 Script execution starts
+2025-03-10 21:15:39,061 - Default - MainProcess - 83070 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.056
+----------------------
+
+2025-03-10 21:15:39,609 - Default - MainProcess - 83070 - M3 Script execution completed
+2025-03-10 21:16:03,392 - Default - MainProcess - 83315 - M3 Script execution starts
+2025-03-10 21:16:24,232 - Default - MainProcess - 83315 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.143
+----------------------
+
+2025-03-10 21:16:24,785 - Default - MainProcess - 83315 - M3 Script execution completed
+2025-03-10 21:16:47,099 - Default - MainProcess - 83580 - M3 Script execution starts
+2025-03-10 21:17:05,953 - Default - MainProcess - 83580 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.218
+----------------------
+
+2025-03-10 21:17:06,511 - Default - MainProcess - 83580 - M3 Script execution completed
+2025-03-10 21:18:36,189 - Default - MainProcess - 84232 - M3 Script execution starts
+2025-03-10 21:18:50,313 - Default - MainProcess - 84232 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.421
+----------------------
+
+2025-03-10 21:18:50,881 - Default - MainProcess - 84232 - M3 Script execution completed
+2025-03-10 21:20:20,482 - Default - MainProcess - 84793 - M3 Script execution starts
+2025-03-10 21:20:36,956 - Default - MainProcess - 84793 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.379
+----------------------
+
+2025-03-10 21:20:37,490 - Default - MainProcess - 84793 - M3 Script execution completed
+2025-03-10 21:21:10,882 - Default - MainProcess - 85095 - M3 Script execution starts
+2025-03-10 21:21:26,478 - Default - MainProcess - 85095 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.350
+----------------------
+
+2025-03-10 21:21:27,022 - Default - MainProcess - 85095 - M3 Script execution completed
+2025-03-10 21:22:05,490 - Default - MainProcess - 85436 - M3 Script execution starts
+2025-03-10 21:22:21,284 - Default - MainProcess - 85436 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.291
+----------------------
+
+2025-03-10 21:22:21,792 - Default - MainProcess - 85436 - M3 Script execution completed
+2025-03-10 21:23:01,394 - Default - MainProcess - 85754 - M3 Script execution starts
+2025-03-10 21:23:16,905 - Default - MainProcess - 85754 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.151
+----------------------
+
+2025-03-10 21:23:17,432 - Default - MainProcess - 85754 - M3 Script execution completed
+2025-03-10 21:23:46,615 - Default - MainProcess - 86016 - M3 Script execution starts
+2025-03-10 21:24:01,163 - Default - MainProcess - 86016 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 2.815
+----------------------
+
+2025-03-10 21:24:22,210 - Default - MainProcess - 86016 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.154
+----------------------
+
+2025-03-10 21:24:22,754 - Default - MainProcess - 86016 - M3 Script execution completed
+2025-03-10 22:00:42,258 - Default - MainProcess - 97338 - M3 Script execution starts
+2025-03-10 22:00:57,659 - Default - MainProcess - 97338 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.659
+----------------------
+
+2025-03-10 22:00:58,192 - Default - MainProcess - 97338 - M3 Script execution completed
+2025-03-10 22:01:53,921 - Default - MainProcess - 97762 - M3 Script execution starts
+2025-03-10 22:02:13,699 - Default - MainProcess - 97762 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.678
+----------------------
+
+2025-03-10 22:02:14,245 - Default - MainProcess - 97762 - M3 Script execution completed
+2025-03-10 22:02:31,777 - Default - MainProcess - 97994 - M3 Script execution starts
+2025-03-10 22:02:48,227 - Default - MainProcess - 97994 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.541
+----------------------
+
+2025-03-10 22:02:48,752 - Default - MainProcess - 97994 - M3 Script execution completed
+2025-03-10 22:03:17,004 - Default - MainProcess - 98249 - M3 Script execution starts
+2025-03-10 22:03:38,712 - Default - MainProcess - 98249 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.594
+----------------------
+
+2025-03-10 22:03:39,251 - Default - MainProcess - 98249 - M3 Script execution completed
+2025-03-10 22:04:13,350 - Default - MainProcess - 98566 - M3 Script execution starts
+2025-03-10 22:04:28,754 - Default - MainProcess - 98566 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Program End.
+Elapsed_time: 3.264
+----------------------
+
+2025-03-10 22:04:52,118 - Default - MainProcess - 98566 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.809
+----------------------
+
+2025-03-10 22:04:52,690 - Default - MainProcess - 98566 - M3 Script execution completed
+2025-03-10 22:06:06,001 - Default - MainProcess - 99209 - M3 Script execution starts
+2025-03-10 22:06:18,420 - Default - MainProcess - 99209 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.534
+----------------------
+
+2025-03-10 22:06:18,989 - Default - MainProcess - 99209 - M3 Script execution completed
+2025-03-10 22:07:21,456 - Default - MainProcess - 99632 - M3 Script execution starts
+2025-03-10 22:07:35,951 - Default - MainProcess - 99632 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.364
+----------------------
+
+2025-03-10 22:07:36,509 - Default - MainProcess - 99632 - M3 Script execution completed
+2025-03-10 22:08:51,222 - Default - MainProcess - 313 - M3 Script execution starts
+2025-03-10 22:09:05,220 - Default - MainProcess - 313 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.240
+----------------------
+
+2025-03-10 22:09:05,734 - Default - MainProcess - 313 - M3 Script execution completed
+2025-03-10 22:10:00,230 - Default - MainProcess - 809 - M3 Script execution starts
+2025-03-10 22:10:13,928 - Default - MainProcess - 809 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65586: [0x00010032] : CoreMotionApi Error: One or more acceleration jerk ratio arguments out of range.
+Elapsed_time: 2.910
+----------------------
+
+2025-03-10 22:10:30,895 - Default - MainProcess - 809 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 2.870
+----------------------
+
+2025-03-10 22:10:31,418 - Default - MainProcess - 809 - M3 Script execution completed
+2025-03-10 22:11:32,679 - Default - MainProcess - 1347 - M3 Script execution starts
+2025-03-10 22:11:46,109 - Default - MainProcess - 1347 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.502
+----------------------
+
+2025-03-10 22:11:46,656 - Default - MainProcess - 1347 - M3 Script execution completed
+2025-03-10 22:13:39,733 - Default - MainProcess - 2052 - M3 Script execution starts
+2025-03-10 22:14:07,294 - Default - MainProcess - 2052 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65589: [0x00010035] : CoreMotionApi Error: One or more end velocity arguments out of range.
+Elapsed_time: 3.016
+----------------------
+
+2025-03-10 22:15:17,906 - Default - MainProcess - 2052 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.175
+----------------------
+
+2025-03-10 22:15:18,465 - Default - MainProcess - 2052 - M3 Script execution completed
+2025-03-10 22:17:01,039 - Default - MainProcess - 3147 - M3 Script execution starts
+2025-03-10 22:17:14,780 - Default - MainProcess - 3147 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.579
+----------------------
+
+2025-03-10 22:17:15,336 - Default - MainProcess - 3147 - M3 Script execution completed
+2025-03-10 22:21:01,881 - Default - MainProcess - 4390 - M3 Script execution starts
+2025-03-10 22:21:22,201 - Default - MainProcess - 4390 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.590
+----------------------
+
+2025-03-10 22:21:22,737 - Default - MainProcess - 4390 - M3 Script execution completed
+2025-03-10 22:23:35,760 - Default - MainProcess - 5224 - M3 Script execution starts
+2025-03-10 22:23:58,520 - Default - MainProcess - 5224 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.398
+----------------------
+
+2025-03-10 22:23:59,069 - Default - MainProcess - 5224 - M3 Script execution completed
+2025-03-10 22:25:40,251 - Default - MainProcess - 5918 - M3 Script execution starts
+2025-03-10 22:25:59,697 - Default - MainProcess - 5918 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.407
+----------------------
+
+2025-03-10 22:26:00,257 - Default - MainProcess - 5918 - M3 Script execution completed
+2025-03-10 22:30:15,666 - Default - MainProcess - 7373 - M3 Script execution starts
+2025-03-10 22:30:59,974 - Default - MainProcess - 7373 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.381
+----------------------
+
+2025-03-10 22:31:00,568 - Default - MainProcess - 7373 - M3 Script execution completed
+2025-03-10 22:31:33,176 - Default - MainProcess - 7832 - M3 Script execution starts
+2025-03-10 22:32:02,604 - Default - MainProcess - 7832 - M3 Script execution completed
+2025-03-10 22:35:45,051 - Default - MainProcess - 9141 - M3 Script execution starts
+2025-03-10 22:36:12,566 - Default - MainProcess - 9141 - M3 Script execution completed
+2025-03-10 22:37:18,933 - Default - MainProcess - 9701 - M3 Script execution starts
+2025-03-10 22:37:54,368 - Default - MainProcess - 9701 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.355
+----------------------
+
+2025-03-10 22:37:54,941 - Default - MainProcess - 9701 - M3 Script execution completed
+2025-03-10 22:41:21,115 - Default - MainProcess - 10996 - M3 Script execution starts
+2025-03-10 22:41:54,308 - Default - MainProcess - 10996 - M3 Script execution completed
+2025-03-10 22:44:17,001 - Default - MainProcess - 11917 - M3 Script execution starts
+2025-03-10 22:45:56,165 - Default - MainProcess - 11917 - M3 Script execution completed
+2025-03-10 22:46:07,478 - Default - MainProcess - 12491 - M3 Script execution starts
+2025-03-10 22:50:44,855 - Default - MainProcess - 12491 - M3 Script execution completed
+2025-03-10 22:51:40,584 - Default - MainProcess - 14214 - M3 Script execution starts
+2025-03-10 22:54:33,397 - Default - MainProcess - 14214 - M3 Script execution completed
+2025-03-10 22:54:58,079 - Default - MainProcess - 15229 - M3 Script execution starts
+2025-03-10 22:55:30,496 - Default - MainProcess - 15229 - M3 Script execution completed
+2025-03-10 22:56:39,410 - Default - MainProcess - 15828 - M3 Script execution starts
+2025-03-10 22:57:19,586 - Default - MainProcess - 15828 - M3 Script execution completed
+2025-03-10 22:57:47,234 - Default - MainProcess - 16194 - M3 Script execution starts
+2025-03-10 22:58:37,131 - Default - MainProcess - 16194 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.306
+----------------------
+
+2025-03-10 22:58:37,768 - Default - MainProcess - 16194 - M3 Script execution completed
+2025-03-10 22:59:37,006 - Default - MainProcess - 16844 - M3 Script execution starts
+2025-03-10 23:00:00,963 - Default - MainProcess - 16844 - M3 Script execution completed
+2025-03-10 23:02:20,851 - Default - MainProcess - 17708 - M3 Script execution starts
+2025-03-10 23:02:50,696 - Default - MainProcess - 17708 - M3 Script execution completed
+2025-03-10 23:03:23,667 - Default - MainProcess - 18055 - M3 Script execution starts
+2025-03-10 23:03:50,956 - Default - MainProcess - 18055 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65587: [0x00010033] : CoreMotionApi Error: One or more deceleration jerk ratio arguments out of range.
+Elapsed_time: 4.184
+----------------------
+
+2025-03-10 23:05:07,540 - Default - MainProcess - 18055 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.773
+----------------------
+
+2025-03-10 23:05:08,098 - Default - MainProcess - 18055 - M3 Script execution completed
+2025-03-10 23:05:37,164 - Default - MainProcess - 18767 - M3 Script execution starts
+2025-03-10 23:06:21,911 - Default - MainProcess - 18767 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65587: [0x00010033] : CoreMotionApi Error: One or more deceleration jerk ratio arguments out of range.
+Elapsed_time: 5.748
+----------------------
+
+2025-03-10 23:06:48,645 - Default - MainProcess - 18767 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.690
+----------------------
+
+2025-03-10 23:06:49,230 - Default - MainProcess - 18767 - M3 Script execution completed
+2025-03-10 23:08:01,953 - Default - MainProcess - 19571 - M3 Script execution starts
+2025-03-10 23:08:20,913 - Default - MainProcess - 19571 - M3 Script execution completed
+2025-03-10 23:10:36,149 - Default - MainProcess - 20385 - M3 Script execution starts
+2025-03-10 23:10:54,036 - Default - MainProcess - 20385 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65587: [0x00010033] : CoreMotionApi Error: One or more deceleration jerk ratio arguments out of range.
+Elapsed_time: 3.408
+----------------------
+
+2025-03-10 23:11:15,280 - Default - MainProcess - 20385 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.928
+----------------------
+
+2025-03-10 23:11:15,828 - Default - MainProcess - 20385 - M3 Script execution completed
+2025-03-10 23:22:59,748 - Default - MainProcess - 24156 - M3 Script execution starts
+2025-03-10 23:23:20,862 - Default - MainProcess - 24156 - M3 Script execution completed
+2025-03-10 23:23:56,394 - Default - MainProcess - 24484 - M3 Script execution starts
+2025-03-10 23:24:14,028 - Default - MainProcess - 24484 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.638
+----------------------
+
+2025-03-10 23:24:14,578 - Default - MainProcess - 24484 - M3 Script execution completed
+2025-03-10 23:24:39,060 - Default - MainProcess - 24727 - M3 Script execution starts
+2025-03-10 23:25:15,135 - Default - MainProcess - 24727 - M3 Script execution completed
+2025-03-10 23:26:21,214 - Default - MainProcess - 25267 - M3 Script execution starts
+2025-03-10 23:26:54,209 - Default - MainProcess - 25267 - M3 Script execution completed
+2025-03-10 23:27:53,838 - Default - MainProcess - 25821 - M3 Script execution starts
+2025-03-10 23:28:25,861 - Default - MainProcess - 25821 - M3 Script execution completed
+2025-03-10 23:29:09,455 - Default - MainProcess - 26231 - M3 Script execution starts
+2025-03-10 23:29:36,091 - Default - MainProcess - 26231 - M3 Script execution completed
+2025-03-10 23:29:48,480 - Default - MainProcess - 26457 - M3 Script execution starts
+2025-03-10 23:30:24,297 - Default - MainProcess - 26457 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.996
+----------------------
+
+2025-03-10 23:30:24,898 - Default - MainProcess - 26457 - M3 Script execution completed
+2025-03-10 23:31:06,939 - Default - MainProcess - 26906 - M3 Script execution starts
+2025-03-10 23:31:31,911 - Default - MainProcess - 26906 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.009
+----------------------
+
+2025-03-10 23:31:32,500 - Default - MainProcess - 26906 - M3 Script execution completed
+2025-03-10 23:31:44,447 - Default - MainProcess - 27137 - M3 Script execution starts
+2025-03-10 23:32:15,705 - Default - MainProcess - 27137 - M3 Script execution completed
+2025-03-10 23:33:03,285 - Default - MainProcess - 27559 - M3 Script execution starts
+2025-03-10 23:33:30,310 - Default - MainProcess - 27559 - M3 Script execution completed
+2025-03-10 23:35:15,592 - Default - MainProcess - 28250 - M3 Script execution starts
+2025-03-10 23:35:34,842 - Default - MainProcess - 28250 - M3 Script execution completed
+2025-03-10 23:36:06,305 - Default - MainProcess - 28540 - M3 Script execution starts
+2025-03-10 23:36:33,003 - Default - MainProcess - 28540 - M3 Script execution completed
+2025-03-10 23:37:36,448 - Default - MainProcess - 29029 - M3 Script execution starts
+2025-03-10 23:37:57,843 - Default - MainProcess - 29029 - M3 Script execution completed
+2025-03-10 23:39:28,979 - Default - MainProcess - 29625 - M3 Script execution starts
+2025-03-10 23:40:48,432 - Default - MainProcess - 29625 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65590: [0x00010036] : CoreMotionApi Error: One or more second velocity arguments out of range.
+StartPos error code is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+StartPos error code is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+StopLog error code is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+SetServoOn to off error code for axis 10 is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+Program End.
+Elapsed_time: 58.826
+----------------------
+
+2025-03-10 23:41:05,398 - Default - MainProcess - 30130 - M3 Script execution starts
+2025-03-10 23:41:33,834 - Default - MainProcess - 30130 - Count0:
+codedata:
+Program begin.
+StartPos error code is 65590: [0x00010036] : CoreMotionApi Error: One or more second velocity arguments out of range.
+Elapsed_time: 3.014
+----------------------
+
+2025-03-10 23:43:35,391 - Default - MainProcess - 30130 - Count1:
+codedata:
+Program begin.
+StartPos error code is 65556: [0x00010014] : CoreMotionApi Error: One or more axes are not in servo on state.
+Elapsed_time: 99.578
+----------------------
+
+2025-03-10 23:44:06,513 - Default - MainProcess - 31076 - M3 Script execution starts
+2025-03-10 23:44:37,217 - Default - MainProcess - 31076 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.963
+----------------------
+
+2025-03-10 23:44:37,773 - Default - MainProcess - 31076 - M3 Script execution completed

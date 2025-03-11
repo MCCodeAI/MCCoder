@@ -104,7 +104,7 @@ the script should start with:
 
 3.	Do not import any motion libraries.
 
-4. Wait for all axes stop moving in the end.
+4. Wait for axes stop moving after every single motion, but don't wait in the middle of continuous motion.
 ----------------------------------------------
 
 Question: 
@@ -342,7 +342,7 @@ def on_message(task_id, message):
 
     log_message(f"Count{attempt_count}:\n{codereturn}")
     # Check for errors in codereturn and attempt self-correction
-    while "codeerr" in codereturn and attempt_count < max_attempts:
+    while ("codeerr" in codereturn or "error code" in codereturn) and attempt_count < max_attempts:
         # Check if current codereturn is same as previous
         if codereturn == previous_codereturn:
             log_message(f"Count{attempt_count}: No change in codereturn, exiting correction loop")
@@ -366,7 +366,7 @@ def on_message(task_id, message):
         log_message(f"Count{attempt_count}:\n{codereturn}")
         
     # Check final state of codereturn, and plot log
-    if "codeerr" not in codereturn:
+    if "codeerr" not in codereturn and "error code" not in codereturn:
         # Execute post-processing if no error is present
         folder_path = f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}'
         os.makedirs(folder_path, exist_ok=True)

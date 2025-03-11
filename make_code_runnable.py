@@ -99,7 +99,7 @@ def main():
     WMX3Log = Log(Wmx3Lib)
                                  
     # Stop log just in case logging is on.
-    # ret = WMX3Log.StopLog(0)
+    ret = WMX3Log.StopLog(0)
     sleep(0.2)
                                      
     axislist = Axes                           
@@ -120,7 +120,7 @@ def main():
     # Set up log time
     option = LogChannelOptions()
     option.samplingPeriodInCycles = 1
-    option.samplingTimeMilliseconds = 1000000
+    option.samplingTimeMilliseconds = 60000
     option.precision = 3
 
     ret=WMX3Log.SetLogOption(0, option)
