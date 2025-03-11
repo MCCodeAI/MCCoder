@@ -18,6 +18,7 @@ from langchain.chains import LLMChain
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_community.retrievers import BM25Retriever
 from langchain.retrievers import EnsembleRetriever
+from langchain_deepseek import ChatDeepSeek
 
 from time import *
 from CodeClient import *
@@ -49,7 +50,7 @@ else:
     # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
     print("load from chunks")
 
-retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 5})
+retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 10})
 
 # Txt loader of sample codes, for BM25 search
 loader = TextLoader("./docs/WMX3API_MCEval_Samplecodes.txt")
@@ -62,15 +63,11 @@ splits = text_splitter.split_documents(docs)
 
 
 
-# Global variable to store the name of the LLM
-llm_name = None
-llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", streaming=True, temperature=0.2)
-
+# llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", temperature=0.2)  # 
+llm = ChatDeepSeek(name="MCCoder-M1", model_name="deepseek-chat", temperature=0.2)  # 
  
- 
-
-# Store the name of the LLM in the global variable
-llm_name = llm.model_name
+# Specify LLM name for making CanonicalCode
+llm_name = 'DeepSeek-V3-M1'
 
 # Prompt for code generation
 prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
@@ -150,7 +147,7 @@ def coder_retrieval(question):
 
     # initialize the bm25 retriever and faiss retriever
     bm25_retriever = BM25Retriever.from_documents(splits)
-    bm25_retriever.k = 5
+    bm25_retriever.k = 10
 
     # initialize the ensemble retriever
     ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
@@ -198,8 +195,6 @@ def on_message(task_id, message):
     #     task_info = file.read().strip()   
     task_info = task_id
 
-    # Only for making CanonicalCode.
-    llm_name = 'CanonicalCode'
 
     # Get python code from the output of LLM
     msgCode = extract_code(response)
@@ -245,4 +240,4 @@ def on_message(task_id, message):
     print("end")
 
     # Return the final codereturn
-    return codereturn + f"llm execution time: {llm_execution_time}s"
+    return codereturn + f"\nllm_time: {llm_execution_time}s"

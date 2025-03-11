@@ -52,7 +52,7 @@ else:
     # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
     print("load from chunks")
 
-retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 5})
+retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 10})
 
 # Txt loader of sample codes, for BM25 search
 loader = TextLoader("./docs/WMX3API_MCEval_Samplecodes.txt")
@@ -65,15 +65,13 @@ splits = text_splitter.split_documents(docs)
 
 
 
-# Global variable to store the name of the LLM
-llm_name = None
-codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="gpt-4o", streaming=True, temperature=0.2)
+ 
+codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="o3-mini")  # o3-mini gpt-4o, ,temperature=0.2
 taskdecom_llm = codegene_llm
 codegene_runnable = None
  
- 
-# Store the name of the LLM in the global variable
-llm_name = codegene_llm.model_name
+# Specify LLM name for making CanonicalCode
+llm_name = 'CanonicalCode'
 
 # Code generation llm >>>>>>>>>>>>>
 # Prompt for code generation
@@ -166,7 +164,7 @@ def task_rag(tasks):
 
         # initialize the bm25 retriever and faiss retriever
         bm25_retriever = BM25Retriever.from_documents(splits)
-        bm25_retriever.k = 5
+        bm25_retriever.k = 10
 
         # initialize the ensemble retriever
         ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])
@@ -203,7 +201,14 @@ def self_correct(user_question, original_code, err_info):
     err_context = f"{err_info}\n\nError context:\n{references}"
     
     # Define the prompt template with original code and error context
-    template = """Correct the code based on the user question, original code, error information and context provided. Do not modify the format.
+    template = """
+    1. Correct the code based on the user question, original code, error information and context provided. Do not modify the format.
+    2.	Code Formatting:
+•	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
+
+    3.	Do not import any motion libraries.
+
+    4. Wait for axes stop moving after every single motion, but don't wait in the middle of continuous motion.
 
     User question:
     ```
@@ -314,8 +319,7 @@ def on_message(task_id, message):
     #     task_info = file.read().strip()   
     task_info = task_id
     
-    # Specify LLM name for making CanonicalCode
-    llm_name = 'CanonicalCode'
+
 
     # Extract Python code from LLM output
     msgCode = extract_code(response)
@@ -340,12 +344,12 @@ def on_message(task_id, message):
     attempt_count = 0
     previous_codereturn = None  # Store previous codereturn value
 
-    log_message(f"Count{attempt_count}:\n{codereturn}")
+    log_message(f"Count {attempt_count}:\n{codereturn}")
     # Check for errors in codereturn and attempt self-correction
     while ("codeerr" in codereturn or "error code" in codereturn) and attempt_count < max_attempts:
         # Check if current codereturn is same as previous
         if codereturn == previous_codereturn:
-            log_message(f"Count{attempt_count}: No change in codereturn, exiting correction loop")
+            log_message(f"Count {attempt_count}: No change in codereturn, exiting correction loop")
             break
         
         # Store current codereturn before attempting correction
@@ -359,11 +363,11 @@ def on_message(task_id, message):
         
         # Run the corrected code in WMX3
         codereturn = SendCode(RunnableCode)
-        
+
         # Increment attempt counter
         attempt_count += 1
 
-        log_message(f"Count{attempt_count}:\n{codereturn}")
+        log_message(f"Count {attempt_count}:\n{codereturn}")
         
     # Check final state of codereturn, and plot log
     if "codeerr" not in codereturn and "error code" not in codereturn:
@@ -398,5 +402,5 @@ def on_message(task_id, message):
         print(f"Error after {max_attempts} attempts: {codereturn}")
 
     # Return the final codereturn
-    return codereturn + f"llm execution time: {llm_execution_time}s"
+    return codereturn + f"\nllm_time: {llm_execution_time}s"
 

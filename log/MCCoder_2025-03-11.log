@@ -1709,3 +1709,235 @@ Elapsed_time: 5.363
 ----------------------
 
 2025-03-11 22:06:10,666 - Default - MainProcess - 63908 - M3 Script execution completed
+2025-03-11 23:03:39,686 - Default - MainProcess - 82089 - M3 Script execution starts
+2025-03-11 23:04:21,978 - Default - MainProcess - 82388 - M3 Script execution starts
+2025-03-11 23:05:39,419 - Default - MainProcess - 82388 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.895
+----------------------
+
+2025-03-11 23:05:39,996 - Default - MainProcess - 82388 - M3 Script execution completed
+2025-03-11 23:07:05,005 - Default - MainProcess - 83223 - M3 Script execution starts
+2025-03-11 23:07:46,906 - Default - MainProcess - 83223 - Count0:
+codedata:
+Program begin.
+StartJog error code: 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Program End.
+Elapsed_time: 4.327
+----------------------
+
+2025-03-11 23:08:07,525 - Default - MainProcess - 83223 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 2.674
+----------------------
+
+2025-03-11 23:08:07,918 - Default - MainProcess - 83223 - M3 Script execution completed
+2025-03-11 23:10:30,092 - Default - MainProcess - 84282 - M3 Script execution starts
+2025-03-11 23:10:51,430 - Default - MainProcess - 84282 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 278, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-11 23:11:15,580 - Default - MainProcess - 84282 - Count1:
+codedata:
+Program begin.
+StartJog error code is 65556: [0x00010014] : CoreMotionApi Error: One or more axes are not in servo on state.
+Program End.
+Elapsed_time: 2.624
+----------------------
+
+2025-03-11 23:11:32,927 - Default - MainProcess - 84282 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 293, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 250, in main
+    jog_axis_12_with_sin()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 210, in jog_axis_12_with_sin
+    ret = Wmx3Lib_cm.motion.ServoOn(12)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'ServoOn'
+!!!
+----------------------
+
+2025-03-11 23:11:32,927 - Default - MainProcess - 84282 - M3 Script execution completed
+2025-03-11 23:12:09,144 - Default - MainProcess - 84805 - M3 Script execution starts
+2025-03-11 23:12:33,202 - Default - MainProcess - 84805 - Count0:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Program End.
+Elapsed_time: 3.137
+----------------------
+
+2025-03-11 23:12:54,619 - Default - MainProcess - 84805 - Count1:
+
+2025-03-11 23:12:55,142 - Default - MainProcess - 84805 - M3 Script execution completed
+2025-03-11 23:16:04,933 - Default - MainProcess - 86010 - M3 Script execution starts
+2025-03-11 23:17:19,991 - Default - MainProcess - 86407 - M3 Script execution starts
+2025-03-11 23:17:34,673 - Default - MainProcess - 86407 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 273, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    jogCommand.profile.type = ProfileType.Sinusoidal
+                              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sinusoidal'
+!!!
+----------------------
+
+2025-03-11 23:17:50,570 - Default - MainProcess - 86407 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.584
+----------------------
+
+2025-03-11 23:17:50,996 - Default - MainProcess - 86407 - M3 Script execution completed
+2025-03-11 23:18:11,766 - Default - MainProcess - 86696 - M3 Script execution starts
+2025-03-11 23:18:23,967 - Default - MainProcess - 86696 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 272, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    jogCommand.profile.type = ProfileType.Sinusoidal
+                              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sinusoidal'
+!!!
+----------------------
+
+2025-03-11 23:18:33,730 - Default - MainProcess - 86696 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 272, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    jogCommand.profile.type = ProfileType.Sine  # Corrected the profile type to Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-11 23:18:47,002 - Default - MainProcess - 86696 - Count2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.934
+----------------------
+
+2025-03-11 23:18:47,547 - Default - MainProcess - 86696 - M3 Script execution completed
+2025-03-11 23:19:48,067 - Default - MainProcess - 87236 - M3 Script execution starts
+2025-03-11 23:20:00,888 - Default - MainProcess - 87236 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 274, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    jogCommand.profile.type = ProfileType.Sinusoidal  # Use a sinusoidal profile for jogging
+                              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sinusoidal'
+!!!
+----------------------
+
+2025-03-11 23:20:14,602 - Default - MainProcess - 87236 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.835
+----------------------
+
+2025-03-11 23:20:15,011 - Default - MainProcess - 87236 - M3 Script execution completed
+2025-03-11 23:21:09,459 - Default - MainProcess - 87668 - M3 Script execution starts
+2025-03-11 23:21:22,563 - Default - MainProcess - 87668 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.518
+----------------------
+
+2025-03-11 23:21:23,100 - Default - MainProcess - 87668 - M3 Script execution completed
+2025-03-11 23:24:10,061 - Default - MainProcess - 88678 - M3 Script execution starts
+2025-03-11 23:24:22,444 - Default - MainProcess - 88678 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.306
+----------------------
+
+2025-03-11 23:24:23,040 - Default - MainProcess - 88678 - M3 Script execution completed
+2025-03-11 23:24:50,870 - Default - MainProcess - 88932 - M3 Script execution starts
+2025-03-11 23:25:09,838 - Default - MainProcess - 88932 - Count0:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 2.959
+----------------------
+
+2025-03-11 23:25:27,098 - Default - MainProcess - 88932 - Count1:
+
+2025-03-11 23:25:27,737 - Default - MainProcess - 88932 - M3 Script execution completed
+2025-03-11 23:26:04,487 - Default - MainProcess - 89338 - M3 Script execution starts
+2025-03-11 23:27:20,299 - Default - MainProcess - 89744 - M3 Script execution starts
+2025-03-11 23:27:43,184 - Default - MainProcess - 89744 - Count0:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 3.030
+----------------------
+
+2025-03-11 23:28:00,378 - Default - MainProcess - 89744 - Count1:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 2.654
+----------------------
+
+2025-03-11 23:28:14,049 - Default - MainProcess - 89744 - Count2:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 2.568
+----------------------
+
+2025-03-11 23:28:14,050 - Default - MainProcess - 89744 - M3 Script execution completed
+2025-03-11 23:29:48,006 - Default - MainProcess - 90517 - M3 Script execution starts
+2025-03-11 23:30:17,884 - Default - MainProcess - 90517 - Count0:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 2.738
+----------------------
+
+2025-03-11 23:30:39,295 - Default - MainProcess - 90517 - Count1:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 2.600
+----------------------
+
+2025-03-11 23:30:52,791 - Default - MainProcess - 90517 - Count2:
+codedata:
+Program begin.
+StartJog error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 2.532
+----------------------
+
+2025-03-11 23:30:52,791 - Default - MainProcess - 90517 - M3 Script execution completed
