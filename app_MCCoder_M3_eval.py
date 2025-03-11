@@ -203,7 +203,7 @@ def self_correct(user_question, original_code, err_info):
     err_context = f"{err_info}\n\nError context:\n{references}"
     
     # Define the prompt template with original code and error context
-    template = """Correct the code based on the user question, original code, error information and context provided. 
+    template = """Correct the code based on the user question, original code, error information and context provided. Do not modify the format.
 
     User question:
     ```

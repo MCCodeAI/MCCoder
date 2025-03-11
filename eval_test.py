@@ -8,12 +8,12 @@ def run():
     log_message("M3 Script execution starts")
 
     tp="""
-Write Python code to set the input event to monitor if the DistanceToTarget of Axis 3's movement is 500，then move Axis 1 to the position -200 at a speed of 1000. Move Axis 3 to 1200; 
 
+Write Python code to execute an absolute triggered position command. Start an absolute position command for Axis 10 to move to position -1000 with a velocity of 600, when the remaining distance is 500, trigger Axis 10 to move to -300 with a velocity of 1000; Then set an event that triggers to start the movement of Axis 2 to -200 when Axis 10 moves to the position of 100;
 
 """
 
-    re = on_message(140, tp) 
+    re = on_message(143, tp) 
 
     log_message("M3 Script execution completed")
     

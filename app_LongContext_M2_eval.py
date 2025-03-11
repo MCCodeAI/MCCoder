@@ -278,3 +278,44 @@ def on_message(message):
 
     print("end")
 
+
+
+
+
+
+
+# # Openai using file_id--------------
+
+# openai:import openai
+
+# openai.api_key = '你的API密钥'
+
+# assistant = openai.beta.assistants.create(
+#     name="My Assistant",
+#     instructions="使用提供的文件回答问题。",
+#     model="gpt-4-1106-preview",
+#     file_ids=["file-xxx"]  # 这里填写你的 file_id
+# )
+
+# print(assistant)
+
+
+
+# # Or, using langchain to use assistant id created by openai.
+
+# from langchain.agents import OpenAIAssistantRunnable
+# from langchain.schema.messages import HumanMessage
+# from langchain.chat_models import ChatOpenAI
+
+# assistant_id = 'asst_xxx'  # 填入你后台创建的Assistant ID
+# openai_api_key = '你的API密钥'
+
+# # 创建 LangChain 的 OpenAI Assistant
+# assistant_agent = OpenAI(temperature=0).as_assistant(assistant_id=assistant_id)
+
+# # 发送问题并获取回复
+# question = "请根据上传的文件内容，回答以下问题：……"
+
+# response = assistant_agent.invoke(question)
+
+# print(response)

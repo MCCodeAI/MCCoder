@@ -322,3 +322,1390 @@ Elapsed_time: 5.676
 ----------------------
 
 2025-03-11 01:29:23,564 - Default - MainProcess - 64398 - M3 Script execution completed
+2025-03-11 14:23:28,267 - Default - MainProcess - 15501 - M3 Script execution starts
+2025-03-11 14:23:54,246 - Default - MainProcess - 15501 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.632
+----------------------
+
+2025-03-11 14:23:54,802 - Default - MainProcess - 15501 - M3 Script execution completed
+2025-03-11 14:24:49,830 - Default - MainProcess - 15945 - M3 Script execution starts
+2025-03-11 14:25:06,981 - Default - MainProcess - 15945 - M3 Script execution completed
+2025-03-11 14:30:19,956 - Default - MainProcess - 17658 - M3 Script execution starts
+2025-03-11 14:30:50,376 - Default - MainProcess - 17658 - M3 Script execution completed
+2025-03-11 14:31:32,711 - Default - MainProcess - 18050 - M3 Script execution starts
+2025-03-11 14:32:02,095 - Default - MainProcess - 18050 - Count0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 5.773
+----------------------
+
+2025-03-11 14:32:30,280 - Default - MainProcess - 18050 - Count1:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 2.630
+----------------------
+
+2025-03-11 14:33:09,635 - Default - MainProcess - 18567 - M3 Script execution starts
+2025-03-11 14:33:45,217 - Default - MainProcess - 18567 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.232
+----------------------
+
+2025-03-11 14:33:45,753 - Default - MainProcess - 18567 - M3 Script execution completed
+2025-03-11 14:34:39,166 - Default - MainProcess - 19043 - M3 Script execution starts
+2025-03-11 14:35:11,345 - Default - MainProcess - 19043 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.044
+----------------------
+
+2025-03-11 14:35:11,892 - Default - MainProcess - 19043 - M3 Script execution completed
+2025-03-11 14:36:10,037 - Default - MainProcess - 19539 - M3 Script execution starts
+2025-03-11 14:36:37,532 - Default - MainProcess - 19539 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.119
+----------------------
+
+2025-03-11 14:36:38,073 - Default - MainProcess - 19539 - M3 Script execution completed
+2025-03-11 14:38:09,490 - Default - MainProcess - 20178 - M3 Script execution starts
+2025-03-11 14:38:37,076 - Default - MainProcess - 20178 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.148
+----------------------
+
+2025-03-11 14:38:37,639 - Default - MainProcess - 20178 - M3 Script execution completed
+2025-03-11 14:39:46,693 - Default - MainProcess - 20679 - M3 Script execution starts
+2025-03-11 14:40:18,488 - Default - MainProcess - 20679 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.969
+----------------------
+
+2025-03-11 14:40:19,056 - Default - MainProcess - 20679 - M3 Script execution completed
+2025-03-11 14:40:40,122 - Default - MainProcess - 20977 - M3 Script execution starts
+2025-03-11 14:41:07,834 - Default - MainProcess - 20977 - M3 Script execution completed
+2025-03-11 14:41:26,737 - Default - MainProcess - 21233 - M3 Script execution starts
+2025-03-11 14:41:48,443 - Default - MainProcess - 21233 - M3 Script execution completed
+2025-03-11 14:42:04,723 - Default - MainProcess - 21447 - M3 Script execution starts
+2025-03-11 14:42:27,043 - Default - MainProcess - 21447 - Count0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 2.633
+----------------------
+
+2025-03-11 14:42:57,117 - Default - MainProcess - 21447 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 334, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    Wmx3Lib_cm = MotionControl(Wmx3Lib)
+                 ^^^^^^^^^^^^^
+NameError: name 'MotionControl' is not defined
+!!!
+----------------------
+
+2025-03-11 14:43:48,009 - Default - MainProcess - 21447 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 14:43:48,009 - Default - MainProcess - 21447 - M3 Script execution completed
+2025-03-11 14:44:55,452 - Default - MainProcess - 22339 - M3 Script execution starts
+2025-03-11 14:45:18,762 - Default - MainProcess - 22339 - Count0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 2.867
+----------------------
+
+2025-03-11 14:45:55,246 - Default - MainProcess - 22339 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.229
+----------------------
+
+2025-03-11 14:45:55,788 - Default - MainProcess - 22339 - M3 Script execution completed
+2025-03-11 15:31:11,070 - Default - MainProcess - 36590 - M3 Script execution starts
+2025-03-11 15:31:29,963 - Default - MainProcess - 36590 - M3 Script execution completed
+2025-03-11 15:31:49,353 - Default - MainProcess - 36845 - M3 Script execution starts
+2025-03-11 15:32:12,623 - Default - MainProcess - 36845 - M3 Script execution completed
+2025-03-11 15:32:38,406 - Default - MainProcess - 37130 - M3 Script execution starts
+2025-03-11 15:33:08,611 - Default - MainProcess - 37130 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.000
+----------------------
+
+2025-03-11 15:33:09,218 - Default - MainProcess - 37130 - M3 Script execution completed
+2025-03-11 16:01:33,925 - Default - MainProcess - 46048 - M3 Script execution starts
+2025-03-11 16:01:53,237 - Default - MainProcess - 46048 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.982
+----------------------
+
+2025-03-11 16:01:53,825 - Default - MainProcess - 46048 - M3 Script execution completed
+2025-03-11 16:23:30,840 - Default - MainProcess - 52918 - M3 Script execution starts
+2025-03-11 16:23:48,025 - Default - MainProcess - 52918 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.827
+----------------------
+
+2025-03-11 16:23:48,564 - Default - MainProcess - 52918 - M3 Script execution completed
+2025-03-11 16:24:37,577 - Default - MainProcess - 53285 - M3 Script execution starts
+2025-03-11 16:24:57,861 - Default - MainProcess - 53285 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.433
+----------------------
+
+2025-03-11 16:24:58,425 - Default - MainProcess - 53285 - M3 Script execution completed
+2025-03-11 16:28:11,865 - Default - MainProcess - 54384 - M3 Script execution starts
+2025-03-11 16:28:28,834 - Default - MainProcess - 54384 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 291, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 242, in main
+    ret = Wmx3Lib_cm.motion.StartPos_Trigger(triggeredPosCommand, eventIN_Motion)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8647, in StartPos_Trigger
+    return _WMX3ApiPython.Motion_StartPos_Trigger(self, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotImplementedError: Wrong number or type of arguments for overloaded function 'Motion_StartPos_Trigger'.
+  Possible C/C++ prototypes are:
+    wmx3ApiPython::Motion::StartPos_Trigger(wmx3ApiPython::Motion_TriggerPosCommand *)
+    wmx3ApiPython::Motion::StartPos_Trigger(unsigned int,PyObject *)
+
+!!!
+----------------------
+
+2025-03-11 16:28:45,450 - Default - MainProcess - 54384 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.303
+----------------------
+
+2025-03-11 16:28:45,980 - Default - MainProcess - 54384 - M3 Script execution completed
+2025-03-11 16:33:55,297 - Default - MainProcess - 56169 - M3 Script execution starts
+2025-03-11 16:34:23,075 - Default - MainProcess - 56169 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.332
+----------------------
+
+2025-03-11 16:34:23,668 - Default - MainProcess - 56169 - M3 Script execution completed
+2025-03-11 16:36:07,274 - Default - MainProcess - 56863 - M3 Script execution starts
+2025-03-11 16:36:36,529 - Default - MainProcess - 56863 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.950
+----------------------
+
+2025-03-11 16:36:37,117 - Default - MainProcess - 56863 - M3 Script execution completed
+2025-03-11 16:37:27,262 - Default - MainProcess - 57308 - M3 Script execution starts
+2025-03-11 16:38:00,502 - Default - MainProcess - 57308 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.236
+----------------------
+
+2025-03-11 16:38:01,052 - Default - MainProcess - 57308 - M3 Script execution completed
+2025-03-11 16:38:29,477 - Default - MainProcess - 57647 - M3 Script execution starts
+2025-03-11 16:39:01,274 - Default - MainProcess - 57647 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.682
+----------------------
+
+2025-03-11 16:39:01,850 - Default - MainProcess - 57647 - M3 Script execution completed
+2025-03-11 16:41:04,640 - Default - MainProcess - 58443 - M3 Script execution starts
+2025-03-11 16:41:34,927 - Default - MainProcess - 58443 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.520
+----------------------
+
+2025-03-11 16:41:35,484 - Default - MainProcess - 58443 - M3 Script execution completed
+2025-03-11 16:43:01,079 - Default - MainProcess - 59057 - M3 Script execution starts
+2025-03-11 16:43:31,627 - Default - MainProcess - 59057 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.184
+----------------------
+
+2025-03-11 16:43:32,158 - Default - MainProcess - 59057 - M3 Script execution completed
+2025-03-11 16:44:20,265 - Default - MainProcess - 59482 - M3 Script execution starts
+2025-03-11 16:44:43,755 - Default - MainProcess - 59482 - M3 Script execution completed
+2025-03-11 16:45:22,976 - Default - MainProcess - 59829 - M3 Script execution starts
+2025-03-11 16:45:51,750 - Default - MainProcess - 59829 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.640
+----------------------
+
+2025-03-11 16:45:52,305 - Default - MainProcess - 59829 - M3 Script execution completed
+2025-03-11 16:46:15,622 - Default - MainProcess - 60120 - M3 Script execution starts
+2025-03-11 16:46:46,888 - Default - MainProcess - 60120 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.305
+----------------------
+
+2025-03-11 16:46:47,433 - Default - MainProcess - 60120 - M3 Script execution completed
+2025-03-11 16:46:57,267 - Default - MainProcess - 60364 - M3 Script execution starts
+2025-03-11 16:47:30,344 - Default - MainProcess - 60364 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.185
+----------------------
+
+2025-03-11 16:47:30,867 - Default - MainProcess - 60364 - M3 Script execution completed
+2025-03-11 16:48:10,293 - Default - MainProcess - 60758 - M3 Script execution starts
+2025-03-11 16:48:42,554 - Default - MainProcess - 60758 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.955
+----------------------
+
+2025-03-11 16:48:43,103 - Default - MainProcess - 60758 - M3 Script execution completed
+2025-03-11 16:49:25,564 - Default - MainProcess - 61168 - M3 Script execution starts
+2025-03-11 16:49:45,201 - Default - MainProcess - 61168 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.877
+----------------------
+
+2025-03-11 16:49:45,752 - Default - MainProcess - 61168 - M3 Script execution completed
+2025-03-11 16:50:14,628 - Default - MainProcess - 61459 - M3 Script execution starts
+2025-03-11 16:50:48,298 - Default - MainProcess - 61459 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.041
+----------------------
+
+2025-03-11 16:50:48,840 - Default - MainProcess - 61459 - M3 Script execution completed
+2025-03-11 16:51:08,058 - Default - MainProcess - 61759 - M3 Script execution starts
+2025-03-11 16:51:30,274 - Default - MainProcess - 61759 - M3 Script execution completed
+2025-03-11 16:51:50,438 - Default - MainProcess - 61993 - M3 Script execution starts
+2025-03-11 16:52:15,504 - Default - MainProcess - 61993 - M3 Script execution completed
+2025-03-11 16:52:45,193 - Default - MainProcess - 62319 - M3 Script execution starts
+2025-03-11 16:53:05,291 - Default - MainProcess - 62319 - M3 Script execution completed
+2025-03-11 16:53:32,574 - Default - MainProcess - 62645 - M3 Script execution starts
+2025-03-11 16:54:03,957 - Default - MainProcess - 62645 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.670
+----------------------
+
+2025-03-11 16:54:04,566 - Default - MainProcess - 62645 - M3 Script execution completed
+2025-03-11 16:54:23,150 - Default - MainProcess - 62935 - M3 Script execution starts
+2025-03-11 16:54:59,647 - Default - MainProcess - 62935 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.312
+----------------------
+
+2025-03-11 16:55:00,257 - Default - MainProcess - 62935 - M3 Script execution completed
+2025-03-11 17:34:49,931 - Default - MainProcess - 75232 - M3 Script execution starts
+2025-03-11 17:35:28,244 - Default - MainProcess - 75232 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.061
+----------------------
+
+2025-03-11 17:35:28,831 - Default - MainProcess - 75232 - M3 Script execution completed
+2025-03-11 17:36:03,712 - Default - MainProcess - 75647 - M3 Script execution starts
+2025-03-11 17:36:32,660 - Default - MainProcess - 75647 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.852
+----------------------
+
+2025-03-11 17:36:33,240 - Default - MainProcess - 75647 - M3 Script execution completed
+2025-03-11 17:37:07,016 - Default - MainProcess - 76011 - M3 Script execution starts
+2025-03-11 17:37:33,884 - Default - MainProcess - 76011 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 321, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 263, in main
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+                    ^^^^^^^^^^^^^^^^
+NameError: name 'Wmx3Lib_EventCtl' is not defined
+!!!
+----------------------
+
+2025-03-11 17:38:08,698 - Default - MainProcess - 76011 - Count1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.143
+----------------------
+
+2025-03-11 17:38:09,289 - Default - MainProcess - 76011 - M3 Script execution completed
+2025-03-11 17:38:54,071 - Default - MainProcess - 76586 - M3 Script execution starts
+2025-03-11 17:39:21,204 - Default - MainProcess - 76586 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.383
+----------------------
+
+2025-03-11 17:39:21,771 - Default - MainProcess - 76586 - M3 Script execution completed
+2025-03-11 17:40:44,728 - Default - MainProcess - 77181 - M3 Script execution starts
+2025-03-11 17:41:06,202 - Default - MainProcess - 77181 - M3 Script execution completed
+2025-03-11 17:42:35,611 - Default - MainProcess - 77769 - M3 Script execution starts
+2025-03-11 17:42:57,531 - Default - MainProcess - 77769 - M3 Script execution completed
+2025-03-11 17:55:28,851 - Default - MainProcess - 81664 - M3 Script execution starts
+2025-03-11 17:55:49,423 - Default - MainProcess - 81664 - M3 Script execution completed
+2025-03-11 17:56:06,369 - Default - MainProcess - 81888 - M3 Script execution starts
+2025-03-11 17:56:30,196 - Default - MainProcess - 81888 - M3 Script execution completed
+2025-03-11 17:57:47,282 - Default - MainProcess - 82479 - M3 Script execution starts
+2025-03-11 17:58:13,883 - Default - MainProcess - 82479 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 334, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 226, in main
+    currentPos = Wmx3Lib_cm.motion.GetPosition(10)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetPosition'
+!!!
+----------------------
+
+2025-03-11 17:58:52,455 - Default - MainProcess - 82479 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 17:59:33,799 - Default - MainProcess - 82479 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 17:59:33,801 - Default - MainProcess - 82479 - M3 Script execution completed
+2025-03-11 18:00:30,968 - Default - MainProcess - 83334 - M3 Script execution starts
+2025-03-11 18:01:02,748 - Default - MainProcess - 83334 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.102
+----------------------
+
+2025-03-11 18:01:03,355 - Default - MainProcess - 83334 - M3 Script execution completed
+2025-03-11 18:02:19,816 - Default - MainProcess - 83963 - M3 Script execution starts
+2025-03-11 18:02:58,626 - Default - MainProcess - 83963 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.588
+----------------------
+
+2025-03-11 18:02:59,184 - Default - MainProcess - 83963 - M3 Script execution completed
+2025-03-11 18:03:21,471 - Default - MainProcess - 84300 - M3 Script execution starts
+2025-03-11 18:03:45,036 - Default - MainProcess - 84300 - M3 Script execution completed
+2025-03-11 18:03:54,699 - Default - MainProcess - 84492 - M3 Script execution starts
+2025-03-11 18:04:24,750 - Default - MainProcess - 84492 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 326, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 227, in main
+    current_position = Wmx3Lib_cm.motion.GetPosition(10)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetPosition'
+!!!
+----------------------
+
+2025-03-11 18:05:02,623 - Default - MainProcess - 84492 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 18:05:36,385 - Default - MainProcess - 84492 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 18:05:36,386 - Default - MainProcess - 84492 - M3 Script execution completed
+2025-03-11 18:08:36,091 - Default - MainProcess - 85961 - M3 Script execution starts
+2025-03-11 18:09:07,274 - Default - MainProcess - 86151 - M3 Script execution starts
+2025-03-11 18:09:39,364 - Default - MainProcess - 86151 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.815
+----------------------
+
+2025-03-11 18:09:39,918 - Default - MainProcess - 86151 - M3 Script execution completed
+2025-03-11 18:10:37,974 - Default - MainProcess - 86637 - M3 Script execution starts
+2025-03-11 18:10:53,187 - Default - MainProcess - 86637 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.501
+----------------------
+
+2025-03-11 18:10:53,721 - Default - MainProcess - 86637 - M3 Script execution completed
+2025-03-11 18:11:37,735 - Default - MainProcess - 86975 - M3 Script execution starts
+2025-03-11 18:12:15,015 - Default - MainProcess - 86975 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.927
+----------------------
+
+2025-03-11 18:12:15,589 - Default - MainProcess - 86975 - M3 Script execution completed
+2025-03-11 18:13:42,514 - Default - MainProcess - 87646 - M3 Script execution starts
+2025-03-11 18:14:08,591 - Default - MainProcess - 87646 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.718
+----------------------
+
+2025-03-11 18:14:09,174 - Default - MainProcess - 87646 - M3 Script execution completed
+2025-03-11 18:14:23,334 - Default - MainProcess - 87882 - M3 Script execution starts
+2025-03-11 18:14:57,534 - Default - MainProcess - 87882 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.170
+----------------------
+
+2025-03-11 18:14:58,114 - Default - MainProcess - 87882 - M3 Script execution completed
+2025-03-11 19:07:57,038 - Default - MainProcess - 5029 - M3 Script execution starts
+2025-03-11 19:08:24,476 - Default - MainProcess - 5029 - M3 Script execution completed
+2025-03-11 19:09:00,816 - Default - MainProcess - 5487 - M3 Script execution starts
+2025-03-11 19:09:29,749 - Default - MainProcess - 5487 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.013
+----------------------
+
+2025-03-11 19:09:30,296 - Default - MainProcess - 5487 - M3 Script execution completed
+2025-03-11 19:09:45,731 - Default - MainProcess - 5758 - M3 Script execution starts
+2025-03-11 19:10:14,982 - Default - MainProcess - 5758 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.744
+----------------------
+
+2025-03-11 19:10:15,539 - Default - MainProcess - 5758 - M3 Script execution completed
+2025-03-11 19:11:05,495 - Default - MainProcess - 6217 - M3 Script execution starts
+2025-03-11 19:11:38,575 - Default - MainProcess - 6217 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.655
+----------------------
+
+2025-03-11 19:11:39,129 - Default - MainProcess - 6217 - M3 Script execution completed
+2025-03-11 19:21:40,268 - Default - MainProcess - 9471 - M3 Script execution starts
+2025-03-11 19:22:11,792 - Default - MainProcess - 9471 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 329, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    Wmx3Lib_cm = MotionControl(Wmx3Lib)
+                 ^^^^^^^^^^^^^
+NameError: name 'MotionControl' is not defined
+!!!
+----------------------
+
+2025-03-11 19:22:39,918 - Default - MainProcess - 9471 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:23:08,912 - Default - MainProcess - 9471 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:23:08,913 - Default - MainProcess - 9471 - M3 Script execution completed
+2025-03-11 19:23:34,823 - Default - MainProcess - 10081 - M3 Script execution starts
+2025-03-11 19:24:08,217 - Default - MainProcess - 10081 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 327, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 224, in main
+    eventOutput.type = CoreMotionEventOutputType.AbsolutePosition
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'CoreMotionEventOutputType' has no attribute 'AbsolutePosition'
+!!!
+----------------------
+
+2025-03-11 19:24:40,859 - Default - MainProcess - 10081 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:25:08,573 - Default - MainProcess - 10081 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 359, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 16, in main
+    Wmx3Lib = WMX3Api()
+              ^^^^^^^
+UnboundLocalError: cannot access local variable 'WMX3Api' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-11 19:25:08,574 - Default - MainProcess - 10081 - M3 Script execution completed
+2025-03-11 19:25:16,377 - Default - MainProcess - 10700 - M3 Script execution starts
+2025-03-11 19:25:52,985 - Default - MainProcess - 10700 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.730
+----------------------
+
+2025-03-11 19:25:53,594 - Default - MainProcess - 10700 - M3 Script execution completed
+2025-03-11 19:26:29,537 - Default - MainProcess - 11108 - M3 Script execution starts
+2025-03-11 19:27:07,757 - Default - MainProcess - 11108 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.424
+----------------------
+
+2025-03-11 19:27:08,361 - Default - MainProcess - 11108 - M3 Script execution completed
+2025-03-11 19:27:23,222 - Default - MainProcess - 11447 - M3 Script execution starts
+2025-03-11 19:27:51,039 - Default - MainProcess - 11447 - M3 Script execution completed
+2025-03-11 19:36:48,932 - Default - MainProcess - 14643 - M3 Script execution starts
+2025-03-11 19:37:07,965 - Default - MainProcess - 14643 - M3 Script execution completed
+2025-03-11 19:38:10,339 - Default - MainProcess - 15118 - M3 Script execution starts
+2025-03-11 19:38:26,568 - Default - MainProcess - 15118 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 287, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    currentPos = Wmx3Lib_cm.motion.GetCurrentPos(5)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetCurrentPos'
+!!!
+----------------------
+
+2025-03-11 19:38:44,217 - Default - MainProcess - 15118 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 210
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:39:02,006 - Default - MainProcess - 15118 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 207
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:39:02,008 - Default - MainProcess - 15118 - M3 Script execution completed
+2025-03-11 19:41:31,181 - Default - MainProcess - 16261 - M3 Script execution starts
+2025-03-11 19:41:49,995 - Default - MainProcess - 16261 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 286, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 230, in main
+    current_position_status = Wmx3Lib_cm.motion.GetPositionStatus(5)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetPositionStatus'
+!!!
+----------------------
+
+2025-03-11 19:42:16,637 - Default - MainProcess - 16261 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 296, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 232, in main
+    current_position = Wmx3Lib_cm.motion.GetCurrentPosition(5)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetCurrentPosition'
+!!!
+----------------------
+
+2025-03-11 19:42:41,022 - Default - MainProcess - 16261 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:42:41,023 - Default - MainProcess - 16261 - M3 Script execution completed
+2025-03-11 19:45:00,018 - Default - MainProcess - 17529 - M3 Script execution starts
+2025-03-11 19:45:15,552 - Default - MainProcess - 17529 - Count0:
+codedata:
+Program begin.
+Moving Axis 5 to position 300 with speed 2000
+Waiting for Axis 5 to stop
+Position command status is 100, stopping and moving back to 0
+Moving Axis 5 to position 0 with speed 2000
+Waiting for Axis 5 to stop
+Program End.
+Elapsed_time: 2.954
+----------------------
+
+2025-03-11 19:45:16,076 - Default - MainProcess - 17529 - M3 Script execution completed
+2025-03-11 19:46:10,647 - Default - MainProcess - 17986 - M3 Script execution starts
+2025-03-11 19:46:25,136 - Default - MainProcess - 17986 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 282, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    current_position = Wmx3Lib_cm.motion.GetPosCommand(5)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetPosCommand'
+!!!
+----------------------
+
+2025-03-11 19:46:40,237 - Default - MainProcess - 17986 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 282, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    current_position = Wmx3Lib_cm.motion.GetPosition(5)  # Correct method to get the position
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetPosition'
+!!!
+----------------------
+
+2025-03-11 19:46:58,615 - Default - MainProcess - 17986 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 288, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 232, in main
+    current_position = Wmx3Lib_cm.motion.GetPosCommand(5)  # Hypothetical method to get the position
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetPosCommand'
+!!!
+----------------------
+
+2025-03-11 19:46:58,616 - Default - MainProcess - 17986 - M3 Script execution completed
+2025-03-11 19:50:40,262 - Default - MainProcess - 19548 - M3 Script execution starts
+2025-03-11 19:50:57,262 - Default - MainProcess - 19548 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 285, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    status = Wmx3Lib_cm.motion.GetStatus(5)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetStatus'
+!!!
+----------------------
+
+2025-03-11 19:51:22,326 - Default - MainProcess - 19548 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:51:44,307 - Default - MainProcess - 19548 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 324, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 16, in main
+    Wmx3Lib = WMX3Api()
+              ^^^^^^^
+UnboundLocalError: cannot access local variable 'WMX3Api' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-11 19:51:44,309 - Default - MainProcess - 19548 - M3 Script execution completed
+2025-03-11 19:55:31,878 - Default - MainProcess - 21136 - M3 Script execution starts
+2025-03-11 19:55:47,290 - Default - MainProcess - 21136 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 282, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    status = Wmx3Lib_cm.motion.GetAxesStatus(5)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxesStatus'
+!!!
+----------------------
+
+2025-03-11 19:56:05,180 - Default - MainProcess - 21136 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 210
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:56:21,345 - Default - MainProcess - 21136 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *  # Ensure this is at the module level
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:56:21,345 - Default - MainProcess - 21136 - M3 Script execution completed
+2025-03-11 19:57:35,389 - Default - MainProcess - 21873 - M3 Script execution starts
+2025-03-11 19:57:50,247 - Default - MainProcess - 21873 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 282, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    status = Wmx3Lib_cm.GetAxesStatus(5)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'GetAxesStatus'. Did you mean: 'GetStatus'?
+!!!
+----------------------
+
+2025-03-11 19:58:12,668 - Default - MainProcess - 21873 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 19:58:32,298 - Default - MainProcess - 21873 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 318, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 16, in main
+    Wmx3Lib = WMX3Api()
+              ^^^^^^^
+UnboundLocalError: cannot access local variable 'WMX3Api' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-11 19:58:32,298 - Default - MainProcess - 21873 - M3 Script execution completed
+2025-03-11 20:00:02,407 - Default - MainProcess - 22756 - M3 Script execution starts
+2025-03-11 20:00:18,307 - Default - MainProcess - 22756 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 282, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    status = Wmx3Lib_cm.GetStatus(5)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CoreMotion.GetStatus() takes 1 positional argument but 2 were given
+!!!
+----------------------
+
+2025-03-11 20:00:37,664 - Default - MainProcess - 22756 - Count1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 210
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 20:01:03,632 - Default - MainProcess - 22756 - Count2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-11 20:01:03,633 - Default - MainProcess - 22756 - M3 Script execution completed
+2025-03-11 20:01:39,010 - Default - MainProcess - 23299 - M3 Script execution starts
+2025-03-11 20:01:59,247 - Default - MainProcess - 23299 - Count0:
+codedata:
+Program begin.
+Pos Cmd : 300.0
+Program End.
+Elapsed_time: 3.551
+----------------------
+
+2025-03-11 20:01:59,812 - Default - MainProcess - 23299 - M3 Script execution completed
+2025-03-11 20:02:41,490 - Default - MainProcess - 23641 - M3 Script execution starts
+2025-03-11 20:03:04,110 - Default - MainProcess - 23641 - Count0:
+codedata:
+Program begin.
+Pos Cmd : 300.0
+Program End.
+Elapsed_time: 3.669
+----------------------
+
+2025-03-11 20:03:04,643 - Default - MainProcess - 23641 - M3 Script execution completed
+2025-03-11 20:03:52,496 - Default - MainProcess - 24081 - M3 Script execution starts
+2025-03-11 20:04:44,459 - Default - MainProcess - 24362 - M3 Script execution starts
+2025-03-11 20:06:10,669 - Default - MainProcess - 24821 - M3 Script execution starts
+2025-03-11 20:08:57,506 - Default - MainProcess - 25719 - M3 Script execution starts
+2025-03-11 20:10:00,327 - Default - MainProcess - 26074 - M3 Script execution starts
+2025-03-11 20:11:04,547 - Default - MainProcess - 26415 - M3 Script execution starts
+2025-03-11 20:12:46,101 - Default - MainProcess - 27009 - M3 Script execution starts
+2025-03-11 20:13:24,056 - Default - MainProcess - 27009 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.812
+----------------------
+
+2025-03-11 20:13:24,644 - Default - MainProcess - 27009 - M3 Script execution completed
+2025-03-11 20:20:21,875 - Default - MainProcess - 29309 - M3 Script execution starts
+2025-03-11 20:20:51,682 - Default - MainProcess - 29309 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.741
+----------------------
+
+2025-03-11 20:20:52,235 - Default - MainProcess - 29309 - M3 Script execution completed
+2025-03-11 20:21:15,474 - Default - MainProcess - 29610 - M3 Script execution starts
+2025-03-11 20:21:39,313 - Default - MainProcess - 29610 - M3 Script execution completed
+2025-03-11 20:27:41,251 - Default - MainProcess - 31666 - M3 Script execution starts
+2025-03-11 20:28:00,107 - Default - MainProcess - 31666 - M3 Script execution completed
+2025-03-11 20:28:57,490 - Default - MainProcess - 32085 - M3 Script execution starts
+2025-03-11 20:31:27,350 - Default - MainProcess - 32875 - M3 Script execution starts
+2025-03-11 20:32:27,148 - Default - MainProcess - 33201 - M3 Script execution starts
+2025-03-11 20:33:28,174 - Default - MainProcess - 33531 - M3 Script execution starts
+2025-03-11 20:33:47,782 - Default - MainProcess - 33531 - Count0:
+codedata:
+Program begin.
+Axis 0 position command: 95
+Axis 0 position command: 90
+Axis 0 position command: 90
+Axis 0 position command: 105
+Axis 0 position command: 95
+Axis 0 position command: 105
+Axis 0 position command: 90
+Axis 0 position command: 95
+Axis 0 position command: 100
+Position command is 100, stopping Axis 0 and moving to 10
+Moving Axis 0 to position 10
+Program End.
+Elapsed_time: 3.363
+----------------------
+
+2025-03-11 20:33:48,306 - Default - MainProcess - 33531 - M3 Script execution completed
+2025-03-11 20:36:22,662 - Default - MainProcess - 34477 - M3 Script execution starts
+2025-03-11 20:37:37,915 - Default - MainProcess - 34925 - M3 Script execution starts
+2025-03-11 20:38:04,049 - Default - MainProcess - 34925 - Count0:
+codedata:
+Program begin.
+Servo On : True
+Servo Offline : False
+Amp Alarm : False
+Amp Alarm Code : 0
+Master Axis : -1
+Second Master Axis : -1
+Program End.
+Elapsed_time: 3.355
+----------------------
+
+2025-03-11 20:38:04,579 - Default - MainProcess - 34925 - M3 Script execution completed
+2025-03-11 20:39:18,881 - Default - MainProcess - 35498 - M3 Script execution starts
+2025-03-11 20:39:39,488 - Default - MainProcess - 35498 - Count0:
+codedata:
+Program begin.
+Pos Cmd for Axis 5: 0.0
+Program End.
+Elapsed_time: 3.525
+----------------------
+
+2025-03-11 20:39:40,034 - Default - MainProcess - 35498 - M3 Script execution completed
+2025-03-11 20:40:37,691 - Default - MainProcess - 35932 - M3 Script execution starts
+2025-03-11 20:41:02,015 - Default - MainProcess - 35932 - Count0:
+codedata:
+Program begin.
+Pos Cmd : 200.0
+Program End.
+Elapsed_time: 3.641
+----------------------
+
+2025-03-11 20:41:02,560 - Default - MainProcess - 35932 - M3 Script execution completed
+2025-03-11 20:42:05,543 - Default - MainProcess - 36403 - M3 Script execution starts
+2025-03-11 20:42:40,670 - Default - MainProcess - 36403 - Count0:
+codedata:
+Program begin.
+Pos Cmd for Axis 5: 200.0
+Program End.
+Elapsed_time: 4.045
+----------------------
+
+2025-03-11 20:42:41,242 - Default - MainProcess - 36403 - M3 Script execution completed
+2025-03-11 20:45:03,189 - Default - MainProcess - 37303 - M3 Script execution starts
+2025-03-11 20:45:24,361 - Default - MainProcess - 37303 - M3 Script execution completed
+2025-03-11 20:46:10,025 - Default - MainProcess - 37705 - M3 Script execution starts
+2025-03-11 20:46:26,680 - Default - MainProcess - 37705 - M3 Script execution completed
+2025-03-11 20:46:42,079 - Default - MainProcess - 37933 - M3 Script execution starts
+2025-03-11 20:47:07,332 - Default - MainProcess - 37933 - Count0:
+codedata:
+Program begin.
+Pos Cmd for Axis 5: 200.0
+Program End.
+Elapsed_time: 4.169
+----------------------
+
+2025-03-11 20:47:07,882 - Default - MainProcess - 37933 - M3 Script execution completed
+2025-03-11 20:53:06,335 - Default - MainProcess - 39914 - M3 Script execution starts
+2025-03-11 20:53:27,498 - Default - MainProcess - 39914 - M3 Script execution completed
+2025-03-11 20:54:23,954 - Default - MainProcess - 40421 - M3 Script execution starts
+2025-03-11 20:55:01,637 - Default - MainProcess - 40421 - Count0:
+codedata:
+Program begin.
+Pos Cmd for Axis 5: 200.0
+Program End.
+Elapsed_time: 4.025
+----------------------
+
+2025-03-11 20:55:02,194 - Default - MainProcess - 40421 - M3 Script execution completed
+2025-03-11 20:55:54,542 - Default - MainProcess - 40911 - M3 Script execution starts
+2025-03-11 20:56:27,233 - Default - MainProcess - 40911 - Count0:
+codedata:
+Program begin.
+Pos Cmd for Axis 5: 200.0
+Program End.
+Elapsed_time: 4.675
+----------------------
+
+2025-03-11 20:56:27,796 - Default - MainProcess - 40911 - M3 Script execution completed
+2025-03-11 20:58:50,708 - Default - MainProcess - 41907 - M3 Script execution starts
+2025-03-11 20:59:12,072 - Default - MainProcess - 41907 - M3 Script execution completed
+2025-03-11 20:59:36,521 - Default - MainProcess - 42195 - M3 Script execution starts
+2025-03-11 21:00:12,490 - Default - MainProcess - 42195 - Count0:
+codedata:
+Program begin.
+Actual Position of Axis 4: 300.0
+Program End.
+Elapsed_time: 4.445
+----------------------
+
+2025-03-11 21:00:13,041 - Default - MainProcess - 42195 - M3 Script execution completed
+2025-03-11 21:03:25,790 - Default - MainProcess - 43399 - M3 Script execution starts
+2025-03-11 21:03:58,525 - Default - MainProcess - 43399 - M3 Script execution completed
+2025-03-11 21:05:05,732 - Default - MainProcess - 43939 - M3 Script execution starts
+2025-03-11 21:05:36,728 - Default - MainProcess - 43939 - M3 Script execution completed
+2025-03-11 21:06:17,878 - Default - MainProcess - 44384 - M3 Script execution starts
+2025-03-11 21:06:53,734 - Default - MainProcess - 44384 - Count0:
+codedata:
+Program begin.
+Actual Pos for Axis 3: 31.860000000000582
+Program End.
+Elapsed_time: 4.174
+----------------------
+
+2025-03-11 21:06:54,310 - Default - MainProcess - 44384 - M3 Script execution completed
+2025-03-11 21:09:31,056 - Default - MainProcess - 45440 - M3 Script execution starts
+2025-03-11 21:09:53,997 - Default - MainProcess - 45440 - M3 Script execution completed
+2025-03-11 21:10:29,799 - Default - MainProcess - 45794 - M3 Script execution starts
+2025-03-11 21:11:11,095 - Default - MainProcess - 45794 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.173
+----------------------
+
+2025-03-11 21:11:11,648 - Default - MainProcess - 45794 - M3 Script execution completed
+2025-03-11 21:12:17,161 - Default - MainProcess - 46366 - M3 Script execution starts
+2025-03-11 21:12:43,413 - Default - MainProcess - 46366 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.910
+----------------------
+
+2025-03-11 21:12:43,953 - Default - MainProcess - 46366 - M3 Script execution completed
+2025-03-11 21:13:23,276 - Default - MainProcess - 46728 - M3 Script execution starts
+2025-03-11 21:13:49,375 - Default - MainProcess - 46728 - M3 Script execution completed
+2025-03-11 21:15:25,182 - Default - MainProcess - 47368 - M3 Script execution starts
+2025-03-11 21:15:54,582 - Default - MainProcess - 47368 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.901
+----------------------
+
+2025-03-11 21:15:55,116 - Default - MainProcess - 47368 - M3 Script execution completed
+2025-03-11 21:17:36,238 - Default - MainProcess - 48071 - M3 Script execution starts
+2025-03-11 21:18:05,640 - Default - MainProcess - 48071 - M3 Script execution completed
+2025-03-11 21:18:23,147 - Default - MainProcess - 48342 - M3 Script execution starts
+2025-03-11 21:19:01,528 - Default - MainProcess - 48342 - M3 Script execution completed
+2025-03-11 21:19:46,030 - Default - MainProcess - 48821 - M3 Script execution starts
+2025-03-11 21:20:49,420 - Default - MainProcess - 49159 - M3 Script execution starts
+2025-03-11 21:21:40,060 - Default - MainProcess - 49159 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.708
+----------------------
+
+2025-03-11 21:21:40,662 - Default - MainProcess - 49159 - M3 Script execution completed
+2025-03-11 21:22:37,357 - Default - MainProcess - 49730 - M3 Script execution starts
+2025-03-11 21:23:27,582 - Default - MainProcess - 49730 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.237
+----------------------
+
+2025-03-11 21:23:28,200 - Default - MainProcess - 49730 - M3 Script execution completed
+2025-03-11 21:25:58,491 - Default - MainProcess - 50843 - M3 Script execution starts
+2025-03-11 21:26:13,129 - Default - MainProcess - 50843 - M3 Script execution completed
+2025-03-11 21:26:58,236 - Default - MainProcess - 51210 - M3 Script execution starts
+2025-03-11 21:27:17,928 - Default - MainProcess - 51210 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 298, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 241, in main
+    axis_status = get_axis_status(1)
+                  ^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 216, in get_axis_status
+    ret, status = Wmx3Lib_cm.GetStatus_AxisSel(axis_selection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'GetStatus_AxisSel'
+!!!
+----------------------
+
+2025-03-11 21:27:32,302 - Default - MainProcess - 51210 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 300, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 238, in main
+    axis_status = get_axis_status(1)
+                  ^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 213, in get_axis_status
+    ret, status = Wmx3Lib_cm.GetStatus(axis)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CoreMotion.GetStatus() takes 1 positional argument but 2 were given
+!!!
+----------------------
+
+2025-03-11 21:27:56,101 - Default - MainProcess - 51210 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 332, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 289, in main
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 245, in main
+    err = wmxlib.CreateDevice('C:\\Program Files\\SoftServo\\WMX3\\', DeviceType.PyNone)
+                                                                      ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'DeviceType' has no attribute 'PyNone'
+!!!
+----------------------
+
+2025-03-11 21:27:56,103 - Default - MainProcess - 51210 - M3 Script execution completed
+2025-03-11 21:29:05,958 - Default - MainProcess - 51876 - M3 Script execution starts
+2025-03-11 21:29:29,551 - Default - MainProcess - 51876 - Count0:
+codedata:
+Program begin.
+Axis 1 Status Retrieved Successfully
+Position Command: 101.0, Actual Position: 101.0
+Program End.
+Elapsed_time: 3.426
+----------------------
+
+2025-03-11 21:29:30,142 - Default - MainProcess - 51876 - M3 Script execution completed
+2025-03-11 21:30:42,982 - Default - MainProcess - 52478 - M3 Script execution starts
+2025-03-11 21:31:09,679 - Default - MainProcess - 52478 - M3 Script execution completed
+2025-03-11 21:31:36,634 - Default - MainProcess - 52784 - M3 Script execution starts
+2025-03-11 21:31:50,818 - Default - MainProcess - 52784 - M3 Script execution completed
+2025-03-11 21:32:30,866 - Default - MainProcess - 53075 - M3 Script execution starts
+2025-03-11 21:32:50,730 - Default - MainProcess - 53075 - Count0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 298, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 244, in main
+    axis_status = get_axis_status(1)
+                  ^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in get_axis_status
+    ret, axis_status = Wmx3Lib_cm.motion.GetAxisStatus(axis)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-11 21:33:08,400 - Default - MainProcess - 53075 - Count1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 300, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 245, in main
+    axis_status = get_axis_status(1)
+                  ^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 213, in get_axis_status
+    ret, axis_status = Wmx3Lib_cm.motion.GetAxisStatus(axis)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-11 21:33:23,501 - Default - MainProcess - 53075 - Count2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 301, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 246, in main
+    axis_status = get_axis_status(1)
+                  ^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 214, in get_axis_status
+    ret, axis_status = Wmx3Lib_cm.axisControl.GetAxisStatus(axis)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 7095, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, AxisControl, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'AxisControl' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-11 21:33:23,502 - Default - MainProcess - 53075 - M3 Script execution completed
+2025-03-11 21:33:39,053 - Default - MainProcess - 53450 - M3 Script execution starts
+2025-03-11 21:33:54,098 - Default - MainProcess - 53450 - Count0:
+codedata:
+Program begin.
+Moving axis 1 to position 201.
+Program End.
+Elapsed_time: 3.154
+----------------------
+
+2025-03-11 21:33:54,603 - Default - MainProcess - 53450 - M3 Script execution completed
+2025-03-11 21:36:02,530 - Default - MainProcess - 54250 - M3 Script execution starts
+2025-03-11 21:36:34,542 - Default - MainProcess - 54250 - Count0:
+codedata:
+Program begin.
+Axis 1 Status : <WMX3ApiPython.CoreMotionAxisStatus; proxy of <Swig Object of type 'wmx3ApiPython::CoreMotionAxisStatus *' at 0x000002193116E340> >
+Position Command: 101.0
+Actual Position: 101.0
+Program End.
+Elapsed_time: 4.494
+----------------------
+
+2025-03-11 21:36:35,097 - Default - MainProcess - 54250 - M3 Script execution completed
+2025-03-11 21:39:23,269 - Default - MainProcess - 55424 - M3 Script execution starts
+2025-03-11 21:39:49,145 - Default - MainProcess - 55424 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.592
+----------------------
+
+2025-03-11 21:39:49,757 - Default - MainProcess - 55424 - M3 Script execution completed
+2025-03-11 21:40:19,514 - Default - MainProcess - 55776 - M3 Script execution starts
+2025-03-11 21:40:44,969 - Default - MainProcess - 55776 - M3 Script execution completed
+2025-03-11 21:41:04,528 - Default - MainProcess - 56041 - M3 Script execution starts
+2025-03-11 21:41:37,979 - Default - MainProcess - 56041 - M3 Script execution completed
+2025-03-11 21:42:48,254 - Default - MainProcess - 56643 - M3 Script execution starts
+2025-03-11 21:43:07,761 - Default - MainProcess - 56643 - M3 Script execution completed
+2025-03-11 21:45:08,316 - Default - MainProcess - 57424 - M3 Script execution starts
+2025-03-11 21:45:33,081 - Default - MainProcess - 57424 - M3 Script execution completed
+2025-03-11 21:47:06,445 - Default - MainProcess - 58053 - M3 Script execution starts
+2025-03-11 21:47:29,115 - Default - MainProcess - 58053 - Count0:
+codedata:
+Program begin.
+Actual Torque: 0.0
+Pos Cmd: 101.0
+Program End.
+Elapsed_time: 3.916
+----------------------
+
+2025-03-11 21:47:29,701 - Default - MainProcess - 58053 - M3 Script execution completed
+2025-03-11 21:48:21,970 - Default - MainProcess - 58514 - M3 Script execution starts
+2025-03-11 21:48:50,556 - Default - MainProcess - 58514 - Count0:
+codedata:
+Program begin.
+Actual Torque: 0.0, Pos Cmd: 101.0
+Program End.
+Elapsed_time: 5.109
+----------------------
+
+2025-03-11 21:48:51,128 - Default - MainProcess - 58514 - M3 Script execution completed
+2025-03-11 21:56:09,255 - Default - MainProcess - 60962 - M3 Script execution starts
+2025-03-11 21:56:22,603 - Default - MainProcess - 60962 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.011
+----------------------
+
+2025-03-11 21:56:23,153 - Default - MainProcess - 60962 - M3 Script execution completed
+2025-03-11 22:02:15,227 - Default - MainProcess - 62831 - M3 Script execution starts
+2025-03-11 22:02:45,244 - Default - MainProcess - 62831 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.224
+----------------------
+
+2025-03-11 22:02:45,839 - Default - MainProcess - 62831 - M3 Script execution completed
+2025-03-11 22:05:42,447 - Default - MainProcess - 63908 - M3 Script execution starts
+2025-03-11 22:06:10,084 - Default - MainProcess - 63908 - Count0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.363
+----------------------
+
+2025-03-11 22:06:10,666 - Default - MainProcess - 63908 - M3 Script execution completed
