@@ -18,6 +18,7 @@ from langchain.chains import LLMChain
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_community.retrievers import BM25Retriever
 from langchain.retrievers import EnsembleRetriever
+from langchain_deepseek import ChatDeepSeek
 
 from time import *
 from CodeClient import *
@@ -66,12 +67,17 @@ splits = text_splitter.split_documents(docs)
 
 
  
-codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="o3-mini")  # o3-mini gpt-4o, ,temperature=0.2
+# codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="o3-mini")  # o3-mini gpt-4o, ,temperature=0.2
+# taskdecom_llm = codegene_llm
+# codegene_runnable = None
+ 
+# codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="gpt-4o", temperature=0.2)  # 
+codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0)  # 
 taskdecom_llm = codegene_llm
 codegene_runnable = None
  
 # Specify LLM name for making CanonicalCode
-llm_name = 'CanonicalCode'
+llm_name = 'DeepSeek-V3-M3'
 
 # Code generation llm >>>>>>>>>>>>>
 # Prompt for code generation
@@ -124,13 +130,21 @@ codegene_runnable = (
 # Task decomposition llm >>>>>>>>>>>>>
 # Prompt for task decomposition
 taskdecom_prompt_template = """
-You are a task decomposer that breaks down a user question into multiple sub-tasks only when encountering ';', listing them as separate lines. For example, the user question '1. Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile ; 2. set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 3. Move Axis 7 to 30; ' should be decomposed into three tasks, adding 'Write Python code to' to each:
+Breaks down the user question into multiple sub-tasks. Only when you see a semicolon(;) in the question, separate the parts before and after it into subtasks. List subtasks as separate lines, and adding 'Write Python code to' to each.
 
-1. Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile ; 
-2. Write Python code to set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 
-3. Write Python code to Move Axis 7 to 30; 
+For example, the user question 
+
+"Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile. Then move to 0; set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; Move Axis 7 to 30;"
+
+should be decomposed into three tasks: 
+
+"Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile. Then move to 0; 
+Write Python code to set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 
+Write Python code to Move Axis 7 to 30; "
 
 If the user question contains only a single task, output the original question as is, adding 'Write Python code to' at the beginning if it’s not already present.
+
+Don't output any other words for explanation.
 
 User question:
 {question}
