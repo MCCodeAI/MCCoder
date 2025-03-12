@@ -64,15 +64,15 @@ separators = ['``']  # Adjust based on actual document structure, `` is the end 
 text_splitter = RecursiveCharacterTextSplitter(separators=separators, keep_separator=True, chunk_size=1000, chunk_overlap=200, add_start_index=True)
 splits = text_splitter.split_documents(docs)
 
-codegene_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
-taskdecom_llm = codegene_llm
-codegene_runnable = None
-llm_name = 'gpt-4o-M3'  #CanonicalCode, gpt-4o-M3
-
-# codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0)  # 
+# codegene_llm = ChatOpenAI(name="MCCoder-M3-o3-mini", model_name="o3-mini")  # o3-mini gpt-4o, ,temperature=0.2
 # taskdecom_llm = codegene_llm
 # codegene_runnable = None
-# llm_name = 'DeepSeek-V3-M3'  #CanonicalCode, gpt-4o-M3
+# llm_name = 'o3-mini-M3'  #CanonicalCode, gpt-4o-M3
+
+codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0)  # 
+taskdecom_llm = codegene_llm
+codegene_runnable = None
+llm_name = 'DeepSeek-V3-M3'  #CanonicalCode, gpt-4o-M3
 
 # Code generation llm >>>>>>>>>>>>>
 # Prompt for code generation
@@ -80,12 +80,12 @@ prompt_template = """Generate a Python code based on the given Question and Cont
 
 Instructions:
 1.	Extract Key Information:
-•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
+•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question, list numbers from small to big.
 •	Add this information at the beginning of the generated code in the following format:
 
 # Axes = [Axis_number_1, Axis_number_2, ...]
-# Inputs = [byte.bit_1, byte.bit_2, ...]
-# Outputs = [byte.bit_1, byte.bit_2, ...]
+# IOInputs = [byte.bit_1, byte.bit_2, ...]
+# IOOutputs = [byte.bit_1, byte.bit_2, ...]
 
 
 •	Example:
@@ -93,9 +93,9 @@ If the Question states:
 “Move Axis 9, Axis 12, and Axis 2 based on Input 0.3 and 1.2, then activate Output 3.4 and 6.1”,
 the script should start with:
 
-# Axes = [9, 12, 2]
-# Inputs = [0.3, 1.2]
-# Outputs = [3.4, 6.1]
+# Axes = [2, 9, 12]
+# IOInputs = [0.3, 1.2]
+# IOOutputs = [3.4, 6.1]
 
 
 2.	Code Formatting:

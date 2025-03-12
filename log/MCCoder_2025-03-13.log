@@ -1,0 +1,2427 @@
+2025-03-13 00:05:18,396 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 1
+2025-03-13 00:05:57,160 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.045
+----------------------
+
+2025-03-13 00:05:57,691 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 1, LLM Time: 33.61s
+2025-03-13 00:05:57,793 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 2
+2025-03-13 00:06:32,034 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.527
+----------------------
+
+2025-03-13 00:06:32,435 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 2, LLM Time: 29.61s
+2025-03-13 00:06:32,537 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 3
+2025-03-13 00:07:11,986 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.286
+----------------------
+
+2025-03-13 00:07:12,396 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 3, LLM Time: 33.97s
+2025-03-13 00:07:12,499 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 4
+2025-03-13 00:08:00,662 - Default - MainProcess - 80421 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 275, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if XYZ == 0:
+       ^^^
+NameError: name 'XYZ' is not defined
+!!!
+----------------------
+
+2025-03-13 00:08:28,132 - Default - MainProcess - 80421 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.436
+----------------------
+
+2025-03-13 00:08:28,544 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 4, LLM Time: 43.98s
+2025-03-13 00:08:28,645 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 5
+2025-03-13 00:09:04,765 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.486
+----------------------
+
+2025-03-13 00:09:05,246 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 5, LLM Time: 30.53s
+2025-03-13 00:09:05,348 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 6
+2025-03-13 00:10:00,094 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.938
+----------------------
+
+2025-03-13 00:10:00,534 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 6, LLM Time: 49.70s
+2025-03-13 00:10:00,634 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 7
+2025-03-13 00:10:46,259 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.757
+----------------------
+
+2025-03-13 00:10:46,680 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 7, LLM Time: 40.76s
+2025-03-13 00:10:46,782 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 8
+2025-03-13 00:11:43,867 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.658
+----------------------
+
+2025-03-13 00:11:44,289 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 8, LLM Time: 51.32s
+2025-03-13 00:11:44,390 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 9
+2025-03-13 00:12:59,645 - Default - MainProcess - 80421 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 289, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if not x:
+           ^
+NameError: name 'x' is not defined
+!!!
+----------------------
+
+2025-03-13 00:13:43,225 - Default - MainProcess - 80421 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.391
+----------------------
+
+2025-03-13 00:13:43,639 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 9, LLM Time: 71.00s
+2025-03-13 00:13:43,740 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 10
+2025-03-13 00:14:25,388 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.697
+----------------------
+
+2025-03-13 00:14:25,809 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 10, LLM Time: 36.84s
+2025-03-13 00:14:25,911 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 11
+2025-03-13 00:15:13,911 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.520
+----------------------
+
+2025-03-13 00:15:14,394 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 11, LLM Time: 42.37s
+2025-03-13 00:15:14,495 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 12
+2025-03-13 00:16:14,695 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.477
+----------------------
+
+2025-03-13 00:16:15,108 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 12, LLM Time: 54.62s
+2025-03-13 00:16:15,210 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 13
+2025-03-13 00:17:06,065 - Default - MainProcess - 80421 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 316, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-13 00:17:53,273 - Default - MainProcess - 80421 - Count 1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-13 00:18:52,600 - Default - MainProcess - 80421 - Count 2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-13 00:18:52,601 - Default - MainProcess - 80421 - DeepSeek-V3-M3 Error detected for Task ID: 13
+2025-03-13 00:18:52,601 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 13, LLM Time: 48.41s
+2025-03-13 00:18:52,703 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 14
+2025-03-13 00:19:48,699 - Default - MainProcess - 80421 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 274, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    jogCommand.profile.type = ProfileType.TimeaccTrapezoidal
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TimeaccTrapezoidal'. Did you mean: 'TimeAccTrapezoidal'?
+!!!
+----------------------
+
+2025-03-13 00:20:13,151 - Default - MainProcess - 80421 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.396
+----------------------
+
+2025-03-13 00:20:13,653 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 14, LLM Time: 51.85s
+2025-03-13 00:20:13,755 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 15
+2025-03-13 00:21:16,057 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.870
+----------------------
+
+2025-03-13 00:21:16,499 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 15, LLM Time: 56.33s
+2025-03-13 00:21:16,601 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 16
+2025-03-13 00:22:44,442 - Default - MainProcess - 80421 - Count 0:
+codeerr:
+!!!
+----------------------
+
+2025-03-13 00:24:00,857 - Default - MainProcess - 80421 - Count 1:
+codeerr:
+!!!
+----------------------
+
+2025-03-13 00:24:00,857 - Default - MainProcess - 80421 - Count 1: No change in codereturn, exiting correction loop
+2025-03-13 00:24:00,858 - Default - MainProcess - 80421 - DeepSeek-V3-M3 Error detected for Task ID: 16
+2025-03-13 00:24:00,858 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 16, LLM Time: 63.11s
+2025-03-13 00:24:00,960 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 17
+2025-03-13 00:24:48,834 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.706
+----------------------
+
+2025-03-13 00:24:49,319 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 17, LLM Time: 42.06s
+2025-03-13 00:24:49,421 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 18
+2025-03-13 00:25:27,707 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.111
+----------------------
+
+2025-03-13 00:25:27,991 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 18, LLM Time: 34.07s
+2025-03-13 00:25:28,094 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 19
+2025-03-13 00:26:25,650 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.846
+----------------------
+
+2025-03-13 00:26:25,940 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 19, LLM Time: 52.60s
+2025-03-13 00:26:26,042 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 20
+2025-03-13 00:27:12,535 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.067
+----------------------
+
+2025-03-13 00:27:12,832 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 20, LLM Time: 42.32s
+2025-03-13 00:27:12,935 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 21
+2025-03-13 00:28:09,326 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.233
+----------------------
+
+2025-03-13 00:28:09,766 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 21, LLM Time: 51.05s
+2025-03-13 00:28:09,868 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 22
+2025-03-13 00:28:57,517 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+StartLinearIntplPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 4.618
+----------------------
+
+2025-03-13 00:29:29,140 - Default - MainProcess - 80421 - Count 1:
+codedata:
+Program begin.
+StartLinearIntplPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 4.347
+----------------------
+
+2025-03-13 00:30:17,024 - Default - MainProcess - 80421 - Count 2:
+codedata:
+Program begin.
+StartLinearIntplPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 3.938
+----------------------
+
+2025-03-13 00:30:17,025 - Default - MainProcess - 80421 - DeepSeek-V3-M3 Error detected for Task ID: 22
+2025-03-13 00:30:17,025 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 22, LLM Time: 42.92s
+2025-03-13 00:30:17,128 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 23
+2025-03-13 00:30:55,958 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.009
+----------------------
+
+2025-03-13 00:30:56,394 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 23, LLM Time: 33.72s
+2025-03-13 00:30:56,496 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 24
+2025-03-13 00:32:13,462 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.199
+----------------------
+
+2025-03-13 00:32:13,918 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 24, LLM Time: 70.66s
+2025-03-13 00:32:14,020 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 25
+2025-03-13 00:33:09,326 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.298
+----------------------
+
+2025-03-13 00:33:09,780 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 25, LLM Time: 49.90s
+2025-03-13 00:33:09,883 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 26
+2025-03-13 00:34:26,621 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.893
+----------------------
+
+2025-03-13 00:34:27,074 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 26, LLM Time: 70.74s
+2025-03-13 00:34:27,176 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 27
+2025-03-13 00:35:54,426 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.475
+----------------------
+
+2025-03-13 00:35:54,881 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 27, LLM Time: 78.67s
+2025-03-13 00:35:54,983 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 28
+2025-03-13 00:37:38,325 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.478
+----------------------
+
+2025-03-13 00:37:38,804 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 28, LLM Time: 96.75s
+2025-03-13 00:37:38,906 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 29
+2025-03-13 00:39:26,793 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.040
+----------------------
+
+2025-03-13 00:39:27,232 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 29, LLM Time: 102.74s
+2025-03-13 00:39:27,334 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 30
+2025-03-13 00:41:15,143 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.436
+----------------------
+
+2025-03-13 00:41:15,564 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 30, LLM Time: 102.27s
+2025-03-13 00:41:15,665 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 31
+2025-03-13 00:42:05,433 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.403
+----------------------
+
+2025-03-13 00:42:05,935 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 31, LLM Time: 44.26s
+2025-03-13 00:42:06,037 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 32
+2025-03-13 00:44:06,175 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.087
+----------------------
+
+2025-03-13 00:44:06,662 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 32, LLM Time: 113.94s
+2025-03-13 00:44:06,763 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 33
+2025-03-13 00:44:52,793 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.527
+----------------------
+
+2025-03-13 00:44:53,264 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 33, LLM Time: 39.40s
+2025-03-13 00:44:53,366 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 34
+2025-03-13 00:45:45,256 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.467
+----------------------
+
+2025-03-13 00:45:45,694 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 34, LLM Time: 46.32s
+2025-03-13 00:45:45,795 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 35
+2025-03-13 00:47:04,549 - Default - MainProcess - 80421 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 297, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 227, in main
+    remaining_distance = Wmx3Lib_cm.motion.GetRemainingDistance(1)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetRemainingDistance'
+!!!
+----------------------
+
+2025-03-13 00:47:54,873 - Default - MainProcess - 80421 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 298, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 227, in main
+    axisStatus = Wmx3Lib_cm.motion.GetAxisStatus(1)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 00:48:42,826 - Default - MainProcess - 80421 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 298, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 227, in main
+    axisStatus = Wmx3Lib_cm.axisControl.GetAxisStatus(1)  # Corrected function call
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 7095, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, AxisControl, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'AxisControl' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 00:48:42,827 - Default - MainProcess - 80421 - DeepSeek-V3-M3 Error detected for Task ID: 35
+2025-03-13 00:48:42,827 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 35, LLM Time: 73.92s
+2025-03-13 00:48:42,930 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 36
+2025-03-13 00:49:47,468 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.949
+----------------------
+
+2025-03-13 00:49:47,912 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 36, LLM Time: 58.48s
+2025-03-13 00:49:48,014 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 37
+2025-03-13 00:51:00,605 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.901
+----------------------
+
+2025-03-13 00:51:01,024 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 37, LLM Time: 67.59s
+2025-03-13 00:51:01,125 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 38
+2025-03-13 00:52:05,982 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.665
+----------------------
+
+2025-03-13 00:52:06,392 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 38, LLM Time: 60.09s
+2025-03-13 00:52:06,493 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 39
+2025-03-13 00:53:05,935 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.635
+----------------------
+
+2025-03-13 00:53:06,454 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 39, LLM Time: 54.70s
+2025-03-13 00:53:06,556 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 40
+2025-03-13 00:54:09,846 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.652
+----------------------
+
+2025-03-13 00:54:10,258 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 40, LLM Time: 58.53s
+2025-03-13 00:54:10,360 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 41
+2025-03-13 00:55:10,603 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.102
+----------------------
+
+2025-03-13 00:55:11,027 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 41, LLM Time: 55.03s
+2025-03-13 00:55:11,128 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 42
+2025-03-13 00:55:56,229 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.345
+----------------------
+
+2025-03-13 00:55:56,664 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 42, LLM Time: 39.65s
+2025-03-13 00:55:56,766 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 43
+2025-03-13 00:57:05,250 - Default - MainProcess - 80421 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.782
+----------------------
+
+2025-03-13 00:57:05,685 - Default - MainProcess - 80421 - DeepSeek-V3-M3: completed for Task ID: 43, LLM Time: 62.59s
+2025-03-13 00:57:05,787 - Default - MainProcess - 80421 - DeepSeek-V3-M3: starts for Task ID: 44
+2025-03-13 00:58:04,999 - Default - MainProcess - 80421 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 309, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 254, in main
+    ret = Wmx3Lib_cm.motion.StartPos_Trigger(posCommand, trig)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8647, in StartPos_Trigger
+    return _WMX3ApiPython.Motion_StartPos_Trigger(self, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotImplementedError: Wrong number or type of arguments for overloaded function 'Motion_StartPos_Trigger'.
+  Possible C/C++ prototypes are:
+    wmx3ApiPython::Motion::StartPos_Trigger(wmx3ApiPython::Motion_TriggerPosCommand *)
+    wmx3ApiPython::Motion::StartPos_Trigger(unsigned int,PyObject *)
+
+!!!
+----------------------
+
+2025-03-13 01:17:44,913 - Default - MainProcess - 3248 - DeepSeek-V3-M3: starts for Task ID: 44
+2025-03-13 01:19:51,109 - Default - MainProcess - 3986 - DeepSeek-V3-M3: starts for Task ID: 44
+2025-03-13 01:21:01,353 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 44
+2025-03-13 01:21:51,085 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 309, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 254, in main
+    ret = Wmx3Lib_cm.motion.StartPos_Trigger(posCommand, trig)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8647, in StartPos_Trigger
+    return _WMX3ApiPython.Motion_StartPos_Trigger(self, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotImplementedError: Wrong number or type of arguments for overloaded function 'Motion_StartPos_Trigger'.
+  Possible C/C++ prototypes are:
+    wmx3ApiPython::Motion::StartPos_Trigger(wmx3ApiPython::Motion_TriggerPosCommand *)
+    wmx3ApiPython::Motion::StartPos_Trigger(unsigned int,PyObject *)
+
+!!!
+----------------------
+
+2025-03-13 01:22:32,711 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.104
+----------------------
+
+2025-03-13 01:22:33,345 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 44, LLM Time: 45.02s
+2025-03-13 01:22:33,448 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 45
+2025-03-13 01:23:14,609 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.581
+----------------------
+
+2025-03-13 01:23:15,022 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 45, LLM Time: 35.47s
+2025-03-13 01:23:15,123 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 46
+2025-03-13 01:23:55,520 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.546
+----------------------
+
+2025-03-13 01:23:55,938 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 46, LLM Time: 34.74s
+2025-03-13 01:23:56,040 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 47
+2025-03-13 01:24:24,754 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.287
+----------------------
+
+2025-03-13 01:24:25,149 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 47, LLM Time: 23.32s
+2025-03-13 01:24:25,252 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 48
+2025-03-13 01:25:15,463 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.874
+----------------------
+
+2025-03-13 01:25:15,869 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 48, LLM Time: 45.23s
+2025-03-13 01:25:15,971 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 49
+2025-03-13 01:26:12,221 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.822
+----------------------
+
+2025-03-13 01:26:12,721 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 49, LLM Time: 47.32s
+2025-03-13 01:26:12,824 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 50
+2025-03-13 01:27:10,073 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.949
+----------------------
+
+2025-03-13 01:27:10,513 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 50, LLM Time: 51.19s
+2025-03-13 01:27:10,616 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 51
+2025-03-13 01:27:52,759 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.329
+----------------------
+
+2025-03-13 01:27:53,178 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 51, LLM Time: 36.71s
+2025-03-13 01:27:53,281 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 52
+2025-03-13 01:28:30,773 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.855
+----------------------
+
+2025-03-13 01:28:31,200 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 52, LLM Time: 32.53s
+2025-03-13 01:28:31,302 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 53
+2025-03-13 01:29:25,481 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.612
+----------------------
+
+2025-03-13 01:29:25,922 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 53, LLM Time: 48.46s
+2025-03-13 01:29:26,025 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 54
+2025-03-13 01:30:15,457 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.345
+----------------------
+
+2025-03-13 01:30:15,920 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 54, LLM Time: 40.98s
+2025-03-13 01:30:16,022 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 55
+2025-03-13 01:30:50,108 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.034
+----------------------
+
+2025-03-13 01:30:50,578 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 55, LLM Time: 28.94s
+2025-03-13 01:30:50,681 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 56
+2025-03-13 01:31:23,379 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.998
+----------------------
+
+2025-03-13 01:31:23,795 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 56, LLM Time: 27.59s
+2025-03-13 01:31:23,898 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 57
+2025-03-13 01:32:02,858 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.044
+----------------------
+
+2025-03-13 01:32:03,302 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 57, LLM Time: 33.80s
+2025-03-13 01:32:03,405 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 58
+2025-03-13 01:33:07,863 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.491
+----------------------
+
+2025-03-13 01:33:08,301 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 58, LLM Time: 56.86s
+2025-03-13 01:33:08,402 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 59
+2025-03-13 01:33:54,563 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.925
+----------------------
+
+2025-03-13 01:33:54,994 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 59, LLM Time: 40.13s
+2025-03-13 01:33:55,096 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 60
+2025-03-13 01:34:45,666 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.866
+----------------------
+
+2025-03-13 01:34:46,101 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 60, LLM Time: 44.60s
+2025-03-13 01:34:46,202 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 61
+2025-03-13 01:35:43,327 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.284
+----------------------
+
+2025-03-13 01:35:43,777 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 61, LLM Time: 50.73s
+2025-03-13 01:35:43,879 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 62
+2025-03-13 01:37:06,589 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.488
+----------------------
+
+2025-03-13 01:37:07,087 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 62, LLM Time: 77.12s
+2025-03-13 01:37:07,188 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 63
+2025-03-13 01:37:56,396 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.611
+----------------------
+
+2025-03-13 01:37:56,835 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 63, LLM Time: 43.49s
+2025-03-13 01:37:56,938 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 64
+2025-03-13 01:39:37,413 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Moving linearly to [90, 0, 0] with velocity 300
+Waiting for axes to stop moving...
+Moving circularly to [100, 10, 0] with center [97.071, 2.929, 0] and velocity 300
+Waiting for axes to stop moving...
+Moving linearly to [100, 90, 0] with velocity 300
+Waiting for axes to stop moving...
+Moving circularly to [90, 100, 0] with center [97.071, 97.071, 0] and velocity 300
+Waiting for axes to stop moving...
+Moving linearly to [10, 100, 0] with velocity 300
+Waiting for axes to stop moving...
+Moving circularly to [0, 90, 0] with center [2.929, 97.071, 0] and velocity 300
+Waiting for axes to stop moving...
+Moving linearly to [0, 0, 0] with velocity 300
+Waiting for axes to stop moving...
+Moving linearly to [90, 0, 0] with velocity 300
+Waiting for axes to stop moving...
+Moving circularly to [100, 0, -10] with center [97.071, 0, -2.929] and velocity 300
+Waiting for axes to stop moving...
+Moving linearly to [100, 0, -90] with velocity 300
+Waiting for axes to stop moving...
+Movin
+2025-03-13 01:39:37,818 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 64, LLM Time: 94.85s
+2025-03-13 01:39:37,919 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 65
+2025-03-13 01:40:58,113 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+FreePathIntplWithRotationBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 5.543
+----------------------
+
+2025-03-13 01:42:17,616 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+FreePathIntplWithRotationBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 3.904
+----------------------
+
+2025-03-13 01:43:28,246 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+SetPathIntplWithRotationConfiguration error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 4.149
+----------------------
+
+2025-03-13 01:43:28,247 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 65
+2025-03-13 01:43:28,247 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 65, LLM Time: 74.54s
+2025-03-13 01:43:28,349 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 66
+2025-03-13 01:44:53,483 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.971
+----------------------
+
+2025-03-13 01:44:53,943 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 66, LLM Time: 74.06s
+2025-03-13 01:44:54,046 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 67
+2025-03-13 01:46:23,144 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 5.075
+----------------------
+
+2025-03-13 01:47:45,530 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 4.023
+----------------------
+
+2025-03-13 01:49:08,259 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 3.870
+----------------------
+
+2025-03-13 01:49:08,260 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 67
+2025-03-13 01:49:08,260 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 67, LLM Time: 83.92s
+2025-03-13 01:49:08,361 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 68
+2025-03-13 01:50:39,175 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 5.630
+----------------------
+
+2025-03-13 01:52:14,850 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 12.193
+----------------------
+
+2025-03-13 01:52:15,337 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 68, LLM Time: 85.08s
+2025-03-13 01:52:15,439 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 69
+2025-03-13 01:53:28,586 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 11.125
+----------------------
+
+2025-03-13 01:53:29,069 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 69, LLM Time: 61.91s
+2025-03-13 01:53:29,172 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 70
+2025-03-13 01:54:45,711 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.331
+----------------------
+
+2025-03-13 01:54:46,259 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 70, LLM Time: 68.10s
+2025-03-13 01:54:46,363 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 71
+2025-03-13 01:55:51,946 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 11.359
+----------------------
+
+2025-03-13 01:55:52,417 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 71, LLM Time: 54.12s
+2025-03-13 01:55:52,520 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 72
+2025-03-13 01:56:42,865 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 317, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 248, in main
+    path.SetType(3, AdvMotion_PathIntplSegmentType.Dwell)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'AdvMotion_PathIntplSegmentType' has no attribute 'Dwell'
+!!!
+----------------------
+
+2025-03-13 01:57:26,479 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 317, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 248, in main
+    path.SetType(3, AdvMotion_PathIntplSegmentType.Delay)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'AdvMotion_PathIntplSegmentType' has no attribute 'Delay'
+!!!
+----------------------
+
+2025-03-13 01:58:01,806 - Default - MainProcess - 4396 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 317, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 248, in main
+    path.SetType(3, AdvMotion_PathIntplSegmentType.Dwell)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'AdvMotion_PathIntplSegmentType' has no attribute 'Dwell'
+!!!
+----------------------
+
+2025-03-13 01:58:01,807 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 72
+2025-03-13 01:58:01,807 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 72, LLM Time: 45.64s
+2025-03-13 01:58:01,910 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 73
+2025-03-13 01:59:04,555 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.729
+----------------------
+
+2025-03-13 01:59:04,995 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 73, LLM Time: 56.81s
+2025-03-13 01:59:05,098 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 74
+2025-03-13 02:00:14,638 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.366
+----------------------
+
+2025-03-13 02:00:15,081 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 74, LLM Time: 62.07s
+2025-03-13 02:00:15,183 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 75
+2025-03-13 02:01:11,543 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.167
+----------------------
+
+2025-03-13 02:01:12,003 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 75, LLM Time: 50.09s
+2025-03-13 02:01:12,106 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 76
+2025-03-13 02:02:19,549 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.278
+----------------------
+
+2025-03-13 02:02:19,986 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 76, LLM Time: 60.06s
+2025-03-13 02:02:20,088 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 77
+2025-03-13 02:03:16,999 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.697
+----------------------
+
+2025-03-13 02:03:17,501 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 77, LLM Time: 51.11s
+2025-03-13 02:03:17,603 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 78
+2025-03-13 02:04:22,147 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.865
+----------------------
+
+2025-03-13 02:04:22,583 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 78, LLM Time: 57.57s
+2025-03-13 02:04:22,686 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 79
+2025-03-13 02:05:19,776 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 323, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 244, in main
+    ret = Wmx3Lib_adv.advSync.StartECAM(0, ECAMdata)
+          ^^^^^^^^^^^
+NameError: name 'Wmx3Lib_adv' is not defined. Did you mean: 'Wmx3Lib_cm'?
+!!!
+----------------------
+
+2025-03-13 02:06:10,684 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.166
+----------------------
+
+2025-03-13 02:06:11,145 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 79, LLM Time: 52.51s
+2025-03-13 02:06:11,248 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 80
+2025-03-13 02:07:02,725 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.211
+----------------------
+
+2025-03-13 02:07:03,136 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 80, LLM Time: 46.16s
+2025-03-13 02:07:03,239 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 81
+2025-03-13 02:07:51,734 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.542
+----------------------
+
+2025-03-13 02:07:52,156 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 81, LLM Time: 42.85s
+2025-03-13 02:07:52,260 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 82
+2025-03-13 02:08:32,525 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.905
+----------------------
+
+2025-03-13 02:08:32,939 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 82, LLM Time: 35.25s
+2025-03-13 02:08:33,042 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 83
+2025-03-13 02:09:11,670 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.828
+----------------------
+
+2025-03-13 02:09:12,086 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 83, LLM Time: 33.69s
+2025-03-13 02:09:12,189 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 84
+2025-03-13 02:09:58,845 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.849
+----------------------
+
+2025-03-13 02:09:59,324 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 84, LLM Time: 41.70s
+2025-03-13 02:09:59,427 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 85
+2025-03-13 02:10:54,835 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.802
+----------------------
+
+2025-03-13 02:10:55,270 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 85, LLM Time: 49.50s
+2025-03-13 02:10:55,371 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 86
+2025-03-13 02:11:36,850 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.002
+----------------------
+
+2025-03-13 02:11:37,263 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 86, LLM Time: 36.37s
+2025-03-13 02:11:37,365 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 87
+2025-03-13 02:12:29,159 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.790
+----------------------
+
+2025-03-13 02:12:29,605 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 87, LLM Time: 46.90s
+2025-03-13 02:12:29,708 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 88
+2025-03-13 02:13:07,704 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 290, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 220, in main
+    ret = Wmx3Lib_comp.SetBacklashCompensation(8, backlashcomp)
+          ^^^^^^^^^^^^
+NameError: name 'Wmx3Lib_comp' is not defined. Did you mean: 'Wmx3Lib_cm'?
+!!!
+----------------------
+
+2025-03-13 02:13:35,744 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+SetBacklashCompensation error code is 301: [0x0000012d] : IM Error: Device is null (device must be created).
+Elapsed_time: 3.642
+----------------------
+
+2025-03-13 02:14:15,730 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+DisableBacklashCompensation error code is 301: [0x0000012d] : IM Error: Device is null (device must be created).
+Elapsed_time: 3.669
+----------------------
+
+2025-03-13 02:14:15,731 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 88
+2025-03-13 02:14:15,731 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 88, LLM Time: 33.92s
+2025-03-13 02:14:15,835 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 89
+2025-03-13 02:15:21,908 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.648
+----------------------
+
+2025-03-13 02:15:22,319 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 89, LLM Time: 61.32s
+2025-03-13 02:15:22,422 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 90
+2025-03-13 02:16:31,194 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.584
+----------------------
+
+2025-03-13 02:16:31,594 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 90, LLM Time: 64.09s
+2025-03-13 02:16:31,697 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 91
+2025-03-13 02:17:32,190 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.604
+----------------------
+
+2025-03-13 02:17:32,606 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 91, LLM Time: 55.78s
+2025-03-13 02:17:32,709 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 92
+2025-03-13 02:18:24,926 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.866
+----------------------
+
+2025-03-13 02:18:25,388 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 92, LLM Time: 47.24s
+2025-03-13 02:18:25,489 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 93
+2025-03-13 02:19:01,852 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 279, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 223, in main
+    ret = Wmx3Lib_cm.motion.StartHome(axis)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'StartHome'. Did you mean: 'StartJog'?
+!!!
+----------------------
+
+2025-03-13 02:19:32,680 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.993
+----------------------
+
+2025-03-13 02:19:33,075 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 93, LLM Time: 32.43s
+2025-03-13 02:19:33,178 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 94
+2025-03-13 02:20:30,312 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.738
+----------------------
+
+2025-03-13 02:20:30,724 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 94, LLM Time: 52.29s
+2025-03-13 02:20:30,827 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 95
+2025-03-13 02:21:13,145 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.124
+----------------------
+
+2025-03-13 02:21:13,558 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 95, LLM Time: 37.09s
+2025-03-13 02:21:13,660 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 96
+2025-03-13 02:22:06,403 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.620
+----------------------
+
+2025-03-13 02:22:06,811 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 96, LLM Time: 48.01s
+2025-03-13 02:22:06,915 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 97
+2025-03-13 02:22:59,143 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.372
+----------------------
+
+2025-03-13 02:22:59,547 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 97, LLM Time: 47.75s
+2025-03-13 02:22:59,650 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 98
+2025-03-13 02:25:51,480 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.617
+----------------------
+
+2025-03-13 02:25:51,887 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 98, LLM Time: 167.10s
+2025-03-13 02:25:51,990 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 99
+2025-03-13 02:26:32,193 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.603
+----------------------
+
+2025-03-13 02:26:32,599 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 99, LLM Time: 35.50s
+2025-03-13 02:26:32,702 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 100
+2025-03-13 02:27:15,002 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.700
+----------------------
+
+2025-03-13 02:27:15,418 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 100, LLM Time: 37.49s
+2025-03-13 02:27:15,521 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 101
+2025-03-13 02:27:52,495 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Engine State : 2
+Program End.
+Elapsed_time: 4.691
+----------------------
+
+2025-03-13 02:27:52,901 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 101, LLM Time: 32.18s
+2025-03-13 02:27:53,003 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 102
+2025-03-13 02:28:40,688 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 315, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 236, in main
+    axisStatus2 = Wmx3Lib_cm.motion.GetAxisStatus(2)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 02:29:17,501 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 315, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 236, in main
+    axisStatus2 = Wmx3Lib_cm.motion.GetAxisStatus(2)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 02:29:17,502 - Default - MainProcess - 4396 - Count 1: No change in codereturn, exiting correction loop
+2025-03-13 02:29:17,503 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 102
+2025-03-13 02:29:17,503 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 102, LLM Time: 42.60s
+2025-03-13 02:29:17,606 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 103
+2025-03-13 02:30:05,428 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.780
+----------------------
+
+2025-03-13 02:30:05,863 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 103, LLM Time: 41.94s
+2025-03-13 02:30:05,966 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 104
+2025-03-13 02:30:43,759 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.724
+----------------------
+
+2025-03-13 02:30:44,168 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 104, LLM Time: 32.96s
+2025-03-13 02:30:44,271 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 105
+2025-03-13 02:31:26,674 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.416
+----------------------
+
+2025-03-13 02:31:27,089 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 105, LLM Time: 36.88s
+2025-03-13 02:31:27,191 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 106
+2025-03-13 02:32:21,942 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.237
+----------------------
+
+2025-03-13 02:32:22,364 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 106, LLM Time: 48.41s
+2025-03-13 02:32:22,467 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 107
+2025-03-13 02:33:26,517 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.469
+----------------------
+
+2025-03-13 02:33:26,931 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 107, LLM Time: 57.47s
+2025-03-13 02:33:27,033 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 108
+2025-03-13 02:34:49,757 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.976
+----------------------
+
+2025-03-13 02:34:50,186 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 108, LLM Time: 75.64s
+2025-03-13 02:34:50,289 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 109
+2025-03-13 02:35:36,930 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.445
+----------------------
+
+2025-03-13 02:35:37,430 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 109, LLM Time: 41.09s
+2025-03-13 02:35:37,534 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 110
+2025-03-13 02:36:38,922 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 341, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in main
+    Wmx3Lib_adv.advMotion.StartCSplinePos_Profile(0, spline, len(points), pt)
+    ^^^^^^^^^^^
+NameError: name 'Wmx3Lib_adv' is not defined. Did you mean: 'Wmx3Lib_cm'?
+!!!
+----------------------
+
+2025-03-13 02:37:28,270 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 356, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 292, in main
+    Wmx3Lib_Io.SetOutBit(3, 1, 1)
+    ^^^^^^^^^^
+NameError: name 'Wmx3Lib_Io' is not defined. Did you mean: 'Wmx3Lib_cm'?
+!!!
+----------------------
+
+2025-03-13 02:38:22,882 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.764
+----------------------
+
+2025-03-13 02:38:23,323 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 110, LLM Time: 56.62s
+2025-03-13 02:38:23,426 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 111
+2025-03-13 02:40:43,363 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 13.066
+----------------------
+
+2025-03-13 02:40:43,852 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 111, LLM Time: 126.76s
+2025-03-13 02:40:43,954 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 112
+2025-03-13 02:41:53,866 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.134
+----------------------
+
+2025-03-13 02:41:54,305 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 112, LLM Time: 63.67s
+2025-03-13 02:41:54,408 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 113
+2025-03-13 02:44:12,803 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+FreePathIntplLookaheadBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 4.450
+----------------------
+
+2025-03-13 02:46:04,086 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+FreeSplineBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 4.380
+----------------------
+
+2025-03-13 02:48:04,687 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.995
+----------------------
+
+2025-03-13 02:48:05,157 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 113, LLM Time: 133.84s
+2025-03-13 02:48:05,259 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 114
+2025-03-13 02:49:56,420 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.474
+----------------------
+
+2025-03-13 02:49:56,859 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 114, LLM Time: 102.58s
+2025-03-13 02:49:56,962 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 115
+2025-03-13 02:50:59,689 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.793
+----------------------
+
+2025-03-13 02:51:00,138 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 115, LLM Time: 54.83s
+2025-03-13 02:51:00,240 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 116
+2025-03-13 02:52:28,889 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.809
+----------------------
+
+2025-03-13 02:52:29,345 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 116, LLM Time: 81.73s
+2025-03-13 02:52:29,448 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 117
+2025-03-13 02:53:02,199 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.370
+----------------------
+
+2025-03-13 02:53:02,593 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 117, LLM Time: 28.27s
+2025-03-13 02:53:02,695 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 118
+2025-03-13 02:53:34,977 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 277, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 218, in main
+    posCommand.profile.type = ProfileType.TwoVelTrapezoidal
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TwoVelTrapezoidal'. Did you mean: 'TwoVelocityTrapezoidal'?
+!!!
+----------------------
+
+2025-03-13 02:54:05,020 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.564
+----------------------
+
+2025-03-13 02:54:05,441 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 118, LLM Time: 28.20s
+2025-03-13 02:54:05,543 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 119
+2025-03-13 02:54:34,019 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65586: [0x00010032] : CoreMotionApi Error: One or more acceleration jerk ratio arguments out of range.
+Elapsed_time: 3.891
+----------------------
+
+2025-03-13 02:55:00,343 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.051
+----------------------
+
+2025-03-13 02:55:00,743 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 119, LLM Time: 24.48s
+2025-03-13 02:55:00,846 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 120
+2025-03-13 02:55:27,881 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Cosine
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Cosine'
+!!!
+----------------------
+
+2025-03-13 02:55:50,102 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-13 02:56:10,006 - Default - MainProcess - 4396 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Cosine  # Corrected from Sine to Cosine
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Cosine'
+!!!
+----------------------
+
+2025-03-13 02:56:10,007 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 120
+2025-03-13 02:56:10,007 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 120, LLM Time: 23.05s
+2025-03-13 02:56:10,111 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 121
+2025-03-13 02:57:12,508 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.423
+----------------------
+
+2025-03-13 02:57:12,963 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 121, LLM Time: 52.87s
+2025-03-13 02:57:13,066 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 122
+2025-03-13 02:57:44,794 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Tixing
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Tixing'
+!!!
+----------------------
+
+2025-03-13 02:58:08,728 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.456
+----------------------
+
+2025-03-13 02:58:09,140 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 122, LLM Time: 27.69s
+2025-03-13 02:58:09,242 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 123
+2025-03-13 02:58:49,785 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 304, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 231, in main
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion, posEventID)
+                    ^^^^^^^^^^^^^^^^
+NameError: name 'Wmx3Lib_EventCtl' is not defined
+!!!
+----------------------
+
+2025-03-13 02:59:22,148 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 3.778
+----------------------
+
+2025-03-13 03:00:02,975 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.238
+----------------------
+
+2025-03-13 03:00:03,483 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 123, LLM Time: 36.01s
+2025-03-13 03:00:03,585 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 124
+2025-03-13 03:00:36,223 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.592
+----------------------
+
+2025-03-13 03:00:36,623 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 124, LLM Time: 27.94s
+2025-03-13 03:00:36,725 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 125
+2025-03-13 03:01:05,917 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.805
+----------------------
+
+2025-03-13 03:01:06,323 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 125, LLM Time: 24.28s
+2025-03-13 03:01:06,426 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 126
+2025-03-13 03:01:40,857 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 3.912
+----------------------
+
+2025-03-13 03:02:11,212 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.919
+----------------------
+
+2025-03-13 03:02:11,620 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 126, LLM Time: 30.41s
+2025-03-13 03:02:11,723 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 127
+2025-03-13 03:02:40,324 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.114
+----------------------
+
+2025-03-13 03:02:40,747 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 127, LLM Time: 22.38s
+2025-03-13 03:02:40,850 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 128
+2025-03-13 03:03:13,210 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.228
+----------------------
+
+2025-03-13 03:03:13,636 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 128, LLM Time: 27.03s
+2025-03-13 03:03:13,739 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 129
+2025-03-13 03:03:45,515 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 3.939
+----------------------
+
+2025-03-13 03:04:20,058 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 13.079
+----------------------
+
+2025-03-13 03:04:20,482 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 129, LLM Time: 27.73s
+2025-03-13 03:04:20,585 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 130
+2025-03-13 03:05:02,714 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 4.491
+----------------------
+
+2025-03-13 03:05:45,110 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.036
+----------------------
+
+2025-03-13 03:05:45,621 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 130, LLM Time: 37.53s
+2025-03-13 03:05:45,725 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 131
+2025-03-13 03:06:27,970 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.729
+----------------------
+
+2025-03-13 03:06:28,391 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 131, LLM Time: 37.41s
+2025-03-13 03:06:28,493 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 132
+2025-03-13 03:07:19,034 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 8.372
+----------------------
+
+2025-03-13 03:08:01,000 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.161
+----------------------
+
+2025-03-13 03:08:01,441 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 132, LLM Time: 42.06s
+2025-03-13 03:08:01,542 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 133
+2025-03-13 03:08:38,374 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.492
+----------------------
+
+2025-03-13 03:08:38,780 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 133, LLM Time: 32.23s
+2025-03-13 03:08:38,882 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 134
+2025-03-13 03:09:13,338 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-13 03:09:35,951 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.121
+----------------------
+
+2025-03-13 03:09:36,369 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 134, LLM Time: 30.40s
+2025-03-13 03:09:36,472 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 135
+2025-03-13 03:10:23,402 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 4.992
+----------------------
+
+2025-03-13 03:11:11,779 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 11.961
+----------------------
+
+2025-03-13 03:11:12,241 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 135, LLM Time: 41.83s
+2025-03-13 03:11:12,344 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 136
+2025-03-13 03:11:43,023 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.395
+----------------------
+
+2025-03-13 03:11:43,431 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 136, LLM Time: 26.18s
+2025-03-13 03:11:43,532 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 137
+2025-03-13 03:12:46,391 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65587: [0x00010033] : CoreMotionApi Error: One or more deceleration jerk ratio arguments out of range.
+Elapsed_time: 6.755
+----------------------
+
+2025-03-13 03:13:56,043 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+StartPos error code is 65587: [0x00010033] : CoreMotionApi Error: One or more deceleration jerk ratio arguments out of range.
+Elapsed_time: 5.014
+----------------------
+
+2025-03-13 03:14:50,795 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+StartPos error code is 65587: [0x00010033] : CoreMotionApi Error: One or more deceleration jerk ratio arguments out of range.
+Elapsed_time: 5.015
+----------------------
+
+2025-03-13 03:14:50,797 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 137
+2025-03-13 03:14:50,797 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 137, LLM Time: 56.00s
+2025-03-13 03:14:50,901 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 138
+2025-03-13 03:16:09,385 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65587: [0x00010033] : CoreMotionApi Error: One or more deceleration jerk ratio arguments out of range.
+Elapsed_time: 6.223
+----------------------
+
+2025-03-13 03:17:18,454 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.171
+----------------------
+
+2025-03-13 03:17:18,902 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 138, LLM Time: 72.15s
+2025-03-13 03:17:19,005 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 139
+2025-03-13 03:17:52,908 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.812
+----------------------
+
+2025-03-13 03:17:53,391 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 139, LLM Time: 26.98s
+2025-03-13 03:17:53,494 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 140
+2025-03-13 03:18:37,084 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 298, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 219, in main
+    eventOut_Motion.type = CoreMotionEventOutputType.StartPosCommand
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'CoreMotionEventOutputType' has no attribute 'StartPosCommand'
+!!!
+----------------------
+
+2025-03-13 03:19:20,603 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-13 03:19:58,792 - Default - MainProcess - 4396 - Count 2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 206
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-13 03:19:58,793 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 140
+2025-03-13 03:19:58,793 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 140, LLM Time: 38.89s
+2025-03-13 03:19:58,896 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 141
+2025-03-13 03:20:57,670 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 8.946
+----------------------
+
+2025-03-13 03:21:47,607 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 329, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in main
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, eventOut_Motion)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: EventControl.SetEvent_ID() missing 1 required positional argument: 'id'
+!!!
+----------------------
+
+2025-03-13 03:22:35,060 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 8.071
+----------------------
+
+2025-03-13 03:22:35,061 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 141
+2025-03-13 03:22:35,061 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 141, LLM Time: 49.72s
+2025-03-13 03:22:35,166 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 142
+2025-03-13 03:23:04,258 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.373
+----------------------
+
+2025-03-13 03:23:04,677 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 142, LLM Time: 24.61s
+2025-03-13 03:23:04,779 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 143
+2025-03-13 03:24:04,432 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 9.152
+----------------------
+
+2025-03-13 03:24:55,953 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.901
+----------------------
+
+2025-03-13 03:24:56,388 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 143, LLM Time: 50.39s
+2025-03-13 03:24:56,490 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 144
+2025-03-13 03:25:22,088 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.672
+----------------------
+
+2025-03-13 03:25:22,498 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 144, LLM Time: 20.82s
+2025-03-13 03:25:22,600 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 145
+2025-03-13 03:25:53,677 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 3.959
+----------------------
+
+2025-03-13 03:26:18,956 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.289
+----------------------
+
+2025-03-13 03:26:19,368 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 145, LLM Time: 27.01s
+2025-03-13 03:26:19,471 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 146
+2025-03-13 03:27:02,866 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 291, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand1.profile.type = ProfileType.S
+                               ^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'S'
+!!!
+----------------------
+
+2025-03-13 03:27:33,468 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.013
+----------------------
+
+2025-03-13 03:27:33,885 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 146, LLM Time: 39.30s
+2025-03-13 03:27:33,989 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 147
+2025-03-13 03:28:01,971 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.667
+----------------------
+
+2025-03-13 03:28:02,464 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 147, LLM Time: 23.21s
+2025-03-13 03:28:02,567 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 148
+2025-03-13 03:28:31,068 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.549
+----------------------
+
+2025-03-13 03:28:31,474 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 148, LLM Time: 23.85s
+2025-03-13 03:28:31,576 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 149
+2025-03-13 03:29:31,558 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.837
+----------------------
+
+2025-03-13 03:29:32,018 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 149, LLM Time: 52.04s
+2025-03-13 03:29:32,123 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 150
+2025-03-13 03:30:05,221 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.940
+----------------------
+
+2025-03-13 03:30:05,626 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 150, LLM Time: 28.05s
+2025-03-13 03:30:05,730 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 151
+2025-03-13 03:30:53,419 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 4.046
+----------------------
+
+2025-03-13 03:31:40,595 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 11.288
+----------------------
+
+2025-03-13 03:31:41,050 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 151, LLM Time: 43.53s
+2025-03-13 03:31:41,153 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 152
+2025-03-13 03:32:15,685 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.592
+----------------------
+
+2025-03-13 03:32:16,110 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 152, LLM Time: 28.83s
+2025-03-13 03:32:16,213 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 153
+2025-03-13 03:33:11,701 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 4.467
+----------------------
+
+2025-03-13 03:34:00,344 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 332, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 250, in main
+    posEventID = Wmx3Lib_EventCtl.GetUnusedEventID()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 21371, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, EventControl, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'EventControl' object has no attribute 'GetUnusedEventID'
+!!!
+----------------------
+
+2025-03-13 03:34:39,568 - Default - MainProcess - 4396 - Count 2:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 3.773
+----------------------
+
+2025-03-13 03:34:39,570 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 153
+2025-03-13 03:34:39,570 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 153, LLM Time: 50.91s
+2025-03-13 03:34:39,674 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 154
+2025-03-13 03:36:01,481 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 12.182
+----------------------
+
+2025-03-13 03:36:02,009 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 154, LLM Time: 69.52s
+2025-03-13 03:36:02,113 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 155
+2025-03-13 03:36:34,979 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.515
+----------------------
+
+2025-03-13 03:36:35,373 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 155, LLM Time: 28.24s
+2025-03-13 03:36:35,476 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 156
+2025-03-13 03:37:18,777 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 4.487
+----------------------
+
+2025-03-13 03:38:05,860 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.893
+----------------------
+
+2025-03-13 03:38:06,315 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 156, LLM Time: 38.71s
+2025-03-13 03:38:06,420 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 157
+2025-03-13 03:38:36,761 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.732
+----------------------
+
+2025-03-13 03:38:37,170 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 157, LLM Time: 25.50s
+2025-03-13 03:38:37,273 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 158
+2025-03-13 03:39:09,146 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.TwoVelJerkRatio
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TwoVelJerkRatio'. Did you mean: 'TwoVelocityJerkRatio'?
+!!!
+----------------------
+
+2025-03-13 03:39:32,481 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.399
+----------------------
+
+2025-03-13 03:39:32,886 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 158, LLM Time: 27.81s
+2025-03-13 03:39:32,988 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 159
+2025-03-13 03:40:19,637 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.377
+----------------------
+
+2025-03-13 03:40:20,067 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 159, LLM Time: 41.17s
+2025-03-13 03:40:20,170 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 160
+2025-03-13 03:41:49,053 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.359
+----------------------
+
+2025-03-13 03:41:49,478 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 160, LLM Time: 83.42s
+2025-03-13 03:41:49,580 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 161
+2025-03-13 03:42:49,945 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 315, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    ret, axisStatus = Wmx3Lib_cm.motion.GetAxisStatus(4)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 03:43:32,267 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 315, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    ret, axisStatus = Wmx3Lib_cm.axisControl.GetAxisStatus(4)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 7095, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, AxisControl, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'AxisControl' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 03:44:11,528 - Default - MainProcess - 4396 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 315, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    ret, axisStatus = Wmx3Lib_cm.cyclicBuffer.GetStatus(4)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'cyclicBuffer'
+!!!
+----------------------
+
+2025-03-13 03:44:11,530 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 161
+2025-03-13 03:44:11,530 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 161, LLM Time: 55.07s
+2025-03-13 03:44:11,633 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 162
+2025-03-13 03:44:37,709 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.955
+----------------------
+
+2025-03-13 03:44:38,199 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 162, LLM Time: 21.01s
+2025-03-13 03:44:38,301 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 163
+2025-03-13 03:45:44,435 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 335, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 234, in main
+    ret, axisStatus = Wmx3Lib_cm.motion.GetAxisStatus(3)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 03:46:34,815 - Default - MainProcess - 4396 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 335, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 234, in main
+    ret, axisStatus = Wmx3Lib_cm.motion.GetAxisStatus_MotionState(3)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus_MotionState'
+!!!
+----------------------
+
+2025-03-13 03:47:21,242 - Default - MainProcess - 4396 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 335, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 234, in main
+    ret, axisStatus = Wmx3Lib_cm.motion.GetAxisStatus(3)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-13 03:47:21,243 - Default - MainProcess - 4396 - DeepSeek-V3-M3 Error detected for Task ID: 163
+2025-03-13 03:47:21,243 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 163, LLM Time: 60.94s
+2025-03-13 03:47:21,347 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 164
+2025-03-13 03:48:13,002 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.561
+----------------------
+
+2025-03-13 03:48:13,440 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 164, LLM Time: 43.99s
+2025-03-13 03:48:13,541 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 165
+2025-03-13 03:49:03,831 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.027
+----------------------
+
+2025-03-13 03:49:04,245 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 165, LLM Time: 40.15s
+2025-03-13 03:49:04,348 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 166
+2025-03-13 03:50:31,752 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.119
+----------------------
+
+2025-03-13 03:50:32,205 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 166, LLM Time: 78.18s
+2025-03-13 03:50:32,308 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 167
+2025-03-13 03:51:56,876 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 14.644
+----------------------
+
+2025-03-13 03:51:57,339 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 167, LLM Time: 69.82s
+2025-03-13 03:51:57,442 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 168
+2025-03-13 03:52:27,758 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.022
+----------------------
+
+2025-03-13 03:52:28,162 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 168, LLM Time: 24.19s
+2025-03-13 03:52:28,265 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 169
+2025-03-13 03:53:29,913 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.107
+----------------------
+
+2025-03-13 03:53:30,349 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 169, LLM Time: 55.43s
+2025-03-13 03:53:30,452 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 170
+2025-03-13 03:54:00,289 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.496
+----------------------
+
+2025-03-13 03:54:00,694 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 170, LLM Time: 25.23s
+2025-03-13 03:54:00,798 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 171
+2025-03-13 03:54:57,467 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.804
+----------------------
+
+2025-03-13 03:54:57,972 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 171, LLM Time: 51.76s
+2025-03-13 03:54:58,073 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 172
+2025-03-13 03:55:29,805 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.337
+----------------------
+
+2025-03-13 03:55:30,251 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 172, LLM Time: 26.29s
+2025-03-13 03:55:30,354 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 173
+2025-03-13 03:56:19,769 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.754
+----------------------
+
+2025-03-13 03:56:20,213 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 173, LLM Time: 43.55s
+2025-03-13 03:56:20,316 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 174
+2025-03-13 03:56:55,695 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.200
+----------------------
+
+2025-03-13 03:56:56,124 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 174, LLM Time: 30.07s
+2025-03-13 03:56:56,227 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 175
+2025-03-13 03:57:52,484 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.566
+----------------------
+
+2025-03-13 03:57:52,912 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 175, LLM Time: 48.58s
+2025-03-13 03:57:53,015 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 176
+2025-03-13 03:58:26,198 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.748
+----------------------
+
+2025-03-13 03:58:26,610 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 176, LLM Time: 27.33s
+2025-03-13 03:58:26,713 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 177
+2025-03-13 03:59:14,796 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.297
+----------------------
+
+2025-03-13 03:59:15,241 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 177, LLM Time: 40.68s
+2025-03-13 03:59:15,344 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 178
+2025-03-13 03:59:45,846 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.876
+----------------------
+
+2025-03-13 03:59:46,296 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 178, LLM Time: 25.52s
+2025-03-13 03:59:46,399 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 179
+2025-03-13 04:00:15,741 - Default - MainProcess - 4396 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-13 04:00:38,366 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.871
+----------------------
+
+2025-03-13 04:00:38,851 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 179, LLM Time: 25.20s
+2025-03-13 04:00:38,954 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 180
+2025-03-13 04:01:20,886 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.768
+----------------------
+
+2025-03-13 04:01:21,307 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 180, LLM Time: 33.06s
+2025-03-13 04:01:21,410 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 181
+2025-03-13 04:01:50,804 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 3.985
+----------------------
+
+2025-03-13 04:02:17,529 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.995
+----------------------
+
+2025-03-13 04:02:17,949 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 181, LLM Time: 25.30s
+2025-03-13 04:02:18,051 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 182
+2025-03-13 04:02:48,876 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.090
+----------------------
+
+2025-03-13 04:02:49,349 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 182, LLM Time: 25.63s
+2025-03-13 04:02:49,450 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 183
+2025-03-13 04:03:17,492 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 4.043
+----------------------
+
+2025-03-13 04:03:48,434 - Default - MainProcess - 4396 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.492
+----------------------
+
+2025-03-13 04:03:48,877 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 183, LLM Time: 23.89s
+2025-03-13 04:03:48,980 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 184
+2025-03-13 04:04:20,048 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.326
+----------------------
+
+2025-03-13 04:04:20,447 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 184, LLM Time: 26.63s
+2025-03-13 04:04:20,550 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 185
+2025-03-13 04:04:59,459 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.343
+----------------------
+
+2025-03-13 04:04:59,895 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 185, LLM Time: 33.46s
+2025-03-13 04:04:59,998 - Default - MainProcess - 4396 - DeepSeek-V3-M3: starts for Task ID: 186
+2025-03-13 04:05:32,652 - Default - MainProcess - 4396 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.461
+----------------------
+
+2025-03-13 04:05:33,062 - Default - MainProcess - 4396 - DeepSeek-V3-M3: completed for Task ID: 186, LLM Time: 28.08s

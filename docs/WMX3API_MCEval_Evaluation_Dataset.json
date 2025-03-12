@@ -217,7 +217,7 @@
     },
     {
         "TaskId": 28,
-        "Instruction": "Write Python code to start a cubic spline motion command for Axes 8 and 9 with a total time of 1000ms to complete. The points are: (0, 0), (10, 10), (-20, -20), (30, 30), (-40, -40), (50, 50), (-60, -60), (70, 70), (-80, -80).",
+        "Instruction": "Write Python code to start a cubic spline motion command for Axes 8 and 9 with a total time of 1000ms to complete. The points are: (0, 0), (10, -10), (-20, 20), (30, -30), (-40, 40), (50, -50), (-60, 60), (70, -70),(0,0).",
         "CanonicalCode": "",
         "Difficulty": 1,
         "CheckEnd": NaN,

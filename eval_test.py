@@ -1,5 +1,5 @@
-# from app_NaiveRAG_M1_eval import *
-from app_MCCoder_M3_eval import *
+from app_NaiveRAG_M1_eval import *
+# from app_MCCoder_M3_eval import *
 from userlib.user_logger import log_message
 from time import *
 import json
@@ -19,7 +19,7 @@ def run():
     llm_times = []  # List to store LLM execution times
     
     # Define start and end task IDs manually
-    start_id = 100
+    start_id = 1
     end_id = 186
     
     # Load the JSON dataset from file

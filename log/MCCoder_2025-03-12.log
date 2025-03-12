@@ -6094,3 +6094,3192 @@ Elapsed_time: 4.455
 ----------------------
 
 2025-03-12 15:49:56,913 - Default - MainProcess - 4934 - gpt-4o-M3: completed for Task ID: 186, LLM Time: 10.61s
+2025-03-12 17:02:06,457 - Default - MainProcess - 53100 - CanonicalCode: starts for Task ID: 3
+2025-03-12 17:02:24,935 - Default - MainProcess - 53100 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.224
+----------------------
+
+2025-03-12 17:02:25,484 - Default - MainProcess - 53100 - CanonicalCode: completed for Task ID: 3, LLM Time: 13.13s
+2025-03-12 17:12:19,990 - Default - MainProcess - 56301 - gpt-4o-M3: starts for Task ID: 28
+2025-03-12 17:12:51,360 - Default - MainProcess - 56301 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.584
+----------------------
+
+2025-03-12 17:12:51,971 - Default - MainProcess - 56301 - gpt-4o-M3: completed for Task ID: 28, LLM Time: 24.67s
+2025-03-12 17:13:21,897 - Default - MainProcess - 56705 - gpt-4o-M3: starts for Task ID: 28
+2025-03-12 17:13:50,437 - Default - MainProcess - 56705 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.425
+----------------------
+
+2025-03-12 17:13:51,018 - Default - MainProcess - 56705 - gpt-4o-M3: completed for Task ID: 28, LLM Time: 21.99s
+2025-03-12 18:01:49,530 - Default - MainProcess - 71026 - gpt-4o-M3: starts for Task ID: 28
+2025-03-12 18:02:24,688 - Default - MainProcess - 71026 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.829
+----------------------
+
+2025-03-12 18:02:25,289 - Default - MainProcess - 71026 - gpt-4o-M3: completed for Task ID: 28, LLM Time: 28.21s
+2025-03-12 18:32:42,564 - Default - MainProcess - 80363 - gpt-4o-M3: starts for Task ID: 73
+2025-03-12 18:33:21,328 - Default - MainProcess - 80363 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.785
+----------------------
+
+2025-03-12 18:33:21,912 - Default - MainProcess - 80363 - gpt-4o-M3: completed for Task ID: 73, LLM Time: 32.86s
+2025-03-12 18:36:35,606 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 83
+2025-03-12 18:36:59,743 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.044
+----------------------
+
+2025-03-12 18:37:00,278 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 83, LLM Time: 18.98s
+2025-03-12 18:37:00,380 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 84
+2025-03-12 18:37:24,587 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.838
+----------------------
+
+2025-03-12 18:37:24,992 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 84, LLM Time: 19.26s
+2025-03-12 18:37:25,096 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 85
+2025-03-12 18:37:53,878 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.653
+----------------------
+
+2025-03-12 18:37:54,307 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 85, LLM Time: 23.02s
+2025-03-12 18:37:54,409 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 86
+2025-03-12 18:38:13,926 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.824
+----------------------
+
+2025-03-12 18:38:14,327 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 86, LLM Time: 14.59s
+2025-03-12 18:38:14,428 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 87
+2025-03-12 18:38:36,773 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.612
+----------------------
+
+2025-03-12 18:38:37,171 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 87, LLM Time: 17.63s
+2025-03-12 18:38:37,272 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 88
+2025-03-12 18:39:02,748 - Default - MainProcess - 81675 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 290, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 220, in main
+    ret = Wmx3Lib_comp.SetBacklashCompensation(8, backlashcomp)
+          ^^^^^^^^^^^^
+NameError: name 'Wmx3Lib_comp' is not defined. Did you mean: 'Wmx3Lib_cm'?
+!!!
+----------------------
+
+2025-03-12 18:39:17,347 - Default - MainProcess - 81675 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 290, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 220, in main
+    ret = Wmx3Lib_cm.SetBacklashCompensation(8, backlashcomp)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'SetBacklashCompensation'
+!!!
+----------------------
+
+2025-03-12 18:39:41,663 - Default - MainProcess - 81675 - Count 2:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211
+    from WMX3ApiPython import *
+                              ^
+SyntaxError: import * only allowed at module level
+!!!
+----------------------
+
+2025-03-12 18:39:41,663 - Default - MainProcess - 81675 - gpt-4o-M3 Error detected for Task ID: 88
+2025-03-12 18:39:41,663 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 88, LLM Time: 21.34s
+2025-03-12 18:39:41,766 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 89
+2025-03-12 18:40:05,143 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.498
+----------------------
+
+2025-03-12 18:40:05,538 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 89, LLM Time: 18.77s
+2025-03-12 18:40:05,640 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 90
+2025-03-12 18:40:35,449 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.496
+----------------------
+
+2025-03-12 18:40:35,843 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 90, LLM Time: 25.20s
+2025-03-12 18:40:35,945 - Default - MainProcess - 81675 - gpt-4o-M3: starts for Task ID: 91
+2025-03-12 18:41:03,594 - Default - MainProcess - 81675 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.483
+----------------------
+
+2025-03-12 18:41:04,083 - Default - MainProcess - 81675 - gpt-4o-M3: completed for Task ID: 91, LLM Time: 23.06s
+2025-03-12 18:48:27,394 - Default - MainProcess - 85358 - gpt-4o-M3: starts for Task ID: 101
+2025-03-12 18:48:46,550 - Default - MainProcess - 85358 - Count 0:
+codedata:
+Program begin.
+Engine State : 2
+Program End.
+Elapsed_time: 4.540
+----------------------
+
+2025-03-12 18:48:47,076 - Default - MainProcess - 85358 - gpt-4o-M3: completed for Task ID: 101, LLM Time: 14.50s
+2025-03-12 18:59:08,199 - Default - MainProcess - 88548 - gpt-4o-M3: starts for Task ID: 107
+2025-03-12 19:00:05,884 - Default - MainProcess - 88548 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.250
+----------------------
+
+2025-03-12 19:00:06,440 - Default - MainProcess - 88548 - gpt-4o-M3: completed for Task ID: 107, LLM Time: 51.32s
+2025-03-12 19:00:06,542 - Default - MainProcess - 88548 - gpt-4o-M3: starts for Task ID: 108
+2025-03-12 19:00:55,604 - Default - MainProcess - 88548 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.586
+----------------------
+
+2025-03-12 19:00:56,022 - Default - MainProcess - 88548 - gpt-4o-M3: completed for Task ID: 108, LLM Time: 42.37s
+2025-03-12 19:00:56,124 - Default - MainProcess - 88548 - gpt-4o-M3: starts for Task ID: 109
+2025-03-12 19:01:42,829 - Default - MainProcess - 88548 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.535
+----------------------
+
+2025-03-12 19:01:43,279 - Default - MainProcess - 88548 - gpt-4o-M3: completed for Task ID: 109, LLM Time: 39.06s
+2025-03-12 19:01:43,381 - Default - MainProcess - 88548 - gpt-4o-M3: starts for Task ID: 110
+2025-03-12 19:02:32,604 - Default - MainProcess - 88548 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.943
+----------------------
+
+2025-03-12 19:02:33,051 - Default - MainProcess - 88548 - gpt-4o-M3: completed for Task ID: 110, LLM Time: 42.17s
+2025-03-12 19:02:33,153 - Default - MainProcess - 88548 - gpt-4o-M3: starts for Task ID: 111
+2025-03-12 19:04:04,528 - Default - MainProcess - 88548 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 12.454
+----------------------
+
+2025-03-12 19:04:05,108 - Default - MainProcess - 88548 - gpt-4o-M3: completed for Task ID: 111, LLM Time: 78.81s
+2025-03-12 19:04:05,210 - Default - MainProcess - 88548 - gpt-4o-M3: starts for Task ID: 112
+2025-03-12 19:04:47,896 - Default - MainProcess - 88548 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.764
+----------------------
+
+2025-03-12 19:04:48,352 - Default - MainProcess - 88548 - gpt-4o-M3: completed for Task ID: 112, LLM Time: 36.81s
+2025-03-12 19:04:48,455 - Default - MainProcess - 88548 - gpt-4o-M3: starts for Task ID: 113
+2025-03-12 19:06:21,642 - Default - MainProcess - 88548 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.252
+----------------------
+
+2025-03-12 19:06:22,124 - Default - MainProcess - 88548 - gpt-4o-M3: completed for Task ID: 113, LLM Time: 82.83s
+2025-03-12 19:21:39,643 - Default - MainProcess - 95547 - CanonicalCode: starts for Task ID: 139
+2025-03-12 19:21:55,986 - Default - MainProcess - 95547 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.427
+----------------------
+
+2025-03-12 19:21:56,538 - Default - MainProcess - 95547 - CanonicalCode: completed for Task ID: 139, LLM Time: 9.80s
+2025-03-12 19:24:09,228 - Default - MainProcess - 96426 - CanonicalCode: starts for Task ID: 140
+2025-03-12 19:24:31,929 - Default - MainProcess - 96426 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.172
+----------------------
+
+2025-03-12 19:24:32,475 - Default - MainProcess - 96426 - CanonicalCode: completed for Task ID: 140, LLM Time: 15.42s
+2025-03-12 19:26:49,620 - Default - MainProcess - 97280 - CanonicalCode: starts for Task ID: 140
+2025-03-12 19:27:20,979 - Default - MainProcess - 97280 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.469
+----------------------
+
+2025-03-12 19:27:21,524 - Default - MainProcess - 97280 - CanonicalCode: completed for Task ID: 140, LLM Time: 23.78s
+2025-03-12 19:31:27,708 - Default - MainProcess - 98682 - CanonicalCode: starts for Task ID: 163
+2025-03-12 19:32:00,704 - Default - MainProcess - 98682 - Count 0:
+codedata:
+Program begin.
+Actual Pos of Axis 3: 29.88000000000102
+Program End.
+Elapsed_time: 6.181
+----------------------
+
+2025-03-12 19:32:01,264 - Default - MainProcess - 98682 - CanonicalCode: completed for Task ID: 163, LLM Time: 26.70s
+2025-03-12 19:37:22,800 - Default - MainProcess - 890 - CanonicalCode: starts for Task ID: 132
+2025-03-12 19:37:49,572 - Default - MainProcess - 890 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.133
+----------------------
+
+2025-03-12 19:37:50,164 - Default - MainProcess - 890 - CanonicalCode: completed for Task ID: 132, LLM Time: 18.53s
+2025-03-12 19:41:12,974 - Default - MainProcess - 2156 - gpt-4o-M3: starts for Task ID: 19
+2025-03-12 19:41:33,287 - Default - MainProcess - 2156 - Count 0:
+codedata:
+Program begin.
+Setting output 1.1 to 1
+Setting output 1.1 to 0
+Setting output 1.1 to 1
+Setting output 1.1 to 0
+Setting output 1.1 to 1
+Setting output 1.1 to 0
+Setting output 1.1 to 1
+Setting output 1.1 to 0
+Setting output 1.1 to 1
+Setting output 1.1 to 0
+Program End.
+Elapsed_time: 6.005
+----------------------
+
+2025-03-12 19:41:33,696 - Default - MainProcess - 2156 - gpt-4o-M3: completed for Task ID: 19, LLM Time: 14.20s
+2025-03-12 19:41:33,797 - Default - MainProcess - 2156 - gpt-4o-M3: starts for Task ID: 20
+2025-03-12 19:41:49,070 - Default - MainProcess - 2156 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.787
+----------------------
+
+2025-03-12 19:41:49,358 - Default - MainProcess - 2156 - gpt-4o-M3: completed for Task ID: 20, LLM Time: 11.38s
+2025-03-12 19:45:52,193 - Default - MainProcess - 3728 - CanonicalCode: starts for Task ID: 34
+2025-03-12 19:46:13,254 - Default - MainProcess - 3728 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.472
+----------------------
+
+2025-03-12 19:46:13,805 - Default - MainProcess - 3728 - CanonicalCode: completed for Task ID: 34, LLM Time: 15.47s
+2025-03-12 19:46:51,948 - Default - MainProcess - 4109 - gpt-4o-M3: starts for Task ID: 38
+2025-03-12 19:47:12,543 - Default - MainProcess - 4109 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 4.038
+----------------------
+
+2025-03-12 19:47:29,365 - Default - MainProcess - 4109 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.437
+----------------------
+
+2025-03-12 19:47:29,898 - Default - MainProcess - 4109 - gpt-4o-M3: completed for Task ID: 38, LLM Time: 16.44s
+2025-03-12 19:47:30,000 - Default - MainProcess - 4109 - gpt-4o-M3: starts for Task ID: 39
+2025-03-12 19:47:50,481 - Default - MainProcess - 4109 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.701
+----------------------
+
+2025-03-12 19:47:50,907 - Default - MainProcess - 4109 - gpt-4o-M3: completed for Task ID: 39, LLM Time: 15.67s
+2025-03-12 20:50:17,690 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 1
+2025-03-12 20:50:57,113 - Default - MainProcess - 21536 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.956
+----------------------
+
+2025-03-12 20:50:57,673 - Default - MainProcess - 21536 - DeepSeek-V3-M3: completed for Task ID: 1, LLM Time: 34.35s
+2025-03-12 20:50:57,775 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 2
+2025-03-12 20:51:47,500 - Default - MainProcess - 21536 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.175
+----------------------
+
+2025-03-12 20:51:47,920 - Default - MainProcess - 21536 - DeepSeek-V3-M3: completed for Task ID: 2, LLM Time: 44.44s
+2025-03-12 20:51:48,022 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 3
+2025-03-12 20:52:32,982 - Default - MainProcess - 21536 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.568
+----------------------
+
+2025-03-12 20:52:33,397 - Default - MainProcess - 21536 - DeepSeek-V3-M3: completed for Task ID: 3, LLM Time: 40.28s
+2025-03-12 20:52:33,500 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 4
+2025-03-12 20:53:22,512 - Default - MainProcess - 21536 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 289, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if XYZ == 0:
+       ^^^
+NameError: name 'XYZ' is not defined
+!!!
+----------------------
+
+2025-03-12 20:54:14,291 - Default - MainProcess - 21536 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.662
+----------------------
+
+2025-03-12 20:54:14,698 - Default - MainProcess - 21536 - DeepSeek-V3-M3: completed for Task ID: 4, LLM Time: 44.72s
+2025-03-12 20:54:14,800 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 5
+2025-03-12 20:56:25,245 - Default - MainProcess - 21536 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.910
+----------------------
+
+2025-03-12 20:56:25,751 - Default - MainProcess - 21536 - DeepSeek-V3-M3: completed for Task ID: 5, LLM Time: 124.42s
+2025-03-12 20:56:25,852 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 6
+2025-03-12 20:57:04,791 - Default - MainProcess - 21536 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.799
+----------------------
+
+2025-03-12 20:57:05,218 - Default - MainProcess - 21536 - DeepSeek-V3-M3: completed for Task ID: 6, LLM Time: 34.03s
+2025-03-12 20:57:05,320 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 7
+2025-03-12 20:59:48,373 - Default - MainProcess - 21536 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.791
+----------------------
+
+2025-03-12 20:59:48,811 - Default - MainProcess - 21536 - DeepSeek-V3-M3: completed for Task ID: 7, LLM Time: 158.16s
+2025-03-12 20:59:48,913 - Default - MainProcess - 21536 - DeepSeek-V3-M3: starts for Task ID: 8
+2025-03-12 21:06:05,538 - Default - MainProcess - 26429 - DeepSeek-V3-M3: starts for Task ID: 8
+2025-03-12 21:07:53,619 - Default - MainProcess - 27033 - DeepSeek-V3-M3: starts for Task ID: 8
+2025-03-12 21:08:51,418 - Default - MainProcess - 27033 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.677
+----------------------
+
+2025-03-12 21:08:51,950 - Default - MainProcess - 27033 - DeepSeek-V3-M3: completed for Task ID: 8, LLM Time: 52.01s
+2025-03-12 21:08:52,053 - Default - MainProcess - 27033 - DeepSeek-V3-M3: starts for Task ID: 9
+2025-03-12 21:09:37,544 - Default - MainProcess - 27033 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 289, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if not x:
+           ^
+NameError: name 'x' is not defined
+!!!
+----------------------
+
+2025-03-12 21:10:48,695 - Default - MainProcess - 27033 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.399
+----------------------
+
+2025-03-12 21:10:49,103 - Default - MainProcess - 27033 - DeepSeek-V3-M3: completed for Task ID: 9, LLM Time: 41.30s
+2025-03-12 21:10:49,206 - Default - MainProcess - 27033 - DeepSeek-V3-M3: starts for Task ID: 10
+2025-03-12 21:11:25,128 - Default - MainProcess - 27033 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.699
+----------------------
+
+2025-03-12 21:11:25,541 - Default - MainProcess - 27033 - DeepSeek-V3-M3: completed for Task ID: 10, LLM Time: 31.11s
+2025-03-12 21:11:25,643 - Default - MainProcess - 27033 - DeepSeek-V3-M3: starts for Task ID: 11
+2025-03-12 21:12:10,158 - Default - MainProcess - 27033 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.425
+----------------------
+
+2025-03-12 21:12:10,552 - Default - MainProcess - 27033 - DeepSeek-V3-M3: completed for Task ID: 11, LLM Time: 38.98s
+2025-03-12 21:12:10,656 - Default - MainProcess - 27033 - DeepSeek-V3-M3: starts for Task ID: 12
+2025-03-12 21:26:08,154 - Default - MainProcess - 27033 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 40.117
+----------------------
+
+2025-03-12 21:26:08,584 - Default - MainProcess - 27033 - DeepSeek-V3-M3: completed for Task ID: 12, LLM Time: 519.22s
+2025-03-12 21:26:08,688 - Default - MainProcess - 27033 - DeepSeek-V3-M3: starts for Task ID: 13
+2025-03-12 21:27:43,627 - Default - MainProcess - 27033 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 21.168
+----------------------
+
+2025-03-12 21:27:44,715 - Default - MainProcess - 27033 - DeepSeek-V3-M3: completed for Task ID: 13, LLM Time: 42.58s
+2025-03-12 21:27:44,819 - Default - MainProcess - 27033 - DeepSeek-V3-M3: starts for Task ID: 14
+2025-03-12 21:28:43,219 - Default - MainProcess - 27033 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 274, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    jogCommand.profile.type = ProfileType.TimeaccTrapezoidal
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TimeaccTrapezoidal'. Did you mean: 'TimeAccTrapezoidal'?
+!!!
+----------------------
+
+2025-03-12 21:38:59,913 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 1
+2025-03-12 21:39:11,481 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.108
+----------------------
+
+2025-03-12 21:39:12,101 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 1, LLM Time: 6.35s
+2025-03-12 21:39:12,203 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 2
+2025-03-12 21:39:24,596 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.460
+----------------------
+
+2025-03-12 21:39:24,995 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 2, LLM Time: 7.83s
+2025-03-12 21:39:25,096 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 3
+2025-03-12 21:39:36,807 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.959
+----------------------
+
+2025-03-12 21:39:37,207 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 3, LLM Time: 6.65s
+2025-03-12 21:39:37,309 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 4
+2025-03-12 21:39:49,298 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 280, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 216, in main
+    if XYZ == 0:
+       ^^^
+NameError: name 'XYZ' is not defined
+!!!
+----------------------
+
+2025-03-12 21:39:49,400 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 4
+2025-03-12 21:39:49,401 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 4, LLM Time: 7.56s
+2025-03-12 21:39:49,503 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 5
+2025-03-12 21:40:04,395 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.824
+----------------------
+
+2025-03-12 21:40:04,807 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 5, LLM Time: 8.96s
+2025-03-12 21:40:04,909 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 6
+2025-03-12 21:40:15,013 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.703
+----------------------
+
+2025-03-12 21:40:15,450 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 6, LLM Time: 5.29s
+2025-03-12 21:40:15,551 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 7
+2025-03-12 21:40:27,188 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartMov error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 3.951
+----------------------
+
+2025-03-12 21:40:27,291 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 7
+2025-03-12 21:40:27,291 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 7, LLM Time: 7.58s
+2025-03-12 21:40:27,394 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 8
+2025-03-12 21:40:44,506 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.640
+----------------------
+
+2025-03-12 21:40:44,971 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 8, LLM Time: 11.37s
+2025-03-12 21:40:45,073 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 9
+2025-03-12 21:40:57,647 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 277, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 216, in main
+    if not x:
+           ^
+NameError: name 'x' is not defined
+!!!
+----------------------
+
+2025-03-12 21:40:57,750 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 9
+2025-03-12 21:40:57,750 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 9, LLM Time: 8.52s
+2025-03-12 21:40:57,852 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 10
+2025-03-12 21:41:11,768 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.696
+----------------------
+
+2025-03-12 21:41:12,188 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 10, LLM Time: 9.12s
+2025-03-12 21:41:12,289 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 11
+2025-03-12 21:41:23,939 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.550
+----------------------
+
+2025-03-12 21:41:24,367 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 11, LLM Time: 5.99s
+2025-03-12 21:41:24,469 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 12
+2025-03-12 21:41:35,104 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 274, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    jogCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-12 21:41:35,207 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 12
+2025-03-12 21:41:35,207 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 12, LLM Time: 6.61s
+2025-03-12 21:41:35,309 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 13
+2025-03-12 21:41:56,955 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 12.502
+----------------------
+
+2025-03-12 21:41:57,389 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 13, LLM Time: 9.04s
+2025-03-12 21:41:57,490 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 14
+2025-03-12 21:42:07,876 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.350
+----------------------
+
+2025-03-12 21:42:08,270 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 14, LLM Time: 5.93s
+2025-03-12 21:42:08,370 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 15
+2025-03-12 21:42:27,347 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.763
+----------------------
+
+2025-03-12 21:42:27,784 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 15, LLM Time: 13.11s
+2025-03-12 21:42:27,886 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 16
+2025-03-12 21:42:46,410 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.471
+----------------------
+
+2025-03-12 21:42:46,842 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 16, LLM Time: 12.95s
+2025-03-12 21:42:46,943 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 17
+2025-03-12 21:43:00,450 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.411
+----------------------
+
+2025-03-12 21:43:00,948 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 17, LLM Time: 7.99s
+2025-03-12 21:43:01,049 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 18
+2025-03-12 21:43:08,708 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 270, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-12 21:43:08,810 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 18
+2025-03-12 21:43:08,810 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 18, LLM Time: 5.70s
+2025-03-12 21:43:08,913 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 19
+2025-03-12 21:43:18,172 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 274, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-12 21:43:18,274 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 19
+2025-03-12 21:43:18,274 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 19, LLM Time: 7.04s
+2025-03-12 21:43:18,376 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 20
+2025-03-12 21:43:30,351 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.738
+----------------------
+
+2025-03-12 21:43:30,647 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 20, LLM Time: 8.13s
+2025-03-12 21:43:30,749 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 21
+2025-03-12 21:43:49,597 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Starting linear interpolation for axes [1, 2] to positions {1: 100, 2: 150} with velocity 1000
+Waiting for axes [1, 2] to stop moving
+Program End.
+Elapsed_time: 5.060
+----------------------
+
+2025-03-12 21:43:49,983 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 21, LLM Time: 13.68s
+2025-03-12 21:43:50,085 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 22
+2025-03-12 21:44:03,951 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartLinearIntplPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 4.435
+----------------------
+
+2025-03-12 21:44:04,360 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 22
+2025-03-12 21:44:04,360 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 22, LLM Time: 9.32s
+2025-03-12 21:44:04,462 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 23
+2025-03-12 21:44:25,521 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.884
+----------------------
+
+2025-03-12 21:44:25,958 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 23, LLM Time: 16.07s
+2025-03-12 21:44:26,059 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 24
+2025-03-12 21:44:45,558 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.683
+----------------------
+
+2025-03-12 21:44:45,985 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 24, LLM Time: 13.71s
+2025-03-12 21:44:46,086 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 25
+2025-03-12 21:44:59,890 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.263
+----------------------
+
+2025-03-12 21:45:00,322 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 25, LLM Time: 8.43s
+2025-03-12 21:45:00,424 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 26
+2025-03-12 21:45:23,982 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.400
+----------------------
+
+2025-03-12 21:45:24,410 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 26, LLM Time: 18.05s
+2025-03-12 21:45:24,512 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 27
+2025-03-12 21:45:52,481 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.713
+----------------------
+
+2025-03-12 21:45:52,873 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 27, LLM Time: 23.15s
+2025-03-12 21:45:52,975 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 28
+2025-03-12 21:46:16,475 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.318
+----------------------
+
+2025-03-12 21:46:16,920 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 28, LLM Time: 17.07s
+2025-03-12 21:46:17,023 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 29
+2025-03-12 21:46:38,417 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.264
+----------------------
+
+2025-03-12 21:46:38,830 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 29, LLM Time: 16.02s
+2025-03-12 21:46:38,933 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 30
+2025-03-12 21:47:05,141 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.434
+----------------------
+
+2025-03-12 21:47:05,557 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 30, LLM Time: 20.67s
+2025-03-12 21:47:05,660 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 31
+2025-03-12 21:47:20,896 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.017
+----------------------
+
+2025-03-12 21:47:21,333 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 31, LLM Time: 9.11s
+2025-03-12 21:47:21,435 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 32
+2025-03-12 21:47:47,683 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.685
+----------------------
+
+2025-03-12 21:47:48,127 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 32, LLM Time: 19.45s
+2025-03-12 21:47:48,230 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 33
+2025-03-12 21:48:04,804 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.168
+----------------------
+
+2025-03-12 21:48:05,260 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 33, LLM Time: 9.30s
+2025-03-12 21:48:05,363 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 34
+2025-03-12 21:48:25,518 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.763
+----------------------
+
+2025-03-12 21:48:25,994 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 34, LLM Time: 14.28s
+2025-03-12 21:48:26,095 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 35
+2025-03-12 21:48:42,788 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.794
+----------------------
+
+2025-03-12 21:48:43,210 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 35, LLM Time: 10.79s
+2025-03-12 21:48:43,312 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 36
+2025-03-12 21:49:01,379 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.709
+----------------------
+
+2025-03-12 21:49:01,819 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 36, LLM Time: 12.25s
+2025-03-12 21:49:01,921 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 37
+2025-03-12 21:49:18,732 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.389
+----------------------
+
+2025-03-12 21:49:19,136 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 37, LLM Time: 11.32s
+2025-03-12 21:49:19,239 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 38
+2025-03-12 21:49:35,772 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.000
+----------------------
+
+2025-03-12 21:49:36,187 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 38, LLM Time: 11.42s
+2025-03-12 21:49:36,290 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 39
+2025-03-12 21:49:53,125 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.921
+----------------------
+
+2025-03-12 21:49:53,506 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 39, LLM Time: 11.80s
+2025-03-12 21:49:53,609 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 40
+2025-03-12 21:50:11,458 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.868
+----------------------
+
+2025-03-12 21:50:11,874 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 40, LLM Time: 12.87s
+2025-03-12 21:50:11,977 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 41
+2025-03-12 21:50:26,015 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.190
+----------------------
+
+2025-03-12 21:50:26,478 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 41, LLM Time: 8.74s
+2025-03-12 21:50:26,580 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 42
+2025-03-12 21:50:40,634 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.746
+----------------------
+
+2025-03-12 21:50:41,060 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 42, LLM Time: 8.20s
+2025-03-12 21:50:41,162 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 43
+2025-03-12 21:50:58,954 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.559
+----------------------
+
+2025-03-12 21:50:59,386 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 43, LLM Time: 11.13s
+2025-03-12 21:50:59,489 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 44
+2025-03-12 21:51:16,842 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 303, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 254, in main
+    ret = Wmx3Lib_cm.motion.StartPos_Trigger(posCommand, trig)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8647, in StartPos_Trigger
+    return _WMX3ApiPython.Motion_StartPos_Trigger(self, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotImplementedError: Wrong number or type of arguments for overloaded function 'Motion_StartPos_Trigger'.
+  Possible C/C++ prototypes are:
+    wmx3ApiPython::Motion::StartPos_Trigger(wmx3ApiPython::Motion_TriggerPosCommand *)
+    wmx3ApiPython::Motion::StartPos_Trigger(unsigned int,PyObject *)
+
+!!!
+----------------------
+
+2025-03-12 21:51:17,269 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 44
+2025-03-12 21:51:17,269 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 44, LLM Time: 11.66s
+2025-03-12 21:51:17,372 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 45
+2025-03-12 21:51:34,322 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.403
+----------------------
+
+2025-03-12 21:51:34,729 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 45, LLM Time: 11.44s
+2025-03-12 21:51:34,831 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 46
+2025-03-12 21:51:55,778 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.563
+----------------------
+
+2025-03-12 21:51:56,206 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 46, LLM Time: 15.28s
+2025-03-12 21:51:56,307 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 47
+2025-03-12 21:52:22,717 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.184
+----------------------
+
+2025-03-12 21:52:23,126 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 47, LLM Time: 21.12s
+2025-03-12 21:52:23,227 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 48
+2025-03-12 21:52:48,441 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.804
+----------------------
+
+2025-03-12 21:52:48,897 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 48, LLM Time: 20.30s
+2025-03-12 21:52:48,999 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 49
+2025-03-12 21:53:16,390 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.094
+----------------------
+
+2025-03-12 21:53:16,820 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 49, LLM Time: 18.19s
+2025-03-12 21:53:16,922 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 50
+2025-03-12 21:53:41,279 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.863
+----------------------
+
+2025-03-12 21:53:41,718 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 50, LLM Time: 18.39s
+2025-03-12 21:53:41,819 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 51
+2025-03-12 21:54:00,155 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.382
+----------------------
+
+2025-03-12 21:54:00,567 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 51, LLM Time: 12.85s
+2025-03-12 21:54:00,668 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 52
+2025-03-12 21:54:11,691 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.729
+----------------------
+
+2025-03-12 21:54:12,104 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 52, LLM Time: 6.19s
+2025-03-12 21:54:12,206 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 53
+2025-03-12 21:54:30,779 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.479
+----------------------
+
+2025-03-12 21:54:31,211 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 53, LLM Time: 12.99s
+2025-03-12 21:54:31,313 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 54
+2025-03-12 21:54:52,209 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.661
+----------------------
+
+2025-03-12 21:54:52,750 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 54, LLM Time: 13.13s
+2025-03-12 21:54:52,851 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 55
+2025-03-12 21:55:05,695 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.366
+----------------------
+
+2025-03-12 21:55:06,101 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 55, LLM Time: 7.37s
+2025-03-12 21:55:06,203 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 56
+2025-03-12 21:55:19,172 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.108
+----------------------
+
+2025-03-12 21:55:19,579 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 56, LLM Time: 7.76s
+2025-03-12 21:55:19,681 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 57
+2025-03-12 21:55:31,763 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.862
+----------------------
+
+2025-03-12 21:55:32,192 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 57, LLM Time: 7.11s
+2025-03-12 21:55:32,294 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 58
+2025-03-12 21:55:53,647 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.156
+----------------------
+
+2025-03-12 21:55:54,091 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 58, LLM Time: 14.09s
+2025-03-12 21:55:54,193 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 59
+2025-03-12 21:56:14,354 - Default - MainProcess - 33416 - codedata:
+Program begin.
+FreeSplineBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 4.742
+----------------------
+
+2025-03-12 21:56:14,762 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 59
+2025-03-12 21:56:14,762 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 59, LLM Time: 15.31s
+2025-03-12 21:56:14,863 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 60
+2025-03-12 21:56:33,650 - Default - MainProcess - 33416 - codedata:
+Program begin.
+FreeSplineBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 4.072
+----------------------
+
+2025-03-12 21:56:34,050 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 60
+2025-03-12 21:56:34,050 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 60, LLM Time: 14.61s
+2025-03-12 21:56:34,152 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 61
+2025-03-12 21:56:58,140 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.206
+----------------------
+
+2025-03-12 21:56:58,644 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 61, LLM Time: 17.68s
+2025-03-12 21:56:58,746 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 62
+2025-03-12 21:57:32,852 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.748
+----------------------
+
+2025-03-12 21:57:33,280 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 62, LLM Time: 28.25s
+2025-03-12 21:57:33,383 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 63
+2025-03-12 21:57:51,576 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.517
+----------------------
+
+2025-03-12 21:57:52,018 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 63, LLM Time: 12.57s
+2025-03-12 21:57:52,120 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 64
+2025-03-12 21:58:50,237 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 499, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 438, in main
+    ret = Wmx3Lib_adv.advMotion.StartPathIntpl3DPos(path)
+          ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdvancedMotion' object has no attribute 'advMotion'
+!!!
+----------------------
+
+2025-03-12 21:58:50,647 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 64
+2025-03-12 21:58:50,648 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 64, LLM Time: 52.97s
+2025-03-12 21:58:50,749 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 65
+2025-03-12 21:59:19,732 - Default - MainProcess - 33416 - codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 94237: [0x0001701d] : AdvancedMotionApi Error: One or more angle correction profile parameters out of range.
+Elapsed_time: 4.984
+----------------------
+
+2025-03-12 21:59:20,148 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 65
+2025-03-12 21:59:20,148 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 65, LLM Time: 23.89s
+2025-03-12 21:59:20,250 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 66
+2025-03-12 22:00:08,077 - Default - MainProcess - 33416 - codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 4.172
+----------------------
+
+2025-03-12 22:00:08,489 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 66
+2025-03-12 22:00:08,490 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 66, LLM Time: 43.55s
+2025-03-12 22:00:08,592 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 67
+2025-03-12 22:00:58,871 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPathIntplWithRotation error code is 65600: [0x00010040] : CoreMotionApi Error: One or more axes are not single turn axes.
+Elapsed_time: 4.141
+----------------------
+
+2025-03-12 22:00:59,279 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 67
+2025-03-12 22:00:59,280 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 67, LLM Time: 46.03s
+2025-03-12 22:00:59,381 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 68
+2025-03-12 22:01:51,358 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 13.758
+----------------------
+
+2025-03-12 22:01:51,836 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 68, LLM Time: 38.11s
+2025-03-12 22:01:51,939 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 69
+2025-03-12 22:02:23,770 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 11.294
+----------------------
+
+2025-03-12 22:02:24,338 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 69, LLM Time: 20.43s
+2025-03-12 22:02:24,441 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 70
+2025-03-12 22:02:55,017 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 9.284
+----------------------
+
+2025-03-12 22:02:55,492 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 70, LLM Time: 21.19s
+2025-03-12 22:02:55,595 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 71
+2025-03-12 22:03:36,277 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.198
+----------------------
+
+2025-03-12 22:03:36,757 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 71, LLM Time: 30.38s
+2025-03-12 22:03:36,860 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 72
+2025-03-12 22:04:11,334 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 376, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 255, in main
+    Point2.type = AdvMotion_PathIntplLookaheadSegmentType.Circular
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'AdvMotion_PathIntplLookaheadSegmentType' has no attribute 'Circular'
+!!!
+----------------------
+
+2025-03-12 22:04:11,764 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 72
+2025-03-12 22:04:11,764 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 72, LLM Time: 29.61s
+2025-03-12 22:04:11,865 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 73
+2025-03-12 22:04:42,661 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.777
+----------------------
+
+2025-03-12 22:04:43,106 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 73, LLM Time: 24.91s
+2025-03-12 22:04:43,208 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 74
+2025-03-12 22:05:23,224 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.880
+----------------------
+
+2025-03-12 22:05:23,667 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 74, LLM Time: 33.03s
+2025-03-12 22:05:23,769 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 75
+2025-03-12 22:05:51,188 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.946
+----------------------
+
+2025-03-12 22:05:51,636 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 75, LLM Time: 21.37s
+2025-03-12 22:05:51,737 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 76
+2025-03-12 22:06:23,442 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.529
+----------------------
+
+2025-03-12 22:06:23,941 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 76, LLM Time: 25.07s
+2025-03-12 22:06:24,042 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 77
+2025-03-12 22:07:02,078 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.672
+----------------------
+
+2025-03-12 22:07:02,527 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 77, LLM Time: 32.26s
+2025-03-12 22:07:02,628 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 78
+2025-03-12 22:07:28,290 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.433
+----------------------
+
+2025-03-12 22:07:28,734 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 78, LLM Time: 18.12s
+2025-03-12 22:07:28,836 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 79
+2025-03-12 22:07:56,416 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.238
+----------------------
+
+2025-03-12 22:07:56,871 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 79, LLM Time: 20.24s
+2025-03-12 22:07:56,973 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 80
+2025-03-12 22:08:16,513 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.456
+----------------------
+
+2025-03-12 22:08:16,930 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 80, LLM Time: 13.98s
+2025-03-12 22:08:17,032 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 81
+2025-03-12 22:08:33,016 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.307
+----------------------
+
+2025-03-12 22:08:33,443 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 81, LLM Time: 10.57s
+2025-03-12 22:08:33,545 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 82
+2025-03-12 22:08:54,858 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.122
+----------------------
+
+2025-03-12 22:08:55,325 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 82, LLM Time: 16.08s
+2025-03-12 22:08:55,426 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 83
+2025-03-12 22:15:43,529 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StopLog error code is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+SetServoOn to off error code for axis 5 is 1537: [0x00000601] : WMX3Api Error: Communication is not started.
+Program End.
+Elapsed_time: 390.892
+----------------------
+
+2025-03-12 22:15:44,114 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 83
+2025-03-12 22:15:44,114 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 83, LLM Time: 17.10s
+2025-03-12 22:15:44,216 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 84
+2025-03-12 22:16:01,996 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.846
+----------------------
+
+2025-03-12 22:16:02,420 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 84, LLM Time: 12.83s
+2025-03-12 22:16:02,522 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 85
+2025-03-12 22:16:26,277 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.636
+----------------------
+
+2025-03-12 22:16:26,715 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 85, LLM Time: 18.01s
+2025-03-12 22:16:26,817 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 86
+2025-03-12 22:16:52,856 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.778
+----------------------
+
+2025-03-12 22:16:53,269 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 86, LLM Time: 21.15s
+2025-03-12 22:16:53,371 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 87
+2025-03-12 22:17:13,302 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.537
+----------------------
+
+2025-03-12 22:17:13,726 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 87, LLM Time: 15.29s
+2025-03-12 22:17:13,827 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 88
+2025-03-12 22:17:28,621 - Default - MainProcess - 33416 - codedata:
+Program begin.
+SetBacklashCompensation error code is 86019: [0x00015003] : CompensationApi Error: Backlash compensation is enabled.
+Elapsed_time: 4.012
+----------------------
+
+2025-03-12 22:17:28,723 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 88
+2025-03-12 22:17:28,724 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 88, LLM Time: 10.68s
+2025-03-12 22:17:28,826 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 89
+2025-03-12 22:18:02,046 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.568
+----------------------
+
+2025-03-12 22:18:02,452 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 89, LLM Time: 28.55s
+2025-03-12 22:18:02,553 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 90
+2025-03-12 22:18:30,695 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.515
+----------------------
+
+2025-03-12 22:18:31,191 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 90, LLM Time: 23.52s
+2025-03-12 22:18:31,292 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 91
+2025-03-12 22:18:58,130 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.462
+----------------------
+
+2025-03-12 22:18:58,545 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 91, LLM Time: 22.27s
+2025-03-12 22:18:58,647 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 92
+2025-03-12 22:19:28,167 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.704
+----------------------
+
+2025-03-12 22:19:28,583 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 92, LLM Time: 24.71s
+2025-03-12 22:19:28,685 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 93
+2025-03-12 22:19:44,342 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 287, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 214, in main
+    axisParam.SetHomePosition(axis, 8.8)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 10983, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Config_AxisParam, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Config_AxisParam' object has no attribute 'SetHomePosition'
+!!!
+----------------------
+
+2025-03-12 22:19:44,445 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 93
+2025-03-12 22:19:44,445 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 93, LLM Time: 11.63s
+2025-03-12 22:19:44,547 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 94
+2025-03-12 22:20:15,671 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.833
+----------------------
+
+2025-03-12 22:20:16,084 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 94, LLM Time: 26.19s
+2025-03-12 22:20:16,186 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 95
+2025-03-12 22:20:32,264 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.028
+----------------------
+
+2025-03-12 22:20:32,680 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 95, LLM Time: 10.94s
+2025-03-12 22:20:32,782 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 96
+2025-03-12 22:20:52,487 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 294, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 244, in main
+    ret = Wmx3Lib_cm.motion.MoveAxis(axis, 99)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'MoveAxis'
+!!!
+----------------------
+
+2025-03-12 22:20:52,589 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 96
+2025-03-12 22:20:52,589 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 96, LLM Time: 15.66s
+2025-03-12 22:20:52,692 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 97
+2025-03-12 22:21:16,275 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.508
+----------------------
+
+2025-03-12 22:21:16,681 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 97, LLM Time: 18.97s
+2025-03-12 22:21:16,783 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 98
+2025-03-12 22:21:34,480 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.494
+----------------------
+
+2025-03-12 22:21:34,882 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 98, LLM Time: 13.10s
+2025-03-12 22:21:34,983 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 99
+2025-03-12 22:21:55,047 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.573
+----------------------
+
+2025-03-12 22:21:55,457 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 99, LLM Time: 15.38s
+2025-03-12 22:21:55,558 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 100
+2025-03-12 22:22:13,819 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.512
+----------------------
+
+2025-03-12 22:22:14,288 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 100, LLM Time: 13.64s
+2025-03-12 22:22:14,389 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 101
+2025-03-12 22:22:33,233 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Engine State : 2
+Program End.
+Elapsed_time: 4.224
+----------------------
+
+2025-03-12 22:22:33,636 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 101, LLM Time: 14.52s
+2025-03-12 22:22:33,737 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 102
+2025-03-12 22:22:57,382 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 318, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 238, in main
+    posCmdAxis2 = Wmx3Lib_cm.motion.GetPosCommand(2)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetPosCommand'
+!!!
+----------------------
+
+2025-03-12 22:22:57,843 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 102
+2025-03-12 22:22:57,843 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 102, LLM Time: 18.57s
+2025-03-12 22:22:57,945 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 103
+2025-03-12 22:23:13,987 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.469
+----------------------
+
+2025-03-12 22:23:14,427 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 103, LLM Time: 10.47s
+2025-03-12 22:23:14,529 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 104
+2025-03-12 22:24:27,391 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.732
+----------------------
+
+2025-03-12 22:24:27,801 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 104, LLM Time: 68.02s
+2025-03-12 22:24:27,903 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 105
+2025-03-12 22:24:42,907 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.279
+----------------------
+
+2025-03-12 22:24:43,321 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 105, LLM Time: 9.62s
+2025-03-12 22:24:43,423 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 106
+2025-03-12 22:25:06,313 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.889
+----------------------
+
+2025-03-12 22:25:06,744 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 106, LLM Time: 16.90s
+2025-03-12 22:25:06,846 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 107
+2025-03-12 22:25:35,531 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 305, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 225, in main
+    Wmx3Lib_cm.io.SetOutput(0, 7, 1)
+    ^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'io'
+!!!
+----------------------
+
+2025-03-12 22:25:35,959 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 107
+2025-03-12 22:25:35,959 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 107, LLM Time: 23.57s
+2025-03-12 22:25:36,061 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 108
+2025-03-12 22:26:06,466 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 317, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 225, in main
+    Wmx3Lib_cm.io.SetOutputBit(0, 7, 1)
+    ^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'io'
+!!!
+----------------------
+
+2025-03-12 22:26:06,982 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 108
+2025-03-12 22:26:06,982 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 108, LLM Time: 26.09s
+2025-03-12 22:26:07,085 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 109
+2025-03-12 22:26:50,001 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPathIntplPos error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 6.189
+----------------------
+
+2025-03-12 22:26:50,469 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 109
+2025-03-12 22:26:50,469 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 109, LLM Time: 36.62s
+2025-03-12 22:26:50,570 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 110
+2025-03-12 22:27:18,280 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 356, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 275, in main
+    spline = Motion_CubicSplineCommand()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'Motion_CubicSplineCommand' is not defined
+!!!
+----------------------
+
+2025-03-12 22:27:18,696 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 110
+2025-03-12 22:27:18,696 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 110, LLM Time: 23.26s
+2025-03-12 22:27:18,797 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 111
+2025-03-12 22:28:08,686 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 442, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 353, in main
+    move_command = Motion_MoveCommand()
+                   ^^^^^^^^^^^^^^^^^^
+NameError: name 'Motion_MoveCommand' is not defined
+!!!
+----------------------
+
+2025-03-12 22:28:09,713 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 111
+2025-03-12 22:28:09,713 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 111, LLM Time: 41.06s
+2025-03-12 22:28:09,815 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 112
+2025-03-12 22:28:39,225 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 351, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 273, in main
+    ret = Wmx3Lib_cm.motion.StartLinearIntplPos(eventOut_Motion.linearIntplPos)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8659, in StartLinearIntplPos
+    return _WMX3ApiPython.Motion_StartLinearIntplPos(self, pLinearIntplCommand)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: in method 'Motion_StartLinearIntplPos', argument 2 of type 'wmx3ApiPython::Motion_LinearIntplCommand *'
+!!!
+----------------------
+
+2025-03-12 22:28:39,667 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 112
+2025-03-12 22:28:39,668 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 112, LLM Time: 25.04s
+2025-03-12 22:28:39,769 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 113
+2025-03-12 22:29:19,808 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 397, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    path.SetSmoothRadius(0, 12)
+    ^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 22112, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, AdvMotion_PathIntplCommand, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'AdvMotion_PathIntplCommand' object has no attribute 'SetSmoothRadius'. Did you mean: 'autoSmoothRadius'?
+!!!
+----------------------
+
+2025-03-12 22:29:20,230 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 113
+2025-03-12 22:29:20,230 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 113, LLM Time: 35.91s
+2025-03-12 22:29:20,333 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 114
+2025-03-12 22:30:03,084 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 404, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 276, in main
+    buffer = Wmx3Lib_cm.motion.CreateBuffer()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'CreateBuffer'. Did you mean: 'CreatePVTBuffer'?
+!!!
+----------------------
+
+2025-03-12 22:30:03,538 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 114
+2025-03-12 22:30:03,538 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 114, LLM Time: 38.36s
+2025-03-12 22:30:03,641 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 115
+2025-03-12 22:30:29,967 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 311, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 247, in main
+    Wmx3Lib_cm.motion.Wait_AxisSel(AxisSelection([5, 2]))
+                                   ^^^^^^^^^^^^^^^^^^^^^
+TypeError: AxisSelection.__init__() takes 1 positional argument but 2 were given
+!!!
+----------------------
+
+2025-03-12 22:30:30,405 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 115
+2025-03-12 22:30:30,405 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 115, LLM Time: 22.18s
+2025-03-12 22:30:30,507 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 116
+2025-03-12 22:31:19,474 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 359, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 229, in main
+    Wmx3Lib_cm.io.SetOutput(6, 7, 1)
+    ^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'io'
+!!!
+----------------------
+
+2025-03-12 22:31:19,937 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 116
+2025-03-12 22:31:19,937 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 116, LLM Time: 44.52s
+2025-03-12 22:31:20,039 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 117
+2025-03-12 22:31:32,645 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.657
+----------------------
+
+2025-03-12 22:31:33,062 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 117, LLM Time: 7.84s
+2025-03-12 22:31:33,163 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 118
+2025-03-12 22:32:10,933 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.773
+----------------------
+
+2025-03-12 22:32:11,365 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 118, LLM Time: 32.89s
+2025-03-12 22:32:11,466 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 119
+2025-03-12 22:32:24,762 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65586: [0x00010032] : CoreMotionApi Error: One or more acceleration jerk ratio arguments out of range.
+Elapsed_time: 4.119
+----------------------
+
+2025-03-12 22:32:24,865 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 119
+2025-03-12 22:32:24,865 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 119, LLM Time: 9.06s
+2025-03-12 22:32:24,968 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 120
+2025-03-12 22:32:34,939 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 270, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    posCommand.profile.type = ProfileType.Cosine
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Cosine'
+!!!
+----------------------
+
+2025-03-12 22:32:35,040 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 120
+2025-03-12 22:32:35,041 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 120, LLM Time: 5.50s
+2025-03-12 22:32:35,143 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 121
+2025-03-12 22:33:00,121 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65584: [0x00010030] : CoreMotionApi Error: One or more acceleration jerk arguments out of range.
+Elapsed_time: 6.616
+----------------------
+
+2025-03-12 22:33:00,612 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 121
+2025-03-12 22:33:00,613 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 121, LLM Time: 18.26s
+2025-03-12 22:33:00,715 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 122
+2025-03-12 22:33:11,495 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 273, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 214, in main
+    posCommand.profile.type = ProfileType.Tixing
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Tixing'
+!!!
+----------------------
+
+2025-03-12 22:33:11,600 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 122
+2025-03-12 22:33:11,600 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 122, LLM Time: 6.95s
+2025-03-12 22:33:11,702 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 123
+2025-03-12 22:33:30,260 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.785
+----------------------
+
+2025-03-12 22:33:30,739 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 123, LLM Time: 9.67s
+2025-03-12 22:33:30,843 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 124
+2025-03-12 22:33:41,481 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.458
+----------------------
+
+2025-03-12 22:33:41,892 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 124, LLM Time: 6.07s
+2025-03-12 22:33:41,994 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 125
+2025-03-12 22:33:53,179 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.931
+----------------------
+
+2025-03-12 22:33:53,603 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 125, LLM Time: 6.15s
+2025-03-12 22:33:53,704 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 126
+2025-03-12 22:34:32,414 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.907
+----------------------
+
+2025-03-12 22:34:32,823 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 126, LLM Time: 32.69s
+2025-03-12 22:34:32,926 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 127
+2025-03-12 22:34:55,115 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.792
+----------------------
+
+2025-03-12 22:34:55,549 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 127, LLM Time: 16.29s
+2025-03-12 22:34:55,651 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 128
+2025-03-12 22:35:12,458 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.013
+----------------------
+
+2025-03-12 22:35:12,965 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 128, LLM Time: 11.69s
+2025-03-12 22:35:13,068 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 129
+2025-03-12 22:35:24,768 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Program End.
+Elapsed_time: 4.246
+----------------------
+
+2025-03-12 22:35:25,173 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 129
+2025-03-12 22:35:25,173 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 129, LLM Time: 7.34s
+2025-03-12 22:35:25,275 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 130
+2025-03-12 22:35:43,782 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 305, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 224, in main
+    eventOut_Motion.startSingleMov.profile.type = ProfileType.Trapezoidal
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 4288, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotionEventOutputFunctionArguments_StartSingleMov, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotionEventOutputFunctionArguments_StartSingleMov' object has no attribute 'profile'
+!!!
+----------------------
+
+2025-03-12 22:35:44,192 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 130
+2025-03-12 22:35:44,192 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 130, LLM Time: 13.93s
+2025-03-12 22:35:44,294 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 131
+2025-03-12 22:35:54,965 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.323
+----------------------
+
+2025-03-12 22:35:55,381 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 131, LLM Time: 6.24s
+2025-03-12 22:35:55,482 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 132
+2025-03-12 22:36:14,317 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.629
+----------------------
+
+2025-03-12 22:36:14,763 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 132, LLM Time: 10.10s
+2025-03-12 22:36:14,865 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 133
+2025-03-12 22:36:27,267 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.394
+----------------------
+
+2025-03-12 22:36:27,678 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 133, LLM Time: 7.90s
+2025-03-12 22:36:27,779 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 134
+2025-03-12 22:36:39,790 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-12 22:36:39,893 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 134
+2025-03-12 22:36:39,894 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 134, LLM Time: 7.95s
+2025-03-12 22:36:39,996 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 135
+2025-03-12 22:37:06,910 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.958
+----------------------
+
+2025-03-12 22:37:07,421 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 135, LLM Time: 17.85s
+2025-03-12 22:37:07,522 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 136
+2025-03-12 22:37:19,115 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.434
+----------------------
+
+2025-03-12 22:37:19,515 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 136, LLM Time: 7.05s
+2025-03-12 22:37:19,616 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 137
+2025-03-12 22:38:01,678 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Program End.
+Elapsed_time: 7.713
+----------------------
+
+2025-03-12 22:38:02,126 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 137
+2025-03-12 22:38:02,126 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 137, LLM Time: 34.24s
+2025-03-12 22:38:02,228 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 138
+2025-03-12 22:38:19,907 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 4.051
+----------------------
+
+2025-03-12 22:38:20,010 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 138
+2025-03-12 22:38:20,010 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 138, LLM Time: 13.52s
+2025-03-12 22:38:20,112 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 139
+2025-03-12 22:38:35,349 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.381
+----------------------
+
+2025-03-12 22:38:35,764 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 139, LLM Time: 8.75s
+2025-03-12 22:38:35,865 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 140
+2025-03-12 22:38:53,163 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 293, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    eventIN_Motion.inputFunction = CoreMotionEventInputType.DistanceToTarget
+    ^^^^^^^^^^^^^^
+NameError: name 'eventIN_Motion' is not defined
+!!!
+----------------------
+
+2025-03-12 22:38:53,580 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 140
+2025-03-12 22:38:53,581 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 140, LLM Time: 12.77s
+2025-03-12 22:38:53,682 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 141
+2025-03-12 22:39:20,874 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 321, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 250, in main
+    eventOut_Motion_Axis2.type = CoreMotionEventOutputType.StartMov
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'CoreMotionEventOutputType' has no attribute 'StartMov'
+!!!
+----------------------
+
+2025-03-12 22:39:21,309 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 141
+2025-03-12 22:39:21,309 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 141, LLM Time: 22.46s
+2025-03-12 22:39:21,410 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 142
+2025-03-12 22:39:32,771 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.231
+----------------------
+
+2025-03-12 22:39:33,177 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 142, LLM Time: 7.02s
+2025-03-12 22:39:33,278 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 143
+2025-03-12 22:40:04,441 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 320, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 259, in main
+    ret, Event_ID = Wmx3Lib_EventCtl.SetEvent_ID(eventIN_Motion, posCommand_Axis2, 0)
+                    ^^^^^^^^^^^^^^^^
+NameError: name 'Wmx3Lib_EventCtl' is not defined
+!!!
+----------------------
+
+2025-03-12 22:40:04,543 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 143
+2025-03-12 22:40:04,543 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 143, LLM Time: 26.62s
+2025-03-12 22:40:04,645 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 144
+2025-03-12 22:40:29,502 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.819
+----------------------
+
+2025-03-12 22:40:29,903 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 144, LLM Time: 19.93s
+2025-03-12 22:40:30,006 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 145
+2025-03-12 22:40:40,890 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Elapsed_time: 3.916
+----------------------
+
+2025-03-12 22:40:40,994 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 145
+2025-03-12 22:40:40,994 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 145, LLM Time: 6.86s
+2025-03-12 22:40:41,098 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 146
+2025-03-12 22:40:53,144 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 282, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    posCommand.profile.type = ProfileType.S
+                              ^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'S'
+!!!
+----------------------
+
+2025-03-12 22:40:53,248 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 146
+2025-03-12 22:40:53,248 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 146, LLM Time: 7.82s
+2025-03-12 22:40:53,351 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 147
+2025-03-12 22:41:05,185 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.807
+----------------------
+
+2025-03-12 22:41:05,608 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 147, LLM Time: 6.92s
+2025-03-12 22:41:05,711 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 148
+2025-03-12 22:41:23,103 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.489
+----------------------
+
+2025-03-12 22:41:23,506 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 148, LLM Time: 12.80s
+2025-03-12 22:41:23,608 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 149
+2025-03-12 22:41:50,222 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.829
+----------------------
+
+2025-03-12 22:41:50,664 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 149, LLM Time: 18.68s
+2025-03-12 22:41:50,767 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 150
+2025-03-12 22:42:02,492 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.001
+----------------------
+
+2025-03-12 22:42:02,900 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 150, LLM Time: 6.62s
+2025-03-12 22:42:03,003 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 151
+2025-03-12 22:42:41,345 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65584: [0x00010030] : CoreMotionApi Error: One or more acceleration jerk arguments out of range.
+Elapsed_time: 6.163
+----------------------
+
+2025-03-12 22:42:41,770 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 151
+2025-03-12 22:42:41,770 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 151, LLM Time: 32.07s
+2025-03-12 22:42:41,873 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 152
+2025-03-12 22:43:01,324 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.646
+----------------------
+
+2025-03-12 22:43:01,746 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 152, LLM Time: 13.70s
+2025-03-12 22:43:01,849 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 153
+2025-03-12 22:43:29,203 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.902
+----------------------
+
+2025-03-12 22:43:29,658 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 153, LLM Time: 19.35s
+2025-03-12 22:43:29,762 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 154
+2025-03-12 22:44:06,135 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Program End.
+Elapsed_time: 10.803
+----------------------
+
+2025-03-12 22:44:06,655 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 154
+2025-03-12 22:44:06,655 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 154, LLM Time: 25.46s
+2025-03-12 22:44:06,759 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 155
+2025-03-12 22:44:19,258 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.575
+----------------------
+
+2025-03-12 22:44:19,658 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 155, LLM Time: 7.82s
+2025-03-12 22:44:19,761 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 156
+2025-03-12 22:44:44,500 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 349, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 329, in main
+    ret = Wmx3Lib_cm.axisControl.SetServoOn(axis, 0)
+          ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Wmx3Lib_cm' has no attribute 'axisControl'
+!!!
+----------------------
+
+2025-03-12 22:44:44,895 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 156
+2025-03-12 22:44:44,895 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 156, LLM Time: 19.93s
+2025-03-12 22:44:44,997 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 157
+2025-03-12 22:44:57,023 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.853
+----------------------
+
+2025-03-12 22:44:57,680 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 157, LLM Time: 7.07s
+2025-03-12 22:44:57,782 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 158
+2025-03-12 22:45:10,397 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 212, in main
+    posCommand.profile.type = ProfileType.TwoVelJerkRatio
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TwoVelJerkRatio'. Did you mean: 'TwoVelocityJerkRatio'?
+!!!
+----------------------
+
+2025-03-12 22:45:10,500 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 158
+2025-03-12 22:45:10,500 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 158, LLM Time: 8.42s
+2025-03-12 22:45:10,602 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 159
+2025-03-12 22:45:30,905 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Pos Cmd for Axis 5: 200.0
+Program End.
+Elapsed_time: 5.222
+----------------------
+
+2025-03-12 22:45:31,329 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 159, LLM Time: 14.98s
+2025-03-12 22:45:31,431 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 160
+2025-03-12 22:45:46,551 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.018
+----------------------
+
+2025-03-12 22:45:46,968 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 160, LLM Time: 10.00s
+2025-03-12 22:45:47,070 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 161
+2025-03-12 22:46:04,908 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 303, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 228, in main
+    axisStatus = Wmx3Lib_cm.motion.GetAxisStatus(4)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-12 22:46:05,346 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 161
+2025-03-12 22:46:05,347 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 161, LLM Time: 12.70s
+2025-03-12 22:46:05,448 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 162
+2025-03-12 22:46:16,226 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.770
+----------------------
+
+2025-03-12 22:46:16,635 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 162, LLM Time: 5.90s
+2025-03-12 22:46:16,737 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 163
+2025-03-12 22:46:39,270 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 330, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 234, in main
+    axisStatus = Wmx3Lib_cm.motion.GetAxisStatus(3)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetAxisStatus'
+!!!
+----------------------
+
+2025-03-12 22:46:39,704 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 163
+2025-03-12 22:46:39,704 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 163, LLM Time: 17.41s
+2025-03-12 22:46:39,806 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 164
+2025-03-12 22:47:03,352 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.263
+----------------------
+
+2025-03-12 22:47:03,806 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 164, LLM Time: 18.18s
+2025-03-12 22:47:03,907 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 165
+2025-03-12 22:47:33,694 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.606
+----------------------
+
+2025-03-12 22:47:34,195 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 165, LLM Time: 21.07s
+2025-03-12 22:47:34,297 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 166
+2025-03-12 22:48:04,408 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 348, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 246, in main
+    linearInterp = Motion_LinearInterpolationCommand()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'Motion_LinearInterpolationCommand' is not defined
+!!!
+----------------------
+
+2025-03-12 22:48:04,860 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 166
+2025-03-12 22:48:04,861 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 166, LLM Time: 23.83s
+2025-03-12 22:48:04,962 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 167
+2025-03-12 22:48:30,511 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 5.770
+----------------------
+
+2025-03-12 22:48:30,932 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 167
+2025-03-12 22:48:30,932 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 167, LLM Time: 19.67s
+2025-03-12 22:48:31,034 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 168
+2025-03-12 22:48:43,736 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.551
+----------------------
+
+2025-03-12 22:48:44,146 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 168, LLM Time: 7.05s
+2025-03-12 22:48:44,247 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 169
+2025-03-12 22:49:06,844 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65582: [0x0001002e] : CoreMotionApi Error: One or more acceleration arguments out of range.
+Elapsed_time: 5.292
+----------------------
+
+2025-03-12 22:49:07,293 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 169
+2025-03-12 22:49:07,293 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 169, LLM Time: 17.20s
+2025-03-12 22:49:07,395 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 170
+2025-03-12 22:49:21,999 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.726
+----------------------
+
+2025-03-12 22:49:22,406 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 170, LLM Time: 9.77s
+2025-03-12 22:49:22,508 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 171
+2025-03-12 22:49:40,244 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Moving Axis 1 to position 101
+Waiting for Axis 1 to stop
+Moving Axis 1 to position 201
+Waiting for Axis 1 to stop
+Program End.
+Elapsed_time: 4.278
+----------------------
+
+2025-03-12 22:49:40,627 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 171, LLM Time: 13.35s
+2025-03-12 22:49:40,728 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 172
+2025-03-12 22:49:59,006 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.051
+----------------------
+
+2025-03-12 22:49:59,511 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 172, LLM Time: 13.12s
+2025-03-12 22:49:59,613 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 173
+2025-03-12 22:50:23,078 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 284, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 225, in main
+    actualTorque = Wmx3Lib_cm.motion.GetActualTorque(12)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'GetActualTorque'
+!!!
+----------------------
+
+2025-03-12 22:50:23,503 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 173
+2025-03-12 22:50:23,503 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 173, LLM Time: 18.28s
+2025-03-12 22:50:23,606 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 174
+2025-03-12 22:50:43,496 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.492
+----------------------
+
+2025-03-12 22:50:43,910 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 174, LLM Time: 14.29s
+2025-03-12 22:50:44,012 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 175
+2025-03-12 22:51:03,972 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 7.225
+----------------------
+
+2025-03-12 22:51:04,414 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 175, LLM Time: 12.62s
+2025-03-12 22:51:04,516 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 176
+2025-03-12 22:51:16,998 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.781
+----------------------
+
+2025-03-12 22:51:17,417 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 176, LLM Time: 6.59s
+2025-03-12 22:51:17,520 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 177
+2025-03-12 22:51:43,491 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.009
+----------------------
+
+2025-03-12 22:51:43,926 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 177, LLM Time: 15.86s
+2025-03-12 22:51:44,029 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 178
+2025-03-12 22:51:56,632 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.734
+----------------------
+
+2025-03-12 22:51:57,048 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 178, LLM Time: 7.76s
+2025-03-12 22:51:57,151 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 179
+2025-03-12 22:52:16,556 - Default - MainProcess - 33416 - codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 273, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 214, in main
+    posCommand.profile.type = ProfileType.Sine
+                              ^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'Sine'. Did you mean: 'Sin'?
+!!!
+----------------------
+
+2025-03-12 22:52:16,660 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 179
+2025-03-12 22:52:16,660 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 179, LLM Time: 15.24s
+2025-03-12 22:52:16,763 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 180
+2025-03-12 22:52:33,633 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.919
+----------------------
+
+2025-03-12 22:52:34,132 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 180, LLM Time: 7.85s
+2025-03-12 22:52:34,235 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 181
+2025-03-12 22:52:45,330 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 3.538
+----------------------
+
+2025-03-12 22:52:45,435 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 181
+2025-03-12 22:52:45,435 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 181, LLM Time: 7.44s
+2025-03-12 22:52:45,539 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 182
+2025-03-12 22:52:55,565 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.826
+----------------------
+
+2025-03-12 22:52:55,977 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 182, LLM Time: 5.10s
+2025-03-12 22:52:56,080 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 183
+2025-03-12 22:53:08,976 - Default - MainProcess - 33416 - codedata:
+Program begin.
+StartPos error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 3.932
+----------------------
+
+2025-03-12 22:53:09,080 - Default - MainProcess - 33416 - gpt-4o-M1 Error detected for Task ID: 183
+2025-03-12 22:53:09,080 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 183, LLM Time: 8.85s
+2025-03-12 22:53:09,184 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 184
+2025-03-12 22:53:19,980 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.437
+----------------------
+
+2025-03-12 22:53:20,383 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 184, LLM Time: 6.25s
+2025-03-12 22:53:20,486 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 185
+2025-03-12 22:53:36,016 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.252
+----------------------
+
+2025-03-12 22:53:36,445 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 185, LLM Time: 10.17s
+2025-03-12 22:53:36,546 - Default - MainProcess - 33416 - gpt-4o-M1: starts for Task ID: 186
+2025-03-12 22:53:47,643 - Default - MainProcess - 33416 - codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.597
+----------------------
+
+2025-03-12 22:53:48,059 - Default - MainProcess - 33416 - gpt-4o-M1: completed for Task ID: 186, LLM Time: 6.39s
+2025-03-12 23:00:23,670 - Default - MainProcess - 59843 - o3-mini-M3: starts for Task ID: 1
+2025-03-12 23:00:50,492 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 1
+2025-03-12 23:01:12,232 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.971
+----------------------
+
+2025-03-12 23:01:12,835 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 1, LLM Time: 16.64s
+2025-03-12 23:01:12,936 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 2
+2025-03-12 23:01:38,588 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.497
+----------------------
+
+2025-03-12 23:01:38,988 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 2, LLM Time: 21.05s
+2025-03-12 23:01:39,090 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 3
+2025-03-12 23:02:00,479 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.653
+----------------------
+
+2025-03-12 23:02:00,878 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 3, LLM Time: 16.63s
+2025-03-12 23:02:00,980 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 4
+2025-03-12 23:02:34,183 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 278, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if XYZ == 0:
+       ^^^
+NameError: name 'XYZ' is not defined
+!!!
+----------------------
+
+2025-03-12 23:02:50,677 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.151
+----------------------
+
+2025-03-12 23:02:50,957 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 4, LLM Time: 29.04s
+2025-03-12 23:02:51,060 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 5
+2025-03-12 23:03:41,904 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.760
+----------------------
+
+2025-03-12 23:03:42,327 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 5, LLM Time: 44.98s
+2025-03-12 23:03:42,429 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 6
+2025-03-12 23:03:58,062 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.784
+----------------------
+
+2025-03-12 23:03:58,480 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 6, LLM Time: 10.74s
+2025-03-12 23:03:58,581 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 7
+2025-03-12 23:04:23,195 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.789
+----------------------
+
+2025-03-12 23:04:23,626 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 7, LLM Time: 19.72s
+2025-03-12 23:04:23,728 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 8
+2025-03-12 23:05:00,431 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.612
+----------------------
+
+2025-03-12 23:05:00,840 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 8, LLM Time: 30.98s
+2025-03-12 23:05:00,942 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 9
+2025-03-12 23:05:40,475 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.620
+----------------------
+
+2025-03-12 23:05:40,899 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 9, LLM Time: 34.80s
+2025-03-12 23:05:41,002 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 10
+2025-03-12 23:06:12,783 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.584
+----------------------
+
+2025-03-12 23:06:13,216 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 10, LLM Time: 27.09s
+2025-03-12 23:06:13,318 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 11
+2025-03-12 23:06:36,569 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.392
+----------------------
+
+2025-03-12 23:06:36,990 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 11, LLM Time: 17.75s
+2025-03-12 23:06:37,092 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 12
+2025-03-12 23:06:55,491 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.303
+----------------------
+
+2025-03-12 23:06:55,908 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 12, LLM Time: 12.99s
+2025-03-12 23:06:56,010 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 13
+2025-03-12 23:07:20,735 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 284, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-12 23:07:48,872 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+StartJog error code is 65556: [0x00010014] : CoreMotionApi Error: One or more axes are not in servo on state.
+Program End.
+Elapsed_time: 3.772
+----------------------
+
+2025-03-12 23:08:07,185 - Default - MainProcess - 60039 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 284, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 208, in main
+    ret = Wmx3Lib_cm.AxisControl.SetServoOn(13, 1)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 11546, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotion' object has no attribute 'AxisControl'. Did you mean: 'axisControl'?
+!!!
+----------------------
+
+2025-03-12 23:08:07,185 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 13
+2025-03-12 23:08:07,185 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 13, LLM Time: 22.73s
+2025-03-12 23:08:07,289 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 14
+2025-03-12 23:08:30,244 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 276, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 214, in main
+    jogCommand.profile.type = ProfileType.TimeaccTrapezoidal
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ProfileType' has no attribute 'TimeaccTrapezoidal'. Did you mean: 'TimeAccTrapezoidal'?
+!!!
+----------------------
+
+2025-03-12 23:08:44,222 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.025
+----------------------
+
+2025-03-12 23:08:44,494 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 14, LLM Time: 18.76s
+2025-03-12 23:08:44,595 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 15
+2025-03-12 23:09:44,863 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.790
+----------------------
+
+2025-03-12 23:09:45,302 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 15, LLM Time: 54.37s
+2025-03-12 23:09:45,403 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 16
+2025-03-12 23:10:21,757 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+!!!
+----------------------
+
+2025-03-12 23:11:48,203 - Default - MainProcess - 60039 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 328, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 252, in main
+    ret = Wmx3Lib_adv.advMotion.StartPathIntplPos(cmd_linear)
+          ^^^^^^^^^^^
+NameError: name 'Wmx3Lib_adv' is not defined
+!!!
+----------------------
+
+2025-03-12 23:12:14,426 - Default - MainProcess - 60039 - Count 2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.200
+----------------------
+
+2025-03-12 23:12:14,882 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 16, LLM Time: 30.38s
+2025-03-12 23:12:14,984 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 17
+2025-03-12 23:12:45,436 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 318, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 249, in main
+    point = AdvMotion_PathIntplCommandPoint()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'AdvMotion_PathIntplCommandPoint' is not defined
+!!!
+----------------------
+
+2025-03-12 23:13:29,149 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+Starting relative path interpolation command with the following segments:
+  Segment 0 -> Targets: {0: 0, 1: 0}
+  Segment 1 -> Targets: {0: 10, 1: -10}
+  Segment 2 -> Targets: {0: 20, 1: -20}
+  Segment 3 -> Targets: {0: 30, 1: -30}
+  Segment 4 -> Targets: {0: 40, 1: -40}
+Waiting for axes to finish motion for axes: {0: 5, 1: 7}
+Program End.
+Elapsed_time: 4.997
+----------------------
+
+2025-03-12 23:13:29,434 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 17, LLM Time: 25.87s
+2025-03-12 23:13:29,535 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 18
+2025-03-12 23:13:50,628 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.850
+----------------------
+
+2025-03-12 23:13:50,922 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 18, LLM Time: 17.14s
+2025-03-12 23:13:51,024 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 19
+2025-03-12 23:14:13,306 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 292, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 278, in main
+    ret = Wmx3Lib.StopCommunication(INFINITE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'StopCommunication'
+!!!
+----------------------
+
+2025-03-12 23:14:41,933 - Default - MainProcess - 60039 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 295, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 281, in main
+    ret = Wmx3Lib.StopCommunication(INFINITE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'StopCommunication'
+!!!
+----------------------
+
+2025-03-12 23:15:01,934 - Default - MainProcess - 60039 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 295, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 281, in main
+    ret = Wmx3Lib.StopCommunication(INFINITE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'StopCommunication'
+!!!
+----------------------
+
+2025-03-12 23:15:01,935 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 19
+2025-03-12 23:15:01,935 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 19, LLM Time: 16.36s
+2025-03-12 23:15:02,038 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 20
+2025-03-12 23:15:21,787 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 276, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 233, in main
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 215, in main
+    ret, input_val = Wmx3Lib_Io.ReadInBit(0x0, 0x03)
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 12445, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Io, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Io' object has no attribute 'ReadInBit'. Did you mean: 'GetInBit'?
+!!!
+----------------------
+
+2025-03-12 23:15:52,925 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.958
+----------------------
+
+2025-03-12 23:15:53,206 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 20, LLM Time: 16.01s
+2025-03-12 23:15:53,307 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 21
+2025-03-12 23:16:12,144 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.179
+----------------------
+
+2025-03-12 23:16:12,579 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 21, LLM Time: 13.55s
+2025-03-12 23:16:12,681 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 22
+2025-03-12 23:16:36,145 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+StartLinearIntplPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Program End.
+Elapsed_time: 4.733
+----------------------
+
+2025-03-12 23:16:54,790 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+StartLinearIntplPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Program End.
+Elapsed_time: 4.849
+----------------------
+
+2025-03-12 23:17:18,898 - Default - MainProcess - 60039 - Count 2:
+codedata:
+Program begin.
+StartLinearIntplPos error code is 65583: [0x0001002f] : CoreMotionApi Error: One or more deceleration arguments out of range.
+Program End.
+Elapsed_time: 4.743
+----------------------
+
+2025-03-12 23:17:18,899 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 22
+2025-03-12 23:17:18,899 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 22, LLM Time: 18.62s
+2025-03-12 23:17:19,001 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 23
+2025-03-12 23:17:41,728 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.172
+----------------------
+
+2025-03-12 23:17:42,171 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 23, LLM Time: 17.45s
+2025-03-12 23:17:42,272 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 24
+2025-03-12 23:18:08,143 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.750
+----------------------
+
+2025-03-12 23:18:08,602 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 24, LLM Time: 20.01s
+2025-03-12 23:18:08,703 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 25
+2025-03-12 23:18:32,762 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.279
+----------------------
+
+2025-03-12 23:18:33,278 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 25, LLM Time: 18.67s
+2025-03-12 23:18:33,380 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 26
+2025-03-12 23:18:58,660 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.323
+----------------------
+
+2025-03-12 23:18:59,102 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 26, LLM Time: 19.85s
+2025-03-12 23:18:59,203 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 27
+2025-03-12 23:19:33,567 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 361, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-12 23:21:32,923 - Default - MainProcess - 60039 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 345, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-12 23:24:33,545 - Default - MainProcess - 60039 - Count 2:
+codedata:
+Program begin.
+FreePathIntplLookaheadBuffer error code: 65627
+Path interpolation timeout.
+Program End.
+Elapsed_time: 59.079
+----------------------
+
+2025-03-12 23:24:33,546 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 27
+2025-03-12 23:24:33,546 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 27, LLM Time: 32.40s
+2025-03-12 23:24:33,649 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 28
+2025-03-12 23:25:15,888 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+FreeSplineBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Program End.
+Elapsed_time: 6.350
+----------------------
+
+2025-03-12 23:25:40,026 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.431
+----------------------
+
+2025-03-12 23:25:40,479 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 28, LLM Time: 35.78s
+2025-03-12 23:25:40,582 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 29
+2025-03-12 23:26:08,223 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.025
+----------------------
+
+2025-03-12 23:26:08,640 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 29, LLM Time: 22.51s
+2025-03-12 23:26:08,742 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 30
+2025-03-12 23:26:42,067 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+FreePathIntplLookaheadBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Elapsed_time: 4.634
+----------------------
+
+2025-03-12 23:27:07,329 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.626
+----------------------
+
+2025-03-12 23:27:07,746 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 30, LLM Time: 28.58s
+2025-03-12 23:27:07,848 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 31
+2025-03-12 23:27:39,026 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.438
+----------------------
+
+2025-03-12 23:27:39,466 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 31, LLM Time: 25.63s
+2025-03-12 23:27:39,567 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 32
+2025-03-12 23:28:44,181 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.055
+----------------------
+
+2025-03-12 23:28:44,630 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 32, LLM Time: 58.45s
+2025-03-12 23:28:44,731 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 33
+2025-03-12 23:29:15,057 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 6.604
+----------------------
+
+2025-03-12 23:29:15,597 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 33, LLM Time: 23.62s
+2025-03-12 23:29:15,699 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 34
+2025-03-12 23:29:56,057 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.291
+----------------------
+
+2025-03-12 23:29:56,493 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 34, LLM Time: 34.96s
+2025-03-12 23:29:56,595 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 35
+2025-03-12 23:30:49,817 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.247
+----------------------
+
+2025-03-12 23:30:50,241 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 35, LLM Time: 47.87s
+2025-03-12 23:30:50,343 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 36
+2025-03-12 23:31:21,304 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.552
+----------------------
+
+2025-03-12 23:31:21,738 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 36, LLM Time: 25.30s
+2025-03-12 23:31:21,840 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 37
+2025-03-12 23:31:55,357 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.880
+----------------------
+
+2025-03-12 23:31:55,777 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 37, LLM Time: 28.53s
+2025-03-12 23:31:55,879 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 38
+2025-03-12 23:32:43,397 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+SetEvent_ID error code is 90120
+Elapsed_time: 3.994
+----------------------
+
+2025-03-12 23:33:02,793 - Default - MainProcess - 60039 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 310, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 252, in main
+    ret = Wmx3Lib_Io.SetOutBit(0x00, 0x01, 0x01)
+          ^^^^^^^^^^
+NameError: name 'Wmx3Lib_Io' is not defined. Did you mean: 'Wmx3Lib_cm'?
+!!!
+----------------------
+
+2025-03-12 23:33:26,517 - Default - MainProcess - 60039 - Count 2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.444
+----------------------
+
+2025-03-12 23:33:26,927 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 38, LLM Time: 43.41s
+2025-03-12 23:33:27,030 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 39
+2025-03-12 23:34:07,273 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.718
+----------------------
+
+2025-03-12 23:34:07,726 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 39, LLM Time: 35.42s
+2025-03-12 23:34:07,829 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 40
+2025-03-12 23:34:41,146 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.969
+----------------------
+
+2025-03-12 23:34:41,646 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 40, LLM Time: 28.24s
+2025-03-12 23:34:41,749 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 41
+2025-03-12 23:35:26,257 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.315
+----------------------
+
+2025-03-12 23:35:26,666 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 41, LLM Time: 40.09s
+2025-03-12 23:35:26,769 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 42
+2025-03-12 23:35:53,764 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.480
+----------------------
+
+2025-03-12 23:35:54,191 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 42, LLM Time: 21.41s
+2025-03-12 23:35:54,294 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 43
+2025-03-12 23:36:21,429 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.211
+----------------------
+
+2025-03-12 23:36:21,869 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 43, LLM Time: 21.82s
+2025-03-12 23:36:21,972 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 44
+2025-03-12 23:36:59,671 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 320, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 245, in main
+    if axis_status.distanceToTarget <= 20:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 4822, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotionAxisStatus, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotionAxisStatus' object has no attribute 'distanceToTarget'
+!!!
+----------------------
+
+2025-03-12 23:37:25,441 - Default - MainProcess - 60039 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 315, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 240, in main
+    if abs(axis_status.targetPos - axis_status.actualPos) <= 20:
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 4822, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, CoreMotionAxisStatus, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'CoreMotionAxisStatus' object has no attribute 'targetPos'
+!!!
+----------------------
+
+2025-03-12 23:37:42,606 - Default - MainProcess - 60039 - Count 2:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.392
+----------------------
+
+2025-03-12 23:37:42,894 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 44, LLM Time: 32.58s
+2025-03-12 23:37:42,996 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 45
+2025-03-12 23:38:06,804 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.337
+----------------------
+
+2025-03-12 23:38:07,211 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 45, LLM Time: 18.36s
+2025-03-12 23:38:07,313 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 46
+2025-03-12 23:38:38,579 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.289
+----------------------
+
+2025-03-12 23:38:38,975 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 46, LLM Time: 25.87s
+2025-03-12 23:38:39,076 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 47
+2025-03-12 23:39:21,820 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.708
+----------------------
+
+2025-03-12 23:39:22,237 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 47, LLM Time: 37.93s
+2025-03-12 23:39:22,339 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 48
+2025-03-12 23:39:55,796 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.175
+----------------------
+
+2025-03-12 23:39:56,210 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 48, LLM Time: 28.18s
+2025-03-12 23:39:56,311 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 49
+2025-03-12 23:40:35,241 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Wait error code is 1567: [0x0000061f] : WMX3Api Error: The servos of one or more commanded axes are off.
+Elapsed_time: 3.964
+----------------------
+
+2025-03-12 23:41:06,344 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+Wait error code is 1567: [0x0000061f] : WMX3Api Error: The servos of one or more commanded axes are off.
+Elapsed_time: 3.699
+----------------------
+
+2025-03-12 23:41:27,802 - Default - MainProcess - 60039 - Count 2:
+codedata:
+Program begin.
+Wait error code is 1567: [0x0000061f] : WMX3Api Error: The servos of one or more commanded axes are off.
+Elapsed_time: 3.699
+----------------------
+
+2025-03-12 23:41:27,802 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 49
+2025-03-12 23:41:27,803 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 49, LLM Time: 34.86s
+2025-03-12 23:41:27,905 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 50
+2025-03-12 23:42:26,511 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 349, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-12 23:44:01,084 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+StartLinearIntplPos error code is 65556: [0x00010014] : CoreMotionApi Error: One or more axes are not in servo on state.
+Program End.
+Elapsed_time: 3.846
+----------------------
+
+2025-03-12 23:44:35,749 - Default - MainProcess - 60039 - Count 2:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 369, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 326, in main
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 217, in main
+    ret = Wmx3Lib_cm.motion.ServoOn_AxisSel(axisSelServo)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 8625, in <lambda>
+    __getattr__ = lambda self, name: _swig_getattr(self, Motion, name)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "\\mac\Home\Downloads\codedemo\WMX3ApiPython.py", line 80, in _swig_getattr
+    raise AttributeError("'%s' object has no attribute '%s'" % (class_type.__name__, name))
+AttributeError: 'Motion' object has no attribute 'ServoOn_AxisSel'. Did you mean: 'Stop_AxisSel'?
+!!!
+----------------------
+
+2025-03-12 23:44:35,750 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 50
+2025-03-12 23:44:35,750 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 50, LLM Time: 56.41s
+2025-03-12 23:44:35,853 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 51
+2025-03-12 23:45:08,856 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.467
+----------------------
+
+2025-03-12 23:45:09,390 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 51, LLM Time: 27.43s
+2025-03-12 23:45:09,493 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 52
+2025-03-12 23:45:34,767 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.437
+----------------------
+
+2025-03-12 23:45:35,190 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 52, LLM Time: 20.73s
+2025-03-12 23:45:35,292 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 53
+2025-03-12 23:46:24,319 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.555
+----------------------
+
+2025-03-12 23:46:24,754 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 53, LLM Time: 43.36s
+2025-03-12 23:46:24,857 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 54
+2025-03-12 23:46:59,840 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 8.312
+----------------------
+
+2025-03-12 23:47:00,302 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 54, LLM Time: 26.56s
+2025-03-12 23:47:00,405 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 55
+2025-03-12 23:47:27,081 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.055
+----------------------
+
+2025-03-12 23:47:27,480 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 55, LLM Time: 21.51s
+2025-03-12 23:47:27,582 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 56
+2025-03-12 23:49:25,417 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.231
+----------------------
+
+2025-03-12 23:49:25,836 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 56, LLM Time: 112.49s
+2025-03-12 23:49:25,939 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 57
+2025-03-12 23:49:49,136 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.059
+----------------------
+
+2025-03-12 23:49:49,561 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 57, LLM Time: 18.03s
+2025-03-12 23:49:49,663 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 58
+2025-03-12 23:50:25,796 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+!!!
+----------------------
+
+2025-03-12 23:51:04,640 - Default - MainProcess - 60039 - Count 1:
+codeerr:
+!!!
+----------------------
+
+2025-03-12 23:51:04,640 - Default - MainProcess - 60039 - Count 1: No change in codereturn, exiting correction loop
+2025-03-12 23:51:04,640 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 58
+2025-03-12 23:51:04,640 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 58, LLM Time: 31.51s
+2025-03-12 23:51:04,742 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 59
+2025-03-12 23:51:44,027 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 5.455
+----------------------
+
+2025-03-12 23:51:44,555 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 59, LLM Time: 33.72s
+2025-03-12 23:51:44,657 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 60
+2025-03-12 23:52:35,506 - Default - MainProcess - 60039 - Count 0:
+codedata:
+Program begin.
+FreeSplineBuffer error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+StartCSplinePos_VelAccLimited error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Program End.
+Elapsed_time: 5.234
+----------------------
+
+2025-03-12 23:53:11,258 - Default - MainProcess - 60039 - Count 1:
+codedata:
+Program begin.
+StartCSplinePos_VelAccLimited error code is 65627: [0x0001005b] : CoreMotionApi Error: Channel buffer memory has not been allocated.
+Program End.
+Elapsed_time: 5.221
+----------------------
+
+2025-03-12 23:53:50,721 - Default - MainProcess - 60039 - Count 2:
+codedata:
+Program begin.
+StartCSplinePos_VelAccLimited error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Program End.
+Elapsed_time: 5.409
+----------------------
+
+2025-03-12 23:53:50,721 - Default - MainProcess - 60039 - o3-mini-M3 Error detected for Task ID: 60
+2025-03-12 23:53:50,721 - Default - MainProcess - 60039 - o3-mini-M3: completed for Task ID: 60, LLM Time: 45.51s
+2025-03-12 23:53:50,826 - Default - MainProcess - 60039 - o3-mini-M3: starts for Task ID: 61
+2025-03-12 23:54:31,016 - Default - MainProcess - 60039 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 361, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+
+2025-03-12 23:54:58,747 - Default - MainProcess - 60039 - Count 1:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 357, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 20, in main
+    sleep(0.1)
+    ^^^^^
+UnboundLocalError: cannot access local variable 'sleep' where it is not associated with a value
+!!!
+----------------------
+

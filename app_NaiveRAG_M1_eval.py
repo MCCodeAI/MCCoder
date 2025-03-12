@@ -65,8 +65,8 @@ splits = text_splitter.split_documents(docs)
 
 
 
-# llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", temperature=0.2)  # 
-llm_name = 'gpt-4o-M1'
+# llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", temperature=0.2)   #
+# llm_name = 'gpt-4o-M1'
 
 llm = ChatDeepSeek(name="MCCoder-M1", model_name="deepseek-chat", temperature=0.2)  # 
 llm_name = 'DeepSeek-V3-M1'
@@ -76,12 +76,12 @@ prompt_template = """Generate a Python script based on the given Question and Co
 
 Instructions:
 1.	Extract Key Information:
-•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
+•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question, list numbers from small to big.
 •	Add this information at the beginning of the generated code in the following format:
 
 # Axes = [Axis_number_1, Axis_number_2, ...]
-# Inputs = [byte.bit_1, byte.bit_2, ...]
-# Outputs = [byte.bit_1, byte.bit_2, ...]
+# IOInputs = [byte.bit_1, byte.bit_2, ...]
+# IOOutputs = [byte.bit_1, byte.bit_2, ...]
 
 
 •	Example:
@@ -89,9 +89,9 @@ If the Question states:
 “Move Axis 9, Axis 12, and Axis 2 based on Input 0.3 and 1.2, then activate Output 3.4 and 6.1”,
 the script should start with:
 
-# Axes = [9, 12, 2]
-# Inputs = [0.3, 1.2]
-# Outputs = [3.4, 6.1]
+# Axes = [2, 9, 12]
+# IOInputs = [0.3, 1.2]
+# IOOutputs = [3.4, 6.1]
 
 
 2.	Code Formatting:
