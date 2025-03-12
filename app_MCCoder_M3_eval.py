@@ -53,7 +53,7 @@ else:
     # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
     print("load from chunks")
 
-retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 10})
+retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 6})
 
 # Txt loader of sample codes, for BM25 search
 loader = TextLoader("./docs/WMX3API_MCEval_Samplecodes.txt")
@@ -64,20 +64,17 @@ separators = ['``']  # Adjust based on actual document structure, `` is the end 
 text_splitter = RecursiveCharacterTextSplitter(separators=separators, keep_separator=True, chunk_size=1000, chunk_overlap=200, add_start_index=True)
 splits = text_splitter.split_documents(docs)
 
-
-
- 
-# codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="o3-mini")  # o3-mini gpt-4o, ,temperature=0.2
+# codegene_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
 # taskdecom_llm = codegene_llm
 # codegene_runnable = None
- 
-# codegene_llm = ChatOpenAI(name="MCCoder-M3", model_name="gpt-4o", temperature=0.2)  # 
+# Specify LLM name 
+llm_name = 'gpt-4o-M3'  #CanonicalCode, gpt-4o-M3
+
 codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0)  # 
 taskdecom_llm = codegene_llm
 codegene_runnable = None
- 
-# Specify LLM name for making CanonicalCode
-llm_name = 'DeepSeek-V3-M3'
+# Specify LLM name
+llm_name = 'DeepSeek-V3-M3'  #CanonicalCode, gpt-4o-M3
 
 # Code generation llm >>>>>>>>>>>>>
 # Prompt for code generation
@@ -178,7 +175,7 @@ def task_rag(tasks):
 
         # initialize the bm25 retriever and faiss retriever
         bm25_retriever = BM25Retriever.from_documents(splits)
-        bm25_retriever.k = 10
+        bm25_retriever.k = 6
 
         # initialize the ensemble retriever
         ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])

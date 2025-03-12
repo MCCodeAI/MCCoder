@@ -52,7 +52,7 @@ else:
     # vectorstore = Chroma.from_documents(documents=splits, embedding=embedding_model, persist_directory=vectorstore_path) 
     print("load from chunks")
 
-retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 10})
+retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 6})
 
 # Txt loader of sample codes, for BM25 search
 loader = TextLoader("./docs/WMX3API_MCEval_Samplecodes.txt")
@@ -65,11 +65,11 @@ splits = text_splitter.split_documents(docs)
 
 
 
-# llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", temperature=0.2)  # 
-llm = ChatDeepSeek(name="MCCoder-M1", model_name="deepseek-chat", temperature=0.2)  # 
+llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", temperature=0.2)  # 
+# llm = ChatDeepSeek(name="MCCoder-M1", model_name="deepseek-chat", temperature=0.2)  # 
  
 # Specify LLM name for making CanonicalCode
-llm_name = 'DeepSeek-V3-M1'
+llm_name = 'gpt-4o-M1'
 
 # Prompt for code generation
 prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
@@ -149,7 +149,7 @@ def coder_retrieval(question):
 
     # initialize the bm25 retriever and faiss retriever
     bm25_retriever = BM25Retriever.from_documents(splits)
-    bm25_retriever.k = 10
+    bm25_retriever.k = 6
 
     # initialize the ensemble retriever
     ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, retriever], weights=[0.5, 0.5])

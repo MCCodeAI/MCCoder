@@ -801,7 +801,7 @@
     },
     {
         "TaskId": 101,
-        "Instruction": "Write Python code to get the System status 'Engine State' for the entire system. If it is Communicating, move Axis 1 to 111.1, otherwise, move to 0.1.",
+        "Instruction": "Write Python code to get the System status 'Engine State' for the entire system; If it is Communicating, move Axis 1 to 111.1, otherwise, move to 0.1.",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -809,7 +809,7 @@
     },
     {
         "TaskId": 102,
-        "Instruction": "Write Python code to move Axis 2 to 200 and Axis 4 to 110, then if the Axis status of position command for Axis 2 minus position command for Axis 4 is 90, move Axis 2 and 4 to 300, otherwise move them to 50.",
+        "Instruction": "Write Python code to move Axis 2 to 200 and Axis 4 to 110; then if the Axis status of position command for Axis 2 minus position command for Axis 4 is 90, move Axis 2 and 4 to 300, otherwise move them to 50.",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -1225,7 +1225,7 @@
     },
     {
         "TaskId": 154,
-        "Instruction": "Write Python code to move Axis 1 to the position 101 at a speed of 1000 using a SCurve profile; move axis 2 to 202 using Parabolic profile; move axis 3 to 303 using Trapezoidal profile; move axis 4 to 404 using Sin profile; move axis 5 to 505 using AdvancedS profile.",
+        "Instruction": "Write Python code to move Axis 1 to the position 101 at a speed of 1000 using a SCurve profile; move axis 2 to 202 using Parabolic profile; move axis 3 to 303 using Trapezoidal profile; move axis 4 to 404 using Sin profile; move axis 5 to 505 using AdvancedS profile; move axis 6 to 606 using TimeAccJerkRatio profile.",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -1265,9 +1265,9 @@
     },
     {
         "TaskId": 159,
-        "Instruction": "Write Python code to move axis 5 to 200. then get the Axis status for Axis 5. Get the axis status of Pos Cmd, if it is 200, then move to 50.",
+        "Instruction": "Write Python code to move axis 5 to 200; then get the Axis status for Axis 5. Get the axis status of Pos Cmd, if it is 200, then move to 50.",
         "CanonicalCode": "",
-        "Difficulty": 2,
+        "Difficulty": 3,
         "CheckEnd": NaN,
         "Error": NaN
     },
@@ -1281,7 +1281,7 @@
     },
     {
         "TaskId": 161,
-        "Instruction": "Write Python code to move axis 4 to 300. then get the Axis status for Axis 4. Get the axis status of Actual Pos, if it is 200, then move to 50, otherwise move to -50. Then move Axis 6 to the position 111 at a speed of 1000 using a TwoVelocityJerkRatio profile.",
+        "Instruction": "Write Python code to move axis 4 to 300; then get the Axis status for Axis 4. Get the axis status of Actual Pos, if it is 200, then move to 50, otherwise move to -50; Then move Axis 6 to the position 111 at a speed of 1000 using a TwoVelocityJerkRatio profile.",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -1297,7 +1297,7 @@
     },
     {
         "TaskId": 163,
-        "Instruction": "Write Python code to jog Axis 3 for 0.5s seconds with a velocity of 90. then get the Axis status for Axis 3. Get the axis status of Actual Pos, if it is more than 20, then move it to 150, otherwise move to -150. Write Python code to start an absolute linear interpolation for Axes 1 and 3 to position (100, 0) with a velocity of 1000.",
+        "Instruction": "Write Python code to jog Axis 3 for 0.5s seconds with a velocity of 90; then get the Axis status for Axis 3. Get the axis status of Actual Pos, if it is more than 20, then move it to 150, otherwise move to -150; Write Python code to start an absolute linear interpolation for Axes 1 and 3 to position (100, 0) with a velocity of 1000.",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -1321,7 +1321,7 @@
     },
     {
         "TaskId": 166,
-        "Instruction": "Write Python code to execute a PVT command for Axis 1 with points in the format (Position, Velocity, Time): (0, 0, 0), (50, 1000, 100), (100, 2000, 200), (200, 3000, 300), (300, 1000, 400), (200, 0, 500). Write Python code to start an absolute linear interpolation for Axes 1 and 3 to position (100, 100) with a velocity of 1000. start a cubic spline motion command for Axes 8 and 9 with a total time of 1000ms to complete. The points are: (0, 0), (10, 10), (-20, -20), (30, 30), (-40, -40), (50, 50), (-60, -60), (70, 70), (-80, -80).",
+        "Instruction": "Write Python code to execute a PVT command for Axis 1 with points in the format (Position, Velocity, Time): (0, 0, 0), (50, 1000, 100), (100, 2000, 200), (200, 3000, 300), (300, 1000, 400), (200, 0, 500); Write Python code to start an absolute linear interpolation for Axes 1 and 3 to position (100, 100) with a velocity of 1000; start a cubic spline motion command for Axes 8 and 9 with a total time of 1000ms to complete. The points are: (0, 0), (10, 10), (-20, -20), (30, 30), (-40, -40), (50, 50), (-60, -60), (70, 70), (-80, -80).",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -1345,7 +1345,7 @@
     },
     {
         "TaskId": 169,
-        "Instruction": "Write Python code to move axis 5 to 200. then get the Axis status for Axis 5. Get the axis status of Pos Cmd, if it is 200, then move to 50. Then move Axis 8 to the position 99 at a speed of 1000 using a TimeAccJerkRatio profile.",
+        "Instruction": "Write Python code to move axis 5 to 200; then get the Axis status for Axis 5, get the axis status of Pos Cmd, if it is 200, then move to 50; Then move Axis 8 to the position 99 at a speed of 1000 using a TimeAccJerkRatio profile.",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -1361,7 +1361,7 @@
     },
     {
         "TaskId": 171,
-        "Instruction": "Write Python code to get the Axis status of Axis 1. Move axis 1 to 101. Get the status of position command and actual position, if they are the same, move axis 1 to 201, otherwise move to -201. ",
+        "Instruction": "Write Python code to get the Axis status of Axis 1; Move axis 1 to 101; Get the status of position command and actual position, if they are the same, move axis 1 to 201, otherwise move to -201. ",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
@@ -1377,7 +1377,7 @@
     },
     {
         "TaskId": 173,
-        "Instruction": "Write Python code to Move axis 12 to 101. Get the status of Actual Torque and pos cmd, if they are the same, move axis 1 to 201, otherwise move to -201. ",
+        "Instruction": "Write Python code to Move axis 12 to 101; Get the status of Actual Torque and pos cmd, if they are the same, move axis 1 to 201, otherwise move to -201. ",
         "CanonicalCode": "",
         "Difficulty": 3,
         "CheckEnd": NaN,
