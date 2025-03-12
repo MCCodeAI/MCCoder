@@ -19,8 +19,8 @@ def run():
     llm_times = []  # List to store LLM execution times
     
     # Define start and end task IDs manually
-    start_id = 177
-    end_id = start_id
+    start_id = 100
+    end_id = 186
     
     # Load the JSON dataset from file
     with open('docs/WMX3API_MCEval_Evaluation_Dataset.json', 'r') as f:
@@ -61,6 +61,7 @@ def run():
                 diff3_error += 1
             # Log error with task ID
             log_message(f"{llm_name} Error detected for Task ID: {current_id}")
+            task_status = "Error"
         else:
             is_error = False
             total_correct += 1
@@ -71,14 +72,19 @@ def run():
                 diff2_correct += 1
             elif difficulty == 3:
                 diff3_correct += 1
+            task_status = "Correct"
         
         # Log the completion of script execution with task ID and LLM time
         log_message(f"{llm_name}: completed for Task ID: {current_id}, LLM Time: {llm_time:.2f}s")
         
+        # Append only the task result to log.txt during the loop
+        with open(f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}/log.txt', 'a') as f:
+            f.write(f"Task ID: {current_id}, Status: {task_status}, Difficulty: {difficulty}, LLM Time: {llm_time:.2f}s\n")
+        
         # Wait for 0.1 seconds before next iteration
         sleep(0.1)
     
-    # Calculate statistics for overall and difficulty-specific performance
+    # After the loop, calculate statistics for overall and difficulty-specific performance
     total_tasks = total_correct + total_error
     total_accuracy = total_correct / total_tasks * 100 if total_tasks > 0 else 0
     total_error_rate = total_error / total_tasks * 100 if total_tasks > 0 else 0
@@ -128,7 +134,7 @@ Difficulty 3:
   Error Rate: {diff3_error_rate:.2f}%
 """
     
-    # Append to existing log file if it exists, otherwise create new
+    # Append the final statistics to the log file only after all tasks are completed
     with open(f'/Users/yin/Documents/GitHub/MCCodeLog/{llm_name}/log.txt', 'a') as f:
         f.write(log_content)
 

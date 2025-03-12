@@ -64,17 +64,15 @@ separators = ['``']  # Adjust based on actual document structure, `` is the end 
 text_splitter = RecursiveCharacterTextSplitter(separators=separators, keep_separator=True, chunk_size=1000, chunk_overlap=200, add_start_index=True)
 splits = text_splitter.split_documents(docs)
 
-# codegene_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
-# taskdecom_llm = codegene_llm
-# codegene_runnable = None
-# Specify LLM name 
-llm_name = 'gpt-4o-M3'  #CanonicalCode, gpt-4o-M3
-
-codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0)  # 
+codegene_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
 taskdecom_llm = codegene_llm
 codegene_runnable = None
-# Specify LLM name
-llm_name = 'DeepSeek-V3-M3'  #CanonicalCode, gpt-4o-M3
+llm_name = 'gpt-4o-M3'  #CanonicalCode, gpt-4o-M3
+
+# codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0)  # 
+# taskdecom_llm = codegene_llm
+# codegene_runnable = None
+# llm_name = 'DeepSeek-V3-M3'  #CanonicalCode, gpt-4o-M3
 
 # Code generation llm >>>>>>>>>>>>>
 # Prompt for code generation
