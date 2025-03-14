@@ -69,10 +69,17 @@ splits = text_splitter.split_documents(docs)
 # codegene_runnable = None
 # llm_name = 'o3-mini-M3'  #CanonicalCode, gpt-4o-M3
 
-codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0)  # 
+# codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-reasoner", model_name="deepseek-reasoner", temperature=0)  # 
+# taskdecom_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0) 
+# codegene_runnable = None
+# llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
+
+# taskdecom_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0.2)
+codegene_llm = ChatOpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"),base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",model="deepseek-r1",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
 taskdecom_llm = codegene_llm
 codegene_runnable = None
-llm_name = 'DeepSeek-V3-M3'  #CanonicalCode, gpt-4o-M3
+llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
+
 
 # Code generation llm >>>>>>>>>>>>>
 # Prompt for code generation
@@ -104,6 +111,8 @@ the script should start with:
 3.	Do not import any motion libraries.
 
 4. Wait for axes stop moving after every single motion, but don't wait in the middle of continuous motion.
+
+5. Don't generate  character '\u2260'.
 ----------------------------------------------
 
 Question: 
@@ -125,13 +134,13 @@ codegene_runnable = (
 # Task decomposition llm >>>>>>>>>>>>>
 # Prompt for task decomposition
 taskdecom_prompt_template = """
-Breaks down the user question into multiple sub-tasks. Only when you see a semicolon(;) in the question, separate the parts before and after it into subtasks. List subtasks as separate lines, and adding 'Write Python code to' to each.
+Breaks down the user question into multiple sub-tasks. ONLY when you see a semicolon(;) in the question, separate the parts before and after it into subtasks. List subtasks as separate lines, and adding 'Write Python code to' to each.
 
 For example, the user question 
 
 "Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile. Then move to 0; set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; Move Axis 7 to 30;"
 
-should be decomposed into three tasks: 
+should be decomposed into three tasks(separated by ;): 
 
 "Write Python code to move Axis 6 to 20 with a velocity of 900 using a trapezoid profile. Then move to 0; 
 Write Python code to set IO output bit 6.7 to 1, sleep for 0.1 seconds, then set it to 0; 
@@ -211,7 +220,7 @@ def self_correct(user_question, original_code, err_info):
     
     # Define the prompt template with original code and error context
     template = """
-    1. Correct the code based on the user question, original code, error information and context provided. Do not modify the format.
+    1. Correct the code based on the user question, original code, error information and context provided. Only correct the error part.
     2.	Code Formatting:
 •	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
 
@@ -350,7 +359,7 @@ def on_message(task_id, message):
 
     # Set maximum correction attempts
     max_attempts = 2
-    attempt_count = 0
+    attempt_count = 1
     previous_codereturn = None  # Store previous codereturn value
 
     log_message(f"Count {attempt_count}:\n{codereturn}")

@@ -65,11 +65,11 @@ splits = text_splitter.split_documents(docs)
 
 
 
-# llm = ChatOpenAI(name="MCCoder-M1", model_name="gpt-4o", temperature=0.2)   #
-# llm_name = 'gpt-4o-M1'
+llm = ChatOpenAI(name="MCCoder-M1-o3-mini-M1", model_name="o3-mini")   #
+llm_name = 'o3-mini-M1'
 
-llm = ChatDeepSeek(name="MCCoder-M1", model_name="deepseek-chat", temperature=0.2)  # 
-llm_name = 'DeepSeek-V3-M1'
+# llm = ChatDeepSeek(name="MCCoder-M1", model_name="deepseek-chat", temperature=0.2)  # 
+# llm_name = 'DeepSeek-V3-M1'
 
 # Prompt for code generation
 prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.

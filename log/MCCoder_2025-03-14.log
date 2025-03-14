@@ -1,0 +1,197 @@
+2025-03-14 00:05:02,001 - Default - MainProcess - 33573 - aliyun-deepseek-r1-M3: starts for Task ID: 9
+2025-03-14 00:05:59,929 - Default - MainProcess - 33573 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 274, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 210, in main
+    if not x:
+           ^
+NameError: name 'x' is not defined
+!!!
+----------------------
+
+2025-03-14 00:06:45,475 - Default - MainProcess - 33573 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.467
+----------------------
+
+2025-03-14 00:06:46,082 - Default - MainProcess - 33573 - aliyun-deepseek-r1-M3: completed for Task ID: 9, LLM Time: 54.70s
+2025-03-14 00:06:46,187 - Default - MainProcess - 33573 - aliyun-deepseek-r1-M3: starts for Task ID: 10
+2025-03-14 00:08:01,908 - Default - MainProcess - 34986 - aliyun-deepseek-r1-M3: starts for Task ID: 1
+2025-03-14 00:08:46,843 - Default - MainProcess - 34986 - Count 0:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211
+    posCommand = Motion_PosCommand()
+IndentationError: unexpected indent
+!!!
+----------------------
+
+2025-03-14 00:11:23,866 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 1
+2025-03-14 00:12:15,255 - Default - MainProcess - 36539 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.797
+----------------------
+
+2025-03-14 00:12:15,813 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: completed for Task ID: 1, LLM Time: 47.48s
+2025-03-14 00:12:15,916 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 2
+2025-03-14 00:13:00,229 - Default - MainProcess - 36539 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.353
+----------------------
+
+2025-03-14 00:13:00,619 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: completed for Task ID: 2, LLM Time: 40.85s
+2025-03-14 00:13:00,721 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 3
+2025-03-14 00:14:48,824 - Default - MainProcess - 36539 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.679
+----------------------
+
+2025-03-14 00:14:49,240 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: completed for Task ID: 3, LLM Time: 104.31s
+2025-03-14 00:14:49,343 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 4
+2025-03-14 00:16:25,049 - Default - MainProcess - 36539 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 271, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 210, in main
+    if XYZ == 0:
+       ^^^
+NameError: name 'XYZ' is not defined
+!!!
+----------------------
+
+2025-03-14 00:17:51,547 - Default - MainProcess - 36539 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.180
+----------------------
+
+2025-03-14 00:17:51,954 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: completed for Task ID: 4, LLM Time: 92.74s
+2025-03-14 00:17:52,056 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 5
+2025-03-14 00:20:03,282 - Default - MainProcess - 36539 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.743
+----------------------
+
+2025-03-14 00:20:03,713 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: completed for Task ID: 5, LLM Time: 126.35s
+2025-03-14 00:20:03,814 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 6
+2025-03-14 00:21:05,417 - Default - MainProcess - 36539 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.515
+----------------------
+
+2025-03-14 00:21:05,901 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: completed for Task ID: 6, LLM Time: 57.98s
+2025-03-14 00:21:06,002 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 7
+2025-03-14 00:24:11,343 - Default - MainProcess - 36539 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.555
+----------------------
+
+2025-03-14 00:24:11,756 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: completed for Task ID: 7, LLM Time: 181.68s
+2025-03-14 00:24:11,856 - Default - MainProcess - 36539 - aliyun-deepseek-r1-M3: starts for Task ID: 8
+2025-03-14 00:31:13,490 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: starts for Task ID: 8
+2025-03-14 00:33:23,895 - Default - MainProcess - 43067 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.506
+----------------------
+
+2025-03-14 00:33:24,450 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: completed for Task ID: 8, LLM Time: 125.79s
+2025-03-14 00:33:24,551 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: starts for Task ID: 9
+2025-03-14 00:34:10,920 - Default - MainProcess - 43067 - Count 0:
+codeerr:
+Traceback (most recent call last):
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 275, in <module>
+    main()
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 211, in main
+    if not x:
+           ^
+NameError: name 'x' is not defined
+!!!
+----------------------
+
+2025-03-14 00:35:43,773 - Default - MainProcess - 43067 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.071
+----------------------
+
+2025-03-14 00:35:44,061 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: completed for Task ID: 9, LLM Time: 43.09s
+2025-03-14 00:35:44,162 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: starts for Task ID: 10
+2025-03-14 00:36:53,630 - Default - MainProcess - 43067 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 3.438
+----------------------
+
+2025-03-14 00:36:54,048 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: completed for Task ID: 10, LLM Time: 65.92s
+2025-03-14 00:36:54,150 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: starts for Task ID: 11
+2025-03-14 00:39:29,626 - Default - MainProcess - 43067 - Count 0:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 4.368
+----------------------
+
+2025-03-14 00:39:30,037 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: completed for Task ID: 11, LLM Time: 151.00s
+2025-03-14 00:39:30,140 - Default - MainProcess - 43067 - aliyun-deepseek-r1-M3: starts for Task ID: 12
+2025-03-14 00:40:15,626 - Default - MainProcess - 43067 - Count 0:
+codeerr:
+  File "\\mac\Home\Downloads\codedemo\sample.py", line 210
+    jogCommand = Motion_JogCommand()
+IndentationError: unexpected indent
+!!!
+----------------------
+
+2025-03-14 01:01:19,231 - Default - MainProcess - 47924 - aliyun-deepseek-r1-M3: starts for Task ID: 12
+2025-03-14 11:14:25,160 - Default - MainProcess - 10637 - DeepSeek-R1-M3: starts for Task ID: 67
+2025-03-14 11:22:40,166 - Default - MainProcess - 10637 - Count 1:
+codedata:
+Program begin.
+Program End.
+Elapsed_time: 10.783
+----------------------
+
+2025-03-14 11:22:40,938 - Default - MainProcess - 10637 - DeepSeek-R1-M3: completed for Task ID: 67, LLM Time: 484.11s
+2025-03-14 11:22:41,040 - Default - MainProcess - 10637 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 11:27:28,311 - Default - MainProcess - 10637 - Count 1:
+codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 4.658
+----------------------
+
+2025-03-14 11:41:47,882 - Default - MainProcess - 19924 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 11:45:27,952 - Default - MainProcess - 19924 - Count 1:
+codedata:
+Program begin.
+AddPathIntplWithRotationCommand error code is 65581: [0x0001002d] : CoreMotionApi Error: One or more velocity arguments out of range.
+Elapsed_time: 3.035
+----------------------
+
+2025-03-14 11:58:47,768 - Default - MainProcess - 25305 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 12:01:09,053 - Default - MainProcess - 26039 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 12:02:35,330 - Default - MainProcess - 26530 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 12:03:44,315 - Default - MainProcess - 26928 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 12:05:33,905 - Default - MainProcess - 27551 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 12:06:29,447 - Default - MainProcess - 28704 - DeepSeek-R1-M3: starts for Task ID: 68
+2025-03-14 12:08:27,936 - Default - MainProcess - 29347 - DeepSeek-R1-M3: starts for Task ID: 68

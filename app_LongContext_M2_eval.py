@@ -70,7 +70,8 @@ llm_name = None
 llm = OpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"), 
 base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",)
 
-
+# Only for making CanonicalCode.
+llm_name = 'CanonicalCode_test'
 
 runnable = None
  
@@ -83,14 +84,15 @@ runnable = None
 # Prompt for code generation
 prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
 
+
 Instructions:
 	1.	Extract Key Information:
 	•	Identify all Axis numbers, IO Inputs, and IO Outputs mentioned in the Question.
 	•	Add this information at the beginning of the generated code in the following format:
 
 # Axes = [Axis_number_1, Axis_number_2, ...]
-# Inputs = [byte.bit_1, byte.bit_2, ...]
-# Outputs = [byte.bit_1, byte.bit_2, ...]
+# IOInputs = [byte.bit_1, byte.bit_2, ...]
+# IOOutputs = [byte.bit_1, byte.bit_2, ...]
 
 
 	•	Example:
@@ -99,8 +101,8 @@ If the Question states:
 the script should start with:
 
 # Axes = [9, 12, 2]
-# Inputs = [0.3, 1.2]
-# Outputs = [3.4, 6.1]
+# IOInputs = [0.3, 1.2]
+# IOOutputs = [3.4, 6.1]
 
 
 	2.	Code Formatting:
@@ -108,14 +110,16 @@ the script should start with:
 
 	3.	Do not import any motion libraries.
 
+    4. Wait for axes stop moving after every single motion, but don't wait in the middle of continuous motion.
+
+    5. Don't generate  character '\u2260'.
 
     ----------------------------------------------
     
 
         """
 
-# Store the name of the LLM in the global variable
-llm_name = llm.model_name
+
 
 prompt_code = ChatPromptTemplate.from_template(prompt_template)
 
@@ -232,8 +236,7 @@ def on_message(message):
     with open(file_path, 'r', encoding='utf-8') as file:
             task_info = file.read().strip()   
 
-    # Only for making CanonicalCode.
-    llm_name = 'CanonicalCode_test'
+
 
     # Get python code from the output of LLM
     msgCode = extract_code(response)
