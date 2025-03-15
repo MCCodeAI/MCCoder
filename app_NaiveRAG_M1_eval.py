@@ -19,6 +19,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_community.retrievers import BM25Retriever
 from langchain.retrievers import EnsembleRetriever
 from langchain_deepseek import ChatDeepSeek
+from langchain_community.chat_models import ChatHunyuan
 
 from time import *
 from CodeClient import *
@@ -65,11 +66,36 @@ splits = text_splitter.split_documents(docs)
 
 
 
-llm = ChatOpenAI(name="MCCoder-M1-o3-mini-M1", model_name="o3-mini")   #
-llm_name = 'o3-mini-M1'
+# llm = ChatOpenAI(name="MCCoder-M1-o3-mini-M1", model_name="o3-mini")   #
+# llm_name = 'o3-mini-M1'
 
-# llm = ChatDeepSeek(name="MCCoder-M1", model_name="deepseek-chat", temperature=0.2)  # 
-# llm_name = 'DeepSeek-V3-M1'
+# llm = ChatDeepSeek(name="MCCoder-DeepSeek-R1-M1", model_name="deepseek-reasoner", temperature=0.0)  # 
+# llm_name = 'DeepSeek-R1-M1'
+
+ 
+# llm = ChatOpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"),base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",model="deepseek-r1",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
+ 
+# codegene_runnable = None
+# llm_name = 'DeepSeek-R1-M1'  #CanonicalCode, gpt-4o-M3
+
+# llm = OpenAI(api_key="sk-UsOchnvgCn1CGBP1rCo3aXy1OjDp7Ak53faVDqgKy3mmFsGA",base_url=" https://api.lkeap.cloud.tencent.com/v1",model="deepseek-r1",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
+# llm_name = 'DeepSeek-R1-M1'  #CanonicalCode, gpt-4o-M3
+
+
+
+# 4bd107bff85941239e27b1509eccfe98
+# 7ba7726dad4c4ea4ab7f39c7741aea68
+llm = ChatOpenAI(openai_api_key="f1e5b71b65e749d9ab68a583406fc951",openai_api_base="https://wishub-x1.ctyun.cn/v1",model_name="7ba7726dad4c4ea4ab7f39c7741aea68",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
+llm_name = 'DeepSeek-R1-M1'  #CanonicalCode, gpt-4o-M3
+
+
+# llm = ChatHunyuan(
+#     hunyuan_app_id=1257617525,
+#     hunyuan_secret_id="AKIDKrNwXzEG4g5HI8mDQQ8kmqlU4c0B9tPi",
+#     hunyuan_secret_key="AAxWs11qTt56uUq11nLgngbeeS3srhLm",
+#     model="deepseek-r1",temperature=0
+# )
+# llm_name = 'DeepSeek-R1-M1'  #CanonicalCode, gpt-4o-M3
 
 # Prompt for code generation
 prompt_template = """Generate a Python script based on the given Question and Context, ensuring that the code structure and formatting align with the Context.
@@ -240,6 +266,8 @@ def on_message(task_id, message):
     plot_log(log_file_path)
     
     sleep(0.1)
+
+    os.system("say --voice=\"Mei-Jia\" o")
 
     print("end")
 

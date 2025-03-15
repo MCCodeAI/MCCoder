@@ -67,17 +67,26 @@ splits = text_splitter.split_documents(docs)
 # codegene_llm = ChatOpenAI(name="MCCoder-M3-o3-mini", model_name="o3-mini")  # o3-mini gpt-4o, ,temperature=0.2
 # taskdecom_llm = codegene_llm
 # codegene_runnable = None
-# llm_name = 'o3-mini-M3'  #CanonicalCode, gpt-4o-M3
+# llm_name = 'o3-mini-M3'  #CanonicalCode, gpt-4o-M3 o3-mini-M3
 
-# codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-reasoner", model_name="deepseek-reasoner", temperature=0)  # 
-# taskdecom_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0) 
+codegene_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-reasoner", model_name="deepseek-reasoner", temperature=0)  # 
+taskdecom_llm = ChatDeepSeek(name="MCCoder-M3-deepseek-chat", model_name="deepseek-chat", temperature=0) 
+codegene_runnable = None
+llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
+
+# taskdecom_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0.2)
+# codegene_llm = ChatOpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"),base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",model="deepseek-r1",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
+# # taskdecom_llm = codegene_llm
 # codegene_runnable = None
 # llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
 
+
+# 4bd107bff85941239e27b1509eccfe98
+# 7ba7726dad4c4ea4ab7f39c7741aea68
+## -------------
 # taskdecom_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0.2)
-codegene_llm = ChatOpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"),base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",model="deepseek-r1",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
-taskdecom_llm = codegene_llm
-codegene_runnable = None
+# codegene_llm = ChatOpenAI(openai_api_key="f1e5b71b65e749d9ab68a583406fc951",openai_api_base="https://wishub-x1.ctyun.cn/v1",model_name="7ba7726dad4c4ea4ab7f39c7741aea68",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
+# codegene_runnable = None
 llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
 
 
@@ -220,7 +229,7 @@ def self_correct(user_question, original_code, err_info):
     
     # Define the prompt template with original code and error context
     template = """
-    1. Correct the code based on the user question, original code, error information and context provided. Only correct the error part.
+    1. Correct the code based on the user question, original code, error information and context provided. Keep the # Axes, # IOInputs and # IOOutputs.
     2.	Code Formatting:
 •	Enclose the entire generated script within triple backticks (```python and ```) to ensure proper formatting.
 
@@ -330,6 +339,9 @@ def on_message(task_id, message):
     llm_execution_time = llm_end_time - llm_start_time
     print(f"llm execution time: {llm_execution_time}s")
 
+    os.system("say --voice=\"Mei-Jia\" o")
+
+
     # # Define TaskId file path
     # file_path = r'/Users/yin/Documents/GitHub/MCCodeLog/TaskId.txt'
     # with open(file_path, 'r', encoding='utf-8') as file:
@@ -359,7 +371,7 @@ def on_message(task_id, message):
 
     # Set maximum correction attempts
     max_attempts = 2
-    attempt_count = 1
+    attempt_count = 0
     previous_codereturn = None  # Store previous codereturn value
 
     log_message(f"Count {attempt_count}:\n{codereturn}")

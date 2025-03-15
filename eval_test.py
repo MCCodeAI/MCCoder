@@ -19,8 +19,8 @@ def run():
     llm_times = []  # List to store LLM execution times
     
     # Define start and end task IDs manually
-    start_id = 68
-    end_id = 186
+    start_id = 112 #111
+    end_id = 116
     
     # Load the JSON dataset from file
     with open('docs/WMX3API_MCEval_Evaluation_Dataset.json', 'r') as f:
