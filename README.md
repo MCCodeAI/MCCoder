@@ -11,7 +11,7 @@ MCCoder is publicly available at [GitHub](https://github.com/MCCodeAI/MCCoder).
 ## Folder
 
 - **MCEval/**: Contains evaluation data programs and results.
-- **docs/**: Includes soft-motion source documentation, sample codes, and the MCEVAL dataset (`WMX3API_MCEval_Evaluation_Dataset`).
+- **docs/**: Includes soft-motion documentation, sample codes, and the MCEVAL dataset (`WMX3API_MCEval_Evaluation_Dataset`).
 
 ## Installation
 
@@ -29,6 +29,4 @@ To launch the main program, run:
 chainlit run app_MCEval.py -w
 ```
 
-chainlit run app_MCEval.py -w
-
-pip install -r requirements.txt
+Running MCCoder requires Soft-Motion's coordination and a valid license. Please contact the author for further details.
