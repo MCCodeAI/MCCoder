@@ -1,4 +1,4 @@
-An awesome project to librate software engineers' bitter life in motion contorl world.
+![Overview](banner.png)![]
 
 # MCCoder: Streamlining Motion Control with LLM-Assisted Code Generation and Rigorous Verification
 
