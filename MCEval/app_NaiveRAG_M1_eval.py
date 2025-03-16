@@ -78,8 +78,7 @@ splits = text_splitter.split_documents(docs)
 # codegene_runnable = None
 # llm_name = 'DeepSeek-R1-M1'  #CanonicalCode, gpt-4o-M3
 
-# 4bd107bff85941239e27b1509eccfe98
-# 7ba7726dad4c4ea4ab7f39c7741aea68
+
 llm = ChatOpenAI(openai_api_key="CTYUN_API_KEY",openai_api_base="https://wishub-x1.ctyun.cn/v1",model_name="7ba7726dad4c4ea4ab7f39c7741aea68",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
 llm_name = 'DeepSeek-R1-M1'  #CanonicalCode, gpt-4o-M3
 
