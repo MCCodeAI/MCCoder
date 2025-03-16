@@ -1,0 +1,191 @@
+1: Match
+2: Match
+3: Match
+4: Match
+5: Match
+6: Match
+7: Match
+8: Match
+9: DifferentEndPoints
+10: Match
+11: DifferentEndPoints
+12: DifferentEndPoints
+13: DifferentEndPoints
+14: Endpoints Error - Column names not same
+15: Match
+16: Match
+17: DifferentEndPoints
+18: No log file
+19: Match
+20: Match
+21: Match
+22: DifferentEndPoints
+23: Match
+24: Match
+25: Match
+26: Match
+27: DifferentEndPoints
+28: Match
+29: Match
+30: No log file
+31: Match
+32: Match
+33: No log file
+34: Match
+35: Match
+36: Match
+37: DifferentEndPoints
+38: Match
+39: Match
+40: Match
+41: DifferentEndPoints
+42: Match
+43: Match
+44: DifferentEndPoints
+45: Match
+46: DifferentEndPoints
+47: Match
+48: DifferentEndPoints
+49: DifferentEndPoints
+50: No log file
+51: Match
+52: Match
+53: Match
+54: Match
+55: Match
+56: Match
+57: Match
+58: DifferentEndPoints
+59: DifferentEndPoints
+60: No log file
+61: No log file
+62: Match
+63: Match
+64: DifferentEndPoints
+65: No log file
+66: No log file
+67: No log file
+68: DifferentEndPoints
+69: No log file
+70: No log file
+71: No log file
+72: DifferentEndPoints
+73: No log file
+74: DifferentEndPoints
+75: Match
+76: Match
+77: Match
+78: Match
+79: Match
+80: Match
+81: DifferentEndPoints
+82: DifferentEndPoints
+83: Match
+84: DifferentEndPoints
+85: Match
+86: Match
+87: No log file
+88: No log file
+89: Match
+90: Match
+91: Match
+92: DifferentEndPoints
+93: DifferentEndPoints
+94: Match
+95: DifferentEndPoints
+96: DifferentEndPoints
+97: Match
+98: Match
+99: Match
+100: DifferentEndPoints
+101: DifferentEndPoints
+102: Match
+103: Match
+104: Match
+105: Match
+106: Match
+107: No log file
+108: DifferentEndPoints
+109: DifferentEndPoints
+110: DifferentEndPoints
+111: No log file
+112: DifferentEndPoints
+113: No log file
+114: No log file
+115: Endpoints Error - Column names not same
+116: No log file
+117: Match
+118: Match
+119: DifferentEndPoints
+120: DifferentEndPoints
+121: DifferentEndPoints
+122: DifferentEndPoints
+123: No log file
+124: Match
+125: Match
+126: DifferentEndPoints
+127: Match
+128: Match
+129: Match
+130: Match
+131: Match
+132: DifferentEndPoints
+133: Match
+134: DifferentEndPoints
+135: DifferentEndPoints
+136: Match
+137: DifferentEndPoints
+138: Match
+139: Match
+140: No log file
+141: Match
+142: Match
+143: Match
+144: Match
+145: DifferentEndPoints
+146: Match
+147: Match
+148: Match
+149: Match
+150: Match
+151: No log file
+152: Match
+153: DifferentEndPoints
+154: DifferentEndPoints
+155: Match
+156: No log file
+157: Match
+158: DifferentEndPoints
+159: Match
+160: Match
+161: DifferentEndPoints
+162: Match
+163: No log file
+164: No log file
+165: Match
+166: DifferentEndPoints
+167: DifferentEndPoints
+168: Match
+169: DifferentEndPoints
+170: Match
+171: DifferentEndPoints
+172: Match
+173: No log file
+174: Match
+175: DifferentEndPoints
+176: Match
+177: Match
+178: Match
+179: DifferentEndPoints
+180: Match
+181: DifferentEndPoints
+182: Match
+183: DifferentEndPoints
+184: Match
+185: Match
+186: Match
+Correct Matches: 103/186
+Match Proportion: 55.38%
+Difficulty 1 Match Proportion: 70.24% (59/84)
+Difficulty 2 Match Proportion: 55.36% (31/56)
+Difficulty 3 Match Proportion: 28.26% (13/46)

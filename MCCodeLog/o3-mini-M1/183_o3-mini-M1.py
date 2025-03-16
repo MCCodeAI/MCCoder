@@ -1,0 +1,27 @@
+
+# Axes = [0]
+# IOInputs = []
+# IOOutputs = []
+
+# Create a position command for moving Axis 0 to position -200 using a JerkLimited profile.
+posCommand = Motion_PosCommand()
+posCommand.profile.type = ProfileType.JerkLimited
+posCommand.axis = 0
+posCommand.target = -200
+posCommand.profile.velocity = -1000
+posCommand.profile.acc = 10000
+posCommand.profile.dec = 10000
+posCommand.profile.jerkAcc = 1000
+posCommand.profile.jerkDec = 1000
+posCommand.profile.startingVelocity = 0
+posCommand.profile.endVelocity = 0
+
+# Execute command to move from current position to the specified absolute position.
+ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+if ret != 0:
+    print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+    # In a real-world application, you might handle the error accordingly.
+    exit(1)
+
+# Wait until Axis 0 stops moving.
+Wmx3Lib_cm.motion.Wait(0)

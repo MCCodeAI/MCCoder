@@ -1,0 +1,29 @@
+
+# Axes = [8]
+# IOInputs = []
+# IOOutputs = []
+
+def move_axis8():
+    posCommand = Motion_PosCommand()
+    posCommand.profile.type = ProfileType.JerkRatioFixedVelocityT
+    posCommand.axis = 8
+    posCommand.target = 180
+    posCommand.profile.velocity = 1000
+    posCommand.profile.acc = 10000
+    posCommand.profile.dec = 10000
+    posCommand.profile.jerkAccRatio = 0.5
+    posCommand.profile.jerkDecRatio = 0.5
+    posCommand.profile.startingVelocity = 0
+    posCommand.profile.endVelocity = 0
+
+    # Execute command to move from current position to specified absolute position.
+    ret = Wmx3Lib_cm.motion.StartPos(posCommand)
+    if ret != 0:
+        print('StartPos error code is ' + str(ret) + ': ' + Wmx3Lib_cm.ErrorToString(ret))
+        return
+
+    # Wait until the axis stops moving after the motion completes.
+    Wmx3Lib_cm.motion.Wait(8)
+
+if __name__ == '__main__':
+    move_axis8()

@@ -1,0 +1,241 @@
+Task ID: 1, Status: Correct, Difficulty: 1, LLM Time: 74.47s
+Task ID: 2, Status: Correct, Difficulty: 2, LLM Time: 102.10s
+Task ID: 3, Status: Correct, Difficulty: 2, LLM Time: 62.27s
+Task ID: 4, Status: Correct, Difficulty: 2, LLM Time: 290.30s
+Task ID: 5, Status: Correct, Difficulty: 2, LLM Time: 156.46s
+Task ID: 6, Status: Correct, Difficulty: 1, LLM Time: 60.15s
+Task ID: 7, Status: Correct, Difficulty: 2, LLM Time: 178.79s
+Task ID: 8, Status: Correct, Difficulty: 2, LLM Time: 128.00s
+Task ID: 9, Status: Correct, Difficulty: 2, LLM Time: 64.12s
+Task ID: 10, Status: Correct, Difficulty: 2, LLM Time: 45.96s
+Task ID: 11, Status: Correct, Difficulty: 1, LLM Time: 94.65s
+Task ID: 12, Status: Correct, Difficulty: 2, LLM Time: 64.81s
+Task ID: 13, Status: Error, Difficulty: 2, LLM Time: 151.94s
+Task ID: 14, Status: Correct, Difficulty: 1, LLM Time: 156.64s
+Task ID: 15, Status: Correct, Difficulty: 1, LLM Time: 106.84s
+Task ID: 16, Status: Correct, Difficulty: 2, LLM Time: 72.10s
+Task ID: 17, Status: Correct, Difficulty: 2, LLM Time: 254.01s
+Task ID: 18, Status: Correct, Difficulty: 1, LLM Time: 90.84s
+Task ID: 19, Status: Correct, Difficulty: 2, LLM Time: 58.89s
+Task ID: 20, Status: Correct, Difficulty: 1, LLM Time: 140.40s
+Task ID: 21, Status: Correct, Difficulty: 1, LLM Time: 87.34s
+Task ID: 22, Status: Error, Difficulty: 2, LLM Time: 98.00s
+Task ID: 23, Status: Correct, Difficulty: 1, LLM Time: 55.24s
+Task ID: 24, Status: Correct, Difficulty: 2, LLM Time: 92.42s
+Task ID: 25, Status: Correct, Difficulty: 2, LLM Time: 87.23s
+Task ID: 26, Status: Correct, Difficulty: 1, LLM Time: 56.49s
+Task ID: 27, Status: Correct, Difficulty: 2, LLM Time: 107.41s
+Task ID: 28, Status: Correct, Difficulty: 1, LLM Time: 88.78s
+Task ID: 29, Status: Correct, Difficulty: 1, LLM Time: 52.56s
+Task ID: 30, Status: Correct, Difficulty: 1, LLM Time: 93.07s
+Task ID: 31, Status: Correct, Difficulty: 1, LLM Time: 53.20s
+Task ID: 32, Status: Correct, Difficulty: 2, LLM Time: 225.86s
+Task ID: 33, Status: Correct, Difficulty: 1, LLM Time: 53.50s
+Task ID: 34, Status: Correct, Difficulty: 1, LLM Time: 134.92s
+Task ID: 35, Status: Correct, Difficulty: 2, LLM Time: 290.90s
+Task ID: 36, Status: Correct, Difficulty: 1, LLM Time: 97.31s
+Task ID: 37, Status: Correct, Difficulty: 2, LLM Time: 172.21s
+Task ID: 38, Status: Correct, Difficulty: 1, LLM Time: 270.35s
+Task ID: 39, Status: Correct, Difficulty: 2, LLM Time: 277.10s
+Task ID: 40, Status: Correct, Difficulty: 1, LLM Time: 71.89s
+Task ID: 41, Status: Correct, Difficulty: 2, LLM Time: 125.41s
+Task ID: 42, Status: Correct, Difficulty: 1, LLM Time: 73.27s
+Task ID: 43, Status: Correct, Difficulty: 1, LLM Time: 55.19s
+Task ID: 44, Status: Error, Difficulty: 2, LLM Time: 360.27s
+Task ID: 45, Status: Correct, Difficulty: 1, LLM Time: 56.18s
+Task ID: 46, Status: Correct, Difficulty: 2, LLM Time: 49.71s
+Task ID: 47, Status: Correct, Difficulty: 2, LLM Time: 141.68s
+Task ID: 48, Status: Correct, Difficulty: 1, LLM Time: 315.56s
+Task ID: 49, Status: Correct, Difficulty: 1, LLM Time: 80.75s
+Task ID: 50, Status: Correct, Difficulty: 1, LLM Time: 212.87s
+Task ID: 51, Status: Correct, Difficulty: 1, LLM Time: 108.90s
+Task ID: 52, Status: Correct, Difficulty: 2, LLM Time: 86.66s
+Task ID: 53, Status: Correct, Difficulty: 1, LLM Time: 187.83s
+Task ID: 54, Status: Correct, Difficulty: 2, LLM Time: 257.72s
+Task ID: 55, Status: Correct, Difficulty: 1, LLM Time: 69.33s
+Task ID: 56, Status: Correct, Difficulty: 1, LLM Time: 80.87s
+Task ID: 57, Status: Correct, Difficulty: 1, LLM Time: 122.36s
+Task ID: 58, Status: Correct, Difficulty: 1, LLM Time: 314.87s
+Task ID: 59, Status: Correct, Difficulty: 1, LLM Time: 187.31s
+Task ID: 60, Status: Correct, Difficulty: 2, LLM Time: 296.22s
+Task ID: 61, Status: Correct, Difficulty: 1, LLM Time: 135.37s
+Task ID: 62, Status: Correct, Difficulty: 1, LLM Time: 296.74s
+Task ID: 63, Status: Correct, Difficulty: 1, LLM Time: 96.57s
+Task ID: 64, Status: Correct, Difficulty: 1, LLM Time: 689.17s
+Task ID: 65, Status: Correct, Difficulty: 1, LLM Time: 137.73s
+Task ID: 66, Status: Correct, Difficulty: 1, LLM Time: 281.94s
+Task ID: 67, Status: Correct, Difficulty: 1, LLM Time: 484.11s
+Task ID: 68, Status: Correct, Difficulty: 1, LLM Time: 333.33s
+Task ID: 69, Status: Correct, Difficulty: 1, LLM Time: 251.93s
+Task ID: 70, Status: Correct, Difficulty: 1, LLM Time: 458.22s
+Task ID: 70, Status: Correct, Difficulty: 1, LLM Time: 56.85s
+Task ID: 71, Status: Error, Difficulty: 1, LLM Time: 48.35s
+Task ID: 72, Status: Error, Difficulty: 1, LLM Time: 67.24s
+Task ID: 73, Status: Correct, Difficulty: 1, LLM Time: 45.92s
+Task ID: 74, Status: Correct, Difficulty: 1, LLM Time: 55.18s
+Task ID: 75, Status: Correct, Difficulty: 1, LLM Time: 41.97s
+Task ID: 76, Status: Correct, Difficulty: 1, LLM Time: 42.05s
+Task ID: 77, Status: Correct, Difficulty: 1, LLM Time: 44.64s
+Task ID: 78, Status: Correct, Difficulty: 1, LLM Time: 43.11s
+Task ID: 79, Status: Correct, Difficulty: 1, LLM Time: 43.91s
+Task ID: 80, Status: Correct, Difficulty: 1, LLM Time: 38.90s
+Task ID: 81, Status: Correct, Difficulty: 1, LLM Time: 36.38s
+Task ID: 82, Status: Correct, Difficulty: 1, LLM Time: 29.94s
+Task ID: 83, Status: Correct, Difficulty: 1, LLM Time: 33.25s
+Task ID: 84, Status: Correct, Difficulty: 2, LLM Time: 80.75s
+Task ID: 85, Status: Correct, Difficulty: 1, LLM Time: 45.16s
+Task ID: 86, Status: Error, Difficulty: 1, LLM Time: 42.39s
+Task ID: 86, Status: Correct, Difficulty: 1, LLM Time: 37.58s
+Task ID: 87, Status: Correct, Difficulty: 2, LLM Time: 38.01s
+Task ID: 88, Status: Correct, Difficulty: 1, LLM Time: 31.93s
+Task ID: 89, Status: Correct, Difficulty: 1, LLM Time: 43.34s
+Task ID: 90, Status: Correct, Difficulty: 1, LLM Time: 52.46s
+Task ID: 91, Status: Correct, Difficulty: 1, LLM Time: 45.32s
+Task ID: 92, Status: Correct, Difficulty: 3, LLM Time: 42.90s
+Task ID: 93, Status: Correct, Difficulty: 3, LLM Time: 34.34s
+Task ID: 94, Status: Correct, Difficulty: 3, LLM Time: 61.29s
+Task ID: 95, Status: Correct, Difficulty: 3, LLM Time: 34.95s
+Task ID: 96, Status: Correct, Difficulty: 3, LLM Time: 44.62s
+Task ID: 97, Status: Correct, Difficulty: 3, LLM Time: 56.75s
+Task ID: 98, Status: Correct, Difficulty: 3, LLM Time: 30.51s
+Task ID: 99, Status: Correct, Difficulty: 3, LLM Time: 34.38s
+Task ID: 100, Status: Correct, Difficulty: 3, LLM Time: 32.05s
+Task ID: 101, Status: Correct, Difficulty: 3, LLM Time: 34.95s
+Task ID: 102, Status: Correct, Difficulty: 3, LLM Time: 43.75s
+Task ID: 103, Status: Correct, Difficulty: 2, LLM Time: 29.56s
+Task ID: 104, Status: Correct, Difficulty: 2, LLM Time: 79.58s
+Task ID: 105, Status: Correct, Difficulty: 3, LLM Time: 28.07s
+Task ID: 106, Status: Correct, Difficulty: 3, LLM Time: 43.59s
+Task ID: 107, Status: Correct, Difficulty: 3, LLM Time: 66.56s
+Task ID: 108, Status: Correct, Difficulty: 3, LLM Time: 60.33s
+Task ID: 109, Status: Correct, Difficulty: 3, LLM Time: 72.29s
+Task ID: 110, Status: Correct, Difficulty: 3, LLM Time: 63.07s
+Task ID: 117, Status: Correct, Difficulty: 1, LLM Time: 19.90s
+Task ID: 118, Status: Correct, Difficulty: 2, LLM Time: 35.93s
+Task ID: 119, Status: Correct, Difficulty: 2, LLM Time: 19.89s
+Task ID: 120, Status: Correct, Difficulty: 2, LLM Time: 19.98s
+Task ID: 121, Status: Correct, Difficulty: 3, LLM Time: 45.41s
+Task ID: 122, Status: Correct, Difficulty: 2, LLM Time: 18.54s
+Task ID: 123, Status: Correct, Difficulty: 2, LLM Time: 43.33s
+Task ID: 124, Status: Correct, Difficulty: 1, LLM Time: 21.81s
+Task ID: 125, Status: Correct, Difficulty: 1, LLM Time: 19.40s
+Task ID: 126, Status: Correct, Difficulty: 2, LLM Time: 23.88s
+Task ID: 127, Status: Correct, Difficulty: 1, LLM Time: 21.84s
+Task ID: 128, Status: Correct, Difficulty: 2, LLM Time: 31.68s
+Task ID: 129, Status: Correct, Difficulty: 2, LLM Time: 23.10s
+Task ID: 130, Status: Error, Difficulty: 2, LLM Time: 42.20s
+Task ID: 131, Status: Correct, Difficulty: 1, LLM Time: 20.70s
+Task ID: 132, Status: Error, Difficulty: 2, LLM Time: 39.44s
+Task ID: 133, Status: Correct, Difficulty: 1, LLM Time: 20.29s
+Task ID: 134, Status: Correct, Difficulty: 2, LLM Time: 19.15s
+Task ID: 135, Status: Error, Difficulty: 3, LLM Time: 37.90s
+Task ID: 136, Status: Correct, Difficulty: 1, LLM Time: 28.67s
+Task ID: 137, Status: Correct, Difficulty: 3, LLM Time: 48.88s
+Task ID: 138, Status: Correct, Difficulty: 3, LLM Time: 54.52s
+Task ID: 139, Status: Correct, Difficulty: 2, LLM Time: 25.98s
+Task ID: 140, Status: Correct, Difficulty: 3, LLM Time: 33.16s
+Task ID: 141, Status: Error, Difficulty: 3, LLM Time: 52.94s
+Task ID: 142, Status: Correct, Difficulty: 1, LLM Time: 19.66s
+Task ID: 143, Status: Error, Difficulty: 3, LLM Time: 41.33s
+Task ID: 144, Status: Correct, Difficulty: 1, LLM Time: 18.44s
+Task ID: 145, Status: Correct, Difficulty: 2, LLM Time: 22.53s
+Task ID: 146, Status: Correct, Difficulty: 2, LLM Time: 25.10s
+Task ID: 147, Status: Correct, Difficulty: 1, LLM Time: 25.19s
+Task ID: 148, Status: Correct, Difficulty: 1, LLM Time: 19.24s
+Task ID: 149, Status: Correct, Difficulty: 3, LLM Time: 75.31s
+Task ID: 150, Status: Correct, Difficulty: 1, LLM Time: 19.74s
+Task ID: 151, Status: Error, Difficulty: 3, LLM Time: 32.77s
+Task ID: 152, Status: Correct, Difficulty: 2, LLM Time: 25.37s
+Task ID: 153, Status: Correct, Difficulty: 3, LLM Time: 53.92s
+Task ID: 154, Status: Correct, Difficulty: 3, LLM Time: 57.90s
+Task ID: 155, Status: Correct, Difficulty: 1, LLM Time: 24.92s
+Task ID: 156, Status: Error, Difficulty: 3, LLM Time: 33.86s
+Task ID: 157, Status: Correct, Difficulty: 1, LLM Time: 22.35s
+Task ID: 158, Status: Correct, Difficulty: 2, LLM Time: 22.24s
+Task ID: 159, Status: Correct, Difficulty: 3, LLM Time: 34.95s
+Task ID: 160, Status: Correct, Difficulty: 2, LLM Time: 22.58s
+Task ID: 161, Status: Correct, Difficulty: 3, LLM Time: 46.76s
+Task ID: 162, Status: Correct, Difficulty: 1, LLM Time: 19.88s
+Task ID: 163, Status: Correct, Difficulty: 3, LLM Time: 57.29s
+Task ID: 164, Status: Error, Difficulty: 3, LLM Time: 37.38s
+Task ID: 165, Status: Correct, Difficulty: 1, LLM Time: 30.40s
+Task ID: 166, Status: Error, Difficulty: 3, LLM Time: 60.85s
+Task ID: 167, Status: Correct, Difficulty: 3, LLM Time: 63.44s
+Task ID: 168, Status: Correct, Difficulty: 1, LLM Time: 19.47s
+Task ID: 169, Status: Correct, Difficulty: 3, LLM Time: 49.17s
+Task ID: 170, Status: Correct, Difficulty: 2, LLM Time: 22.98s
+Task ID: 171, Status: Correct, Difficulty: 3, LLM Time: 49.88s
+Task ID: 172, Status: Correct, Difficulty: 1, LLM Time: 22.67s
+Task ID: 173, Status: Correct, Difficulty: 3, LLM Time: 53.16s
+Task ID: 174, Status: Correct, Difficulty: 2, LLM Time: 44.04s
+Task ID: 175, Status: Error, Difficulty: 3, LLM Time: 49.53s
+Task ID: 176, Status: Correct, Difficulty: 1, LLM Time: 21.63s
+Task ID: 177, Status: Error, Difficulty: 3, LLM Time: 37.81s
+Task ID: 178, Status: Correct, Difficulty: 1, LLM Time: 22.37s
+Task ID: 179, Status: Correct, Difficulty: 2, LLM Time: 22.97s
+Task ID: 180, Status: Correct, Difficulty: 2, LLM Time: 28.26s
+Task ID: 181, Status: Correct, Difficulty: 2, LLM Time: 24.43s
+Task ID: 182, Status: Correct, Difficulty: 1, LLM Time: 20.93s
+Task ID: 183, Status: Error, Difficulty: 2, LLM Time: 21.07s
+Task ID: 184, Status: Correct, Difficulty: 1, LLM Time: 22.85s
+Task ID: 185, Status: Correct, Difficulty: 2, LLM Time: 360.28s
+Task ID: 186, Status: Correct, Difficulty: 1, LLM Time: 22.22s
+
+Evaluation Statistics:
+Total Tasks: 13
+Total Correct: 10
+Total Errors: 3
+Overall Accuracy: 76.92%
+Overall Error Rate: 23.08%
+Error Task IDs: [175, 177, 183]
+Average LLM Time: 53.72s
+
+Difficulty 1:
+  Correct: 5
+  Errors: 0
+  Accuracy: 100.00%
+  Error Rate: 0.00%
+
+Difficulty 2:
+  Correct: 5
+  Errors: 1
+  Accuracy: 83.33%
+  Error Rate: 16.67%
+
+Difficulty 3:
+  Correct: 0
+  Errors: 2
+  Accuracy: 0.00%
+  Error Rate: 100.00%
+Task ID: 112, Status: Error, Difficulty: 3, LLM Time: 104.70s
+Task ID: 113, Status: Correct, Difficulty: 3, LLM Time: 340.64s
+Task ID: 114, Status: Correct, Difficulty: 3, LLM Time: 121.67s
+Task ID: 115, Status: Correct, Difficulty: 3, LLM Time: 194.53s
+Task ID: 116, Status: Correct, Difficulty: 3, LLM Time: 287.03s
+
+Evaluation Statistics:
+Total Tasks: 5
+Total Correct: 4
+Total Errors: 1
+Overall Accuracy: 80.00%
+Overall Error Rate: 20.00%
+Error Task IDs: [112]
+Average LLM Time: 209.72s
+
+Difficulty 1:
+  Correct: 0
+  Errors: 0
+  Accuracy: 0.00%
+  Error Rate: 0.00%
+
+Difficulty 2:
+  Correct: 0
+  Errors: 0
+  Accuracy: 0.00%
+  Error Rate: 0.00%
+
+Difficulty 3:
+  Correct: 4
+  Errors: 1
+  Accuracy: 80.00%
+  Error Rate: 20.00%

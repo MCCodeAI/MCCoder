@@ -1,0 +1,4 @@
+Total Match Endpoints and DTW Zero: 105/186 (56.45%)
+Difficulty 1 Match Endpoints and DTW Zero: 64/84 (76.19%)
+Difficulty 2 Match Endpoints and DTW Zero: 29/56 (51.79%)
+Difficulty 3 Match Endpoints and DTW Zero: 12/46 (26.09%)

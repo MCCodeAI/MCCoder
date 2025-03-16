@@ -1,2 +1,5 @@
 
 .env
+logs/
+UI sample/
+temp/
