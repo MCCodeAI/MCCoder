@@ -1,5 +1,5 @@
 
 .env
-logs/
-UI sample/
+log/
+UISample/
 temp/

@@ -1,4 +1,4 @@
-![Overview](banner.png)![]
+![Overview](banner.png)
 
 # MCCoder: Streamlining Motion Control with LLM-Assisted Code Generation and Rigorous Verification
 
