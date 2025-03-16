@@ -8,14 +8,10 @@ MCCoder is an LLM-powered system designed to generate motion control code effici
 
 MCCoder is publicly available at [GitHub](https://github.com/MCCodeAI/MCCoder).
 
----
-
 ## Folder
 
 - **MCEval/**: Contains evaluation data programs and results.
 - **docs/**: Includes soft-motion source documentation, sample codes, and the MCEVAL dataset (`WMX3API_MCEval_Evaluation_Dataset`).
-
----
 
 ## Installation
 
@@ -25,8 +21,6 @@ To install dependencies, run:
 pip install -r requirements.txt
 ```
 
----
-
 ## Usage
 
 To launch the main program, run:
@@ -34,7 +28,6 @@ To launch the main program, run:
 ```sh
 chainlit run app_MCEval.py -w
 ```
-
 
 chainlit run app_MCEval.py -w
 
