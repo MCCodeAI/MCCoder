@@ -81,11 +81,8 @@ llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
 # llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
 
 
-# 4bd107bff85941239e27b1509eccfe98
-# 7ba7726dad4c4ea4ab7f39c7741aea68
-## -------------
 # taskdecom_llm = ChatOpenAI(name="MCCoder-M3-gpt-4o", model_name="gpt-4o", temperature=0.2)
-# codegene_llm = ChatOpenAI(openai_api_key="f1e5b71b65e749d9ab68a583406fc951",openai_api_base="https://wishub-x1.ctyun.cn/v1",model_name="7ba7726dad4c4ea4ab7f39c7741aea68",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
+# codegene_llm = ChatOpenAI(openai_api_key="CTYUN_API_KEY",openai_api_base="https://wishub-x1.ctyun.cn/v1",model_name="7ba7726dad4c4ea4ab7f39c7741aea68",temperature=0)  # o3-mini gpt-4o, ,temperature=0.2
 # codegene_runnable = None
 llm_name = 'DeepSeek-R1-M3'  #CanonicalCode, gpt-4o-M3
 
